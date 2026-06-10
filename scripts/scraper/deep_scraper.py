@@ -37,7 +37,8 @@ def fetch_page_text(url):
 
 def extract_images_from_html(html, base_url):
     soup = BeautifulSoup(html, 'html.parser')
-    images = []
+    products = []
+    seen_images = set()
     for img in soup.find_all('img'):
         src = img.get('src')
         if not src:
@@ -47,14 +48,25 @@ def extract_images_from_html(html, base_url):
         if 'logo' in src_lower or 'icon' in src_lower or 'banner' in src_lower or src_lower.endswith('.svg') or src_lower.endswith('.gif'):
             continue
             
-        full_url = urllib.parse.urljoin(base_url, src)
-        if full_url not in images:
-            images.append(full_url)
+        full_img_url = urllib.parse.urljoin(base_url, src)
+        if full_img_url in seen_images:
+            continue
             
-        if len(images) >= 15: # Grab candidate images
+        parent_a = img.find_parent('a')
+        product_url = ""
+        if parent_a and parent_a.get('href'):
+            product_url = urllib.parse.urljoin(base_url, parent_a.get('href'))
+            
+        products.append({
+            'image_url': full_img_url,
+            'product_url': product_url
+        })
+        seen_images.add(full_img_url)
+            
+        if len(products) >= 20: # Grab candidate images
             break
             
-    return images[:5] # Return top 5
+    return products[:10] # Return top 10
 
 def extract_ceo_from_text(text):
     match = CEO_REGEX.search(text)
@@ -166,16 +178,23 @@ def process_leads():
                     print("  [-] No services info found.")
                     
             # Try fetching explicit products page if still few images
-            if len(product_images) < 3:
+            if len(product_images) < 5:
                 products_url = urllib.parse.urljoin(website, '/products')
                 prod_html, _ = fetch_page_content(products_url)
                 if prod_html:
                     product_images.extend(extract_images_from_html(prod_html, products_url))
                     
             if product_images and not lead.get('product_images'):
-                # Deduplicate and save
-                lead['product_images'] = list(dict.fromkeys(product_images))[:5]
-                print(f"  [+] Extracted {len(lead['product_images'])} product images.")
+                # Deduplicate by image_url and save
+                unique_products = []
+                seen_urls = set()
+                for p in product_images:
+                    if p['image_url'] not in seen_urls:
+                        unique_products.append(p)
+                        seen_urls.add(p['image_url'])
+                        
+                lead['product_images'] = unique_products[:10]
+                print(f"  [+] Extracted {len(lead['product_images'])} products.")
                 updated_count += 1
                 
             # Be polite to servers

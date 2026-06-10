@@ -86,22 +86,43 @@ def export_structure():
             # 7. Download Product Images
             product_images = lead.get('product_images', [])
             if product_images:
-                img_count = 1
-                for img_url in product_images:
-                    if not img_url.startswith('http'):
-                        continue
-                    try:
-                        res = requests.get(img_url, timeout=5)
-                        if res.status_code == 200:
-                            # Filter small images (less than 10KB might just be an icon or tracking pixel)
-                            if len(res.content) > 10240:
-                                ext = 'png' if 'png' in res.headers.get('Content-Type', '') else 'jpg'
-                                img_path = os.path.join(products_path, f'product_{img_count}.{ext}')
-                                with open(img_path, 'wb') as f:
-                                    f.write(res.content)
-                                img_count += 1
-                    except Exception as e:
-                        print(f"Failed to download product image {img_url}: {e}")
+                products_md_path = os.path.join(products_path, 'products.md')
+                with open(products_md_path, 'w', encoding='utf-8') as p_md:
+                    p_md.write(f"# Products for {name}\n\n")
+                    
+                    img_count = 1
+                    for prod in product_images:
+                        # Handle backwards compatibility if old data is just a list of strings
+                        if isinstance(prod, str):
+                            img_url = prod
+                            prod_url = ""
+                        else:
+                            img_url = prod.get('image_url', '')
+                            prod_url = prod.get('product_url', '')
+                            
+                        if not img_url.startswith('http'):
+                            continue
+                        try:
+                            res = requests.get(img_url, timeout=5)
+                            if res.status_code == 200:
+                                # Filter small images (less than 10KB might just be an icon or tracking pixel)
+                                if len(res.content) > 10240:
+                                    ext = 'png' if 'png' in res.headers.get('Content-Type', '') else 'jpg'
+                                    filename = f'product_{img_count}.{ext}'
+                                    img_path = os.path.join(products_path, filename)
+                                    with open(img_path, 'wb') as f:
+                                        f.write(res.content)
+                                        
+                                    # Log to products.md
+                                    p_md.write(f"### Product {img_count}\n")
+                                    p_md.write(f"**Image:** `{filename}`\n")
+                                    if prod_url:
+                                        p_md.write(f"**URL:** [View Product]({prod_url})\n")
+                                    p_md.write("\n")
+                                    
+                                    img_count += 1
+                        except Exception as e:
+                            print(f"Failed to download product image {img_url}: {e}")
             
             count += 1
 
