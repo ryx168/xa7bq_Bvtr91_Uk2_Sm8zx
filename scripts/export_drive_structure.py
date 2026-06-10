@@ -83,6 +83,26 @@ def export_structure():
                 else:
                     f.write(f"# Services for {name}\n\n*Service information will be populated here by AI.*")
             
+            # 7. Download Product Images
+            product_images = lead.get('product_images', [])
+            if product_images:
+                img_count = 1
+                for img_url in product_images:
+                    if not img_url.startswith('http'):
+                        continue
+                    try:
+                        res = requests.get(img_url, timeout=5)
+                        if res.status_code == 200:
+                            # Filter small images (less than 10KB might just be an icon or tracking pixel)
+                            if len(res.content) > 10240:
+                                ext = 'png' if 'png' in res.headers.get('Content-Type', '') else 'jpg'
+                                img_path = os.path.join(products_path, f'product_{img_count}.{ext}')
+                                with open(img_path, 'wb') as f:
+                                    f.write(res.content)
+                                img_count += 1
+                    except Exception as e:
+                        print(f"Failed to download product image {img_url}: {e}")
+            
             count += 1
 
     print(f"Successfully exported {count} business profiles into {base_output_dir}.")

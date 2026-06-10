@@ -15,20 +15,46 @@ headers = {
 # This is a basic heuristic. A more advanced version would use an LLM.
 CEO_REGEX = re.compile(r'\b(?:CEO|Owner|Founder|President|Managing Director)[\s:-]+([A-Z][a-z]+ [A-Z][a-z]+)\b')
 
-def fetch_page_text(url):
+def fetch_page_content(url):
     try:
         res = requests.get(url, headers=headers, timeout=10)
         if res.status_code == 200:
-            soup = BeautifulSoup(res.text, 'html.parser')
+            html = res.text
+            soup = BeautifulSoup(html, 'html.parser')
             # remove script and style tags
             for script in soup(["script", "style"]):
                 script.extract()
             text = soup.get_text(separator=' ')
-            # collapse whitespace
-            return ' '.join(text.split())
+            text = ' '.join(text.split())
+            return html, text
     except Exception as e:
         print(f"Failed to fetch {url}: {e}")
-    return ""
+    return "", ""
+
+def fetch_page_text(url):
+    _, text = fetch_page_content(url)
+    return text
+
+def extract_images_from_html(html, base_url):
+    soup = BeautifulSoup(html, 'html.parser')
+    images = []
+    for img in soup.find_all('img'):
+        src = img.get('src')
+        if not src:
+            continue
+            
+        src_lower = src.lower()
+        if 'logo' in src_lower or 'icon' in src_lower or 'banner' in src_lower or src_lower.endswith('.svg') or src_lower.endswith('.gif'):
+            continue
+            
+        full_url = urllib.parse.urljoin(base_url, src)
+        if full_url not in images:
+            images.append(full_url)
+            
+        if len(images) >= 15: # Grab candidate images
+            break
+            
+    return images[:5] # Return top 5
 
 def extract_ceo_from_text(text):
     match = CEO_REGEX.search(text)
@@ -74,12 +100,17 @@ def process_leads():
             processed_count += 1
             
             # 1. Fetch homepage
-            text = fetch_page_text(website)
+            home_html, text = fetch_page_content(website)
             
             if not lead.get('ceo'):
                 ceo = extract_ceo_from_text(text)
             else:
                 ceo = lead.get('ceo')
+                
+            # Grab product images from homepage initially
+            product_images = []
+            if not lead.get('product_images'):
+                product_images = extract_images_from_html(home_html, website)
             
             # 2. Try to find About Us page if CEO or History is missing
             about_text = ""
@@ -117,18 +148,35 @@ def process_leads():
             if not lead.get('services'):
                 services_url = urllib.parse.urljoin(website, '/services')
                 print(f"  -> Looking for services at {services_url}")
-                services_text = fetch_page_text(services_url)
+                services_html, services_text = fetch_page_content(services_url)
                 
                 if not services_text or len(services_text) < 100:
                     services_url = urllib.parse.urljoin(website, '/our-services')
-                    services_text = fetch_page_text(services_url)
+                    services_html, services_text = fetch_page_content(services_url)
                 
                 if services_text and len(services_text) > 100:
                     print("  [+] FOUND SERVICES INFO")
                     lead['services'] = services_text[:3000] # Cap length just in case
                     updated_count += 1
+                    
+                    # Also try grabbing images from services/products page if homepage didn't yield much
+                    if len(product_images) < 3 and services_html:
+                        product_images.extend(extract_images_from_html(services_html, services_url))
                 else:
                     print("  [-] No services info found.")
+                    
+            # Try fetching explicit products page if still few images
+            if len(product_images) < 3:
+                products_url = urllib.parse.urljoin(website, '/products')
+                prod_html, _ = fetch_page_content(products_url)
+                if prod_html:
+                    product_images.extend(extract_images_from_html(prod_html, products_url))
+                    
+            if product_images and not lead.get('product_images'):
+                # Deduplicate and save
+                lead['product_images'] = list(dict.fromkeys(product_images))[:5]
+                print(f"  [+] Extracted {len(lead['product_images'])} product images.")
+                updated_count += 1
                 
             # Be polite to servers
             time.sleep(1)
