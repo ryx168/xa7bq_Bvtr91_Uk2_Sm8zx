@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install beautifulsoup4 requests
+          pip install beautifulsoup4 requests google-api-python-client google-auth-httplib2 google-auth-oauthlib
 
       - name: Run Yellow Pages Scraper
         run: python scripts/scraper/yp_scraper.py
@@ -34,6 +34,19 @@ jobs:
 
       - name: Run Enrichment (Logos and History)
         run: python scripts/scraper/enrich_business.py
+
+      - name: Setup Google Drive Credentials
+        run: |
+          if [ -n "${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}" ]; then
+            echo "${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}" > credentials.json
+          fi
+          if [ -n "${{ secrets.GOOGLE_DRIVE_TOKEN }}" ]; then
+            echo "${{ secrets.GOOGLE_DRIVE_TOKEN }}" | base64 --decode > token.pickle
+          fi
+
+      - name: Upload to Google Drive
+        run: |
+          python scripts/upload_folder_to_drive.py public/data --name Business_Info_Sync
 
       - name: Commit and push if changed
         run: |
