@@ -77,6 +77,23 @@ def process_leads():
             else:
                 print("  [-] No leader found via heuristics.")
                 
+            # 3. Try to fetch Services page
+            if not lead.get('services'):
+                services_url = urllib.parse.urljoin(website, '/services')
+                print(f"  -> Looking for services at {services_url}")
+                services_text = fetch_page_text(services_url)
+                
+                if not services_text or len(services_text) < 100:
+                    services_url = urllib.parse.urljoin(website, '/our-services')
+                    services_text = fetch_page_text(services_url)
+                
+                if services_text and len(services_text) > 100:
+                    print("  [+] FOUND SERVICES INFO")
+                    lead['services'] = services_text[:3000] # Cap length just in case
+                    updated_count += 1
+                else:
+                    print("  [-] No services info found.")
+                
             # Be polite to servers
             time.sleep(1)
 

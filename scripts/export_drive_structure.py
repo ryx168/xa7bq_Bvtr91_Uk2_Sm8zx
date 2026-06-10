@@ -70,6 +70,18 @@ def export_structure():
             banner_path = os.path.join(folder_path, 'banner.txt')
             with open(banner_path, 'w', encoding='utf-8') as f:
                 f.write(lead.get('banner', f'Banner for {name} will be generated/saved here.'))
+                
+            # 6. Save services info
+            services_path = os.path.join(folder_path, 'services')
+            os.makedirs(services_path, exist_ok=True)
+            
+            services_md_path = os.path.join(services_path, 'services.md')
+            with open(services_md_path, 'w', encoding='utf-8') as f:
+                services_text = lead.get('services')
+                if services_text:
+                    f.write(f"# Services for {name}\n\n{services_text}")
+                else:
+                    f.write(f"# Services for {name}\n\n*Service information will be populated here by AI.*")
             
             count += 1
 
