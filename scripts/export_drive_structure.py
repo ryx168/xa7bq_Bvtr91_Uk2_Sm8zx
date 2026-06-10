@@ -36,9 +36,40 @@ def export_structure():
             folder_path = os.path.join(base_output_dir, city, industry, name)
             os.makedirs(folder_path, exist_ok=True)
 
+            # 1. Save profile.json
             profile_path = os.path.join(folder_path, 'profile.json')
             with open(profile_path, 'w', encoding='utf-8') as f:
                 json.dump(lead, f, indent=4, ensure_ascii=False)
+            
+            # 2. Save about.md
+            about_path = os.path.join(folder_path, 'about.md')
+            with open(about_path, 'w', encoding='utf-8') as f:
+                history = lead.get('history', 'No history available yet.')
+                ceo = lead.get('ceo', 'Unknown')
+                f.write(f"# About {name}\n\n**Leader:** {ceo}\n\n{history}")
+                
+            # 3. Create products folder (placeholder for AI or future scrapers)
+            products_path = os.path.join(folder_path, 'products')
+            os.makedirs(products_path, exist_ok=True)
+            
+            # 4. Download Logo if URL exists
+            import requests
+            logo_url = lead.get('logo')
+            if logo_url and logo_url.startswith('http'):
+                logo_path = os.path.join(folder_path, 'logo.png')
+                try:
+                    res = requests.get(logo_url, timeout=5)
+                    if res.status_code == 200:
+                        with open(logo_path, 'wb') as f:
+                            f.write(res.content)
+                except Exception as e:
+                    print(f"Failed to download logo for {name}: {e}")
+            
+            # 5. Placeholder for banner (just a folder or text file for now)
+            # The AI or next scraper step can download actual banners here
+            banner_path = os.path.join(folder_path, 'banner.txt')
+            with open(banner_path, 'w', encoding='utf-8') as f:
+                f.write(lead.get('banner', f'Banner for {name} will be generated/saved here.'))
             
             count += 1
 
