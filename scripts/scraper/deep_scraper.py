@@ -39,6 +39,19 @@ def extract_ceo_from_text(text):
             return name
     return None
 
+def extract_timeline_from_text(text):
+    # Find sentences containing years (18xx, 19xx, 20xx)
+    sentences = re.split(r'(?<=[.!?]) +', text)
+    timeline = []
+    for s in sentences:
+        if re.search(r'\b(18|19|20)\d{2}\b', s) and len(s) > 15:
+            timeline.append(s.strip())
+    
+    if timeline:
+        # Deduplicate and sort could be done here, but keeping it simple
+        return "### Historical Timeline\n\n" + "\n".join([f"- {s}" for s in timeline[:10]])
+    return None
+
 def process_leads():
     filepath = 'public/data/vancouver_leads.json'
     try:
@@ -49,33 +62,56 @@ def process_leads():
         return
 
     updated_count = 0
+    processed_count = 0
     for idx, lead in enumerate(leads):
-        if lead.get('website') != 'N/A' and not lead.get('ceo'):
+        if processed_count >= 10:
+            print("Reached 10 company test limit. Stopping scrape.")
+            break
+            
+        if lead.get('website') != 'N/A' and (not lead.get('ceo') or not lead.get('history')):
             website = lead['website']
             print(f"[{idx+1}/{len(leads)}] Crawling {website} for {lead['name']}...")
+            processed_count += 1
             
             # 1. Fetch homepage
             text = fetch_page_text(website)
-            ceo = extract_ceo_from_text(text)
             
-            # 2. Try to find About Us page if not found on homepage
-            if not ceo:
+            if not lead.get('ceo'):
+                ceo = extract_ceo_from_text(text)
+            else:
+                ceo = lead.get('ceo')
+            
+            # 2. Try to find About Us page if CEO or History is missing
+            about_text = ""
+            if not ceo or not lead.get('history'):
                 about_url = urllib.parse.urljoin(website, '/about')
-                print(f"  -> No CEO found on homepage, trying {about_url}")
-                text = fetch_page_text(about_url)
-                ceo = extract_ceo_from_text(text)
+                print(f"  -> Fetching {about_url}")
+                about_text = fetch_page_text(about_url)
                 
-            if not ceo:
-                about_url = urllib.parse.urljoin(website, '/about-us')
-                text = fetch_page_text(about_url)
-                ceo = extract_ceo_from_text(text)
+                if not about_text or len(about_text) < 100:
+                    about_url = urllib.parse.urljoin(website, '/about-us')
+                    about_text = fetch_page_text(about_url)
+                
+                if not ceo:
+                    ceo = extract_ceo_from_text(about_text)
 
-            if ceo:
+            # Update CEO
+            if ceo and ceo != lead.get('ceo'):
                 print(f"  [+] FOUND LEADER: {ceo}")
                 lead['ceo'] = ceo
                 updated_count += 1
-            else:
+            elif not ceo:
                 print("  [-] No leader found via heuristics.")
+                
+            # Extract Timeline
+            if not lead.get('history') and about_text:
+                timeline = extract_timeline_from_text(about_text)
+                if timeline:
+                    print("  [+] FOUND TIMELINE HISTORY")
+                    lead['history'] = timeline
+                    updated_count += 1
+                else:
+                    print("  [-] No timeline found.")
                 
             # 3. Try to fetch Services page
             if not lead.get('services'):
