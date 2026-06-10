@@ -1,0 +1,403 @@
+name: auto server
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+on:
+  schedule:
+    - cron: '0 0,6,12,18 * * *'
+  workflow_dispatch:
+    inputs:
+      debug_mode:
+        description: 'Enable debug mode (keep runner alive if server crashes)'
+        type: boolean
+        default: false
+
+jobs:
+  serve:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    timeout-minutes: 360
+
+    steps:
+      # â”€â”€ 1. Checkout â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      # â”€â”€ 2. Python setup with pip cache â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      # â”€â”€ 3. Install dependencies â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - name: Install dependencies
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+          pip install --upgrade pip
+          pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
+          pip install -U yt-dlp
+
+      # â”€â”€ 4. Install system dependencies â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y espeak ffmpeg chromium-browser chromium-chromedriver openssh-server nodejs
+
+      # â”€â”€ 5. Setup Google Drive Credentials â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - name: Setup Google Drive Credentials
+        run: |
+          if [ -n "${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}" ]; then
+            echo "${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}" > credentials.json
+          fi
+          if [ -n "${{ secrets.GOOGLE_DRIVE_TOKEN }}" ]; then
+            echo "${{ secrets.GOOGLE_DRIVE_TOKEN }}" | base64 --decode > token.pickle
+          fi
+
+      # â”€â”€ 5b. Write YouTube cookies from secret â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - name: Write YouTube cookies
+        run: |
+          if [ -n "${{ secrets.YOUTUBE_COOKIES }}" ]; then
+            echo "# Netscape HTTP Cookie File" > scripts/cookies.txt
+            echo "${{ secrets.YOUTUBE_COOKIES }}" >> scripts/cookies.txt
+            echo "cookies.txt written ($(wc -l < scripts/cookies.txt) lines)"
+          else
+            echo "No YOUTUBE_COOKIES secret found â€” YouTube will be skipped, SoundCloud only"
+          fi
+
+      # â”€â”€ 5c. Warm up Chrome to generate cookies â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - name: Warm up Chrome profile (for yt-dlp cookies)
+        run: |
+          export DISPLAY=:99
+          Xvfb :99 -screen 0 1920x1080x24 &
+          sleep 2
+          # Launch Chromium headlessly to initialize profile/cookies DB
+          chromium-browser \
+            --no-sandbox \
+            --disable-gpu \
+            --disable-dev-shm-usage \
+            --user-data-dir="$HOME/.config/chromium" \
+            --headless=new \
+            https://www.youtube.com &
+          CHROME_PID=$!
+          sleep 10
+          kill $CHROME_PID || true
+          echo "Chrome profile initialized at $HOME/.config/chromium"
+          ls "$HOME/.config/chromium/Default/" || echo "Profile dir not found"
+
+      # â”€â”€ 6. Start Cloudflare tunnel + register URL in KV â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - name: Install cloudflared
+        run: |
+          curl -fsSL https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb -o cloudflared.deb
+          sudo dpkg -i cloudflared.deb
+
+      - name: Start tunnel and register URL
+        run: |
+          # Start a small public status/proxy server. The tunnel points here,
+          # and /people is forwarded to process_famous_people.py's local queue API.
+          python3 <<'PY' &
+          import http.server
+          import json
+          import os
+          import threading
+          import time
+          import urllib.error
+          import urllib.request
+
+          class H(http.server.BaseHTTPRequestHandler):
+              def log_message(self, *a):
+                  pass
+
+              def cors(self):
+                  self.send_header('Access-Control-Allow-Origin', '*')
+                  self.send_header('Access-Control-Allow-Methods', 'GET,POST,OPTIONS')
+                  self.send_header('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+
+              def send_json(self, code, payload):
+                  body = json.dumps(payload).encode()
+                  self.send_response(code)
+                  self.send_header('Content-Type', 'application/json')
+                  self.cors()
+                  self.end_headers()
+                  self.wfile.write(body)
+
+              def do_OPTIONS(self):
+                  self.send_response(204)
+                  self.cors()
+                  self.end_headers()
+
+              def do_GET(self):
+                  if self.path.rstrip('/') in ('/people', '/dynamic-people'):
+                      try:
+                          with urllib.request.urlopen('http://127.0.0.1:8765/people', timeout=10) as r:
+                              body = r.read()
+                          self.send_response(200)
+                          self.send_header('Content-Type', 'application/json')
+                          self.cors()
+                          self.end_headers()
+                          self.wfile.write(body)
+                      except Exception as e:
+                          self.send_json(503, {'status': 'starting', 'error': str(e), 'run_id': os.environ.get('GITHUB_RUN_ID')})
+                      return
+                  self.send_json(200, {'status': 'running', 'run_id': os.environ.get('GITHUB_RUN_ID')})
+
+              def do_POST(self):
+                  length = int(self.headers.get('Content-Length', 0))
+                  body = self.rfile.read(length)
+                  if self.path.rstrip('/') in ('/people', '/dynamic-people'):
+                      req = urllib.request.Request(
+                          'http://127.0.0.1:8765/people',
+                          data=body,
+                          method='POST',
+                          headers={'Content-Type': self.headers.get('Content-Type', 'application/json')}
+                      )
+                      try:
+                          with urllib.request.urlopen(req, timeout=30) as r:
+                              resp_body = r.read()
+                              status = r.status
+                              content_type = r.headers.get('Content-Type', 'application/json')
+                          self.send_response(status)
+                          self.send_header('Content-Type', content_type)
+                          self.cors()
+                          self.end_headers()
+                          self.wfile.write(resp_body)
+                      except urllib.error.HTTPError as e:
+                          self.send_response(e.code)
+                          self.send_header('Content-Type', e.headers.get('Content-Type', 'application/json'))
+                          self.cors()
+                          self.end_headers()
+                          self.wfile.write(e.read())
+                      except Exception as e:
+                          self.send_json(503, {'error': 'process_famous_people.py queue API is not ready', 'detail': str(e)})
+                      return
+                  self.send_json(404, {'error': 'Not found'})
+
+          threading.Thread(target=http.server.HTTPServer(('', 3000), H).serve_forever, daemon=True).start()
+          time.sleep(999999)
+          PY
+          sleep 2
+
+          # Start tunnel, capture URL. Quick tunnels can return transient 500s,
+          # so retry tunnel creation instead of failing the whole run immediately.
+          TUNNEL_URL=""
+          CLOUDFLARED_PID=""
+          for attempt in $(seq 1 5); do
+            rm -f tunnel.log
+            echo "Starting Cloudflare quick tunnel attempt $attempt/5..."
+            cloudflared tunnel --url http://localhost:3000 --logfile tunnel.log &
+            CLOUDFLARED_PID=$!
+
+            echo "Waiting for tunnel URL..."
+            for i in $(seq 1 30); do
+              TUNNEL_URL=$(grep -o 'https://[a-z0-9-]*\.trycloudflare\.com' tunnel.log 2>/dev/null | head -1 || true)
+              [ -n "$TUNNEL_URL" ] && break
+              if ! kill -0 "$CLOUDFLARED_PID" 2>/dev/null; then
+                echo "cloudflared exited before publishing a URL."
+                break
+              fi
+              sleep 2
+            done
+
+            [ -n "$TUNNEL_URL" ] && break
+
+            echo "Cloudflare tunnel attempt $attempt failed."
+            cat tunnel.log 2>/dev/null || true
+            kill "$CLOUDFLARED_PID" 2>/dev/null || true
+            wait "$CLOUDFLARED_PID" 2>/dev/null || true
+            sleep $((attempt * 10))
+          done
+
+          if [ -z "$TUNNEL_URL" ]; then
+            echo "ERROR: Could not get tunnel URL after retries"
+            cat tunnel.log 2>/dev/null || true
+            exit 1
+          fi
+
+          echo "Tunnel URL: $TUNNEL_URL"
+          echo "TUNNEL_URL=$TUNNEL_URL" >> $GITHUB_ENV
+
+          # Register URL in Cloudflare KV via Worker
+          curl -fsSL -X POST "https://runner-registry.harryji.workers.dev/register" \
+            -H "Authorization: Bearer ${{ secrets.RUNNER_SECRET }}" \
+            -H "Content-Type: application/json" \
+            -d "{\"url\":\"$TUNNEL_URL\",\"run_id\":\"$GITHUB_RUN_ID\",\"started_at\":\"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"}"
+
+      # â”€â”€ 6b. Start SSH via Cloudflare â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - name: Start SSH via Cloudflare
+        if: github.event.inputs.debug_mode == 'true'
+        run: |
+          sudo mkdir -p /var/run/sshd
+          echo "runner:runner" | sudo chpasswd
+          sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config || true
+          sudo sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config || true
+          sudo service ssh start
+
+          SSH_URL=""
+          SSH_CLOUDFLARED_PID=""
+          for attempt in $(seq 1 5); do
+            rm -f ssh_tunnel.log
+            echo "Starting SSH Cloudflare quick tunnel attempt $attempt/5..."
+            cloudflared tunnel --url ssh://localhost:22 --logfile ssh_tunnel.log &
+            SSH_CLOUDFLARED_PID=$!
+
+            echo "Waiting for SSH tunnel URL..."
+            for i in $(seq 1 30); do
+              SSH_URL=$(grep -o 'https://[a-z0-9-]*\.trycloudflare\.com' ssh_tunnel.log 2>/dev/null | head -1 || true)
+              [ -n "$SSH_URL" ] && break
+              if ! kill -0 "$SSH_CLOUDFLARED_PID" 2>/dev/null; then
+                echo "SSH cloudflared exited before publishing a URL."
+                break
+              fi
+              sleep 2
+            done
+
+            [ -n "$SSH_URL" ] && break
+
+            echo "SSH Cloudflare tunnel attempt $attempt failed."
+            cat ssh_tunnel.log 2>/dev/null || true
+            kill "$SSH_CLOUDFLARED_PID" 2>/dev/null || true
+            wait "$SSH_CLOUDFLARED_PID" 2>/dev/null || true
+            sleep $((attempt * 10))
+          done
+
+          if [ -z "$SSH_URL" ]; then
+            echo "ERROR: Could not get SSH tunnel URL after retries"
+            cat ssh_tunnel.log 2>/dev/null || true
+            exit 1
+          fi
+          
+          SSH_HOST=$(echo "$SSH_URL" | sed 's/https:\/\///')
+          
+          echo "=========================================================="
+          echo "  SSH via Cloudflare Tunnel"
+          echo "  Connect command:"
+          echo "  ssh -o ProxyCommand=\"cloudflared access ssh --hostname %h\" runner@$SSH_HOST"
+          echo "  Password: runner"
+          echo "=========================================================="
+
+      # â”€â”€ 6c. Connect Tailscale â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+      - name: Connect Tailscale
+        uses: tailscale/github-action@v4
+        with:
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:ci
+          version: latest
+
+      # â”€â”€ 6d. Setup Home Proxy via SSH â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - name: Setup Home Proxy via SSH
+        run: |
+          mkdir -p ~/.ssh
+          if [ -n "${{ secrets.SSH_PRIVATE_KEY }}" ]; then
+            echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+            chmod 600 ~/.ssh/id_rsa
+            # Start SSH SOCKS proxy in background (-f = background, -N = no command, -D = dynamic forwarding)
+            ssh -o StrictHostKeyChecking=no -f -N -D 1080 -p 168 admin@100.65.165.65
+            echo "SSH SOCKS proxy started on port 1080"
+            echo "YTDLP_PROXY=socks5://127.0.0.1:1080" >> $GITHUB_ENV
+          else
+            echo "WARNING: No SSH_PRIVATE_KEY secret found. Skipping home proxy setup."
+          fi
+
+      # â”€â”€ 7. Run Famous People Processing â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - name: Run process_famous_people.py
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          GH_MODELS_TOKEN: ${{ secrets.GH_MODELS_TOKEN }}
+          CLOUDFLARE_ACCOUNTS_JSON: ${{ secrets.CLOUDFLARE_ACCOUNTS_JSON }}
+          DISPLAY: ':99'
+        run: |
+          # Make the secrets available to SSH interactive shells
+          cat << EOF >> ~/.bashrc
+          export OPENAI_API_KEY="${OPENAI_API_KEY}"
+          export HF_TOKEN="${HF_TOKEN}"
+          export GH_MODELS_TOKEN="${GH_MODELS_TOKEN}"
+          export CLOUDFLARE_ACCOUNTS_JSON='${CLOUDFLARE_ACCOUNTS_JSON}'
+          export DISPLAY=":99"
+          EOF
+
+          source venv/bin/activate
+          mkdir -p logs
+
+          if [ ! -f /tmp/.X99-lock ]; then
+            Xvfb :99 -screen 0 1920x1080x24 &
+            sleep 2
+          fi
+
+          echo "========================================"
+          echo "  Famous people processing list preview"
+          echo "========================================"
+          echo "Process Voice List queue file: scripts/dynamic_famous_people.txt"
+          touch scripts/dynamic_famous_people.txt
+          if [ -s scripts/dynamic_famous_people.txt ]; then
+            nl -ba scripts/dynamic_famous_people.txt
+          else
+            echo "(empty or missing)"
+          fi
+          echo
+          echo "Wrong voice contacts file: ${WRONG_VOICE_CONTACTS_FILE:-C:\\email_solutions\\public\\config\\contacts.json}"
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          path = Path(os.environ.get("WRONG_VOICE_CONTACTS_FILE") or r"C:\email_solutions\public\config\contacts.json")
+          if not path.exists():
+              print("(missing on this runner)")
+              raise SystemExit(0)
+
+          try:
+              contacts = json.loads(path.read_text(encoding="utf-8"))
+          except Exception as exc:
+              print(f"(could not read: {exc})")
+              raise SystemExit(0)
+
+          rows = []
+          for contact in contacts if isinstance(contacts, list) else []:
+              if contact.get("group") != "politicians":
+                  continue
+              redo = contact.get("voiceRedo") or {}
+              if contact.get("voiceStatus") != "wrong" and not (redo.get("referWav") or redo.get("cloneWav")):
+                  continue
+              rows.append("|".join([
+                  str(contact.get("name") or "").strip(),
+                  str(contact.get("gender") or "").strip(),
+                  str(contact.get("location") or contact.get("country") or "").strip(),
+              ]))
+
+          if not rows:
+              print("(none)")
+          for index, row in enumerate(rows, 1):
+              print(f"{index}\t{row}")
+          PY
+          echo "========================================"
+          echo
+
+          if [ "${{ github.event.inputs.debug_mode }}" == "true" ]; then
+            echo "Debug mode enabled. Skipping process_famous_people.py..."
+            echo "Sleeping for 6 hours to allow SSH debugging..."
+            sleep 21600
+          else
+            python scripts/process_famous_people.py 2>&1 | tee logs/process_famous.log
+          fi
+
+      # â”€â”€ 7b. Keep alive for debugging on failure â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - name: Keep alive for debugging on failure
+        if: failure() && github.event.inputs.debug_mode == 'true'
+        run: |
+          echo "Workflow failed in debug mode. Keeping runner alive for 6 hours..."
+          sleep 21600
+
+      # â”€â”€ 8. Deregister tunnel URL on completion â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      - name: Deregister tunnel
+        if: always()
+        run: |
+          curl -fsSL -X DELETE "https://runner-registry.harryji.workers.dev/register" \
+            -H "Authorization: Bearer ${{ secrets.RUNNER_SECRET }}" \
+            -H "Content-Type: application/json" \
+            -d "{\"run_id\":\"$GITHUB_RUN_ID\"}"
