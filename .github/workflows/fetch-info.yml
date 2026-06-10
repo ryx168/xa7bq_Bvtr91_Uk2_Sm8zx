@@ -1,4 +1,4 @@
-name: Fetch Business Info
+name: Fetch Info
 
 on:
   schedule:
@@ -46,7 +46,7 @@ jobs:
 
       - name: Upload to Google Drive
         run: |
-          python scripts/upload_folder_to_drive.py public/data --name Business_Info_Sync
+          python scripts/upload_folder_to_drive.py public/data --name "business info"
 
       - name: Commit and push if changed
         run: |
