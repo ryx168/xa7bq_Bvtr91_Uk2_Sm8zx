@@ -1,0 +1,652 @@
+[
+    {
+        "id": "yp_log_0",
+        "city": "Vancouver",
+        "name": "HighTail Hotshot",
+        "industry": "Logistics",
+        "website": "http://www.hightailhotshot.com/",
+        "phone": "1-877-556-8748",
+        "address": "13776 21A Ave, Surrey, BC V4A 9V6",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_1",
+        "city": "Vancouver",
+        "name": "Speedy Air Cargo Inc",
+        "industry": "Logistics",
+        "website": "http://www.speedyaircargo.ca/",
+        "phone": "604-210-5906",
+        "address": "110-5200 Miller Rd, Richmond, BC V7B 1K5",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_2",
+        "city": "Vancouver",
+        "name": "Canadian Distribution Services (CDS)",
+        "industry": "Logistics",
+        "website": "http://www.cdsltd.ca/",
+        "phone": "604-279-0960",
+        "address": "18351 McCartney Way, Richmond, BC V6W 0A1",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_3",
+        "city": "Vancouver",
+        "name": "MD Transport Ltd",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-850-1818",
+        "address": "1683 Mt Lehman Rd, Abbotsford, BC V2T 6H6",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_4",
+        "city": "Vancouver",
+        "name": "Berry & Smith Trucking Ltd",
+        "industry": "Logistics",
+        "website": "http://www.berryandsmith.com/",
+        "phone": "604-582-1244",
+        "address": "100-8208 Swenson Way, Delta, BC V4G 1J6",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_6",
+        "city": "Vancouver",
+        "name": "Clark Trucking Lines Ltd",
+        "industry": "Logistics",
+        "website": "http://www.clarktruckinglines.com/",
+        "phone": "604-882-7661",
+        "address": "100-19661 96 Ave, Langley, BC V1M 3C9",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_7",
+        "city": "Vancouver",
+        "name": "Dalton Trucking Ltd",
+        "industry": "Logistics",
+        "website": "http://daltontrucking.ca/",
+        "phone": "604-706-0271",
+        "address": "87 Mountain Hwy, North Vancouver, BC V7J 2K2",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_8",
+        "city": "Vancouver",
+        "name": "Alpha Movers & Delivery",
+        "industry": "Logistics",
+        "website": "https://www.alphamovefreight.com/",
+        "phone": "604-398-2266",
+        "address": "Unknown",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_9",
+        "city": "Vancouver",
+        "name": "All-Tow Boat Moving Ltd",
+        "industry": "Logistics",
+        "website": "http://www.alltowboatmoving.ca/",
+        "phone": "604-946-7899",
+        "address": "5365 Chamberlayne Way, Delta, BC V4K 4C5",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_10",
+        "city": "Vancouver",
+        "name": "TransLink",
+        "industry": "Logistics",
+        "website": "http://www.skyscraperpage.com/",
+        "phone": "604-953-3333",
+        "address": "Unknown",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_11",
+        "city": "Vancouver",
+        "name": "Polar Express Transportation Ltd",
+        "industry": "Logistics",
+        "website": "http://www.polarexpresstrans.com/",
+        "phone": "604-888-3729",
+        "address": "2 10097 201 St, Langley Fort Langley, BC V1M 3Y5",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_12",
+        "city": "Vancouver",
+        "name": "Sokil Express Lines Ltd",
+        "industry": "Logistics",
+        "website": "https://www.facebook.com/pages/Sokil-Express-Lines-Ltd/195410244175468",
+        "phone": "604-522-4440",
+        "address": "1725 Coast Meridian Rd, Port Coquitlam, BC V3C 3T7",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_13",
+        "city": "Vancouver",
+        "name": "Government of BC",
+        "industry": "Logistics",
+        "website": "http://www.gov.bc.ca/",
+        "phone": "250-387-2727",
+        "address": "PO Box 9412 Stn Terminal, Vancouver, BC V6B 4G3",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_14",
+        "city": "Vancouver",
+        "name": "TMS Transportation Management Services Ltd Dispatch/Operations",
+        "industry": "Logistics",
+        "website": "http://www.tmstrans.com/",
+        "phone": "604-930-8540",
+        "address": "10610 Timberland Rd, Surrey, BC V3V 7Z1",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_15",
+        "city": "Vancouver",
+        "name": "Can-Am West Carriers Inc",
+        "industry": "Logistics",
+        "website": "http://canamtransportation.com/",
+        "phone": "604-857-1375",
+        "address": "PO Box 3200 Stn Del Ctr, Abbotsford, BC V2S 4P4",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_16",
+        "city": "Vancouver",
+        "name": "Can-Am West Asset Based Logistics",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-857-1375",
+        "address": "380 Riverside Rd, Abbotsford, BC V2S 7M4",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_17",
+        "city": "Vancouver",
+        "name": "Van-Kam Freightways Ltd",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "1-888-229-9889",
+        "address": "Unknown",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_18",
+        "city": "Vancouver",
+        "name": "Impark",
+        "industry": "Logistics",
+        "website": "http://www.facebook.com/1026110864174234",
+        "phone": "604-331-7288",
+        "address": "2184 Broadway W, Vancouver, BC V6K 2E1",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_19",
+        "city": "Vancouver",
+        "name": "VIA Rail Canada Inc",
+        "industry": "Logistics",
+        "website": "http://www.viarail.ca/",
+        "phone": "1-888-842-7245",
+        "address": "Queen Charlotte, BC",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_20",
+        "city": "Vancouver",
+        "name": "Canadian Freightways",
+        "industry": "Logistics",
+        "website": "http://canadianfreightways.com/",
+        "phone": "604-420-6808",
+        "address": "Unknown",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_21",
+        "city": "Vancouver",
+        "name": "Dan",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-722-4862",
+        "address": "Vancouver, BC V6B 3P7",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_22",
+        "city": "Vancouver",
+        "name": "Driving Miss Daisy",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "778-229-3468",
+        "address": "Vancouver, BC V6B 3P7",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_25",
+        "city": "Vancouver",
+        "name": "Bob Global Logistics",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-618-4222",
+        "address": "Vancouver, BC",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_26",
+        "city": "Vancouver",
+        "name": "First Group America",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-681-0666",
+        "address": "295 Terminal Ave, Vancouver, BC V6A 2L7",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_27",
+        "city": "Vancouver",
+        "name": "Seatrade Shipping Ltd",
+        "industry": "Logistics",
+        "website": "http://www.seatrade.ca/",
+        "phone": "604-714-3200",
+        "address": "307-212 Lonsdale Ave, North Vancouver, BC V7M 2G1",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_28",
+        "city": "Vancouver",
+        "name": "Versacold Group Services ULC",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-255-3120",
+        "address": "Unknown",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_29",
+        "city": "Vancouver",
+        "name": "JBC Transport",
+        "industry": "Logistics",
+        "website": "http://www.jbctransport.com/",
+        "phone": "604-521-4577",
+        "address": "1305 Kingsway Ave, Port Coquitlam, BC V3C 1S2",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_30",
+        "city": "Vancouver",
+        "name": "Malou Travel Svc",
+        "industry": "Logistics",
+        "website": "http://www.facebook.com/240136079670680",
+        "phone": "604-879-3533",
+        "address": "Vancouver, BC V5T 1X2",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_31",
+        "city": "Vancouver",
+        "name": "Kids Coach Transportation Systems For Children",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-437-5437",
+        "address": "Unknown",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_32",
+        "city": "Vancouver",
+        "name": "JPP Transport Ltd",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "778-395-3829",
+        "address": "Surrey, BC",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_34",
+        "city": "Vancouver",
+        "name": "VeloMetro",
+        "industry": "Logistics",
+        "website": "http://www.facebook.com/416697811791138",
+        "phone": "778-776-7076",
+        "address": "1885 Franklin St, Vancouver, BC V5L 1P9",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_0",
+        "city": "Vancouver",
+        "name": "Veemo",
+        "industry": "Logistics",
+        "website": "https://www.facebook.com/rideveemo/",
+        "phone": "778-806-8736",
+        "address": "1885 Franklin St, Vancouver, BC V5L 1P9",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_1",
+        "city": "Vancouver",
+        "name": "Snowbus",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-331-7850",
+        "address": "512-929 Granville St, Vancouver, BC V6Z 1L3",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_2",
+        "city": "Vancouver",
+        "name": "Goodfellas Transport",
+        "industry": "Logistics",
+        "website": "http://www.goodfellastransport.ca/",
+        "phone": "778-847-8782",
+        "address": "14182 83 Avenue, Surrey, BC V3W 0V7",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_3",
+        "city": "Vancouver",
+        "name": "Breakaway Vacations",
+        "industry": "Logistics",
+        "website": "http://www.breakawayvacations.com/",
+        "phone": "604-872-5466",
+        "address": "342 8th Avenue W, Vancouver, BC V5Y 3X2",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_4",
+        "city": "Vancouver",
+        "name": "Parr Trucking",
+        "industry": "Logistics",
+        "website": "http://www.facebook.com/232006314235212",
+        "phone": "604-434-1149",
+        "address": "3659 Borham Cres, Vancouver, BC V5S 3X2",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_5",
+        "city": "Vancouver",
+        "name": "Vanride Inc",
+        "industry": "Logistics",
+        "website": "http://www.vanride.ca/",
+        "phone": "604-446-7433",
+        "address": "229-3381 Cambie St, Vancouver, BC V5Z 4R3",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_6",
+        "city": "Vancouver",
+        "name": "Waheguru Trucking",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "778-775-5749",
+        "address": "2955 Virtual Way, Vancouver, BC V5M 4X6",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_7",
+        "city": "Vancouver",
+        "name": "Ringo Trucking",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "778-878-4338",
+        "address": "Vancouver, BC V6B 3P7",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_8",
+        "city": "Vancouver",
+        "name": "Nuna Logistics",
+        "industry": "Logistics",
+        "website": "http://www.nunalogistics.com/",
+        "phone": "604-682-4667",
+        "address": "666 Burrard St, Vancouver, BC V6C 2X8",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_9",
+        "city": "Vancouver",
+        "name": "TMBC Logistics",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-282-6066",
+        "address": "855-789 Pender St W, Vancouver, BC V6C 1H2",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_10",
+        "city": "Vancouver",
+        "name": "Harman Trucking",
+        "industry": "Logistics",
+        "website": "http://harmantrucking.com/homepage.html",
+        "phone": "604-700-4227",
+        "address": "Unknown",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_11",
+        "city": "Vancouver",
+        "name": "DRC Travel",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-638-0786",
+        "address": "12194 86 Ave, Surrey, BC V3W 3H7",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_12",
+        "city": "Vancouver",
+        "name": "Armored Logistics",
+        "industry": "Logistics",
+        "website": "https://www.facebook.com/armoredlogistics/",
+        "phone": "1-844-533-1254",
+        "address": "401-4453 Main St, Vancouver, BC V5V 3R2",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_13",
+        "city": "Vancouver",
+        "name": "Aruba Transport",
+        "industry": "Logistics",
+        "website": "http://www.facebook.com/400197087064823",
+        "phone": "604-812-3251",
+        "address": "595 61st Ave E, Vancouver, BC V5X 2B8",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_14",
+        "city": "Vancouver",
+        "name": "GoNorth Canada",
+        "industry": "Logistics",
+        "website": "http://www.facebook.com/1763690267242272",
+        "phone": "604-442-6767",
+        "address": "6655 Lynas Lane, Richmond, BC V7C 3K8",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_15",
+        "city": "Vancouver",
+        "name": "Tuksen express",
+        "industry": "Logistics",
+        "website": "http://www.facebook.com/959363147514938",
+        "phone": "604-367-8661",
+        "address": "10523 University Dr, Surrey, BC V3T 5T8",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_16",
+        "city": "Vancouver",
+        "name": "Fircrest Management",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-687-3895",
+        "address": "2000-925 W Georgia St, Vancouver, BC V6C 3L2",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_17",
+        "city": "Vancouver",
+        "name": "Left Lane Logistics Inc",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-503-1177",
+        "address": "2-7880 128 St, Surrey, BC V3W 4E8",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_18",
+        "city": "Vancouver",
+        "name": "Milthorp Trucking",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-880-8426",
+        "address": "36765 McKamey Rd, Dewdney, BC V0M 1H0",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_20",
+        "city": "Vancouver",
+        "name": "BDS Transport",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-970-1452",
+        "address": "Vancouver, BC V6B 3P7",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_21",
+        "city": "Vancouver",
+        "name": "Hallcon Corp",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-689-8121",
+        "address": "601 Cordova St W, Vancouver, BC V6B 1G1",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_22",
+        "city": "Vancouver",
+        "name": "Kukil Tours",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-669-5996",
+        "address": "Vancouver, BC V6G 3L4",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_23",
+        "city": "Vancouver",
+        "name": "KTP Transportation",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "1-877-468-0101",
+        "address": "845 Avison Way, Vancouver, BC V6G 3E2",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_24",
+        "city": "Vancouver",
+        "name": "Cougar Transport",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-345-8586",
+        "address": "Vancouver, BC",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_25",
+        "city": "Vancouver",
+        "name": "Ruano Dora",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-430-8720",
+        "address": "3-5788 Rupert St, Vancouver, BC V5R 2K6",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_26",
+        "city": "Vancouver",
+        "name": "e-courier",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-261-4631",
+        "address": "101-5835 Hampton Pl, Vancouver, BC V6T 2G2",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_27",
+        "city": "Vancouver",
+        "name": "ForVikingsOnly.ca",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-837-0812",
+        "address": "123-3851 Francis Rd, Richmond, BC V7C 1J6",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_28",
+        "city": "Vancouver",
+        "name": "Sensible BC",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-620-6599",
+        "address": "Unknown",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_29",
+        "city": "Vancouver",
+        "name": "Ashcroft Terminal",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-563-5595",
+        "address": "Unknown",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_30",
+        "city": "Vancouver",
+        "name": "LThomas Trucking",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-240-8899",
+        "address": "Unknown",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_31",
+        "city": "Vancouver",
+        "name": "Nova Trucking",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "778-233-3096",
+        "address": "Unknown",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_32",
+        "city": "Vancouver",
+        "name": "VanCity Limos",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "778-654-5699",
+        "address": "Unknown",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_33",
+        "city": "Vancouver",
+        "name": "Xperia Logistics",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "778-883-0630",
+        "address": "Vancouver, BC V5P 3B9",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_34",
+        "city": "Vancouver",
+        "name": "Knight Trucking",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-831-2162",
+        "address": "Unknown",
+        "start_date": "Unknown"
+    }
+]

@@ -1,0 +1,402 @@
+[
+    {
+        "id": "yp_fur_0",
+        "city": "Vancouver",
+        "name": "Buy Rite Office Furnishings Ltd",
+        "industry": "Furniture",
+        "website": "http://www.buyritebc.com/",
+        "phone": "604-999-7483",
+        "address": "408-1930 Pandora St, Vancouver, BC V5L 0C7",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_1",
+        "city": "Vancouver",
+        "name": "Livingspace Interiors",
+        "industry": "Furniture",
+        "website": "http://livingspace.com/",
+        "phone": "604-683-1116",
+        "address": "120 -1706 W 1st Ave, Vancouver, BC V6J 0E4",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_2",
+        "city": "Vancouver",
+        "name": "Canadian Tire",
+        "industry": "Furniture",
+        "website": "http://canadiantire.ca/",
+        "phone": "Unknown",
+        "address": "2830 Bentall St, Vancouver, BC V5M 4H4",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_5",
+        "city": "Vancouver",
+        "name": "HomeSense",
+        "industry": "Furniture",
+        "website": "http://homesense.ca/",
+        "phone": "604-683-4406",
+        "address": "493 Robson St, Vancouver, BC V6B 6L9",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_6",
+        "city": "Vancouver",
+        "name": "Sleep Country",
+        "industry": "Furniture",
+        "website": "N/A",
+        "phone": "604-876-9090",
+        "address": "3-4090 Main St, Vancouver, BC V5V 0C4",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_7",
+        "city": "Vancouver",
+        "name": "Pier 1 Imports",
+        "industry": "Furniture",
+        "website": "http://www.pier1.ca/",
+        "phone": "604-742-2340",
+        "address": "1702 Broadway W, Vancouver, BC V6J 1Y1",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_9",
+        "city": "Vancouver",
+        "name": "United Furniture Warehouse",
+        "industry": "Furniture",
+        "website": "N/A",
+        "phone": "604-430-8899",
+        "address": "3057 Grandview Hwy, Vancouver, BC V5M 2E4",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_10",
+        "city": "Vancouver",
+        "name": "Direct Liquidation",
+        "industry": "Furniture",
+        "website": "https://www.directliquidation.ca/",
+        "phone": "604-294-2331",
+        "address": "2622 Nootka Street, Vancouver, BC V5C 5E3",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_11",
+        "city": "Vancouver",
+        "name": "Save Now Furniture",
+        "industry": "Furniture",
+        "website": "http://savenowfurniture.com/",
+        "phone": "604-331-4665",
+        "address": "2005-928 Richards St, Vancouver, BC V6B 3C1",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_12",
+        "city": "Vancouver",
+        "name": "Instant Bedrooms Mfg Inc",
+        "industry": "Furniture",
+        "website": "N/A",
+        "phone": "604-256-6555",
+        "address": "102, 12925 115 Ave, Surrey, BC V3R 0E2",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_13",
+        "city": "Vancouver",
+        "name": "Ready Set Show Staging",
+        "industry": "Furniture",
+        "website": "http://www.houzz.com/pro/trisha370/__public",
+        "phone": "604-984-7469",
+        "address": "106 Garden Ave, North Vancouver, BC V7P 3H2",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_14",
+        "city": "Vancouver",
+        "name": "Vancouver Sofa & Patio",
+        "industry": "Furniture",
+        "website": "N/A",
+        "phone": "604-770-3493",
+        "address": "127 Esplanade W, North Vancouver, BC V7M 1A1",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_15",
+        "city": "Vancouver",
+        "name": "C & C Furniture Ltd",
+        "industry": "Furniture",
+        "website": "N/A",
+        "phone": "604-988-1672",
+        "address": "105-758 Copping St, North Vancouver, BC V7M 3G6",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_16",
+        "city": "Vancouver",
+        "name": "Coker's Custom Classics",
+        "industry": "Furniture",
+        "website": "N/A",
+        "phone": "604-988-2227",
+        "address": "708 Copping St, North Vancouver, BC V7M 3G6",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_17",
+        "city": "Vancouver",
+        "name": "Velles North Van Furniture Ltd",
+        "industry": "Furniture",
+        "website": "http://www.vellesfurniture.com/",
+        "phone": "604-985-2212",
+        "address": "1076 3rd St W, North Vancouver, BC V7P 3J6",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_18",
+        "city": "Vancouver",
+        "name": "Oscar Granns Ltd",
+        "industry": "Furniture",
+        "website": "http://oscargranns.com/",
+        "phone": "604-987-9833",
+        "address": "237 1st St E, North Vancouver, BC V7L 1B4",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_19",
+        "city": "Vancouver",
+        "name": "Country Furniture",
+        "industry": "Furniture",
+        "website": "http://theotherroom.ca/",
+        "phone": "604-971-5336",
+        "address": "1395 Pemberton Ave, North Vancouver, BC V7P 2R6",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_21",
+        "city": "Vancouver",
+        "name": "A A Furniture Repair & Refinishing",
+        "industry": "Furniture",
+        "website": "http://aafurniturerepair.ca/",
+        "phone": "604-980-6441",
+        "address": "139A 2nd St E, North Vancouver, BC V7L 1C2",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_22",
+        "city": "Vancouver",
+        "name": "The Modern Source Inc.",
+        "industry": "Furniture",
+        "website": "N/A",
+        "phone": "1-800-979-2696",
+        "address": "603-130 2Nd St E, North Vancouver, BC V7L 1C3",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_23",
+        "city": "Vancouver",
+        "name": "North Shore Custom Furniture Co.",
+        "industry": "Furniture",
+        "website": "N/A",
+        "phone": "604-332-0060",
+        "address": "92 Lonsdale Ave, North Vancouver, BC V7M 2E6",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_24",
+        "city": "Vancouver",
+        "name": "Cate Brown",
+        "industry": "Furniture",
+        "website": "N/A",
+        "phone": "778-340-2089",
+        "address": "1480 Lloyd Ave, North Vancouver, BC V7P 3J9",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_25",
+        "city": "Vancouver",
+        "name": "The Living Lab",
+        "industry": "Furniture",
+        "website": "http://thelivinglab.ca/",
+        "phone": "604-973-0263",
+        "address": "1121 15th St W, North Vancouver, BC V7P 1M7",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_27",
+        "city": "Vancouver",
+        "name": "Mansour International Commerce",
+        "industry": "Furniture",
+        "website": "N/A",
+        "phone": "604-971-5508",
+        "address": "748 Marine Dr, North Vancouver, BC V7M 1H3",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_28",
+        "city": "Vancouver",
+        "name": "Northwood Furniture Repair Services",
+        "industry": "Furniture",
+        "website": "N/A",
+        "phone": "778-512-1569",
+        "address": "175 4th St E, BC V7L 1H8",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_30",
+        "city": "Vancouver",
+        "name": "Canadian Heritage Designs Ltd",
+        "industry": "Furniture",
+        "website": "https://www.facebook.com/pages/Country-Furniture/72402363442",
+        "phone": "604-985-3359",
+        "address": "101-1550 Marine Dr, North Vancouver, BC V7P 1T7",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_31",
+        "city": "Vancouver",
+        "name": "Bed Bath & Beyond",
+        "industry": "Furniture",
+        "website": "http://www.bedbathandbeyond.ca/",
+        "phone": "604-904-1118",
+        "address": "200-845 Marine Dr, North Vancouver, BC V7P 0A8",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_32",
+        "city": "Vancouver",
+        "name": "Ginger Jar Furniture",
+        "industry": "Furniture",
+        "website": "N/A",
+        "phone": "604-770-0898",
+        "address": "203-1410 Marine Dr, North Vancouver, BC V7P 1T6",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_33",
+        "city": "Vancouver",
+        "name": "OMG It's Small",
+        "industry": "Furniture",
+        "website": "http://www.gingerjarinteriors.com/",
+        "phone": "604-988-2789",
+        "address": "1400 Marine Dr, North Vancouver, BC V7P 1T6",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_0",
+        "city": "Vancouver",
+        "name": "Durga Interiors",
+        "industry": "Furniture",
+        "website": "http://www.durgainteriors.com/",
+        "phone": "604-738-6699",
+        "address": "3566 4th Ave W, Vancouver, BC V6R 1N8",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_1",
+        "city": "Vancouver",
+        "name": "Fullhouse Modern",
+        "industry": "Furniture",
+        "website": "http://www.fullhousemodern.com/",
+        "phone": "604-733-7789",
+        "address": "1545 4th Ave W, Vancouver, BC V6J 1L6",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_2",
+        "city": "Vancouver",
+        "name": "Industrial Revolution",
+        "industry": "Furniture",
+        "website": "http://industrialrevolution.net/",
+        "phone": "604-734-4395",
+        "address": "2306 Granville St, Vancouver, BC V6H 3G3",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_3",
+        "city": "Vancouver",
+        "name": "Urban Garage",
+        "industry": "Furniture",
+        "website": "http://www.urbangarage.com/",
+        "phone": "604-620-8568",
+        "address": "3640 Hastings St E, Vancouver, BC V5K 2A9",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_4",
+        "city": "Vancouver",
+        "name": "McKellars Interiors",
+        "industry": "Furniture",
+        "website": "http://www.mckellarsinteriors.com/",
+        "phone": "604-734-1671",
+        "address": "1549 Pender St W, Vancouver, BC V6G 2T1",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_5",
+        "city": "Vancouver",
+        "name": "Buen Café",
+        "industry": "Furniture",
+        "website": "N/A",
+        "phone": "604-739-1767",
+        "address": "2350 4th Ave W, Vancouver, BC V6K 1P1",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_6",
+        "city": "Vancouver",
+        "name": "Furniture Salad",
+        "industry": "Furniture",
+        "website": "http://www.furnituresalad.ca/",
+        "phone": "604-732-7712",
+        "address": "4055 MacDonald St, Vancouver, BC V6L 2N8",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_7",
+        "city": "Vancouver",
+        "name": "Bulthaup Vancouver",
+        "industry": "Furniture",
+        "website": "http://www.vancouver.bulthaup.com/en",
+        "phone": "604-688-1881",
+        "address": "93 Cordova St W, Vancouver, BC V6B 1C8",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_8",
+        "city": "Vancouver",
+        "name": "Naughty Pine",
+        "industry": "Furniture",
+        "website": "http://www.naughtypine.com/",
+        "phone": "604-874-0114",
+        "address": "1218 Pender St E, Vancouver, BC V6A 1W8",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_9",
+        "city": "Vancouver",
+        "name": "EOY Designs",
+        "industry": "Furniture",
+        "website": "N/A",
+        "phone": "604-992-1952",
+        "address": "1189 Howe St, Vancouver, BC V6Z 2X4",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_33",
+        "city": "Vancouver",
+        "name": "Showcase",
+        "industry": "Furniture",
+        "website": "http://shopatshowcasecanada.com/",
+        "phone": "604-980-5737",
+        "address": "103-935 Marine Dr, North Vancouver, BC V7P 1S3",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_34",
+        "city": "Vancouver",
+        "name": "Ginger Jar",
+        "industry": "Furniture",
+        "website": "http://www.gingerjarfurniture.com/",
+        "phone": "604-988-7328",
+        "address": "1420 Fell Ave, North Vancouver, BC V7P 2K3",
+        "start_date": "Unknown"
+    }
+]
