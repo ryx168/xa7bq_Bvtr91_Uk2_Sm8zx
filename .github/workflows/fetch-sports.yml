@@ -1,0 +1,58 @@
+name: Fetch Sports Data
+
+on:
+  schedule:
+    # Run every 2 hours
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+
+jobs:
+  fetch-sports-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests google-api-python-client google-auth-httplib2 google-auth-oauthlib
+
+      - name: Fetch Live Scores
+        run: |
+          # Fetch the latest live goals and update fifa_schedule.json
+          python public/data/fetch_goals.py || true
+
+      - name: Fetch Analyst Data
+        run: |
+          # Automatically scrape active matches and fetch their historical references
+          python public/data/auto_fetch_all_references.py
+
+      - name: Setup Google Drive Credentials
+        run: |
+          if [ -n "${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}" ]; then
+            echo "${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}" > credentials.json
+          fi
+          if [ -n "${{ secrets.GOOGLE_DRIVE_TOKEN }}" ]; then
+            echo "${{ secrets.GOOGLE_DRIVE_TOKEN }}" | base64 --decode > token.pickle
+          fi
+
+      - name: Upload Data to Google Drive
+        run: |
+          # Upload the public/data folder to Google Drive under a 'sports data backup' folder
+          python scripts/upload_folder_to_drive.py public/data --name "sports data backup"
+
+      - name: Commit and push updated JSON data
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/*.json || true
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): auto-update live scores and references" && git push)
