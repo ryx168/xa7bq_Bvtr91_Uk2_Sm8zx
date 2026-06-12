@@ -79,24 +79,29 @@ def main():
         all_leads.extend(leads)
         time.sleep(2)
         
-    # Deduplicate by name
-    unique_leads = {}
+    # Deduplicate by name and group by industry
+    industry_leads = {}
     for lead in all_leads:
         name = lead['name'].strip()
-        if name not in unique_leads:
-            unique_leads[name] = lead
+        ind = lead['industry'].strip()
+        if ind not in industry_leads:
+            industry_leads[ind] = {}
             
-    final_leads = list(unique_leads.values())
-        
-    # Write to vancouver_leads.json
+        if name not in industry_leads[ind]:
+            industry_leads[ind][name] = lead
+            
     import os
     output_dir = 'public/data'
     os.makedirs(output_dir, exist_ok=True)
-    output_path = os.path.join(output_dir, 'vancouver_leads.json')
-    with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(final_leads, f, indent=4, ensure_ascii=False)
-        
-    print(f"Successfully saved {len(final_leads)} leads to {output_path}")
+    
+    for ind, unique_leads in industry_leads.items():
+        final_leads = list(unique_leads.values())
+        filename = f"vancouver_{ind.lower()}.json"
+        output_path = os.path.join(output_dir, filename)
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(final_leads, f, indent=4, ensure_ascii=False)
+            
+        print(f"Successfully saved {len(final_leads)} leads to {output_path}")
 
 if __name__ == "__main__":
     main()

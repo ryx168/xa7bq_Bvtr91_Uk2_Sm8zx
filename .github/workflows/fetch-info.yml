@@ -58,5 +58,5 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/vancouver_leads.json public/data/global_leads.json || true
+          git add public/data/*.json || true
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): auto-update business leads" && git push)

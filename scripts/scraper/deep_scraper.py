@@ -102,10 +102,6 @@ def process_leads():
     updated_count = 0
     processed_count = 0
     for idx, lead in enumerate(leads):
-        if processed_count >= 10:
-            print("Reached 10 company test limit. Stopping scrape.")
-            break
-            
         if lead.get('website') != 'N/A' and (not lead.get('ceo') or not lead.get('history')):
             website = lead['website']
             print(f"[{idx+1}/{len(leads)}] Crawling {website} for {lead['name']}...")
