@@ -201,27 +201,17 @@ def main():
                     match_obj = process_historical_match(id_list[i], f"{away_team} Hist", h_team, a_team, score, date_list[i], target_match_id)
                     historical_matches.append(match_obj)
 
-    # Append to parsed_references.json
-    parsed_file = r'c:\email_solutions\public\data\parsed_references.json'
-    existing_data = []
-    if os.path.exists(parsed_file):
-        with open(parsed_file, 'r', encoding='utf-8') as f:
-            try:
-                existing_data = json.load(f)
-            except:
-                pass
-                
-    # We want to avoid adding duplicates if the script is run multiple times
-    new_ids = {m['matchId'] for m in historical_matches}
-    filtered_data = [d for d in existing_data if str(d.get('matchId')) not in new_ids]
-    
-    # Add new matches
-    filtered_data.extend(historical_matches)
+    # Save to individual reference file
+    refs_dir = os.path.join(os.path.dirname(__file__), '..', 'sports', 'refs')
+    if not os.path.exists(refs_dir):
+        os.makedirs(refs_dir, exist_ok=True)
+        
+    parsed_file = os.path.join(refs_dir, f'{target_match_id}.json')
     
     with open(parsed_file, 'w', encoding='utf-8') as f:
-        json.dump(filtered_data, f, indent=2)
+        json.dump(historical_matches, f, indent=2)
         
-    print(f"Successfully added {len(historical_matches)} historical matches for {home_team} vs {away_team} to parsed_references.json.")
+    print(f"Successfully saved {len(historical_matches)} historical matches for {home_team} vs {away_team} to {target_match_id}.json.")
 
 if __name__ == '__main__':
     main()
