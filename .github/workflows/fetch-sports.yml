@@ -59,19 +59,12 @@ jobs:
             # 1. Fetch Live Scores and Goal Times
             python public/data/fetch_goals.py || true
             
-            # 2. Upload Data to Google Drive
+            # 2. Upload Data to Google Drive (fifa_schedule.json)
             python scripts/upload_folder_to_drive.py public/data --name "sports data backup" --exclude "*vancouver*" --exclude "*lead*" --exclude "*furniture*" --exclude "*business*" --exclude "*company*" --exclude "*logistics*" || true
-            python scripts/upload_folder_to_drive.py public/sports --name "sports data backup" || true
             
-            # 4. Commit and push updated JSON data (Main Repo)
+            # 3. Commit and push updated JSON data (Main Repo)
             git add public/data/*.json || true
-            git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): auto-update live scores and references" && git pull --rebase && git push)
-            
-            # 5. Commit and push updated Sports data (Sports Repo)
-            cd public/sports
-            git add .
-            git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): auto-update sports references" && git pull --rebase && git push)
-            cd ../..
+            git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): auto-update live scores" && git pull --rebase && git push)
             
             echo "Sleeping for 3 minutes..."
             sleep 180
