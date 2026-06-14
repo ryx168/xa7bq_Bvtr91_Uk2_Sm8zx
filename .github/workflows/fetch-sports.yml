@@ -56,13 +56,10 @@ jobs:
             echo "Starting fetch cycle at $(date)"
             echo "=================================================="
             
-            # 1. Fetch Live Scores
+            # 1. Fetch Live Scores and Goal Times
             python public/data/fetch_goals.py || true
             
-            # 2. Fetch Analyst Data
-            python public/data/auto_fetch_all_references.py || true
-            
-            # 3. Upload Data to Google Drive
+            # 2. Upload Data to Google Drive
             python scripts/upload_folder_to_drive.py public/data --name "sports data backup" --exclude "*vancouver*" --exclude "*lead*" --exclude "*furniture*" --exclude "*business*" --exclude "*company*" --exclude "*logistics*" || true
             python scripts/upload_folder_to_drive.py public/sports --name "sports data backup" || true
             
