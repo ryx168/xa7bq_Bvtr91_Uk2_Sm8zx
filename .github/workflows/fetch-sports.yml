@@ -2,13 +2,14 @@ name: Fetch Sports Data
 
 on:
   schedule:
-    # Run every 2 hours
-    - cron: '0 */2 * * *'
+    # Run every 6 hours
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 jobs:
   fetch-sports-data:
     runs-on: ubuntu-latest
+    timeout-minutes: 360
     permissions:
       contents: write
 
@@ -26,15 +27,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests google-api-python-client google-auth-httplib2 google-auth-oauthlib
 
-      - name: Fetch Live Scores
+      - name: Checkout Sports Repository
         run: |
-          # Fetch the latest live goals and update fifa_schedule.json
-          python public/data/fetch_goals.py || true
-
-      - name: Fetch Analyst Data
-        run: |
-          # Automatically scrape active matches and fetch their historical references
-          python public/data/auto_fetch_all_references.py
+          # Clone the new dedicated sports repo into public/sports so scripts can write to it
+          git clone https://${{ secrets.GIT_TOKEN }}@github.com/harryji168/email_solutions-sports.git public/sports
 
       - name: Setup Google Drive Credentials
         run: |
@@ -45,14 +41,43 @@ jobs:
             echo "${{ secrets.GOOGLE_DRIVE_TOKEN }}" | base64 --decode > token.pickle
           fi
 
-      - name: Upload Data to Google Drive
-        run: |
-          # Upload the public/data folder to Google Drive under a 'sports data backup' folder
-          python scripts/upload_folder_to_drive.py public/data --name "sports data backup"
-
-      - name: Commit and push updated JSON data
+      - name: Setup Git Identity
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/*.json || true
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): auto-update live scores and references" && git push)
+
+      - name: Continuous Fetch Loop (Every 3 Minutes)
+        run: |
+          # Calculate an end time 355 minutes from now to exit gracefully before the 360m hard timeout
+          END_TIME=$((SECONDS + 355 * 60))
+          
+          while [ $SECONDS -lt $END_TIME ]; do
+            echo "=================================================="
+            echo "Starting fetch cycle at $(date)"
+            echo "=================================================="
+            
+            # 1. Fetch Live Scores
+            python public/data/fetch_goals.py || true
+            
+            # 2. Fetch Analyst Data
+            python public/data/auto_fetch_all_references.py || true
+            
+            # 3. Upload Data to Google Drive
+            python scripts/upload_folder_to_drive.py public/data --name "sports data backup" --exclude "*vancouver*" --exclude "*lead*" --exclude "*furniture*" --exclude "*business*" --exclude "*company*" --exclude "*logistics*" || true
+            python scripts/upload_folder_to_drive.py public/sports --name "sports data backup" || true
+            
+            # 4. Commit and push updated JSON data (Main Repo)
+            git add public/data/*.json || true
+            git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): auto-update live scores and references" && git pull --rebase && git push)
+            
+            # 5. Commit and push updated Sports data (Sports Repo)
+            cd public/sports
+            git add .
+            git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): auto-update sports references" && git pull --rebase && git push)
+            cd ../..
+            
+            echo "Sleeping for 3 minutes..."
+            sleep 180
+          done
+          
+          echo "Finished continuous loop gracefully. Next cron job will pick up."

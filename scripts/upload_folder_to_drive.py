@@ -180,7 +180,7 @@ def _dir_matches(rel: str, patterns: list) -> bool:
 SKIP_NAMES = {'.git', 'node_modules', '__pycache__', '.env', '.agent'}
 
 def scan_and_collect(service, local_folder, parent_id=None,
-                     drive_folder_name=None, sync=True, include_patterns=None):
+                     drive_folder_name=None, sync=True, include_patterns=None, exclude_patterns=None):
     """
     Walk local_folder, mirror the FULL folder structure on Drive, and return
     upload tasks only for files inside --include matched dirs.
@@ -193,20 +193,14 @@ def scan_and_collect(service, local_folder, parent_id=None,
     The root "" maps to the drive_folder_name folder itself.
     """
     include_patterns = include_patterns or []
+    exclude_patterns = exclude_patterns or []
     local_root = Path(local_folder)
-    # drive_folder_name is the parent to upload INTO (e.g. "2026-03").
-    # We always create local_root.name (e.g. "2026") as a subfolder inside it.
-    # Final Drive path: drive_folder_name / local_root.name / rel / filename
-    #   e.g.  2026-03 / 2026 / 09 / 2026-09-01-project / 0.sources / file.mp4
     if drive_folder_name:
-        # Get or create the named parent folder, then create local_root.name inside it
         named_parent_id = create_drive_folder(service, drive_folder_name, parent_id)
         root_id = create_drive_folder(service, local_root.name, named_parent_id)
     else:
-        # No --name given: create local_root.name directly under parent_id
         root_id = create_drive_folder(service, local_root.name, parent_id)
 
-    # rel_posix -> drive_folder_id  (rel is relative to local_root)
     folder_id_map = {"": root_id}
 
     tasks        = []
@@ -224,7 +218,6 @@ def scan_and_collect(service, local_folder, parent_id=None,
 
         dirs_visited += 1
 
-        # ── Prune dirs that can never match any include pattern ──
         if include_patterns:
             kept = []
             for d in dirnames:
@@ -235,13 +228,11 @@ def scan_and_collect(service, local_folder, parent_id=None,
                     dirs_pruned += 1
             dirnames[:] = kept
 
-        # Live scan progress
         display   = rel or drive_folder_name
         truncated = display if len(display) <= 55 else "..." + display[-52:]
         sys.stdout.write(f"\r   Scanning [{dirs_visited} dirs, {dirs_pruned} pruned] {truncated:<55}")
         sys.stdout.flush()
 
-        # ── Always ensure this dir exists on Drive (full structure mirror) ──
         if rel and rel not in folder_id_map:
             parts      = rel.split("/")
             parent_rel = "/".join(parts[:-1])
@@ -249,8 +240,6 @@ def scan_and_collect(service, local_folder, parent_id=None,
             fid        = create_drive_folder(service, parts[-1], pid)
             folder_id_map[rel] = fid
 
-        # ── Only collect files from dirs that match --include ──
-        # (root "" is skipped if include_patterns given — must match explicitly)
         if include_patterns and not _dir_matches(rel, include_patterns):
             continue
 
@@ -258,7 +247,13 @@ def scan_and_collect(service, local_folder, parent_id=None,
         drive_contents  = get_drive_folder_contents(service, drive_folder_id) if sync else {}
 
         for fname in sorted(filenames):
-            fpath         = str(Path(dirpath) / fname)
+            fpath = str(Path(dirpath) / fname)
+            frel = f"{rel}/{fname}" if rel else fname
+            
+            # Check exclude patterns
+            if any(fnmatch.fnmatch(frel, p) for p in exclude_patterns):
+                continue
+                
             existing_file = drive_contents.get(fname) if sync else None
             tasks.append((fpath, drive_folder_id, existing_file))
             files_found  += 1
@@ -285,6 +280,11 @@ def main():
                         help='Only upload sub-paths matching this glob '
                              '(relative to <folder>, repeat for multiple). '
                              'E.g. --include "09/*/0.sources"')
+    parser.add_argument('--exclude',   '-e', action='append', default=[],
+                        metavar='GLOB',
+                        help='Exclude files matching this glob '
+                             '(relative to <folder>, repeat for multiple). '
+                             'E.g. --exclude "*vancouver*"')
     args = parser.parse_args()
 
     local_path = os.path.abspath(args.folder)
@@ -302,6 +302,7 @@ def main():
     print(f"   Local  : {local_path}")
     print(f"   Name   : {args.name or Path(local_path).name}")
     print(f"   Include: {args.include or '(all)'}")
+    print(f"   Exclude: {args.exclude or '(none)'}")
     print(f"   Threads: {args.threads}")
     print(f"   Sync   : {args.sync}")
 
@@ -312,6 +313,7 @@ def main():
         drive_folder_name = args.name,
         sync            = args.sync,
         include_patterns = args.include,
+        exclude_patterns = args.exclude,
     )
 
     if not all_tasks:
