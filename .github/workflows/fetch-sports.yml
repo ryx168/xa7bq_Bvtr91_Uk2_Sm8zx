@@ -27,10 +27,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests google-api-python-client google-auth-httplib2 google-auth-oauthlib
 
-      - name: Checkout Sports Repository
-        run: |
-          # Clone the new dedicated sports repo into public/sports so scripts can write to it
-          git clone https://${{ secrets.GIT_TOKEN }}@github.com/harryji168/email_solutions-sports.git public/sports
+
 
       - name: Setup Google Drive Credentials
         run: |
@@ -61,12 +58,6 @@ jobs:
             
             # 2. Upload Sports Data to Google Drive (excluding the massive refs directory)
             python scripts/upload_folder_to_drive.py public/sports --name "sports data backup" --exclude "refs" || true
-            
-            # 3. Commit and push updated Sports data (Sports Repo)
-            cd public/sports
-            git add .
-            git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): auto-update live games and leagues" && git pull --rebase && git push)
-            cd ../..
             
             echo "Sleeping for 3 minutes..."
             sleep 180
