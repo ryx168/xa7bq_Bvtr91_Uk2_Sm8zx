@@ -56,15 +56,17 @@ jobs:
             echo "Starting fetch cycle at $(date)"
             echo "=================================================="
             
-            # 1. Fetch Live Scores and Goal Times
-            python public/data/fetch_goals.py || true
+            # 1. Fetch Live Scores from fen.js and csxl.js (direct from 7msport)
+            python public/data/fetch_live_reference.py || true
             
-            # 2. Upload Data to Google Drive (fifa_schedule.json)
-            python scripts/upload_folder_to_drive.py public/data --name "sports data backup" --exclude "*.py" --exclude "*.js" --exclude "*.html" --exclude "*vancouver*" --exclude "*lead*" --exclude "*furniture*" --exclude "*business*" --exclude "*company*" --exclude "*logistics*" || true
+            # 2. Upload Sports Data to Google Drive (excluding the massive refs directory)
+            python scripts/upload_folder_to_drive.py public/sports --name "sports data backup" --exclude "refs" || true
             
-            # 3. Commit and push updated JSON data (Main Repo)
-            git add public/data/*.json || true
-            git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): auto-update live scores" && git pull --rebase && git push)
+            # 3. Commit and push updated Sports data (Sports Repo)
+            cd public/sports
+            git add .
+            git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): auto-update live games and leagues" && git pull --rebase && git push)
+            cd ../..
             
             echo "Sleeping for 3 minutes..."
             sleep 180

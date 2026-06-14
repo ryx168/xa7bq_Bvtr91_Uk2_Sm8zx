@@ -227,6 +227,15 @@ def scan_and_collect(service, local_folder, parent_id=None,
                 else:
                     dirs_pruned += 1
             dirnames[:] = kept
+            
+        if exclude_patterns:
+            kept = []
+            for d in dirnames:
+                if any(fnmatch.fnmatch(d, p) or fnmatch.fnmatch(f"{rel}/{d}" if rel else d, p) for p in exclude_patterns):
+                    dirs_pruned += 1
+                else:
+                    kept.append(d)
+            dirnames[:] = kept
 
         display   = rel or drive_folder_name
         truncated = display if len(display) <= 55 else "..." + display[-52:]
