@@ -3,7 +3,13 @@ import json
 import urllib.request
 import datetime
 
-with open('c:\\email_solutions\\public\\data\\scraped_matches.js', 'r', encoding='utf-8') as f:
+import os
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+in_file = os.path.join(script_dir, 'scraped_matches.js')
+out_file = os.path.join(script_dir, 'fifa_schedule.json')
+
+with open(in_file, 'r', encoding='utf-8') as f:
     content = f.read()
 
 def parse_array(var_name):
@@ -142,7 +148,7 @@ for stage_idx in range(7):
 
 matches.sort(key=lambda x: (x['date'], x['time']))
 
-with open('c:\\email_solutions\\public\\data\\fifa_schedule.json', 'w', encoding='utf-8') as f:
+with open(out_file, 'w', encoding='utf-8') as f:
     json.dump(matches, f, indent=2)
 
 print('Matches extracted with fetched goals:', len(matches))
