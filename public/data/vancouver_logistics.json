@@ -295,7 +295,7 @@
         "name": "JPP Transport Ltd",
         "industry": "Logistics",
         "website": "N/A",
-        "phone": "778-395-3829",
+        "phone": "778-395-3832",
         "address": "Surrey, BC",
         "start_date": "Unknown"
     },
@@ -500,7 +500,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_19",
+        "id": "yp_log_20",
         "city": "Vancouver",
         "name": "BDS Transport",
         "industry": "Logistics",
@@ -582,35 +582,25 @@
     {
         "id": "yp_log_28",
         "city": "Vancouver",
-        "name": "Ashcroft Terminal",
+        "name": "LThomas Trucking",
         "industry": "Logistics",
         "website": "N/A",
-        "phone": "604-563-5595",
+        "phone": "604-240-8899",
         "address": "Unknown",
         "start_date": "Unknown"
     },
     {
         "id": "yp_log_29",
         "city": "Vancouver",
-        "name": "Sensible BC",
+        "name": "Reuben Anderson",
         "industry": "Logistics",
         "website": "N/A",
-        "phone": "604-620-6599",
+        "phone": "604-222-0086",
         "address": "Unknown",
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_30",
-        "city": "Vancouver",
-        "name": "Nova Trucking",
-        "industry": "Logistics",
-        "website": "N/A",
-        "phone": "778-233-3096",
-        "address": "Unknown",
-        "start_date": "Unknown"
-    },
-    {
-        "id": "yp_log_32",
+        "id": "yp_log_31",
         "city": "Vancouver",
         "name": "VanCity Limos",
         "industry": "Logistics",
@@ -620,23 +610,33 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_33",
+        "id": "yp_log_32",
         "city": "Vancouver",
-        "name": "Knight Trucking",
+        "name": "Nova Trucking",
         "industry": "Logistics",
         "website": "N/A",
-        "phone": "604-831-2162",
+        "phone": "778-233-3096",
+        "address": "Unknown",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_33",
+        "city": "Vancouver",
+        "name": "Ashcroft Terminal",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-563-5595",
         "address": "Unknown",
         "start_date": "Unknown"
     },
     {
         "id": "yp_log_34",
         "city": "Vancouver",
-        "name": "Reuben Anderson",
+        "name": "Xperia Logistics",
         "industry": "Logistics",
         "website": "N/A",
-        "phone": "604-222-0086",
-        "address": "Unknown",
+        "phone": "778-883-0630",
+        "address": "Vancouver, BC V5P 3B9",
         "start_date": "Unknown"
     }
 ]
