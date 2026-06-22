@@ -220,7 +220,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_24",
+        "id": "yp_log_25",
         "city": "Vancouver",
         "name": "Bob Global Logistics",
         "industry": "Logistics",
@@ -582,26 +582,6 @@
     {
         "id": "yp_log_28",
         "city": "Vancouver",
-        "name": "Ashcroft Terminal",
-        "industry": "Logistics",
-        "website": "N/A",
-        "phone": "604-563-5595",
-        "address": "Unknown",
-        "start_date": "Unknown"
-    },
-    {
-        "id": "yp_log_29",
-        "city": "Vancouver",
-        "name": "Sensible BC",
-        "industry": "Logistics",
-        "website": "N/A",
-        "phone": "604-620-6599",
-        "address": "Unknown",
-        "start_date": "Unknown"
-    },
-    {
-        "id": "yp_log_30",
-        "city": "Vancouver",
         "name": "LThomas Trucking",
         "industry": "Logistics",
         "website": "N/A",
@@ -610,27 +590,17 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_31",
+        "id": "yp_log_29",
         "city": "Vancouver",
-        "name": "Reuben Anderson",
+        "name": "VanCity Limos",
         "industry": "Logistics",
         "website": "N/A",
-        "phone": "604-222-0086",
+        "phone": "778-654-5699",
         "address": "Unknown",
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_32",
-        "city": "Vancouver",
-        "name": "Xperia Logistics",
-        "industry": "Logistics",
-        "website": "N/A",
-        "phone": "778-883-0630",
-        "address": "Vancouver, BC V5P 3B9",
-        "start_date": "Unknown"
-    },
-    {
-        "id": "yp_log_33",
+        "id": "yp_log_30",
         "city": "Vancouver",
         "name": "Nova Trucking",
         "industry": "Logistics",
@@ -640,12 +610,42 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_34",
+        "id": "yp_log_31",
         "city": "Vancouver",
-        "name": "VanCity Limos",
+        "name": "Xperia Logistics",
         "industry": "Logistics",
         "website": "N/A",
-        "phone": "778-654-5699",
+        "phone": "778-883-0630",
+        "address": "Vancouver, BC V5P 3B9",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_32",
+        "city": "Vancouver",
+        "name": "Knight Trucking",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-831-2162",
+        "address": "Unknown",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_33",
+        "city": "Vancouver",
+        "name": "Sensible BC",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-620-6599",
+        "address": "Unknown",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_34",
+        "city": "Vancouver",
+        "name": "Ashcroft Terminal",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-563-5595",
         "address": "Unknown",
         "start_date": "Unknown"
     }
