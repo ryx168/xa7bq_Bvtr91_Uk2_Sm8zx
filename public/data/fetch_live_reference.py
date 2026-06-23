@@ -107,6 +107,18 @@ def main():
     date_str = now.strftime('%Y-%m-%d')
     day_str = now.strftime('%A')
     
+    out_dir = os.path.join(os.path.dirname(__file__), '..', 'sports', 'live_game')
+    existing_file = os.path.join(out_dir, f'live_games_{date_str}.json')
+    existing_matches = {}
+    if os.path.exists(existing_file):
+        try:
+            with open(existing_file, 'r', encoding='utf-8') as f:
+                ex_data = json.load(f)
+                for m in ex_data:
+                    existing_matches[m['matchId']] = m
+        except:
+            pass
+            
     import concurrent.futures
 
     def process_match(match_id, array_content):
@@ -172,6 +184,42 @@ def main():
                         has_goals = True
                         
             live_score = scores.get(match_id)
+            
+            # --- Custom Goal Tracking Fallback ---
+            live_total_goals = 0
+            if live_score and '-' in live_score:
+                try:
+                    parts = live_score.split('-')
+                    live_total_goals = int(parts[0]) + int(parts[1])
+                except: pass
+                    
+            current_goal_count = sum(len([x for x in g.split('<br>') if x.strip()]) for g in goals)
+            
+            if live_total_goals > current_goal_count:
+                old_match = existing_matches.get(match_id, {})
+                old_score = old_match.get('score', '')
+                old_goals = old_match.get('goals', ['', '', '', '', '', '', '', ''])
+                
+                if old_score != live_score and live_score:
+                    minute_str = live_states.get(match_id, '')
+                    if not minute_str or minute_str in ('Live', 'HT', 'ET', 'FT'):
+                        minute_str = '?'
+                    else:
+                        if "'" not in minute_str:
+                            minute_str += "'"
+                        
+                    bucket = get_goal_bucket(minute_str)
+                    if bucket == -1: 
+                        bucket = 7
+                        
+                    custom_goal = f"{minute_str} ({live_score})"
+                    existing_b = old_goals[bucket]
+                    old_goals[bucket] = existing_b + ("<br>" if existing_b else "") + custom_goal
+                    
+                goals = old_goals
+                has_goals = any(g != '' for g in goals)
+            # -------------------------------------
+
             if has_goals:
                 title = f"{home_team} {live_score or final_score} {away_team}"
         except Exception:
