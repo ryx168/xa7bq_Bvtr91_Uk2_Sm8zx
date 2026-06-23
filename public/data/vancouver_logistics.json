@@ -302,20 +302,20 @@
     {
         "id": "yp_log_34",
         "city": "Vancouver",
-        "name": "VeloMetro",
+        "name": "Veemo",
         "industry": "Logistics",
-        "website": "http://www.facebook.com/416697811791138",
-        "phone": "778-776-7076",
+        "website": "https://www.facebook.com/rideveemo/",
+        "phone": "778-806-8736",
         "address": "1885 Franklin St, Vancouver, BC V5L 1P9",
         "start_date": "Unknown"
     },
     {
         "id": "yp_log_0",
         "city": "Vancouver",
-        "name": "Veemo",
+        "name": "VeloMetro",
         "industry": "Logistics",
-        "website": "https://www.facebook.com/rideveemo/",
-        "phone": "778-806-8736",
+        "website": "http://www.facebook.com/416697811791138",
+        "phone": "778-776-7076",
         "address": "1885 Franklin St, Vancouver, BC V5L 1P9",
         "start_date": "Unknown"
     },
@@ -592,20 +592,20 @@
     {
         "id": "yp_log_29",
         "city": "Vancouver",
-        "name": "VanCity Limos",
+        "name": "Sensible BC",
         "industry": "Logistics",
         "website": "N/A",
-        "phone": "778-654-5699",
+        "phone": "604-620-6599",
         "address": "Unknown",
         "start_date": "Unknown"
     },
     {
         "id": "yp_log_30",
         "city": "Vancouver",
-        "name": "Nova Trucking",
+        "name": "Ashcroft Terminal",
         "industry": "Logistics",
         "website": "N/A",
-        "phone": "778-233-3096",
+        "phone": "604-563-5595",
         "address": "Unknown",
         "start_date": "Unknown"
     },
@@ -632,20 +632,20 @@
     {
         "id": "yp_log_33",
         "city": "Vancouver",
-        "name": "Sensible BC",
+        "name": "Nova Trucking",
         "industry": "Logistics",
         "website": "N/A",
-        "phone": "604-620-6599",
+        "phone": "778-233-3096",
         "address": "Unknown",
         "start_date": "Unknown"
     },
     {
         "id": "yp_log_34",
         "city": "Vancouver",
-        "name": "Ashcroft Terminal",
+        "name": "VanCity Limos",
         "industry": "Logistics",
         "website": "N/A",
-        "phone": "604-563-5595",
+        "phone": "778-654-5699",
         "address": "Unknown",
         "start_date": "Unknown"
     }
