@@ -44,8 +44,22 @@ const fetchUrl = (url) => {
                 const scriptStr = await fetchUrl(url);
                 if (!scriptStr) return;
                 
-                // Add current year by default
-                league.seasons.push({ year: 'current', url: `https://data.7msport.com/matches_data/${league.id}/en/index.shtml`, completed: false });
+                // Parse d_start_date and d_end_date to determine season string
+                let currentYearStr = 'current';
+                const startDateMatch = scriptStr.match(/var d_start_date = ['"](.*?)['"];/);
+                const endDateMatch = scriptStr.match(/var d_end_date = ['"](.*?)['"];/);
+                if (startDateMatch && endDateMatch) {
+                    let startYear = startDateMatch[1].split('-')[0];
+                    let endYear = endDateMatch[1].split('-')[0];
+                    if (startYear === endYear) {
+                        currentYearStr = startYear;
+                    } else {
+                        currentYearStr = `${startYear}-${endYear}`;
+                    }
+                }
+                
+                // Add current year with dynamically determined year string
+                league.seasons.push({ year: currentYearStr, url: `https://data.7msport.com/matches_data/${league.id}/en/index.shtml`, completed: false, isCurrent: true });
                 
                 // Parse d_Links: <A href="/history_matches_data/2025/1044/en/index.shtml" target=_blank>2025</A>
                 const dLinksMatch = scriptStr.match(/var d_Links = ['"](.*?)['"];/);

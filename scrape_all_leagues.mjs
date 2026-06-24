@@ -133,7 +133,8 @@ const processMatchGoals = async (m, folderId) => {
 
             // 'current' year implies the live active season, which updates constantly. We scrape it every time.
             // Historical years are static, if completed, we skip them unless data is empty.
-            if (season.completed && season.year !== 'current' && !forceScrape) {
+            let isCurrentSeason = season.isCurrent || season.year === 'current';
+            if (season.completed && !isCurrentSeason && !forceScrape) {
                 continue;
             }
 
@@ -221,7 +222,8 @@ const processMatchGoals = async (m, folderId) => {
                 console.log(`Saved ${outPath}`);
 
                 // Mark season as completed so we don't scrape it again next run
-                if (season.year !== 'current') {
+                let isCurrentSeason = season.isCurrent || season.year === 'current';
+                if (!isCurrentSeason) {
                     season.completed = true;
                     // Periodically save state to disk
                     fs.writeFileSync(CATALOG_PATH, JSON.stringify(catalog, null, 2));
