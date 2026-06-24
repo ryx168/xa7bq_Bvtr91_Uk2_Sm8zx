@@ -24,8 +24,19 @@ jobs:
       - name: Install Puppeteer
         run: npm install puppeteer
 
-      - name: Run 7msport Scraper
+      - name: Run Catalog Generator
+        run: node generate_catalog.mjs
+
+      - name: Run Incremental Scraper
         run: node scrape_all_leagues.mjs
+
+      - name: Commit State Catalog
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add league_catalog.json || true
+          git commit -m "chore: save league scraping catalog state" || true
+          git push || true
 
       - name: Setup Python 3.11
         uses: actions/setup-python@v5
