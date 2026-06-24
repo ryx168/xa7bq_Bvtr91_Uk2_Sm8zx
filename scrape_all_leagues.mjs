@@ -146,11 +146,16 @@ const processMatchGoals = async (m, folderId) => {
                 const matches = await page.evaluate((leagueGroup) => {
                     let results = [];
                     try {
-                        let Tmp_bh_Arr = window.Tmp_bh_Arr || window.live_bh_arr || window.Match_bh_arr || [];
-                        let TeamA_Arr = window.TeamA_Arr || window.TeamA_arr || [];
-                        let TeamB_Arr = window.TeamB_Arr || window.TeamB_arr || [];
-                        let Scores_Arr = window.Scores_Arr || window.score_arr || [];
-                        let Time_Arr = window.Time_Arr || window.Start_time_arr || [];
+                        const flattenArray = (arr) => {
+                            if (!Array.isArray(arr)) return [];
+                            return arr.flat(Infinity);
+                        };
+
+                        let Tmp_bh_Arr = flattenArray(window.Tmp_bh_Arr || window.live_bh_arr || window.Match_bh_arr || []);
+                        let TeamA_Arr = flattenArray(window.TeamA_Arr || window.TeamA_arr || []);
+                        let TeamB_Arr = flattenArray(window.TeamB_Arr || window.TeamB_arr || []);
+                        let Scores_Arr = flattenArray(window.Scores_Arr || window.score_arr || []);
+                        let Time_Arr = flattenArray(window.Time_Arr || window.Start_time_arr || []);
                         
                         for (let i = 0; i < Tmp_bh_Arr.length; i++) {
                             let matchId = Tmp_bh_Arr[i];
