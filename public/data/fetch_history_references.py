@@ -202,7 +202,13 @@ def main():
                     historical_matches.append(match_obj)
 
     # Save to individual reference file
-    refs_dir = os.path.join(os.path.dirname(__file__), '..', 'sports', 'refs')
+    import datetime
+    now = datetime.datetime.now()
+    year_str = now.strftime('%Y')
+    month_str = now.strftime('%m')
+    date_str = now.strftime('%Y_%m_%d')
+    
+    refs_dir = os.path.join(os.path.dirname(__file__), '..', 'sports', 'refs', year_str, month_str, date_str)
     if not os.path.exists(refs_dir):
         os.makedirs(refs_dir, exist_ok=True)
         
