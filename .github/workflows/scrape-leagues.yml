@@ -1,0 +1,40 @@
+name: Scrape 7mSport Leagues to Google Drive
+
+on:
+  schedule:
+    # Run at midnight every day UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allow manual trigger from the GitHub Actions UI
+
+jobs:
+  scrape-and-upload:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Puppeteer requires some system dependencies in CI, but usually ubuntu-latest handles the headless bundle.
+      # If missing, it can be installed, but npm install puppeteer fetches a bundled browser.
+      - name: Install Puppeteer
+        run: npm install puppeteer
+
+      - name: Run 7msport Scraper
+        run: node scrape_all_leagues.mjs
+
+      - name: Zip Output Directory
+        run: zip -r leagues_data.zip ./output_leagues
+
+      # Upload the zipped JSON files to Google Drive using a standard action
+      - name: Upload to Google Drive
+        uses: adityak74/google-drive-upload-action@main
+        with:
+          credentials: ${{ secrets.GDRIVE_CREDENTIALS_JSON }}
+          filename: leagues_data.zip
+          folderId: ${{ secrets.GDRIVE_FOLDER_ID }}
+          overwrite: "true"
