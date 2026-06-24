@@ -1,11 +1,2215 @@
 [
   {
+    "id": "100",
+    "name": "BEL D1",
+    "seasons": [
+      {
+        "year": "current",
+        "url": "https://data.7msport.com/matches_data/100/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2025-2026",
+        "url": "https://data.7msport.com/history_matches_data/2025-2026/100/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2024-2025",
+        "url": "https://data.7msport.com/history_matches_data/2024-2025/100/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2023-2024",
+        "url": "https://data.7msport.com/history_matches_data/2023-2024/100/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2022-2023",
+        "url": "https://data.7msport.com/history_matches_data/2022-2023/100/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2021-2022",
+        "url": "https://data.7msport.com/history_matches_data/2021-2022/100/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2020-2021",
+        "url": "https://data.7msport.com/history_matches_data/2020-2021/100/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2019-2020",
+        "url": "https://data.7msport.com/history_matches_data/2019-2020/100/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2018-2019",
+        "url": "https://data.7msport.com/history_matches_data/2018-2019/100/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2017-2018",
+        "url": "https://data.7msport.com/history_matches_data/2017-2018/100/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2016-2017",
+        "url": "https://data.7msport.com/history_matches_data/2016-2017/100/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2015-2016",
+        "url": "https://data.7msport.com/history_matches_data/2015-2016/100/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2014-2015",
+        "url": "https://data.7msport.com/history_matches_data/2014-2015/100/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2013-2014",
+        "url": "https://data.7msport.com/history_matches_data/2013-2014/100/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2012-2013",
+        "url": "https://data.7msport.com/history_matches_data/2012-2013/100/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2011-2012",
+        "url": "https://data.7msport.com/history_matches_data/2011-2012/100/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2010-2011",
+        "url": "https://data.7msport.com/history_Matches_Data/2010-2011/100/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2009-2010",
+        "url": "https://data.7msport.com/history_Matches_Data/2009-2010/100/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2008-2009",
+        "url": "https://data.7msport.com/history_Matches_Data/2008-2009/100/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2007-2008",
+        "url": "https://data.7msport.com/history_Matches_Data/2007-2008/100/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2006-2007",
+        "url": "https://data.7msport.com/history_Matches_Data/2006-2007/100/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2005-2006",
+        "url": "https://data.7msport.com/history_Matches_Data/2005-2006/100/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2004-2005",
+        "url": "https://data.7msport.com/history_Matches_Data/2004-2005/100/en/index.shtml",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "id": "302",
+    "name": "POL D2",
+    "seasons": [
+      {
+        "year": "current",
+        "url": "https://data.7msport.com/matches_data/302/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2025-2026",
+        "url": "https://data.7msport.com/history_matches_data/2025-2026/302/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2024-2025",
+        "url": "https://data.7msport.com/history_matches_data/2024-2025/302/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2023-2024",
+        "url": "https://data.7msport.com/history_matches_data/2023-2024/302/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2022-2023",
+        "url": "https://data.7msport.com/history_matches_data/2022-2023/302/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2021-2022",
+        "url": "https://data.7msport.com/history_matches_data/2021-2022/302/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2020-2021",
+        "url": "https://data.7msport.com/history_matches_data/2020-2021/302/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2019-2020",
+        "url": "https://data.7msport.com/history_matches_data/2019-2020/302/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2018-2019",
+        "url": "https://data.7msport.com/history_matches_data/2018-2019/302/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2017-2018",
+        "url": "https://data.7msport.com/history_matches_data/2017-2018/302/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2016-2017",
+        "url": "https://data.7msport.com/history_matches_data/2016-2017/302/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2015-2016",
+        "url": "https://data.7msport.com/history_matches_data/2015-2016/302/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2014-2015",
+        "url": "https://data.7msport.com/history_matches_data/2014-2015/302/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2013-2014",
+        "url": "https://data.7msport.com/history_matches_data/2013-2014/302/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2012-2013",
+        "url": "https://data.7msport.com/history_matches_data/2012-2013/302/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2011-2012",
+        "url": "https://data.7msport.com/history_matches_data/2011-2012/302/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2010-2011",
+        "url": "https://data.7msport.com/history_Matches_Data/2010-2011/302/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2009-2010",
+        "url": "https://data.7msport.com/history_Matches_Data/2009-2010/302/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2008-2009",
+        "url": "https://data.7msport.com/history_Matches_Data/2008-2009/302/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2007-2008",
+        "url": "https://data.7msport.com/history_Matches_Data/2007-2008/302/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2006-2007",
+        "url": "https://data.7msport.com/history_Matches_Data/2006-2007/302/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2005-2006",
+        "url": "https://data.7msport.com/history_Matches_Data/2005-2006/302/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2004-2005",
+        "url": "https://data.7msport.com/history_Matches_Data/2004-2005/302/en/index.shtml",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "id": "232",
+    "name": "RUS Cup",
+    "seasons": [
+      {
+        "year": "current",
+        "url": "https://data.7msport.com/matches_data/232/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2025-2026",
+        "url": "https://data.7msport.com/history_matches_data/2025-2026/232/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2024-2025",
+        "url": "https://data.7msport.com/history_matches_data/2024-2025/232/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2023-2024",
+        "url": "https://data.7msport.com/history_matches_data/2023-2024/232/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2022-2023",
+        "url": "https://data.7msport.com/history_matches_data/2022-2023/232/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2021-2022",
+        "url": "https://data.7msport.com/history_matches_data/2021-2022/232/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2020-2021",
+        "url": "https://data.7msport.com/history_matches_data/2020-2021/232/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2019-2020",
+        "url": "https://data.7msport.com/history_matches_data/2019-2020/232/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2018-2019",
+        "url": "https://data.7msport.com/history_matches_data/2018-2019/232/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2017-2018",
+        "url": "https://data.7msport.com/history_matches_data/2017-2018/232/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2016-2017",
+        "url": "https://data.7msport.com/history_matches_data/2016-2017/232/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2015-2016",
+        "url": "https://data.7msport.com/history_matches_data/2015-2016/232/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2014-2015",
+        "url": "https://data.7msport.com/history_matches_data/2014-2015/232/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2013-2014",
+        "url": "https://data.7msport.com/history_matches_data/2013-2014/232/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2012-2013",
+        "url": "https://data.7msport.com/history_matches_data/2012-2013/232/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2011-2012",
+        "url": "https://data.7msport.com/history_matches_data/2011-2012/232/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2010-2011",
+        "url": "https://data.7msport.com/history_Matches_Data/2010-2011/232/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2009-2010",
+        "url": "https://data.7msport.com/history_Matches_Data/2009-2010/232/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2008-2009",
+        "url": "https://data.7msport.com/history_Matches_Data/2008-2009/232/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2007-2008",
+        "url": "https://data.7msport.com/history_Matches_Data/2007-2008/232/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2006-2007",
+        "url": "https://data.7msport.com/history_Matches_Data/2006-2007/232/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2005-2006",
+        "url": "https://data.7msport.com/history_Matches_Data/2005-2006/232/en/index.shtml",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "id": "92",
+    "name": "ENG PR",
+    "seasons": [
+      {
+        "year": "current",
+        "url": "https://data.7msport.com/matches_data/92/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2025-2026",
+        "url": "https://data.7msport.com/history_matches_data/2025-2026/92/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2024-2025",
+        "url": "https://data.7msport.com/history_matches_data/2024-2025/92/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2023-2024",
+        "url": "https://data.7msport.com/history_matches_data/2023-2024/92/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2022-2023",
+        "url": "https://data.7msport.com/history_matches_data/2022-2023/92/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2021-2022",
+        "url": "https://data.7msport.com/history_matches_data/2021-2022/92/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2020-2021",
+        "url": "https://data.7msport.com/history_matches_data/2020-2021/92/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2019-2020",
+        "url": "https://data.7msport.com/history_matches_data/2019-2020/92/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2018-2019",
+        "url": "https://data.7msport.com/history_matches_data/2018-2019/92/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2017-2018",
+        "url": "https://data.7msport.com/history_matches_data/2017-2018/92/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2016-2017",
+        "url": "https://data.7msport.com/history_matches_data/2016-2017/92/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2015-2016",
+        "url": "https://data.7msport.com/history_matches_data/2015-2016/92/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2014-2015",
+        "url": "https://data.7msport.com/history_matches_data/2014-2015/92/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2013-2014",
+        "url": "https://data.7msport.com/history_matches_data/2013-2014/92/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2012-2013",
+        "url": "https://data.7msport.com/history_matches_data/2012-2013/92/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2011-2012",
+        "url": "https://data.7msport.com/history_matches_data/2011-2012/92/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2010-2011",
+        "url": "https://data.7msport.com/history_Matches_Data/2010-2011/92/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2009-2010",
+        "url": "https://data.7msport.com/history_Matches_Data/2009-2010/92/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2008-2009",
+        "url": "https://data.7msport.com/history_Matches_Data/2008-2009/92/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2007-2008",
+        "url": "https://data.7msport.com/history_Matches_Data/2007-2008/92/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2006-2007",
+        "url": "https://data.7msport.com/history_Matches_Data/2006-2007/92/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2005-2006",
+        "url": "https://data.7msport.com/history_Matches_Data/2005-2006/92/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2004-2005",
+        "url": "https://data.7msport.com/history_Matches_Data/2004-2005/92/en/index.shtml",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "id": "76",
+    "name": "SCO PR",
+    "seasons": [
+      {
+        "year": "current",
+        "url": "https://data.7msport.com/matches_data/76/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2025-2026",
+        "url": "https://data.7msport.com/history_matches_data/2025-2026/76/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2024-2025",
+        "url": "https://data.7msport.com/history_matches_data/2024-2025/76/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2023-2024",
+        "url": "https://data.7msport.com/history_matches_data/2023-2024/76/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2022-2023",
+        "url": "https://data.7msport.com/history_matches_data/2022-2023/76/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2021-2022",
+        "url": "https://data.7msport.com/history_matches_data/2021-2022/76/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2020-2021",
+        "url": "https://data.7msport.com/history_matches_data/2020-2021/76/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2019-2020",
+        "url": "https://data.7msport.com/history_matches_data/2019-2020/76/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2018-2019",
+        "url": "https://data.7msport.com/history_matches_data/2018-2019/76/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2017-2018",
+        "url": "https://data.7msport.com/history_matches_data/2017-2018/76/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2016-2017",
+        "url": "https://data.7msport.com/history_matches_data/2016-2017/76/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2015-2016",
+        "url": "https://data.7msport.com/history_matches_data/2015-2016/76/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2014-2015",
+        "url": "https://data.7msport.com/history_matches_data/2014-2015/76/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2013-2014",
+        "url": "https://data.7msport.com/history_matches_data/2013-2014/76/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2012-2013",
+        "url": "https://data.7msport.com/history_matches_data/2012-2013/76/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2011-2012",
+        "url": "https://data.7msport.com/history_matches_data/2011-2012/76/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2010-2011",
+        "url": "https://data.7msport.com/history_Matches_Data/2010-2011/76/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2009-2010",
+        "url": "https://data.7msport.com/history_Matches_Data/2009-2010/76/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2008-2009",
+        "url": "https://data.7msport.com/history_Matches_Data/2008-2009/76/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2007-2008",
+        "url": "https://data.7msport.com/history_Matches_Data/2007-2008/76/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2006-2007",
+        "url": "https://data.7msport.com/history_Matches_Data/2006-2007/76/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2005-2006",
+        "url": "https://data.7msport.com/history_Matches_Data/2005-2006/76/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2004-2005",
+        "url": "https://data.7msport.com/history_Matches_Data/2004-2005/76/en/index.shtml",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "id": "238",
+    "name": "SCO D2",
+    "seasons": [
+      {
+        "year": "current",
+        "url": "https://data.7msport.com/matches_data/238/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2025-2026",
+        "url": "https://data.7msport.com/history_matches_data/2025-2026/238/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2024-2025",
+        "url": "https://data.7msport.com/history_matches_data/2024-2025/238/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2023-2024",
+        "url": "https://data.7msport.com/history_matches_data/2023-2024/238/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2022-2023",
+        "url": "https://data.7msport.com/history_matches_data/2022-2023/238/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2021-2022",
+        "url": "https://data.7msport.com/history_matches_data/2021-2022/238/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2020-2021",
+        "url": "https://data.7msport.com/history_matches_data/2020-2021/238/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2019-2020",
+        "url": "https://data.7msport.com/history_matches_data/2019-2020/238/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2018-2019",
+        "url": "https://data.7msport.com/history_matches_data/2018-2019/238/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2017-2018",
+        "url": "https://data.7msport.com/history_matches_data/2017-2018/238/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2016-2017",
+        "url": "https://data.7msport.com/history_matches_data/2016-2017/238/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2015-2016",
+        "url": "https://data.7msport.com/history_matches_data/2015-2016/238/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2014-2015",
+        "url": "https://data.7msport.com/history_matches_data/2014-2015/238/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2013-2014",
+        "url": "https://data.7msport.com/history_matches_data/2013-2014/238/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2012-2013",
+        "url": "https://data.7msport.com/history_matches_data/2012-2013/238/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2011-2012",
+        "url": "https://data.7msport.com/history_matches_data/2011-2012/238/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2010-2011",
+        "url": "https://data.7msport.com/history_Matches_Data/2010-2011/238/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2009-2010",
+        "url": "https://data.7msport.com/history_Matches_Data/2009-2010/238/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2008-2009",
+        "url": "https://data.7msport.com/history_Matches_Data/2008-2009/238/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2007-2008",
+        "url": "https://data.7msport.com/history_Matches_Data/2007-2008/238/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2006-2007",
+        "url": "https://data.7msport.com/history_Matches_Data/2006-2007/238/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2005-2006",
+        "url": "https://data.7msport.com/history_Matches_Data/2005-2006/238/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2004-2005",
+        "url": "https://data.7msport.com/history_Matches_Data/2004-2005/238/en/index.shtml",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "id": "237",
+    "name": "SCO D1",
+    "seasons": [
+      {
+        "year": "current",
+        "url": "https://data.7msport.com/matches_data/237/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2025-2026",
+        "url": "https://data.7msport.com/history_matches_data/2025-2026/237/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2024-2025",
+        "url": "https://data.7msport.com/history_matches_data/2024-2025/237/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2023-2024",
+        "url": "https://data.7msport.com/history_matches_data/2023-2024/237/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2022-2023",
+        "url": "https://data.7msport.com/history_matches_data/2022-2023/237/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2021-2022",
+        "url": "https://data.7msport.com/history_matches_data/2021-2022/237/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2020-2021",
+        "url": "https://data.7msport.com/history_matches_data/2020-2021/237/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2019-2020",
+        "url": "https://data.7msport.com/history_matches_data/2019-2020/237/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2018-2019",
+        "url": "https://data.7msport.com/history_matches_data/2018-2019/237/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2017-2018",
+        "url": "https://data.7msport.com/history_matches_data/2017-2018/237/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2016-2017",
+        "url": "https://data.7msport.com/history_matches_data/2016-2017/237/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2015-2016",
+        "url": "https://data.7msport.com/history_matches_data/2015-2016/237/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2014-2015",
+        "url": "https://data.7msport.com/history_matches_data/2014-2015/237/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2013-2014",
+        "url": "https://data.7msport.com/history_matches_data/2013-2014/237/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2012-2013",
+        "url": "https://data.7msport.com/history_matches_data/2012-2013/237/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2011-2012",
+        "url": "https://data.7msport.com/history_matches_data/2011-2012/237/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2010-2011",
+        "url": "https://data.7msport.com/history_Matches_Data/2010-2011/237/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2009-2010",
+        "url": "https://data.7msport.com/history_Matches_Data/2009-2010/237/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2008-2009",
+        "url": "https://data.7msport.com/history_Matches_Data/2008-2009/237/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2007-2008",
+        "url": "https://data.7msport.com/history_Matches_Data/2007-2008/237/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2006-2007",
+        "url": "https://data.7msport.com/history_Matches_Data/2006-2007/237/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2005-2006",
+        "url": "https://data.7msport.com/history_Matches_Data/2005-2006/237/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2004-2005",
+        "url": "https://data.7msport.com/history_Matches_Data/2004-2005/237/en/index.shtml",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "id": "236",
+    "name": "SCO LCH",
+    "seasons": [
+      {
+        "year": "current",
+        "url": "https://data.7msport.com/matches_data/236/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2025-2026",
+        "url": "https://data.7msport.com/history_matches_data/2025-2026/236/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2024-2025",
+        "url": "https://data.7msport.com/history_matches_data/2024-2025/236/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2023-2024",
+        "url": "https://data.7msport.com/history_matches_data/2023-2024/236/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2022-2023",
+        "url": "https://data.7msport.com/history_matches_data/2022-2023/236/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2021-2022",
+        "url": "https://data.7msport.com/history_matches_data/2021-2022/236/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2020-2021",
+        "url": "https://data.7msport.com/history_matches_data/2020-2021/236/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2019-2020",
+        "url": "https://data.7msport.com/history_matches_data/2019-2020/236/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2018-2019",
+        "url": "https://data.7msport.com/history_matches_data/2018-2019/236/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2017-2018",
+        "url": "https://data.7msport.com/history_matches_data/2017-2018/236/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2016-2017",
+        "url": "https://data.7msport.com/history_matches_data/2016-2017/236/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2015-2016",
+        "url": "https://data.7msport.com/history_matches_data/2015-2016/236/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2014-2015",
+        "url": "https://data.7msport.com/history_matches_data/2014-2015/236/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2013-2014",
+        "url": "https://data.7msport.com/history_matches_data/2013-2014/236/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2012-2013",
+        "url": "https://data.7msport.com/history_matches_data/2012-2013/236/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2011-2012",
+        "url": "https://data.7msport.com/history_matches_data/2011-2012/236/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2010-2011",
+        "url": "https://data.7msport.com/history_Matches_Data/2010-2011/236/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2009-2010",
+        "url": "https://data.7msport.com/history_Matches_Data/2009-2010/236/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2008-2009",
+        "url": "https://data.7msport.com/history_Matches_Data/2008-2009/236/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2007-2008",
+        "url": "https://data.7msport.com/history_Matches_Data/2007-2008/236/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2006-2007",
+        "url": "https://data.7msport.com/history_Matches_Data/2006-2007/236/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2005-2006",
+        "url": "https://data.7msport.com/history_Matches_Data/2005-2006/236/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2004-2005",
+        "url": "https://data.7msport.com/history_Matches_Data/2004-2005/236/en/index.shtml",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "id": "521",
+    "name": "MNE D1",
+    "seasons": [
+      {
+        "year": "current",
+        "url": "https://data.7msport.com/matches_data/521/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2025-2026",
+        "url": "https://data.7msport.com/history_matches_data/2025-2026/521/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2024-2025",
+        "url": "https://data.7msport.com/history_matches_data/2024-2025/521/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2023-2024",
+        "url": "https://data.7msport.com/history_matches_data/2023-2024/521/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2022-2023",
+        "url": "https://data.7msport.com/history_matches_data/2022-2023/521/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2021-2022",
+        "url": "https://data.7msport.com/history_matches_data/2021-2022/521/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2020-2021",
+        "url": "https://data.7msport.com/history_matches_data/2020-2021/521/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2019-2020",
+        "url": "https://data.7msport.com/history_matches_data/2019-2020/521/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2018-2019",
+        "url": "https://data.7msport.com/history_matches_data/2018-2019/521/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2017-2018",
+        "url": "https://data.7msport.com/history_matches_data/2017-2018/521/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2016-2017",
+        "url": "https://data.7msport.com/history_matches_data/2016-2017/521/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2015-2016",
+        "url": "https://data.7msport.com/history_matches_data/2015-2016/521/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2014-2015",
+        "url": "https://data.7msport.com/history_matches_data/2014-2015/521/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2013-2014",
+        "url": "https://data.7msport.com/history_matches_data/2013-2014/521/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2012-2013",
+        "url": "https://data.7msport.com/history_matches_data/2012-2013/521/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2011-2012",
+        "url": "https://data.7msport.com/history_matches_data/2011-2012/521/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2010-2011",
+        "url": "https://data.7msport.com/history_Matches_Data/2010-2011/521/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2009-2010",
+        "url": "https://data.7msport.com/history_Matches_Data/2009-2010/521/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2008-2009",
+        "url": "https://data.7msport.com/history_Matches_Data/2008-2009/521/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2007-2008",
+        "url": "https://data.7msport.com/history_Matches_Data/2007-2008/521/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2006-2007",
+        "url": "https://data.7msport.com/history_Matches_Data/2006-2007/521/en/index.shtml",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "id": "247",
+    "name": "ISR D1",
+    "seasons": [
+      {
+        "year": "current",
+        "url": "https://data.7msport.com/matches_data/247/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2025-2026",
+        "url": "https://data.7msport.com/history_matches_data/2025-2026/247/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2024-2025",
+        "url": "https://data.7msport.com/history_matches_data/2024-2025/247/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2023-2024",
+        "url": "https://data.7msport.com/history_matches_data/2023-2024/247/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2022-2023",
+        "url": "https://data.7msport.com/history_matches_data/2022-2023/247/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2021-2022",
+        "url": "https://data.7msport.com/history_matches_data/2021-2022/247/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2020-2021",
+        "url": "https://data.7msport.com/history_matches_data/2020-2021/247/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2019-2020",
+        "url": "https://data.7msport.com/history_matches_data/2019-2020/247/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2018-2019",
+        "url": "https://data.7msport.com/history_matches_data/2018-2019/247/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2017-2018",
+        "url": "https://data.7msport.com/history_matches_data/2017-2018/247/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2016-2017",
+        "url": "https://data.7msport.com/history_matches_data/2016-2017/247/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2015-2016",
+        "url": "https://data.7msport.com/history_matches_data/2015-2016/247/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2014-2015",
+        "url": "https://data.7msport.com/history_matches_data/2014-2015/247/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2013-2014",
+        "url": "https://data.7msport.com/history_matches_data/2013-2014/247/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2012-2013",
+        "url": "https://data.7msport.com/history_matches_data/2012-2013/247/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2011-2012",
+        "url": "https://data.7msport.com/history_matches_data/2011-2012/247/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2010-2011",
+        "url": "https://data.7msport.com/history_Matches_Data/2010-2011/247/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2009-2010",
+        "url": "https://data.7msport.com/history_Matches_Data/2009-2010/247/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2008-2009",
+        "url": "https://data.7msport.com/history_Matches_Data/2008-2009/247/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2007-2008",
+        "url": "https://data.7msport.com/history_Matches_Data/2007-2008/247/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2006-2007",
+        "url": "https://data.7msport.com/history_Matches_Data/2006-2007/247/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2005-2006",
+        "url": "https://data.7msport.com/history_Matches_Data/2005-2006/247/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2004-2005",
+        "url": "https://data.7msport.com/history_Matches_Data/2004-2005/247/en/index.shtml",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "id": "742",
+    "name": "ISR LATTC",
+    "seasons": [
+      {
+        "year": "current",
+        "url": "https://data.7msport.com/matches_data/742/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2025",
+        "url": "https://data.7msport.com/history_matches_data/2025/742/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2024-2025",
+        "url": "https://data.7msport.com/history_matches_data/2024-2025/742/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2023-2024",
+        "url": "https://data.7msport.com/history_matches_data/2023-2024/742/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2022-2023",
+        "url": "https://data.7msport.com/history_matches_data/2022-2023/742/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2021-2022",
+        "url": "https://data.7msport.com/history_matches_data/2021-2022/742/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2020-2021",
+        "url": "https://data.7msport.com/history_matches_data/2020-2021/742/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2019-2020",
+        "url": "https://data.7msport.com/history_matches_data/2019-2020/742/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2018-2019",
+        "url": "https://data.7msport.com/history_matches_data/2018-2019/742/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2017-2018",
+        "url": "https://data.7msport.com/history_matches_data/2017-2018/742/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2016-2017",
+        "url": "https://data.7msport.com/history_matches_data/2016-2017/742/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2015-2016",
+        "url": "https://data.7msport.com/history_matches_data/2015-2016/742/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2014-2015",
+        "url": "https://data.7msport.com/history_matches_data/2014-2015/742/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2012-2013",
+        "url": "https://data.7msport.com/history_matches_data/2012-2013/742/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2011-2012",
+        "url": "https://data.7msport.com/history_matches_data/2011-2012/742/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2010-2011",
+        "url": "https://data.7msport.com/history_Matches_Data/2010-2011/742/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2009-2010",
+        "url": "https://data.7msport.com/history_Matches_Data/2009-2010/742/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2008-2009",
+        "url": "https://data.7msport.com/history_Matches_Data/2008-2009/742/en/index.shtml",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "id": "197",
+    "name": "SUI D2",
+    "seasons": [
+      {
+        "year": "current",
+        "url": "https://data.7msport.com/matches_data/197/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2025-2026",
+        "url": "https://data.7msport.com/history_matches_data/2025-2026/197/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2024-2025",
+        "url": "https://data.7msport.com/history_matches_data/2024-2025/197/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2023-2024",
+        "url": "https://data.7msport.com/history_matches_data/2023-2024/197/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2022-2023",
+        "url": "https://data.7msport.com/history_matches_data/2022-2023/197/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2021-2022",
+        "url": "https://data.7msport.com/history_matches_data/2021-2022/197/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2020-2021",
+        "url": "https://data.7msport.com/history_matches_data/2020-2021/197/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2019-2020",
+        "url": "https://data.7msport.com/history_matches_data/2019-2020/197/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2018-2019",
+        "url": "https://data.7msport.com/history_matches_data/2018-2019/197/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2017-2018",
+        "url": "https://data.7msport.com/history_matches_data/2017-2018/197/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2016-2017",
+        "url": "https://data.7msport.com/history_matches_data/2016-2017/197/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2015-2016",
+        "url": "https://data.7msport.com/history_matches_data/2015-2016/197/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2014-2015",
+        "url": "https://data.7msport.com/history_matches_data/2014-2015/197/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2013-2014",
+        "url": "https://data.7msport.com/history_matches_data/2013-2014/197/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2012-2013",
+        "url": "https://data.7msport.com/history_matches_data/2012-2013/197/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2011-2012",
+        "url": "https://data.7msport.com/history_matches_data/2011-2012/197/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2010-2011",
+        "url": "https://data.7msport.com/history_Matches_Data/2010-2011/197/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2009-2010",
+        "url": "https://data.7msport.com/history_Matches_Data/2009-2010/197/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2008-2009",
+        "url": "https://data.7msport.com/history_Matches_Data/2008-2009/197/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2007-2008",
+        "url": "https://data.7msport.com/history_Matches_Data/2007-2008/197/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2006-2007",
+        "url": "https://data.7msport.com/history_Matches_Data/2006-2007/197/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2005-2006",
+        "url": "https://data.7msport.com/history_Matches_Data/2005-2006/197/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2004-2005",
+        "url": "https://data.7msport.com/history_Matches_Data/2004-2005/197/en/index.shtml",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "id": "133",
+    "name": "SUI D1",
+    "seasons": [
+      {
+        "year": "current",
+        "url": "https://data.7msport.com/matches_data/133/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2025-2026",
+        "url": "https://data.7msport.com/history_matches_data/2025-2026/133/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2024-2025",
+        "url": "https://data.7msport.com/history_matches_data/2024-2025/133/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2023-2024",
+        "url": "https://data.7msport.com/history_matches_data/2023-2024/133/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2022-2023",
+        "url": "https://data.7msport.com/history_matches_data/2022-2023/133/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2021-2022",
+        "url": "https://data.7msport.com/history_matches_data/2021-2022/133/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2020-2021",
+        "url": "https://data.7msport.com/history_matches_data/2020-2021/133/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2019-2020",
+        "url": "https://data.7msport.com/history_matches_data/2019-2020/133/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2018-2019",
+        "url": "https://data.7msport.com/history_matches_data/2018-2019/133/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2017-2018",
+        "url": "https://data.7msport.com/history_matches_data/2017-2018/133/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2016-2017",
+        "url": "https://data.7msport.com/history_matches_data/2016-2017/133/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2015-2016",
+        "url": "https://data.7msport.com/history_matches_data/2015-2016/133/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2014-2015",
+        "url": "https://data.7msport.com/history_matches_data/2014-2015/133/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2013-2014",
+        "url": "https://data.7msport.com/history_matches_data/2013-2014/133/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2012-2013",
+        "url": "https://data.7msport.com/history_matches_data/2012-2013/133/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2011-2012",
+        "url": "https://data.7msport.com/history_matches_data/2011-2012/133/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2010-2011",
+        "url": "https://data.7msport.com/history_Matches_Data/2010-2011/133/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2009-2010",
+        "url": "https://data.7msport.com/history_Matches_Data/2009-2010/133/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2008-2009",
+        "url": "https://data.7msport.com/history_Matches_Data/2008-2009/133/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2007-2008",
+        "url": "https://data.7msport.com/history_Matches_Data/2007-2008/133/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2006-2007",
+        "url": "https://data.7msport.com/history_Matches_Data/2006-2007/133/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2005-2006",
+        "url": "https://data.7msport.com/history_Matches_Data/2005-2006/133/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2004-2005",
+        "url": "https://data.7msport.com/history_Matches_Data/2004-2005/133/en/index.shtml",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "id": "1667",
+    "name": "UEFA ECL",
+    "seasons": [
+      {
+        "year": "current",
+        "url": "https://data.7msport.com/matches_data/1667/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2025-2026",
+        "url": "https://data.7msport.com/history_matches_data/2025-2026/1667/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2024-2025",
+        "url": "https://data.7msport.com/history_matches_data/2024-2025/1667/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2023-2024",
+        "url": "https://data.7msport.com/history_matches_data/2023-2024/1667/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2022-2023",
+        "url": "https://data.7msport.com/history_matches_data/2022-2023/1667/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2021-2022",
+        "url": "https://data.7msport.com/history_matches_data/2021-2022/1667/en/index.shtml",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "id": "347",
+    "name": "JPN D2",
+    "seasons": [
+      {
+        "year": "current",
+        "url": "https://data.7msport.com/matches_data/347/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2026",
+        "url": "https://data.7msport.com/history_matches_data/2026/347/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2025",
+        "url": "https://data.7msport.com/history_matches_data/2025/347/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2024",
+        "url": "https://data.7msport.com/history_matches_data/2024/347/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2023",
+        "url": "https://data.7msport.com/history_matches_data/2023/347/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2022",
+        "url": "https://data.7msport.com/history_matches_data/2022/347/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2021",
+        "url": "https://data.7msport.com/history_matches_data/2021/347/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2020",
+        "url": "https://data.7msport.com/history_matches_data/2020/347/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2019",
+        "url": "https://data.7msport.com/history_matches_data/2019/347/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2018",
+        "url": "https://data.7msport.com/history_matches_data/2018/347/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2017",
+        "url": "https://data.7msport.com/history_matches_data/2017/347/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2016",
+        "url": "https://data.7msport.com/history_matches_data/2016/347/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2015",
+        "url": "https://data.7msport.com/history_matches_data/2015/347/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2014",
+        "url": "https://data.7msport.com/history_matches_data/2014/347/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2013",
+        "url": "https://data.7msport.com/history_matches_data/2013/347/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2012",
+        "url": "https://data.7msport.com/history_matches_data/2012/347/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2011",
+        "url": "https://data.7msport.com/history_Matches_Data/2011/347/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2010",
+        "url": "https://data.7msport.com/history_Matches_Data/2010/347/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2009",
+        "url": "https://data.7msport.com/history_Matches_Data/2009/347/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2008",
+        "url": "https://data.7msport.com/history_Matches_Data/2008/347/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2007",
+        "url": "https://data.7msport.com/history_Matches_Data/2007/347/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2006",
+        "url": "https://data.7msport.com/history_Matches_Data/2006/347/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2005",
+        "url": "https://data.7msport.com/history_Matches_Data/2005/347/en/index.shtml",
+        "completed": false
+      }
+    ]
+  },
+  {
     "id": "58",
     "name": "UEFA EL",
     "seasons": [
       {
+        "year": "current",
+        "url": "https://data.7msport.com/matches_data/58/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2025-2026",
+        "url": "https://data.7msport.com/history_matches_data/2025-2026/58/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2024-2025",
+        "url": "https://data.7msport.com/history_matches_data/2024-2025/58/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2023-2024",
+        "url": "https://data.7msport.com/history_matches_data/2023-2024/58/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2022-2023",
+        "url": "https://data.7msport.com/history_matches_data/2022-2023/58/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2021-2022",
+        "url": "https://data.7msport.com/history_matches_data/2021-2022/58/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2020-2021",
+        "url": "https://data.7msport.com/history_matches_data/2020-2021/58/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2019-2020",
+        "url": "https://data.7msport.com/history_matches_data/2019-2020/58/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2018-2019",
+        "url": "https://data.7msport.com/history_matches_data/2018-2019/58/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2017-2018",
+        "url": "https://data.7msport.com/history_matches_data/2017-2018/58/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2016-2017",
+        "url": "https://data.7msport.com/history_matches_data/2016-2017/58/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2015-2016",
+        "url": "https://data.7msport.com/history_matches_data/2015-2016/58/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2014-2015",
+        "url": "https://data.7msport.com/history_matches_data/2014-2015/58/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2013-2014",
+        "url": "https://data.7msport.com/history_matches_data/2013-2014/58/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2012-2013",
+        "url": "https://data.7msport.com/history_matches_data/2012-2013/58/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2011-2012",
+        "url": "https://data.7msport.com/history_matches_data/2011-2012/58/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2010-2011",
+        "url": "https://data.7msport.com/history_Matches_Data/2010-2011/58/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2009-2010",
+        "url": "https://data.7msport.com/history_Matches_Data/2009-2010/58/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2008-2009",
+        "url": "https://data.7msport.com/history_Matches_Data/2008-2009/58/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2007-2008",
+        "url": "https://data.7msport.com/history_Matches_Data/2007-2008/58/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2006-2007",
+        "url": "https://data.7msport.com/history_Matches_Data/2006-2007/58/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2005-2006",
+        "url": "https://data.7msport.com/history_Matches_Data/2005-2006/58/en/index.shtml",
+        "completed": false
+      },
+      {
         "year": "2004-2005",
         "url": "https://data.7msport.com/history_Matches_Data/2004-2005/58/en/index.shtml",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "id": "74",
+    "name": "UEFA CL",
+    "seasons": [
+      {
+        "year": "current",
+        "url": "https://data.7msport.com/matches_data/74/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2025-2026",
+        "url": "https://data.7msport.com/history_matches_data/2025-2026/74/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2024-2025",
+        "url": "https://data.7msport.com/history_matches_data/2024-2025/74/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2023-2024",
+        "url": "https://data.7msport.com/history_matches_data/2023-2024/74/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2022-2023",
+        "url": "https://data.7msport.com/history_matches_data/2022-2023/74/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2021-2022",
+        "url": "https://data.7msport.com/history_matches_data/2021-2022/74/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2020-2021",
+        "url": "https://data.7msport.com/history_matches_data/2020-2021/74/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2019-2020",
+        "url": "https://data.7msport.com/history_matches_data/2019-2020/74/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2018-2019",
+        "url": "https://data.7msport.com/history_matches_data/2018-2019/74/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2017-2018",
+        "url": "https://data.7msport.com/history_matches_data/2017-2018/74/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2016-2017",
+        "url": "https://data.7msport.com/history_matches_data/2016-2017/74/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2015-2016",
+        "url": "https://data.7msport.com/history_matches_data/2015-2016/74/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2014-2015",
+        "url": "https://data.7msport.com/history_matches_data/2014-2015/74/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2013-2014",
+        "url": "https://data.7msport.com/history_matches_data/2013-2014/74/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2012-2013",
+        "url": "https://data.7msport.com/history_matches_data/2012-2013/74/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2011-2012",
+        "url": "https://data.7msport.com/history_matches_data/2011-2012/74/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2010-2011",
+        "url": "https://data.7msport.com/history_Matches_Data/2010-2011/74/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2009-2010",
+        "url": "https://data.7msport.com/history_Matches_Data/2009-2010/74/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2008-2009",
+        "url": "https://data.7msport.com/history_Matches_Data/2008-2009/74/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2007-2008",
+        "url": "https://data.7msport.com/history_Matches_Data/2007-2008/74/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2006-2007",
+        "url": "https://data.7msport.com/history_Matches_Data/2006-2007/74/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2005-2006",
+        "url": "https://data.7msport.com/history_Matches_Data/2005-2006/74/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2004-2005",
+        "url": "https://data.7msport.com/history_Matches_Data/2004-2005/74/en/index.shtml",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "id": "1294",
+    "name": "JPN D3",
+    "seasons": [
+      {
+        "year": "current",
+        "url": "https://data.7msport.com/matches_data/1294/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2025",
+        "url": "https://data.7msport.com/history_matches_data/2025/1294/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2024",
+        "url": "https://data.7msport.com/history_matches_data/2024/1294/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2023",
+        "url": "https://data.7msport.com/history_matches_data/2023/1294/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2022",
+        "url": "https://data.7msport.com/history_matches_data/2022/1294/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2021",
+        "url": "https://data.7msport.com/history_matches_data/2021/1294/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2020",
+        "url": "https://data.7msport.com/history_matches_data/2020/1294/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2019",
+        "url": "https://data.7msport.com/history_matches_data/2019/1294/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2018",
+        "url": "https://data.7msport.com/history_matches_data/2018/1294/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2017",
+        "url": "https://data.7msport.com/history_matches_data/2017/1294/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2016",
+        "url": "https://data.7msport.com/history_matches_data/2016/1294/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2015",
+        "url": "https://data.7msport.com/history_matches_data/2015/1294/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2014",
+        "url": "https://data.7msport.com/history_matches_data/2014/1294/en/index.shtml",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "id": "239",
+    "name": "SER SL",
+    "seasons": [
+      {
+        "year": "current",
+        "url": "https://data.7msport.com/matches_data/239/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2025-2026",
+        "url": "https://data.7msport.com/history_matches_data/2025-2026/239/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2024-2025",
+        "url": "https://data.7msport.com/history_matches_data/2024-2025/239/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2023-2024",
+        "url": "https://data.7msport.com/history_matches_data/2023-2024/239/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2022-2023",
+        "url": "https://data.7msport.com/history_matches_data/2022-2023/239/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2021-2022",
+        "url": "https://data.7msport.com/history_matches_data/2021-2022/239/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2020-2021",
+        "url": "https://data.7msport.com/history_matches_data/2020-2021/239/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2019-2020",
+        "url": "https://data.7msport.com/history_matches_data/2019-2020/239/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2018-2019",
+        "url": "https://data.7msport.com/history_matches_data/2018-2019/239/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2017-2018",
+        "url": "https://data.7msport.com/history_matches_data/2017-2018/239/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2016-2017",
+        "url": "https://data.7msport.com/history_matches_data/2016-2017/239/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2015-2016",
+        "url": "https://data.7msport.com/history_matches_data/2015-2016/239/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2014-2015",
+        "url": "https://data.7msport.com/history_matches_data/2014-2015/239/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2013-2014",
+        "url": "https://data.7msport.com/history_matches_data/2013-2014/239/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2012-2013",
+        "url": "https://data.7msport.com/history_matches_data/2012-2013/239/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2011-2012",
+        "url": "https://data.7msport.com/history_matches_data/2011-2012/239/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2010-2011",
+        "url": "https://data.7msport.com/history_Matches_Data/2010-2011/239/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2009-2010",
+        "url": "https://data.7msport.com/history_Matches_Data/2009-2010/239/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2008-2009",
+        "url": "https://data.7msport.com/history_Matches_Data/2008-2009/239/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2007-2008",
+        "url": "https://data.7msport.com/history_Matches_Data/2007-2008/239/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2006-2007",
+        "url": "https://data.7msport.com/history_Matches_Data/2006-2007/239/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2005-2006",
+        "url": "https://data.7msport.com/history_Matches_Data/2005-2006/239/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2004-2005",
+        "url": "https://data.7msport.com/history_Matches_Data/2004-2005/239/en/index.shtml",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "id": "1032",
+    "name": "SER D2",
+    "seasons": [
+      {
+        "year": "current",
+        "url": "https://data.7msport.com/matches_data/1032/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2025-2026",
+        "url": "https://data.7msport.com/history_matches_data/2025-2026/1032/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2024-2025",
+        "url": "https://data.7msport.com/history_matches_data/2024-2025/1032/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2023-2024",
+        "url": "https://data.7msport.com/history_matches_data/2023-2024/1032/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2022-2023",
+        "url": "https://data.7msport.com/history_matches_data/2022-2023/1032/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2021-2022",
+        "url": "https://data.7msport.com/history_matches_data/2021-2022/1032/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2020-2021",
+        "url": "https://data.7msport.com/history_matches_data/2020-2021/1032/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2019-2020",
+        "url": "https://data.7msport.com/history_matches_data/2019-2020/1032/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2018-2019",
+        "url": "https://data.7msport.com/history_matches_data/2018-2019/1032/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2017-2018",
+        "url": "https://data.7msport.com/history_matches_data/2017-2018/1032/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2016-2017",
+        "url": "https://data.7msport.com/history_matches_data/2016-2017/1032/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2015-2016",
+        "url": "https://data.7msport.com/history_matches_data/2015-2016/1032/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2014-2015",
+        "url": "https://data.7msport.com/history_matches_data/2014-2015/1032/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2013-2014",
+        "url": "https://data.7msport.com/history_matches_data/2013-2014/1032/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2012-2013",
+        "url": "https://data.7msport.com/history_matches_data/2012-2013/1032/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2011-2012",
+        "url": "https://data.7msport.com/history_matches_data/2011-2012/1032/en/index.shtml",
+        "completed": false
+      },
+      {
+        "year": "2010-2011",
+        "url": "https://data.7msport.com/history_Matches_Data/2010-2011/1032/en/index.shtml",
         "completed": false
       }
     ]
