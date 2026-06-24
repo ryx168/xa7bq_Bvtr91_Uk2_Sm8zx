@@ -36,15 +36,10 @@ jobs:
             echo "${{ secrets.GOOGLE_DRIVE_TOKEN }}" | base64 --decode > token.pickle
           fi
 
-      - name: Fetch Analyst Data
+      - name: Fetch and Upload Incremental Analyst Data
         run: |
-          echo "Fetching historical reference data (analyst refs) for all active matches..."
-          python public/data/auto_fetch_all_references.py || true
-
-      - name: Upload Analyst Data to Google Drive
-        run: |
-          echo "Uploading refs folder to Google Drive..."
-          python scripts/upload_folder_to_drive.py public/sports/refs --name "analyst refs backup" || true
+          echo "Running incremental analyst data fetcher..."
+          python scripts/sync_analyst_incremental.py || true
 
       - name: Sync to Local Repository (Commit and Push)
         run: |
