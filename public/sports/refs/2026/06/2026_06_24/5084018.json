@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5084018",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "21/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Heidelberg Utd Women\\s Hist",
+    "title": "Heidelberg Utd Women's 1-3 Box Hill United Women's",
+    "homeTeam": "Heidelberg Utd Women's",
+    "awayTeam": "Box Hill United Women's",
+    "score": "1-3",
+    "matchId": "5038430",
+    "targetMatchId": "5084018",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "06/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Heidelberg Utd Women\\s Hist",
+    "title": "South Melbourne Women's 2-1 Heidelberg Utd Women's",
+    "homeTeam": "South Melbourne Women's",
+    "awayTeam": "Heidelberg Utd Women's",
+    "score": "2-1",
+    "matchId": "5038428",
+    "targetMatchId": "5084018",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "30/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Heidelberg Utd Women\\s Hist",
+    "title": "Heidelberg Utd Women's 0-1 Melbourne Victory FC Youth Women's",
+    "homeTeam": "Heidelberg Utd Women's",
+    "awayTeam": "Melbourne Victory FC Youth Women's",
+    "score": "0-1",
+    "matchId": "5038417",
+    "targetMatchId": "5084018",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

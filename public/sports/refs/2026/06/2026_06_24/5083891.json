@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5083891",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "29/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Liaoning Shengjing Xinrui Hist",
+    "title": "Liaoning Shengjing Xinrui 4-0 Benxi Qingfan",
+    "homeTeam": "Liaoning Shengjing Xinrui",
+    "awayTeam": "Benxi Qingfan",
+    "score": "4-0",
+    "matchId": "5070744",
+    "targetMatchId": "5083891",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "26/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Liaoning Shengjing Xinrui Hist",
+    "title": "Xingtai Wanshuai 2-0 Liaoning Shengjing Xinrui",
+    "homeTeam": "Xingtai Wanshuai",
+    "awayTeam": "Liaoning Shengjing Xinrui",
+    "score": "2-0",
+    "matchId": "5068968",
+    "targetMatchId": "5083891",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "24/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Liaoning Shengjing Xinrui Hist",
+    "title": "Liaoning Shengjing Xinrui 1-1 Heilongjiang Longyue Ice City",
+    "homeTeam": "Liaoning Shengjing Xinrui",
+    "awayTeam": "Heilongjiang Longyue Ice City",
+    "score": "1-1",
+    "matchId": "5068678",
+    "targetMatchId": "5083891",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
