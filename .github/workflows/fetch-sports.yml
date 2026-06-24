@@ -56,8 +56,8 @@ jobs:
             # 1. Fetch Live Scores from fen.js and csxl.js (direct from 7msport)
             python public/data/fetch_live_reference.py || true
             
-            # 2. Upload Sports Data to Google Drive (excluding the massive refs directory)
-            python scripts/upload_folder_to_drive.py public/sports --name "sports data backup" --exclude "refs" || true
+            # 2. Upload Sports Data to Google Drive (excluding the massive refs directory and local scraper dirs)
+            python scripts/upload_folder_to_drive.py public/sports --name "sports data backup" --exclude "refs/*" --exclude "sportsinteraction/*" --exclude "playnow/*" || true
             
             echo "Sleeping for 3 minutes..."
             sleep 180
