@@ -1,4 +1,4 @@
-name: Scrape 7mSport Leagues to Google Drive
+name: Scrape Leagues 
 
 on:
   schedule:
