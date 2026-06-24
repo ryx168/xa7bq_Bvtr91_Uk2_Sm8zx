@@ -122,9 +122,18 @@ const processMatchGoals = async (m, folderId) => {
                 process.exit(0);
             }
 
+            const outPath = path.join(leagueDir, `${season.year}.json`);
+            let forceScrape = false;
+            if (fs.existsSync(outPath)) {
+                let content = fs.readFileSync(outPath, 'utf8').trim();
+                if (content === '[]' || content === '') {
+                    forceScrape = true;
+                }
+            }
+
             // 'current' year implies the live active season, which updates constantly. We scrape it every time.
-            // Historical years are static, if completed, we skip them.
-            if (season.completed && season.year !== 'current') {
+            // Historical years are static, if completed, we skip them unless data is empty.
+            if (season.completed && season.year !== 'current' && !forceScrape) {
                 continue;
             }
 
@@ -137,11 +146,11 @@ const processMatchGoals = async (m, folderId) => {
                 const matches = await page.evaluate((leagueGroup) => {
                     let results = [];
                     try {
-                        let Tmp_bh_Arr = window.Tmp_bh_Arr || [];
-                        let TeamA_Arr = window.TeamA_Arr || [];
-                        let TeamB_Arr = window.TeamB_Arr || [];
-                        let Scores_Arr = window.Scores_Arr || [];
-                        let Time_Arr = window.Time_Arr || [];
+                        let Tmp_bh_Arr = window.Tmp_bh_Arr || window.live_bh_arr || window.Match_bh_arr || [];
+                        let TeamA_Arr = window.TeamA_Arr || window.TeamA_arr || [];
+                        let TeamB_Arr = window.TeamB_Arr || window.TeamB_arr || [];
+                        let Scores_Arr = window.Scores_Arr || window.score_arr || [];
+                        let Time_Arr = window.Time_Arr || window.Start_time_arr || [];
                         
                         for (let i = 0; i < Tmp_bh_Arr.length; i++) {
                             let matchId = Tmp_bh_Arr[i];
@@ -158,7 +167,7 @@ const processMatchGoals = async (m, folderId) => {
                             }
                             
                             let tStr = typeof Time_Arr[i] === 'string' ? Time_Arr[i] : (Array.isArray(Time_Arr[i]) ? Time_Arr[i].join(',') : '');
-                            let t = tStr.split(',');
+                            let t = tStr.split(/[, \-\:]/);
                             
                             let year = t[0] || '2026';
                             let month = parseInt(t[1] || '1');
@@ -203,7 +212,6 @@ const processMatchGoals = async (m, folderId) => {
                     await Promise.all(batch.map(m => processMatchGoals(m, league.id)));
                 }
 
-                const outPath = path.join(leagueDir, `${season.year}.json`);
                 fs.writeFileSync(outPath, JSON.stringify(matches, null, 2));
                 console.log(`Saved ${outPath}`);
 
