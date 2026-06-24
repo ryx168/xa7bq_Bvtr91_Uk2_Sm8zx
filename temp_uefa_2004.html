@@ -1,0 +1,1009 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>UEFA Cup (UC)2005 Data</title>
+<link href="../../matches_style.css" rel="stylesheet" type="text/css">
+<script language="javascript" src="/js/open_link.js"></script>
+<style type="text/css">
+.lsm3 {
+	border: 1px solid #FFFFFF;
+	background-color: #330033;
+	color: #FFFFFF;
+	height: 16px;
+	cursor: hand;
+	font-size: 12px;
+	padding-top: 3px;
+}
+.lst1 {
+	padding-left: 12px;
+	padding-top: 4px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #FFFFFF;
+	background-color: #330033;
+}
+.lst8 {
+	background-color: #330033;
+	color: #FFFFFF;
+}
+.lst9 {
+	background-color: #330033;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 19px;
+	wdith: 144px;
+	text-align: center;
+	padding-top: 4px;
+}
+</style>
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false">
+<div id="overDiv" style="z-index: 1; position: absolute"></div>
+<script language="javascript" src="/js/overlib.js"></script>
+<div id="all">
+<Script language="javascript" src="/include/datatopmenu_en.js"></script>
+<Script language="javascript">
+function changeLanguage()
+{
+	var ourl = location.href.substring(0, location.href.lastIndexOf("/"));
+	ourl = ourl.substring(0, ourl.lastIndexOf("/")); 
+	var str = '<img src="//img.7m.com.cn/img4/l_but3_1.gif" border="0">';
+	document.write(str);
+}
+
+function headImg()
+{
+	if (hk == 1)
+		document.write('<img src="//img.7m.com.cn/dataimg/matches_data/share_img/top_best1.jpg" border="0" width="580" height="45"><img src="//img.7m.com.cn/dataimg/analyse/share_img/analyse_top4.jpg" border="0" width="192" height="45">');
+	else
+		document.write('<img src="//img.7m.com.cn/dataimg/matches_data/share_img/top_best1.jpg" border="0" width="580" height="45"><img src="//img.7m.com.cn/dataimg/matches_data/share_img/top_best2.jpg" border="0" width="192" height="45">');
+}
+
+function rightImg()
+{
+	if (hk == 1)
+		document.write('<tr><td width="100%" style="background: url(\'//img.7m.com.cn/dataimg/matches_data/share_img/le_bg2.gif\') no-repeat center top; height: 56px;"></td></tr>');
+	else
+		document.write('<tr><td width="100%" style="background: url(\'//img.7m.com.cn/dataimg/matches_data/share_img/le_bg1.gif\') no-repeat center top; height: 56px;"></td></tr>');
+}
+
+function hideOdds()
+{
+	return;
+	if (hk == 0)
+	{
+	  	var obj = document.getElementById("odds_tb");
+	  	if (obj != null)
+	  		obj.style.display = "none";
+	}	
+}
+</Script>
+<table border="0" cellpadding="0" cellspacing="0" id="leftmove" style="position:absolute;visibility: visible;z-index:100" class="noprint"><tr><td></td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" id="rightmove" style="position: absolute;visibility: visible;z-index:200" class="noprint"><tr><td></td></tr></table>
+<script language="javascript" src="/banner/move_ad.js"></script>
+<table border="0" cellpadding="2" cellspacing="0" width="772">
+  <tr>
+    <td width="100%" height="2" bgcolor="#91844D"></td>
+  </tr>
+  <tr>
+    <td width="100%" height="2" bgcolor="#FFFFFF"></td>
+  </tr>
+  <tr>
+    <td width="100%" height="19" bgcolor="#91844D" align="right" style="padding-top: 4px; padding-right: 12px;"><script language="javascript">topMenu();</script></td>
+  </tr>
+  <tr>
+    <td width="100%" height="2" bgcolor="#FFFFFF"></td>
+  </tr>
+  <tr>
+    <td width="100%" height="2" bgcolor="#91844D"></td>
+  </tr>
+  <tr>
+    <td width="100%" height="1" bgcolor="#FFFFFF"></td>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="772">
+  <tr>
+    <td width="100%"><script language="javascript">headImg();</script></td>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="772">
+  <tr>
+    <td class="cou_tm9" valign="top">
+    <table border="0" cellpadding="0" cellspacing="0" width="579" class="cou_tm8">
+      <tr>
+        <td width="399"><div id="coub_tt1_en">2005 UEFA Cup</div></td>
+        <td width="51"><script language="javascript">changeLanguage();</script></td>
+      </tr>
+    </table>
+    <div align="center">
+    <table border="1" cellpadding="2" cellspacing="0" bordercolor="#FFFFFF" width="566">
+  <tr>
+    <td width="100%" class="lst1" id="Class_type"></td>
+  </tr>
+</table>
+<div id="c_Table"></div>
+<table border="1" cellpadding="2" cellspacing="0" bordercolor="#FFFFFF" bgcolor="#FFFFFF" width="566">
+    <tr>
+        <td>Last Update:2005-6-24 18:18:17</td>
+    </tr>
+</table>
+<script language="javascript">
+var mid = 0;
+var Matches = new Array();
+var currentRun = new Array();
+var TableHead = '<table border="1" cellpadding="2" cellspacing="0" bordercolor="#FFFFFF" bgcolor="#FFFFFF" width="566" id="s1">' +
+				'	<tr align="middle" id="s1_tr1">' +
+				'		<td width="28">Run</td>' +
+			    '		<td width="98">Date</td>' +
+			    '		<td width="162">Team</td>' +
+			    '		<td width="30"></td>' +
+			    '		<td width="162">Team</td>' +
+			    '		<td width="30">Analyse</td>' +
+			    '	</tr>';
+var StatTable = '<table borderColor="#000000" cellspacing="3" cellpadding="2" width="566" bgColor="#ffffff" border="0">' +
+				'  <tr align="middle" bgColor="#ffcc00">' +
+				'    <td width="8%">Rand</td>' +
+				'    <td width="30%">Team</td>' +
+				'    <td width="5%">Matches</td>' +
+				'    <td width="5%">Win</td>' +
+				'    <td width="5%">Deuce</td>' +
+				'    <td width="5%">Loss</td>' +
+				'    <td width="5%">Get</td>' +
+				'    <td width="5%">Miss</td>' +
+				'    <td width="10%">Integral</td>' +
+				'    <td width="15%">&nbsp;</td>' +
+				'  </tr>';
+var StatHead = 	'<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#FFFFFF" width="560">' +
+				'  <tr>' +
+				'    <td width="100%" style="background: url(\'//img.7m.com.cn/img2/jfp/jfp_gb2.gif\');">' +
+				'    <table border="0" cellpadding="0" cellspacing="0">' +
+				'      <tr>' +
+				'        <td style="font-size: 12px; font-weight: bold; font-family: Tahoma; background: url(\'//img.7m.com.cn/img2/jfp/jfp_gb1.jpg\'); letter-spacing: 2px; text-align: center; padding-top: 3px;">��Integral��</td>' +
+				'        <td width="30"><img src="//img.7m.com.cn/img2/jfp/jfp_bj1.gif" border="0"></td>' +
+				'        <td><img src="//img.7m.com.cn/img2/jfp/jfp_bu1_1_en.gif" border="0" id="but1" style="cursor: hand;" onClick="but1.src=\'//img.7m.com.cn/img2/jfp/jfp_bu1_1_en.gif\'; but2.src=\'//img.7m.com.cn/img2/jfp/jfp_bu2_1_en.gif\'; but3.src=\'//img.7m.com.cn/img2/jfp/jfp_bu3_1_en.gif\';Show_Standings(0);" title="Total Integral Tables Please Click Here"><img src="//img.7m.com.cn/img2/jfp/jfp_bu2_1_en.gif" border="0" id="but2" style="cursor: hand;" onClick="but1.src=\'//img.7m.com.cn/img2/jfp/jfp_bu1_2_en.gif\'; but2.src=\'//img.7m.com.cn/img2/jfp/jfp_bu2_2_en.gif\'; but3.src=\'//img.7m.com.cn/img2/jfp/jfp_bu3_2_en.gif\';Show_Standings(1);" title="Home Integral Tables Please Click Here"><img src="//img.7m.com.cn/img2/jfp/jfp_bu3_1_en.gif" border="0" id="but3" style="cursor: hand;" onClick="but1.src=\'//img.7m.com.cn/img2/jfp/jfp_bu1_3_en.gif\'; but2.src=\'//img.7m.com.cn/img2/jfp/jfp_bu2_3_en.gif\'; but3.src=\'//img.7m.com.cn/img2/jfp/jfp_bu3_3_en.gif\';Show_Standings(2);" title="Away Integral Tables Please Click Here"></td>' +
+				'      </tr>' +
+				'    </table>' +
+				'    </td>' +
+				'  </tr>' +
+				'  <tr>' +
+				'    <td width="100%" height="1"></td>' +
+				'  </tr>' +
+				'  <tr>' +
+				'    <td width="100%" id="s_std">';
+	Matches[3] = new Array()
+	Matches[3][0] = '<table border="1" cellpadding="1" cellspacing="0" bordercolor="#E9E9DF" bgcolor="#FFFFFF" width="566">' +
+'<tr align="middle">' +
+	'<td class="lsm2" gf="0" onclick="javascript:ShowGroups(3,1)" onmouseover="this.className=\'lsm1\'" onmouseout="if (this.gf==\'0\') this.className=\'lsm2\'" onblur="this.className=\'lsm2\';this.gf=\'0\'" onfocus="this.className=\'lsm3\';this.gf=\'1\'">Groups A</td>' +
+	'<td class="lsm2" gf="0" onclick="javascript:ShowGroups(3,2)" onmouseover="this.className=\'lsm1\'" onmouseout="if (this.gf==\'0\') this.className=\'lsm2\'" onblur="this.className=\'lsm2\';this.gf=\'0\'" onfocus="this.className=\'lsm3\';this.gf=\'1\'">Groups B</td>' +
+	'<td class="lsm2" gf="0" onclick="javascript:ShowGroups(3,3)" onmouseover="this.className=\'lsm1\'" onmouseout="if (this.gf==\'0\') this.className=\'lsm2\'" onblur="this.className=\'lsm2\';this.gf=\'0\'" onfocus="this.className=\'lsm3\';this.gf=\'1\'">Groups C</td>' +
+	'<td class="lsm2" gf="0" onclick="javascript:ShowGroups(3,4)" onmouseover="this.className=\'lsm1\'" onmouseout="if (this.gf==\'0\') this.className=\'lsm2\'" onblur="this.className=\'lsm2\';this.gf=\'0\'" onfocus="this.className=\'lsm3\';this.gf=\'1\'">Groups D</td>' +
+	'<td class="lsm2" gf="0" onclick="javascript:ShowGroups(3,5)" onmouseover="this.className=\'lsm1\'" onmouseout="if (this.gf==\'0\') this.className=\'lsm2\'" onblur="this.className=\'lsm2\';this.gf=\'0\'" onfocus="this.className=\'lsm3\';this.gf=\'1\'">Groups E</td>' +
+	'<td class="lsm2" gf="0" onclick="javascript:ShowGroups(3,6)" onmouseover="this.className=\'lsm1\'" onmouseout="if (this.gf==\'0\') this.className=\'lsm2\'" onblur="this.className=\'lsm2\';this.gf=\'0\'" onfocus="this.className=\'lsm3\';this.gf=\'1\'">Groups F</td>' +
+	'<td class="lsm2" gf="0" onclick="javascript:ShowGroups(3,7)" onmouseover="this.className=\'lsm1\'" onmouseout="if (this.gf==\'0\') this.className=\'lsm2\'" onblur="this.className=\'lsm2\';this.gf=\'0\'" onfocus="this.className=\'lsm3\';this.gf=\'1\'">Groups G</td>' +
+	'<td class="lsm2" gf="0" onclick="javascript:ShowGroups(3,8)" onmouseover="this.className=\'lsm1\'" onmouseout="if (this.gf==\'0\') this.className=\'lsm2\'" onblur="this.className=\'lsm2\';this.gf=\'0\'" onfocus="this.className=\'lsm3\';this.gf=\'1\'">Groups H</td>' +
+	'	</tr>' +
+	'</table>' +
+	'<div id="Groups_Table">' +
+	'</div>' +
+	'<table width="566" border="0" cellpadding="2" cellsapcing="1">' +
+	'	<tr>' +
+	'		<td></td>' +
+	'	</tr>' +
+	'</table>';
+	Matches[3][1] = '<tr>' +
+'   <td colspan="11" style="font-weight: bold; padding-left: 12px; letter-spacing: 4px; background-color: #EEEEEE;">Group A</td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">1</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(407)"><font color="#000000"><font color=Red><b>Feyenoord</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">6</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#33ccff">7</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">2</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(123)"><font color="#000000"><font color=Red><b>Schalke 04</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">5</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#33ccff">7</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">3</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(512)"><font color="#000000"><font color=Red><b>Basel</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">5</td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#33ccff">7</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">4</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(401)"><font color="#000000">Ferencvarosi TC</font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#e0e0e0">5</td>' +
+'	<td bgColor="#33ccff">4</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">5</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(359)"><font color="#000000">Hearts</font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">6</td>' +
+'	<td bgColor="#33ccff">3</td>' +
+'	<td></td>' +
+'</tr>' +
+'';
+	Matches[3][2] = '<tr>' +
+'   <td colspan="11" style="font-weight: bold; padding-left: 12px; letter-spacing: 4px; background-color: #EEEEEE;">Group B</td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">1</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(476)"><font color="#000000"><font color=Red><b>Bilbao</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">11</td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#33ccff">9</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">2</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(684)"><font color="#000000"><font color=Red><b>Steaua Bucuresti</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#33ccff">6</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">3</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(192)"><font color="#000000"><font color=Red><b>Parma</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">5</td>' +
+'	<td bgColor="#e0e0e0">6</td>' +
+'	<td bgColor="#33ccff">6</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">4</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(478)"><font color="#000000">Besiktas JK</font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">7</td>' +
+'	<td bgColor="#e0e0e0">7</td>' +
+'	<td bgColor="#33ccff">4</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">5</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(661)"><font color="#000000">Standard Liege</font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">11</td>' +
+'	<td bgColor="#33ccff">4</td>' +
+'	<td></td>' +
+'</tr>' +
+'';
+	Matches[3][3] = '<tr>' +
+'   <td colspan="11" style="font-weight: bold; padding-left: 12px; letter-spacing: 4px; background-color: #EEEEEE;">Group C</td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">1</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(697)"><font color="#000000"><font color=Red><b>FC Dnipro</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">7</td>' +
+'	<td bgColor="#e0e0e0">5</td>' +
+'	<td bgColor="#33ccff">9</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">2</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(167)"><font color="#000000"><font color=Red><b>Zaragoza</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">5</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#33ccff">7</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">3</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(807)"><font color="#000000"><font color=Red><b>Austria Wien</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#33ccff">7</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">4</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(450)"><font color="#000000">Club Brugge</font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">5</td>' +
+'	<td bgColor="#e0e0e0">5</td>' +
+'	<td bgColor="#33ccff">5</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">5</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(55)"><font color="#000000">Utrecht</font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">7</td>' +
+'	<td bgColor="#33ccff">0</td>' +
+'	<td></td>' +
+'</tr>' +
+'';
+	Matches[3][4] = '<tr>' +
+'   <td colspan="11" style="font-weight: bold; padding-left: 12px; letter-spacing: 4px; background-color: #EEEEEE;">Group D</td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">1</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(200)"><font color="#000000"><font color=Red><b>Newcastle</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">8</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#33ccff">10</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">2</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(100)"><font color="#000000"><font color=Red><b>Sochaux</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#33ccff">9</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">3</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(117)"><font color="#000000"><font color=Red><b>Sporting Lisbon</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">9</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#33ccff">7</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">4</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(777)"><font color="#000000">Panionios</font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#e0e0e0">6</td>' +
+'	<td bgColor="#e0e0e0">8</td>' +
+'	<td bgColor="#33ccff">3</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">5</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(423)"><font color="#000000">Dinamo Tbilisi</font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">13</td>' +
+'	<td bgColor="#33ccff">0</td>' +
+'	<td></td>' +
+'</tr>' +
+'';
+	Matches[3][5] = '<tr>' +
+'   <td colspan="11" style="font-weight: bold; padding-left: 12px; letter-spacing: 4px; background-color: #EEEEEE;">Group E</td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">1</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(226)"><font color="#000000"><font color=Red><b>Middlesbrough</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">6</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#33ccff">9</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">2</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(63)"><font color="#000000"><font color=Red><b>Villarreal</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">8</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#33ccff">8</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">3</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(506)"><font color="#000000"><font color=Red><b>Partizan Belgrade</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">7</td>' +
+'	<td bgColor="#e0e0e0">6</td>' +
+'	<td bgColor="#33ccff">5</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">4</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(304)"><font color="#000000">Lazio</font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">5</td>' +
+'	<td bgColor="#e0e0e0">7</td>' +
+'	<td bgColor="#33ccff">3</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">5</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(1313)"><font color="#000000">AS Egaleo Aigaleo Athens</font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">11</td>' +
+'	<td bgColor="#33ccff">1</td>' +
+'	<td></td>' +
+'</tr>' +
+'';
+	Matches[3][6] = '<tr>' +
+'   <td colspan="11" style="font-weight: bold; padding-left: 12px; letter-spacing: 4px; background-color: #EEEEEE;">Group F</td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">1</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(558)"><font color="#000000"><font color=Red><b>AZ Alkmaar</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">6</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#33ccff">9</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">2</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(193)"><font color="#000000"><font color=Red><b>Auxerre</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">7</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#33ccff">7</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">3</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(378)"><font color="#000000"><font color=Red><b>Grazer AK</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">5</td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#33ccff">7</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">4</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(377)"><font color="#000000">Glasgow Rangers</font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">8</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#33ccff">6</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">5</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(574)"><font color="#000000">Amica Wronki</font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#e0e0e0">16</td>' +
+'	<td bgColor="#33ccff">0</td>' +
+'	<td></td>' +
+'</tr>' +
+'';
+	Matches[3][7] = '<tr>' +
+'   <td colspan="11" style="font-weight: bold; padding-left: 12px; letter-spacing: 4px; background-color: #EEEEEE;">Group G</td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">1</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(121)"><font color="#000000"><font color=Red><b>Stuttgart</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">10</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#33ccff">9</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">2</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(474)"><font color="#000000"><font color=Red><b>Benfica</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">9</td>' +
+'	<td bgColor="#e0e0e0">5</td>' +
+'	<td bgColor="#33ccff">9</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">3</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(364)"><font color="#000000"><font color=Red><b>SC Heerenveen</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">6</td>' +
+'	<td bgColor="#e0e0e0">6</td>' +
+'	<td bgColor="#33ccff">7</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">4</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(169)"><font color="#000000">Dinamo Zagreb</font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">9</td>' +
+'	<td bgColor="#e0e0e0">7</td>' +
+'	<td bgColor="#33ccff">4</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">5</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(485)"><font color="#000000">Beveren</font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">15</td>' +
+'	<td bgColor="#33ccff">0</td>' +
+'	<td></td>' +
+'</tr>' +
+'';
+	Matches[3][8] = '<tr>' +
+'   <td colspan="11" style="font-weight: bold; padding-left: 12px; letter-spacing: 4px; background-color: #EEEEEE;">Group H</td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">1</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(284)"><font color="#000000"><font color=Red><b>Lille</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">5</td>' +
+'	<td bgColor="#e0e0e0">3</td>' +
+'	<td bgColor="#33ccff">9</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">2</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(49)"><font color="#000000"><font color=Red><b>Sevilla</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">6</td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#33ccff">7</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">3</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(923)"><font color="#000000"><font color=Red><b>TSV Alemannia Aachen</b></font></font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">5</td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#33ccff">7</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">4</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(134)"><font color="#000000">Zenit St.Petersburg</font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">2</td>' +
+'	<td bgColor="#e0e0e0">1</td>' +
+'	<td bgColor="#e0e0e0">9</td>' +
+'	<td bgColor="#e0e0e0">6</td>' +
+'	<td bgColor="#33ccff">5</td>' +
+'	<td></td>' +
+'</tr>' +
+'	<tr align="middle">' +
+'<td bgColor="#FFFFFF">5</td>' +
+'<td bgColor="#FFFFFF"><a href="javascript:Team_en(599)"><font color="#000000">AEK Athens</font></a></td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">0</td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">4</td>' +
+'	<td bgColor="#e0e0e0">12</td>' +
+'	<td bgColor="#33ccff">0</td>' +
+'	<td></td>' +
+'</tr>' +
+'';
+
+var Start_time_arr = new Array("2004-7-13 23:00:00","2004-7-15 22:00:00","2004-7-15 23:00:00","2004-7-15 23:00:00","2004-7-15 23:00:00","2004-7-15 23:30:00","2004-7-15 23:59:00","2004-7-15 23:59:00","2004-7-15 23:59:00","2004-7-15 23:59:00","2004-7-16 0:30:00","2004-7-16 1:00:00","2004-7-16 1:00:00","2004-7-16 1:00:00","2004-7-16 1:15:00","2004-7-16 1:30:00","2004-7-16 2:00:00","2004-7-16 2:00:00","2004-7-16 2:00:00","2004-7-16 2:00:00","2004-7-16 2:00:00","2004-7-16 2:30:00","2004-7-16 2:45:00","2004-7-16 3:00:00","2004-7-16 3:15:00","2004-7-28 2:45:00","2004-7-29 21:00:00","2004-7-29 21:55:00","2004-7-29 22:30:00","2004-7-29 23:00:00","2004-7-29 23:00:00","2004-7-29 23:00:00","2004-7-29 23:30:00","2004-7-29 23:59:00","2004-7-29 23:59:00","2004-7-29 23:59:00","2004-7-29 23:59:00","2004-7-29 23:59:00","2004-7-29 23:59:00","2004-7-29 23:59:00","2004-7-30 1:00:00","2004-7-30 1:00:00","2004-7-30 1:00:00","2004-7-30 2:00:00","2004-7-30 2:00:00","2004-7-30 2:00:00","2004-7-30 2:00:00","2004-7-30 2:00:00","2004-7-30 2:30:00","2004-7-30 3:15:00","2004-8-10 23:59:00","2004-8-10 23:59:00","2004-8-10 23:59:00","2004-8-12 22:00:00","2004-8-12 22:30:00","2004-8-12 23:00:00","2004-8-12 23:00:00","2004-8-12 23:00:00","2004-8-12 23:30:00","2004-8-12 23:59:00","2004-8-12 23:59:00","2004-8-12 23:59:00","2004-8-12 23:59:00","2004-8-13 1:00:00","2004-8-13 1:00:00","2004-8-13 1:00:00","2004-8-13 1:00:00","2004-8-13 1:00:00","2004-8-13 1:00:00","2004-8-13 1:00:00","2004-8-13 1:00:00","2004-8-13 1:15:00","2004-8-13 2:00:00","2004-8-13 2:00:00","2004-8-13 2:00:00","2004-8-13 2:00:00","2004-8-13 2:00:00","2004-8-13 2:00:00","2004-8-13 2:05:00","2004-8-13 2:15:00","2004-8-13 2:45:00","2004-8-13 4:00:00","2004-8-26 22:30:00","2004-8-26 22:30:00","2004-8-26 23:00:00","2004-8-26 23:00:00","2004-8-26 23:00:00","2004-8-26 23:30:00","2004-8-26 23:59:00","2004-8-26 23:59:00","2004-8-26 23:59:00","2004-8-26 23:59:00","2004-8-26 23:59:00","2004-8-27 0:30:00","2004-8-27 0:45:00","2004-8-27 1:00:00","2004-8-27 1:00:00","2004-8-27 1:00:00","2004-8-27 1:00:00","2004-8-27 1:00:00","2004-8-27 1:00:00","2004-8-27 1:05:00","2004-8-27 1:30:00","2004-8-27 1:30:00","2004-8-27 1:30:00","2004-8-27 1:30:00","2004-8-27 1:45:00","2004-8-27 2:00:00","2004-8-27 2:00:00","2004-8-27 2:00:00","2004-8-27 2:00:00","2004-8-27 2:15:00","2004-8-27 2:45:00","2004-8-27 2:45:00","2004-9-16 21:30:00","2004-9-16 22:00:00","2004-9-16 22:55:00","2004-9-16 23:00:00","2004-9-16 23:59:00","2004-9-17 0:15:00","2004-9-17 0:30:00","2004-9-17 0:30:00","2004-9-17 1:00:00","2004-9-17 1:00:00","2004-9-17 1:00:00","2004-9-17 1:00:00","2004-9-17 1:00:00","2004-9-17 1:00:00","2004-9-17 1:30:00","2004-9-17 1:30:00","2004-9-17 2:00:00","2004-9-17 2:00:00","2004-9-17 2:00:00","2004-9-17 2:15:00","2004-9-17 2:15:00","2004-9-17 2:30:00","2004-9-17 2:30:00","2004-9-17 2:30:00","2004-9-17 2:30:00","2004-9-17 2:30:00","2004-9-17 2:45:00","2004-9-17 2:45:00","2004-9-17 2:45:00","2004-9-17 2:45:00","2004-9-17 3:00:00","2004-9-17 3:00:00","2004-9-17 3:00:00","2004-9-17 3:00:00","2004-9-17 3:00:00","2004-9-17 3:00:00","2004-9-17 3:00:00","2004-9-17 4:30:00","2004-9-17 4:30:00","2004-9-30 22:00:00","2004-9-30 23:00:00","2004-9-30 23:00:00","2004-9-30 23:59:00","2004-9-30 23:59:00","2004-9-30 23:59:00","2004-10-1 0:30:00","2004-10-1 1:00:00","2004-10-1 1:00:00","2004-10-1 1:00:00","2004-10-1 1:00:00","2004-10-1 1:30:00","2004-10-1 1:30:00","2004-10-1 1:30:00","2004-10-1 1:30:00","2004-10-1 2:00:00","2004-10-1 2:00:00","2004-10-1 2:15:00","2004-10-1 2:15:00","2004-10-1 2:15:00","2004-10-1 2:15:00","2004-10-1 2:30:00","2004-10-1 2:30:00","2004-10-1 2:30:00","2004-10-1 2:30:00","2004-10-1 2:30:00","2004-10-1 2:45:00","2004-10-1 2:45:00","2004-10-1 2:45:00","2004-10-1 2:45:00","2004-10-1 2:45:00","2004-10-1 3:00:00","2004-10-1 3:00:00","2004-10-1 3:00:00","2004-10-1 3:00:00","2004-10-1 3:00:00","2004-10-1 3:00:00","2004-10-1 3:30:00","2004-10-1 4:00:00","2004-10-22 2:05:00","2004-10-22 2:30:00","2004-11-5 3:30:00","2004-11-5 3:45:00","2004-11-26 1:15:00","2004-11-26 3:15:00","2004-12-2 3:45:00","2004-12-2 3:45:00","2004-12-17 3:45:00","2004-12-17 3:45:00","2004-10-22 1:15:00","2004-10-22 3:00:00","2004-11-5 2:00:00","2004-11-5 2:30:00","2004-11-26 2:15:00","2004-11-26 2:30:00","2004-12-2 3:45:00","2004-12-2 3:45:00","2004-12-17 3:45:00","2004-12-17 3:45:00","2004-10-22 0:30:00","2004-10-22 2:45:00","2004-11-5 2:15:00","2004-11-5 3:45:00","2004-11-26 1:45:00","2004-11-26 2:30:00","2004-12-2 3:45:00","2004-12-2 3:45:00","2004-12-17 3:45:00","2004-12-17 3:45:00","2004-10-21 23:59:00","2004-10-22 2:30:00","2004-11-5 3:30:00","2004-11-5 5:15:00","2004-11-26 1:00:00","2004-11-26 3:45:00","2004-12-2 3:45:00","2004-12-2 3:45:00","2004-12-17 3:45:00","2004-12-17 3:45:00","2004-10-22 0:15:00","2004-10-22 3:00:00","2004-11-5 2:00:00","2004-11-5 4:00:00","2004-11-26 4:00:00","2004-11-26 4:00:00","2004-12-3 3:45:00","2004-12-3 3:45:00","2004-12-16 3:45:00","2004-12-16 3:45:00","2004-10-22 2:30:00","2004-10-22 2:45:00","2004-11-5 1:45:00","2004-11-5 4:15:00","2004-11-26 0:30:00","2004-11-26 3:45:00","2004-12-3 3:45:00","2004-12-3 3:45:00","2004-12-16 3:45:00","2004-12-16 3:45:00","2004-10-22 2:45:00","2004-10-22 4:15:00","2004-11-5 1:15:00","2004-11-5 1:30:00","2004-11-26 4:00:00","2004-11-26 4:30:00","2004-12-3 3:45:00","2004-12-3 3:45:00","2004-12-16 3:45:00","2004-12-16 3:45:00","2004-10-21 23:59:00","2004-10-22 0:15:00","2004-11-5 3:45:00","2004-11-5 4:30:00","2004-11-26 1:00:00","2004-11-26 3:00:00","2004-12-3 3:45:00","2004-12-3 3:45:00","2004-12-16 3:45:00","2004-12-16 3:45:00","2005-2-16 23:59:00","2005-2-17 1:15:00","2005-2-17 2:00:00","2005-2-17 3:00:00","2005-2-17 3:30:00","2005-2-17 4:30:00","2005-2-17 5:15:00","2005-2-17 23:59:00","2005-2-18 1:30:00","2005-2-18 2:00:00","2005-2-18 2:00:00","2005-2-18 3:30:00","2005-2-18 3:30:00","2005-2-18 3:45:00","2005-2-18 3:45:00","2005-2-24 23:59:00","2005-2-25 1:00:00","2005-2-25 1:30:00","2005-2-25 2:00:00","2005-2-25 2:00:00","2005-2-25 2:30:00","2005-2-25 3:30:00","2005-2-25 3:45:00","2005-2-25 3:45:00","2005-2-25 3:45:00","2005-2-25 3:45:00","2005-2-25 3:45:00","2005-2-25 4:00:00","2005-2-25 4:30:00","2005-2-25 4:30:00","2005-2-25 4:30:00","2005-2-28 1:00:00","2005-3-10 23:59:00","2005-3-11 1:00:00","2005-3-11 1:00:00","2005-3-11 2:30:00","2005-3-11 3:30:00","2005-3-11 4:10:00","2005-3-11 4:30:00","2005-3-17 2:00:00","2005-3-17 3:30:00","2005-3-17 3:45:00","2005-3-17 23:59:00","2005-3-18 3:45:00","2005-3-18 3:45:00","2005-3-18 3:45:00","2005-3-18 3:45:00","2005-3-21 3:00:00","2005-4-8 0:30:00","2005-4-8 2:45:00","2005-4-8 2:45:00","2005-4-8 2:45:00","2005-4-15 2:30:00","2005-4-15 2:45:00","2005-4-15 2:45:00","2005-4-15 3:15:00","2005-4-29 3:00:00","2005-4-29 3:15:00","2005-5-6 0:45:00","2005-5-6 3:00:00","2005-5-19 2:45:00");
+var TeamA_bh_arr = new Array(1045,712,1063,690,1070,522,715,1072,39,425,1073,646,1062,653,720,353,1055,1068,597,1075,470,1066,1061,375,578,449,1064,1071,154,676,732,700,1056,423,416,577,727,22,61,424,714,1076,1065,1046,1074,250,1057,698,1067,38,1118,646,808,1063,715,1121,1070,22,717,1073,783,676,1169,126,506,653,1171,169,99,652,456,779,1168,574,485,469,375,1174,61,809,366,38,690,1056,290,1072,1040,1076,697,423,39,714,425,1172,134,815,578,1065,1120,353,684,696,98,562,506,1173,1046,71,1170,250,161,496,807,428,676,1169,365,312,134,123,385,99,783,786,378,684,652,815,55,1313,114,506,777,169,366,1070,661,1168,450,100,807,359,225,200,192,469,226,249,590,49,167,117,38,714,779,423,121,364,697,574,126,460,696,1120,455,488,284,478,558,923,512,1,562,250,962,485,466,599,407,1174,193,290,1102,809,377,54,401,304,474,369,476,63,407,123,359,401,123,512,401,407,512,359,684,476,192,478,684,661,478,476,661,192,697,167,55,807,697,450,807,167,450,55,423,777,200,117,423,100,117,777,100,200,1313,304,506,226,304,63,506,1313,63,226,574,193,378,558,574,377,558,193,377,378,485,474,121,169,474,364,169,485,364,121,134,923,284,49,134,599,49,923,599,284,506,168,188,579,192,350,117,342,378,215,402,512,923,364,770,697,123,558,684,100,807,121,226,200,407,193,167,284,474,49,63,476,506,770,168,807,284,226,49,684,558,200,215,117,192,193,167,63,215,200,807,63,558,192,193,117,192,117,215,558,117);
+var TeamB_bh_arr = new Array(1046,1065,1064,416,1071,423,154,449,727,698,700,1057,424,1067,1056,1074,250,676,714,1076,61,38,22,577,732,1072,1063,1070,715,1068,578,1073,720,522,690,375,39,1061,470,1062,597,1075,712,1045,353,1055,646,425,653,1066,250,98,134,290,1120,684,71,696,697,807,1065,496,1170,39,1062,714,1172,1076,1056,690,423,1173,161,1046,353,1072,562,425,815,1040,578,428,652,99,1063,469,809,169,717,456,126,653,1174,1171,808,61,366,783,715,485,1121,22,646,375,1062,779,574,1070,1169,1118,1168,676,1073,38,574,512,697,423,488,714,599,485,304,476,696,98,407,193,1,779,284,460,54,562,63,474,466,121,962,126,290,455,401,1174,250,478,1102,377,558,369,1120,809,923,123,1313,312,1168,1172,365,676,100,506,378,167,359,134,114,469,590,38,1169,55,169,192,450,99,661,385,652,200,815,807,226,117,249,777,225,783,1070,49,786,366,359,512,123,407,401,359,512,123,407,401,661,192,684,476,478,192,661,684,476,478,450,55,697,167,807,55,450,697,167,807,100,200,423,777,117,200,100,423,777,117,226,63,1313,304,506,226,63,304,1313,506,377,378,574,193,558,378,377,574,193,558,121,364,474,485,169,121,364,474,485,169,599,284,134,923,49,284,599,134,923,49,697,123,49,193,121,684,407,63,226,474,167,284,558,200,100,506,168,923,350,770,476,192,378,364,117,579,402,512,215,188,342,807,215,200,558,167,193,117,192,63,168,770,506,226,49,284,807,684,193,117,192,558,63,807,215,200,215,558,192,117,215);
+var TeamA_arr = new Array("MIKA Ashtarak","Shirak","Tbilisi","Ekranas","Banska Bystrica","BATE Borisov","FC Nistru Otaci Unisport","Levadia Tallinn","Haka","Partizani Tirana","Illichivets","Omonia Nicosia FC","FC Otelul Galati","Osters","FC Santa Coloma","Vaduz","Sileks","Toftir B68","B36 Torshavn","Marsaxlokk FC","Portadown","Haverfordwest County","S.S Pennarossa","Glentoran FC","IA Akranes","Bohemians","FC Shamkir","FK Karabakh","Shakhtior Soligorsk","Ventspils FK","TVMK Tallinn","Banants","FK Modrica","Dinamo Tbilisi","F91 Dudelange","Allianssi","etzella ettelbruck","FK Zeljeznicar","Zalgiris Vilnius","KS Dinamo Tirana","Liepajas Metalurgs","NK Primorje","FC Tiligul Tiraspol","Kispest Honved","Longford Town","Maribor","Sloga Jugomagnat","Birkirkara","Total Network Solutions FC","Hafnarfjordur  FH","FK Buducnost Podgorica","Omonia Nicosia FC","FC Superfund","Tbilisi","FC Nistru Otaci Unisport","Zeleznik","Banska Bystrica","FK Zeljeznicar","Petrzalka","Illichivets","Metalurh Donetsk","Ventspils FK","FC Terek Grozny","Stabaek","Partizan Belgrade","Osters","AEK Larnaca","Dinamo Zagreb","Levski Sofia","Odd Grenland","Slavia Mozyr","Genclerbirligi","Ujpesti TE","Amica Wronki","Beveren","Bodo Glimt","Glentoran FC","Hapoel Bnei Sakhnin FC","Zalgiris Vilnius","Rapid Wien","Hammarby","Hafnarfjordur  FH","Ekranas","FK Modrica","Legia Warsawa","Levadia Tallinn","Rubin Kazan","NK Primorje","FC Dnipro","Dinamo Tbilisi","Haka","Liepajas Metalurgs","Partizani Tirana","Maccabi Petah Tikva FC","Zenit St.Petersburg","Aalborg BK","IA Akranes","FC Tiligul Tiraspol","SK Sigma Olomouc","Vaduz","Steaua Bucuresti","Litex Lovech","CSKA Sofia","Elfsborg","Partizan Belgrade","NK Rijeka","Kispest Honved","FC Wil 1900","Lech Poznan","Maribor","Servette","Brondby","Austria Wien","Dunfermline","Ventspils FK","FC Terek Grozny","Maccabi Haifa","Wisla Krakow","Zenit St.Petersburg","Schalke 04","Gorica","Levski Sofia","Metalurh Donetsk","Trabzonspor","Grazer AK","Steaua Bucuresti","Odd Grenland","Aalborg BK","Utrecht","AS Egaleo Aigaleo Athens","Shelbourne","Partizan Belgrade","Panionios","Dinamo Zagreb","Hammarby","Banska Bystrica","Standard Liege","Ujpesti TE","Club Brugge","Sochaux","Austria Wien","Hearts","Millwall","Newcastle","Parma","Bodo Glimt","Middlesbrough","Maritimo","PAOK Saloniki","Sevilla","Zaragoza","Sporting Lisbon","Hafnarfjordur  FH","Liepajas Metalurgs","Genclerbirligi","Dinamo Tbilisi","Stuttgart","SC Heerenveen","FC Dnipro","Amica Wronki","Stabaek","Dinamo Bucuresti","Litex Lovech","SK Sigma Olomouc","Braga","Crvena Zvezda","Lille","Besiktas JK","AZ Alkmaar","TSV Alemannia Aachen","Basel","Djurgardens","Elfsborg","Maribor","Chateauroux","Beveren","Bochum","AEK Athens","Feyenoord","Hapoel Bnei Sakhnin FC","Auxerre","Legia Warsawa","Banik Ostrava","Rapid Wien","Glasgow Rangers","Udinese","Ferencvarosi TC","Lazio","Benfica","Nacional","Bilbao","Villarreal","Feyenoord","Schalke 04","Hearts","Ferencvarosi TC","Schalke 04","Basel","Ferencvarosi TC","Feyenoord","Basel","Hearts","Steaua Bucuresti","Bilbao","Parma","Besiktas JK","Steaua Bucuresti","Standard Liege","Besiktas JK","Bilbao","Standard Liege","Parma","FC Dnipro","Zaragoza","Utrecht","Austria Wien","FC Dnipro","Club Brugge","Austria Wien","Zaragoza","Club Brugge","Utrecht","Dinamo Tbilisi","Panionios","Newcastle","Sporting Lisbon","Dinamo Tbilisi","Sochaux","Sporting Lisbon","Panionios","Sochaux","Newcastle","AS Egaleo Aigaleo Athens","Lazio","Partizan Belgrade","Middlesbrough","Lazio","Villarreal","Partizan Belgrade","AS Egaleo Aigaleo Athens","Villarreal","Middlesbrough","Amica Wronki","Auxerre","Grazer AK","AZ Alkmaar","Amica Wronki","Glasgow Rangers","AZ Alkmaar","Auxerre","Glasgow Rangers","Grazer AK","Beveren","Benfica","Stuttgart","Dinamo Zagreb","Benfica","SC Heerenveen","Dinamo Zagreb","Beveren","SC Heerenveen","Stuttgart","Zenit St.Petersburg","TSV Alemannia Aachen","Lille","Sevilla","Zenit St.Petersburg","AEK Athens","Sevilla","TSV Alemannia Aachen","AEK Athens","Lille","Partizan Belgrade","Shakhtar Donetsk","Panathinaikos","Ajax","Parma","Valencia","Sporting Lisbon","Dinamo Kyiv","Grazer AK","CSKA Moscow","Fenerbahce","Basel","TSV Alemannia Aachen","SC Heerenveen","Olympiakos Piraeus","FC Dnipro","Schalke 04","AZ Alkmaar","Steaua Bucuresti","Sochaux","Austria Wien","Stuttgart","Middlesbrough","Newcastle","Feyenoord","Auxerre","Zaragoza","Lille","Benfica","Sevilla","Villarreal","Bilbao","Partizan Belgrade","Olympiakos Piraeus","Shakhtar Donetsk","Austria Wien","Lille","Middlesbrough","Sevilla","Steaua Bucuresti","AZ Alkmaar","Newcastle","CSKA Moscow","Sporting Lisbon","Parma","Auxerre","Zaragoza","Villarreal","CSKA Moscow","Newcastle","Austria Wien","Villarreal","AZ Alkmaar","Parma","Auxerre","Sporting Lisbon","Parma","Sporting Lisbon","CSKA Moscow","AZ Alkmaar","Sporting Lisbon");
+var TeamB_arr = new Array("Kispest Honved","FC Tiligul Tiraspol","FC Shamkir","F91 Dudelange","FK Karabakh","Dinamo Tbilisi","Shakhtior Soligorsk","Bohemians","etzella ettelbruck","Birkirkara","Banants","Sloga Jugomagnat","KS Dinamo Tirana","Total Network Solutions FC","FK Modrica","Longford Town","Maribor","Ventspils FK","Liepajas Metalurgs","NK Primorje","Zalgiris Vilnius","Hafnarfjordur  FH","FK Zeljeznicar","Allianssi","TVMK Tallinn","Levadia Tallinn","Tbilisi","Banska Bystrica","FC Nistru Otaci Unisport","Toftir B68","IA Akranes","Illichivets","FC Santa Coloma","BATE Borisov","Ekranas","Glentoran FC","Haka","S.S Pennarossa","Portadown","FC Otelul Galati","B36 Torshavn","Marsaxlokk FC","Shirak","MIKA Ashtarak","Vaduz","Sileks","Omonia Nicosia FC","Partizani Tirana","Osters","Haverfordwest County","Maribor","CSKA Sofia","Zenit St.Petersburg","Legia Warsawa","SK Sigma Olomouc","Steaua Bucuresti","FC Wil 1900","Litex Lovech","FC Dnipro","Austria Wien","FC Tiligul Tiraspol","Brondby","Lech Poznan","Haka","FC Otelul Galati","Liepajas Metalurgs","Maccabi Petah Tikva FC","NK Primorje","FK Modrica","Ekranas","Dinamo Tbilisi","NK Rijeka","Servette","Kispest Honved","Vaduz","Levadia Tallinn","Elfsborg","Partizani Tirana","Aalborg BK","Rubin Kazan","IA Akranes","Dunfermline","Odd Grenland","Levski Sofia","Tbilisi","Bodo Glimt","Rapid Wien","Dinamo Zagreb","Petrzalka","Slavia Mozyr","Stabaek","Osters","Hapoel Bnei Sakhnin FC","AEK Larnaca","FC Superfund","Zalgiris Vilnius","Hammarby","Metalurh Donetsk","FC Nistru Otaci Unisport","Beveren","Zeleznik","FK Zeljeznicar","Omonia Nicosia FC","Glentoran FC","FC Otelul Galati","Genclerbirligi","Amica Wronki","Banska Bystrica","FC Terek Grozny","FK Buducnost Podgorica","Ujpesti TE","Ventspils FK","Illichivets","Hafnarfjordur  FH","Amica Wronki","Basel","FC Dnipro","Dinamo Tbilisi","Crvena Zvezda","Liepajas Metalurgs","AEK Athens","Beveren","Lazio","Bilbao","Litex Lovech","CSKA Sofia","Feyenoord","Auxerre","Djurgardens","Genclerbirligi","Lille","Dinamo Bucuresti","Udinese","Elfsborg","Villarreal","Benfica","Bochum","Stuttgart","Chateauroux","Stabaek","Legia Warsawa","Braga","Ferencvarosi TC","Hapoel Bnei Sakhnin FC","Maribor","Besiktas JK","Banik Ostrava","Glasgow Rangers","AZ Alkmaar","Nacional","SK Sigma Olomouc","Rapid Wien","TSV Alemannia Aachen","Schalke 04","AS Egaleo Aigaleo Athens","Wisla Krakow","Ujpesti TE","Maccabi Petah Tikva FC","Maccabi Haifa","Ventspils FK","Sochaux","Partizan Belgrade","Grazer AK","Zaragoza","Hearts","Zenit St.Petersburg","Shelbourne","Bodo Glimt","PAOK Saloniki","Hafnarfjordur  FH","FC Terek Grozny","Utrecht","Dinamo Zagreb","Parma","Club Brugge","Levski Sofia","Standard Liege","Gorica","Odd Grenland","Newcastle","Aalborg BK","Austria Wien","Middlesbrough","Sporting Lisbon","Maritimo","Panionios","Millwall","Metalurh Donetsk","Banska Bystrica","Sevilla","Trabzonspor","Hammarby","Hearts","Basel","Schalke 04","Feyenoord","Ferencvarosi TC","Hearts","Basel","Schalke 04","Feyenoord","Ferencvarosi TC","Standard Liege","Parma","Steaua Bucuresti","Bilbao","Besiktas JK","Parma","Standard Liege","Steaua Bucuresti","Bilbao","Besiktas JK","Club Brugge","Utrecht","FC Dnipro","Zaragoza","Austria Wien","Utrecht","Club Brugge","FC Dnipro","Zaragoza","Austria Wien","Sochaux","Newcastle","Dinamo Tbilisi","Panionios","Sporting Lisbon","Newcastle","Sochaux","Dinamo Tbilisi","Panionios","Sporting Lisbon","Middlesbrough","Villarreal","AS Egaleo Aigaleo Athens","Lazio","Partizan Belgrade","Middlesbrough","Villarreal","Lazio","AS Egaleo Aigaleo Athens","Partizan Belgrade","Glasgow Rangers","Grazer AK","Amica Wronki","Auxerre","AZ Alkmaar","Grazer AK","Glasgow Rangers","Amica Wronki","Auxerre","AZ Alkmaar","Stuttgart","SC Heerenveen","Benfica","Beveren","Dinamo Zagreb","Stuttgart","SC Heerenveen","Benfica","Beveren","Dinamo Zagreb","AEK Athens","Lille","Zenit St.Petersburg","TSV Alemannia Aachen","Sevilla","Lille","AEK Athens","Zenit St.Petersburg","TSV Alemannia Aachen","Sevilla","FC Dnipro","Schalke 04","Sevilla","Auxerre","Stuttgart","Steaua Bucuresti","Feyenoord","Villarreal","Middlesbrough","Benfica","Zaragoza","Lille","AZ Alkmaar","Newcastle","Sochaux","Partizan Belgrade","Shakhtar Donetsk","TSV Alemannia Aachen","Valencia","Olympiakos Piraeus","Bilbao","Parma","Grazer AK","SC Heerenveen","Sporting Lisbon","Ajax","Fenerbahce","Basel","CSKA Moscow","Panathinaikos","Dinamo Kyiv","Austria Wien","CSKA Moscow","Newcastle","AZ Alkmaar","Zaragoza","Auxerre","Sporting Lisbon","Parma","Villarreal","Shakhtar Donetsk","Olympiakos Piraeus","Partizan Belgrade","Middlesbrough","Sevilla","Lille","Austria Wien","Steaua Bucuresti","Auxerre","Sporting Lisbon","Parma","AZ Alkmaar","Villarreal","Austria Wien","CSKA Moscow","Newcastle","CSKA Moscow","AZ Alkmaar","Parma","Sporting Lisbon","CSKA Moscow");
+var live_bh_arr = new Array(9081,9126,9117,9121,9125,9129,9124,9130,9131,9135,10483,9102,9116,9119,9101,9134,9100,9120,9122,9136,9137,9118,9115,9138,9123,10659,10661,10662,10663,10664,10665,10666,10671,10667,10668,10669,10670,10672,10673,10676,10674,10675,10677,10678,10679,10680,10681,10682,10683,10702,11956,11957,11958,11965,11966,11967,11972,11973,11974,11975,12046,12050,12056,12051,12052,12057,12058,12059,12060,12061,12062,12063,12053,12064,12065,12066,12067,12068,12069,12054,12070,12071,13295,13296,13297,13298,13299,13300,13301,13302,13303,13304,13305,13306,13307,13308,13309,13310,13311,13312,13316,13313,13314,13315,13317,13318,13319,13320,13321,13322,13323,13324,13325,13326,15337,15338,15340,15339,15342,15344,15346,15347,15341,15343,15348,15349,15350,15351,15352,15353,15345,15354,15355,15356,15357,15358,15359,15360,15361,15370,15362,15364,15365,15374,15363,15366,15367,15368,15369,15371,15375,15372,15373,16508,16503,16504,16505,16506,16507,16510,16512,16513,16514,16534,16515,16516,16517,16518,16520,16521,16525,16526,16527,16528,16511,16522,16529,16530,16531,16519,16523,16524,16532,16533,16535,16536,16537,16538,16539,16542,16540,16541,17321,17322,17854,17858,18938,18944,19200,19201,19685,19686,17324,17323,17849,17852,18940,18941,19202,19203,19687,19688,17326,17325,17851,17856,18939,18942,19204,19205,19689,19690,17328,17327,17853,17862,18935,18945,19206,19207,19691,19692,17329,17330,17850,17859,18947,18949,19210,19211,19677,19678,17332,17331,17848,17860,18936,18946,19212,19213,19679,19680,17333,17334,17847,17855,18948,18950,19214,19215,19681,19682,17336,17335,17857,17861,18937,18943,19216,19217,19683,19684,21098,21104,21103,21100,21094,21099,21095,21106,21091,21101,21102,21093,21096,21092,21105,21114,21120,21112,21115,21121,21097,21110,21107,21108,21111,21116,21118,21109,21117,21119,21122,21113,26153,26151,26152,26164,26150,26147,26148,26149,26761,26762,26764,26765,26766,26767,26768,26763,27538,27539,27540,27544,27545,27542,27543,27541,28780,28781,29218,29219,29426);
+var score_arr = new Array("0-1","1-2","1-0","1-0","3-0","2-3","1-1","0-0","2-1","4-2","2-0","4-0","4-0","2-0","0-1","1-0","0-1","0-3","1-3","0-1","2-2","0-1","1-5","2-2","4-2","1-3","1-4","0-1","1-2","8-0","1-2","0-2","3-0","1-0","1-2","1-2","1-3","4-0","2-0","1-4","8-1","2-0","2-0","1-1","2-3","1-1","1-4","2-1","1-2","3-1","1-2","1-1","3-1","0-1","1-2","2-4","3-1","1-2","0-3","0-0","3-0","0-0","1-0","3-1","0-0","2-2","3-0","4-0","5-0","3-1","3-1","1-0","3-1","1-0","3-1","2-1","0-1","3-0","1-3","0-2","2-0","2-2","2-1","0-3","6-0","2-1","0-3","2-0","1-1","2-0","1-3","1-1","1-3","4-0","2-0","0-0","1-2","1-2","4-0","1-2","1-2","7-0","1-1","2-1","1-0","2-1","1-0","1-1","0-1","0-1","0-2","1-1","3-0","1-2","1-1","1-1","1-0","4-3","4-0","5-1","1-1","1-1","0-3","3-2","5-0","2-1","0-1","1-1","4-0","1-0","2-2","3-1","3-1","2-0","1-2","0-3","0-0","1-3","4-0","4-0","1-0","3-1","1-1","2-0","3-2","1-1","3-0","1-0","2-3","2-0","1-0","2-0","1-5","0-4","1-1","2-1","4-0","5-0","2-0","1-0","0-5","0-0","1-0","2-3","2-2","1-2","2-0","1-0","2-1","0-0","2-0","3-0","0-0","0-0","1-2","1-0","1-1","1-0","4-1","1-5","2-0","1-3","1-1","0-0","1-0","1-0","3-1","3-0","2-0","1-2","2-0","3-0","3-0","1-1","0-1","1-1","2-0","1-2","1-2","2-1","1-0","0-1","2-0","2-0","1-0","3-1","2-1","2-1","1-1","1-0","1-7","3-2","3-2","2-0","1-2","1-0","1-0","1-0","1-1","2-1","1-1","1-2","0-2","0-1","2-0","4-1","0-4","0-4","0-1","5-2","1-0","1-1","0-1","1-1","4-0","2-0","2-2","2-0","1-1","2-2","4-0","3-0","0-5","0-0","3-1","2-0","1-3","3-0","1-0","5-1","0-2","2-0","1-5","4-2","3-0","6-1","2-0","1-0","2-2","0-3","1-0","2-1","5-1","1-0","2-1","2-0","1-1","1-2","3-2","2-2","0-2","1-0","2-2","1-1","1-0","1-0","0-0","2-0","2-1","0-0","2-2","2-0","0-1","0-0","0-0","1-2","1-0","0-1","0-1","2-1","2-0","0-1","0-0","0-0","2-1","2-1","1-2","3-1","2-1","2-0","1-1","2-0","2-0","1-2","1-1","1-3","1-3","1-1","0-1","2-3","0-0","0-0","2-1","4-0","2-0","1-0","1-0","0-0","2-2","2-0","4-0","1-0","1-1","1-2","1-1","0-0","2-0","4-1","0-0","2-1","3-0","2-1","1-3");
+var Memo_arr = new Array("","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","90 minute[2-1],120 minute[2-1],Penalty Kick[7-8]","","","","","","","","","","","","","","","","","90 minute[1-1],120 minute[3-1]","","","","90 minute[1-0],120 minute[1-0],Penalty Kick[4-5]","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","90 minute[1-0],120 minute[1-0],Penalty Kick[4-2]","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","90 minute[2-0],�ɻغ�[2-2],120 minute[2-0],Penalty Kick[4-3]","","","90 minute[0-0],�ɻغ�[0-0],120 minute[0-2]","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","90 minute[2-1],120 minute[3-2],Double bouts[4-4]","");
+var ord_arr = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,7,7,7,7,8);
+var group_arr = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+var run_arr = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+		ShowData(8, "Final");
+
+
+function Show_Standings(id)
+{
+	document.all.s_std.innerHTML = StatTable + eval("Standing_" + mid + "[" + id + "]") + '</table>';
+}
+
+function ShowData(id, title)
+{
+	mid = id;
+	var code = "";
+	if (typeof(Matches[id]) == "string")
+	{
+		code = TableHead;
+		var bgcolor = "#C6E4F5";
+		for (var i=0;i<ord_arr.length;i++)
+		{
+			if (ord_arr[i] == id)
+			{
+				bgcolor = (bgcolor == "#E6F4FB") ? "#C6E4F5" : "#E6F4FB";
+				code += RowData(bgcolor, run_arr[i], Start_time_arr[i], TeamA_bh_arr[i], TeamA_arr[i], score_arr[i], 
+							TeamB_bh_arr[i], TeamB_arr[i], live_bh_arr[i], Memo_arr[i]);
+			}
+		}
+		code += "</table>";
+ 		document.all.c_Table.innerHTML = Matches[id] + code;
+ 	}
+ 	else if (typeof(Matches[id]) == "object")
+ 	{
+ 		if (typeof(Matches[id][0]) == "string")
+ 		{
+	 		document.all.c_Table.innerHTML = Matches[id][0];
+	 		if (typeof(document.all.Groups_Table) == "object")
+	 		{
+		 		code = StatTable;
+		 		for (var i=1;i<Matches[id].length;i++)
+		 			code += Matches[id][i];
+		 		document.all.Groups_Table.innerHTML += code + "</table>";
+		 	}
+		 	else if (typeof(document.all.Runs_Table) == "object")
+		 	{
+		 		ShowRuns(id, currentRun[id]);
+		 	}
+	 	}
+ 	}
+	else
+	{
+		code = TableHead;
+		var bgcolor = "#C6E4F5";
+		for (var i=0;i<ord_arr.length;i++)
+		{
+			if (ord_arr[i] == id)
+			{
+				bgcolor = (bgcolor == "#E6F4FB") ? "#C6E4F5" : "#E6F4FB";
+				code += RowData(bgcolor, run_arr[i], Start_time_arr[i], TeamA_bh_arr[i], TeamA_arr[i], score_arr[i], 
+							TeamB_bh_arr[i], TeamB_arr[i], live_bh_arr[i], Memo_arr[i]);
+			}
+		}
+		code += "</table>";
+		document.all.c_Table.innerHTML = code;
+	}
+	Class_type.innerText = title;
+}
+
+function ShowGroups(pid, sid)
+{
+	var code = TableHead;
+	var bgcolor = "#C6E4F5";
+	for (var i=0;i<ord_arr.length;i++)
+	{
+		if (ord_arr[i] == pid && group_arr[i] == sid)
+		{
+			bgcolor = (bgcolor == "#E6F4FB") ? "#C6E4F5" : "#E6F4FB";
+			code += RowData(bgcolor, run_arr[i], Start_time_arr[i], TeamA_bh_arr[i], TeamA_arr[i], score_arr[i], 
+							TeamB_bh_arr[i], TeamB_arr[i], live_bh_arr[i], Memo_arr[i]);
+		}
+	}
+	code += "</table>";
+	document.all.Groups_Table.innerHTML = StatTable + Matches[pid][sid] + "</table>" + code;
+}
+
+function ShowRuns(pid, rid)
+{
+	var code = TableHead;
+	var bgcolor = "#C6E4F5";
+	for (var i=0;i<ord_arr.length;i++)
+	{
+		if (ord_arr[i] == pid && run_arr[i] == rid)
+		{
+			bgcolor = (bgcolor == "#E6F4FB") ? "#C6E4F5" : "#E6F4FB";
+			code += RowData(bgcolor, run_arr[i], Start_time_arr[i], TeamA_bh_arr[i], TeamA_arr[i], score_arr[i], 
+							TeamB_bh_arr[i], TeamB_arr[i], live_bh_arr[i], Memo_arr[i]);
+		}
+	}
+	code += "</table>";
+	document.all.Runs_Table.innerHTML = code;
+}
+
+function RowData(bgcolor, run, Start_time, TeamA_bh, TeamA, score, TeamB_bh, TeamB, live_bh, Memo)
+{
+	var rlt = "";
+	rlt =	"<tr align=\"center\" bgcolor=\"" + bgcolor + "\">" +
+			"	<td>" + run + "</td>" +
+			"	<td>" + Start_time + "</td>" +
+			"	<td><a href=\"javascript:Team_en(" + TeamA_bh + ")\">" + TeamA + "</a></td>" +
+			"	<td><a href=\"javascript:ShowDetails_en(" + live_bh + ")\">" + score + "</a></td>" +
+			"	<td><a href=\"javascript:Team_en(" + TeamB_bh + ")\">" + TeamB + "</a></td>" +
+			"	<td><a href=\"javascript:ShowAnalyse_en(" + live_bh + ")\"><img src=\"//img.7m.com.cn/icon/analyse_1.gif\" border=\"0\" width=\"12\" height=\"14\"></a></td>" +
+			"</tr>";
+	if (Memo != "")
+	{
+		rlt += "<tr align=\"center\" bgcolor=\"#FFFFFF\">" +
+				"	<td colspan=6>" + Memo + "</td>" +
+				"</tr>";
+	}
+	return rlt;
+}
+</script>
+
+
+    
+    <div id="odds_tb">
+    
+    
+    </div>
+    <script language="javascript">hideOdds();</script>
+    <table border="0" cellpadding="2" cellspacing="0" width="100">
+      <tr>
+        <td width="100%" height="6"></td>
+      </tr>
+    </table>
+    
+    </div>
+    <div class="bb1"></div>
+    </td>
+    <td width="192" valign="top" style="background: url('//img.7m.com.cn/dataimg/matches_data/share_img/l_bg1.gif')" align="center">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td width="100%"><img src="//img.7m.com.cn/dataimg/matches_data/share_img/top_best3.jpg" border="0" width="192" height="29"></td>
+      </tr>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td width="100%" class="cou_tm2"></td>
+      </tr>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td width="100%">��</td>
+      </tr>
+      <tr>
+        <td width="100%" align="center">
+       	 	<table border="0" cellpadding="2" cellspacing="0" width="150">
+  <tr>
+	<td width="100%" height="28" class="rmc1">
+   	<table width="100%" border="0" cellpadding="2" cellspacing="0" onclick="javascript:ShowData(0, this.innerText)" onMouseOver="this.style.color='#CC2050'" onMouseOut="this.style.color='#000000'">
+   		<tr>
+       		<td class="rmf1" id="menu0">Round 1</td>
+      		</tr>
+   	</table>
+   </td>
+</tr>
+<tr>
+	<td width="100%" height="28" class="rmc1">
+   	<table width="100%" border="0" cellpadding="2" cellspacing="0" onclick="javascript:ShowData(1, this.innerText)" onMouseOver="this.style.color='#CC2050'" onMouseOut="this.style.color='#000000'">
+   		<tr>
+       		<td class="rmf1" id="menu1">Round 2</td>
+      		</tr>
+   	</table>
+   </td>
+</tr>
+<tr>
+	<td width="100%" height="28" class="rmc1">
+   	<table width="100%" border="0" cellpadding="2" cellspacing="0" onclick="javascript:ShowData(2, this.innerText)" onMouseOver="this.style.color='#CC2050'" onMouseOut="this.style.color='#000000'">
+   		<tr>
+       		<td class="rmf1" id="menu2">Round 3</td>
+      		</tr>
+   	</table>
+   </td>
+</tr>
+<tr>
+	<td width="100%" height="28" class="rmc1">
+   	<table width="100%" border="0" cellpadding="2" cellspacing="0" onclick="javascript:ShowData(3, this.innerText)" onMouseOver="this.style.color='#CC2050'" onMouseOut="this.style.color='#000000'">
+   		<tr>
+       		<td class="rmf1" id="menu3">Groups</td>
+      		</tr>
+   	</table>
+   </td>
+</tr>
+<tr>
+	<td width="100%" height="28" class="rmc1">
+   	<table width="100%" border="0" cellpadding="2" cellspacing="0" onclick="javascript:ShowData(4, this.innerText)" onMouseOver="this.style.color='#CC2050'" onMouseOut="this.style.color='#000000'">
+   		<tr>
+       		<td class="rmf1" id="menu4">Round 5</td>
+      		</tr>
+   	</table>
+   </td>
+</tr>
+<tr>
+	<td width="100%" height="28" class="rmc1">
+   	<table width="100%" border="0" cellpadding="2" cellspacing="0" onclick="javascript:ShowData(5, this.innerText)" onMouseOver="this.style.color='#CC2050'" onMouseOut="this.style.color='#000000'">
+   		<tr>
+       		<td class="rmf1" id="menu5">Round 6</td>
+      		</tr>
+   	</table>
+   </td>
+</tr>
+<tr>
+	<td width="100%" height="28" class="rmc1">
+   	<table width="100%" border="0" cellpadding="2" cellspacing="0" onclick="javascript:ShowData(6, this.innerText)" onMouseOver="this.style.color='#CC2050'" onMouseOut="this.style.color='#000000'">
+   		<tr>
+       		<td class="rmf1" id="menu6">1/4 Final</td>
+      		</tr>
+   	</table>
+   </td>
+</tr>
+<tr>
+	<td width="100%" height="28" class="rmc1">
+   	<table width="100%" border="0" cellpadding="2" cellspacing="0" onclick="javascript:ShowData(7, this.innerText)" onMouseOver="this.style.color='#CC2050'" onMouseOut="this.style.color='#000000'">
+   		<tr>
+       		<td class="rmf1" id="menu7">Semifinal</td>
+      		</tr>
+   	</table>
+   </td>
+</tr>
+<tr>
+	<td width="100%" height="28" class="rmc1">
+   	<table width="100%" border="0" cellpadding="2" cellspacing="0" onclick="javascript:ShowData(8, this.innerText)" onMouseOver="this.style.color='#CC2050'" onMouseOut="this.style.color='#000000'">
+   		<tr>
+       		<td class="rmf1" id="menu8">Final</td>
+      		</tr>
+   	</table>
+   </td>
+</tr>
+
+</table>
+
+			<br>
+			<div style="border: 2px solid #FFFFFF; width: 154px; height: 184px; padding: 2px;">
+		        <table border="0" cellpadding="2" cellspacing="0" width="100%" height="100%" style="background-color: #FFFFFF;">
+		          <tr>
+		            <td width="100%" height="103" align="middle" style="padding: 6px;">
+		            <img src="../match_logo.gif"></td><!--ِ���I-->
+		          </tr>
+		          <tr>
+		            <td width="100%" height="19"><div class="lst9">2005<br>UEFA Cup</div></td>
+		          </tr>
+		          <script language="javascript">rightImg();</script>
+		        </table>
+	        </div>
+        </td>
+      </tr>
+    </table>
+<br>
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border: 2px solid #FFFFFF;" width="154">
+  <tr>
+    <td width="100%" style="padding: 2px;">
+    <table border="0" cellpadding="2" cellspacing="0" width="100%" bgcolor="#FFFFFF">
+      <tr>
+        <td width="100%" style="padding-top: 4px; padding-left: 12px; line-height: 16px;"></td>
+      </tr>
+      <tr>
+        <td width="100%" style="padding-top: 4px; padding-left: 12px; line-height: 16px;"><a href="//data.7m.cn/database/index_en.htm">back</a></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+    
+<div style="height: 4px; width: 2px;"></div>
+    </td>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="772" height="2" style="background-color: #FFFFFF;"><tr><td width="100%"></td></tr></table>
+<table border="0" cellpadding="2" cellspacing="0" width="772" style="background-color: #E9E9DF; height: 40">
+  <tr>
+    <td width="100%" align="center"><link href="/database/nav_style.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="/database/js/ql_en.js" charset="utf-8"></script>
+<script language="javascript" src="/include/datafooter_en.js"></script>
+<div style="display:none">
+<script type="text/javascript" id="countObj" src="//count.7m.com.cn/count.js?lang=en"></script>
+</div>
+</td>
+  </tr>
+</table>
+</div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"8ae811e06294496fab59dea5a068429a","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
