@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5089064",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "23/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Fram Larvik(U19) Hist",
+    "title": "Fram Larvik(U19) 6-4 Larvik Turn(U19)",
+    "homeTeam": "Fram Larvik(U19)",
+    "awayTeam": "Larvik Turn(U19)",
+    "score": "6-4",
+    "matchId": "5083676",
+    "targetMatchId": "5089064",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "19/09/19",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Fram Larvik(U19) Hist",
+    "title": "Fram Larvik(U19) 4-2 Grotta Kria U19",
+    "homeTeam": "Fram Larvik(U19)",
+    "awayTeam": "Grotta Kria U19",
+    "score": "4-2",
+    "matchId": "3968896",
+    "targetMatchId": "5089064",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "19/10/16",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Fram Larvik(U19) Hist",
+    "title": "Fram Larvik(U19) 4-2 Charlottenlund(U19)",
+    "homeTeam": "Fram Larvik(U19)",
+    "awayTeam": "Charlottenlund(U19)",
+    "score": "4-2",
+    "matchId": "1656179",
+    "targetMatchId": "5089064",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "12/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Notteroy/Husoy Foynland(U19) Hist",
+    "title": "Larvik Turn(U19) 0-1 Notteroy/Husoy Foynland(U19)",
+    "homeTeam": "Larvik Turn(U19)",
+    "awayTeam": "Notteroy/Husoy Foynland(U19)",
+    "score": "0-1",
+    "matchId": "5073518",
+    "targetMatchId": "5089064",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
