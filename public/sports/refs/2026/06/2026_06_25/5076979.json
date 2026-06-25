@@ -1,0 +1,74 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5076979",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "27/02/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "FC Tbilisi\u202f2025 Hist",
+    "title": "FC Algeti Marneuli 0-5 FC Tbilisi\u202f2025",
+    "homeTeam": "FC Algeti Marneuli",
+    "awayTeam": "FC Tbilisi\u202f2025",
+    "score": "0-5",
+    "matchId": "5047154",
+    "targetMatchId": "5076979",
+    "goals": [
+      "10' 0-1",
+      "19' 0-2",
+      "41' 0-3",
+      "",
+      "",
+      "",
+      "85' 0-4<br>89' 0-5",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "18/02/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "FC Tbilisi\u202f2025 Hist",
+    "title": "FC Tbilisi\u202f2025 3-2 Iveria Khashuri",
+    "homeTeam": "FC Tbilisi\u202f2025",
+    "awayTeam": "Iveria Khashuri",
+    "score": "3-2",
+    "matchId": "5042428",
+    "targetMatchId": "5076979",
+    "goals": [
+      "10' 1-0",
+      "",
+      "40' 2-0",
+      "45+1' 3-0",
+      "",
+      "",
+      "88' 3-1<br>90' 3-2",
+      ""
+    ],
+    "isReference": true
+  }
+]

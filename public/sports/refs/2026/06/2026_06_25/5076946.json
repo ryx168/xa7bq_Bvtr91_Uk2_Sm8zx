@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5076946",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "23/03/21",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "FC Merani Martvili II Hist",
+    "title": "Tbilisi 2016 0-0 FC Merani Martvili II",
+    "homeTeam": "Tbilisi 2016",
+    "awayTeam": "FC Merani Martvili II",
+    "score": "0-0",
+    "matchId": "4138617",
+    "targetMatchId": "5076946",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "12/02/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Iberia 1999 Tbilisi B Hist",
+    "title": "CSM Resita 1-0 Iberia 1999 Tbilisi B",
+    "homeTeam": "CSM Resita",
+    "awayTeam": "Iberia 1999 Tbilisi B",
+    "score": "1-0",
+    "matchId": "5038302",
+    "targetMatchId": "5076946",
+    "goals": [
+      "",
+      "",
+      "36' 1-0",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "28/01/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Iberia 1999 Tbilisi B Hist",
+    "title": "Iberia 1999 Tbilisi B 0-0 Aragvi Dusheti",
+    "homeTeam": "Iberia 1999 Tbilisi B",
+    "awayTeam": "Aragvi Dusheti",
+    "score": "0-0",
+    "matchId": "5030696",
+    "targetMatchId": "5076946",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "15/12/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Iberia 1999 Tbilisi B Hist",
+    "title": "Odishi Zugdidi 2-1 Iberia 1999 Tbilisi B",
+    "homeTeam": "Odishi Zugdidi",
+    "awayTeam": "Iberia 1999 Tbilisi B",
+    "score": "2-1",
+    "matchId": "5002517",
+    "targetMatchId": "5076946",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "61' 1-0",
+      "87' 2-0",
+      "90+5' 2-1"
+    ],
+    "isReference": true
+  }
+]

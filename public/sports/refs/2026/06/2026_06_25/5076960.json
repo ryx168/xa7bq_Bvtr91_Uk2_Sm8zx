@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5076960",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "22/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Shturmi Hist",
+    "title": "Kolkheti Poti 0-0 Shturmi",
+    "homeTeam": "Kolkheti Poti",
+    "awayTeam": "Shturmi",
+    "score": "0-0",
+    "matchId": "5022899",
+    "targetMatchId": "5076960",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "17/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Shturmi Hist",
+    "title": "FC Gareji Sagarejo 0-0 Shturmi",
+    "homeTeam": "FC Gareji Sagarejo",
+    "awayTeam": "Shturmi",
+    "score": "0-0",
+    "matchId": "5022887",
+    "targetMatchId": "5076960",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "13/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Shturmi Hist",
+    "title": "Shturmi 0-2 FC Telavi",
+    "homeTeam": "Shturmi",
+    "awayTeam": "FC Telavi",
+    "score": "0-2",
+    "matchId": "5022881",
+    "targetMatchId": "5076960",
+    "goals": [
+      "",
+      "",
+      "36' 0-1",
+      "",
+      "48' 0-2",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

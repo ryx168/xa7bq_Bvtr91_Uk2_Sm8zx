@@ -1,0 +1,122 @@
+[
+  {
+    "date": "29/06/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": "Nashville Rhythm Women's 0-0 865 Alliance Women's",
+    "homeTeam": "Nashville Rhythm Women's",
+    "awayTeam": "865 Alliance Women's",
+    "score": "0-0",
+    "matchId": "4890405",
+    "targetMatchId": "5088743",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "22/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Nashville Rhythm Women\\s Hist",
+    "title": "Tennessee Tempo Women's 0-6 Nashville Rhythm Women's",
+    "homeTeam": "Tennessee Tempo Women's",
+    "awayTeam": "Nashville Rhythm Women's",
+    "score": "0-6",
+    "matchId": "5068332",
+    "targetMatchId": "5088743",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "04/07/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Nashville Rhythm Women\\s Hist",
+    "title": "Chattanooga  Women's 1-0 Nashville Rhythm Women's",
+    "homeTeam": "Chattanooga  Women's",
+    "awayTeam": "Nashville Rhythm Women's",
+    "score": "1-0",
+    "matchId": "4894148",
+    "targetMatchId": "5088743",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "29/06/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Nashville Rhythm Women\\s Hist",
+    "title": "Nashville Rhythm Women's 0-0 865 Alliance Women's",
+    "homeTeam": "Nashville Rhythm Women's",
+    "awayTeam": "865 Alliance Women's",
+    "score": "0-0",
+    "matchId": "4890405",
+    "targetMatchId": "5088743",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "29/06/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "865 Alliance Women\\s Hist",
+    "title": "Nashville Rhythm Women's 0-0 865 Alliance Women's",
+    "homeTeam": "Nashville Rhythm Women's",
+    "awayTeam": "865 Alliance Women's",
+    "score": "0-0",
+    "matchId": "4890405",
+    "targetMatchId": "5088743",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

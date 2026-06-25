@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5076956",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "22/03/21",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Torpedo Kutaisi II Hist",
+    "title": "Legioni Gori 1-0 Torpedo Kutaisi II",
+    "homeTeam": "Legioni Gori",
+    "awayTeam": "Torpedo Kutaisi II",
+    "score": "1-0",
+    "matchId": "4138609",
+    "targetMatchId": "5076956",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "72' 1-0",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "03/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Margveti 2006 Hist",
+    "title": "Margveti 2006 1-2 Samtredia",
+    "homeTeam": "Margveti 2006",
+    "awayTeam": "Samtredia",
+    "score": "1-2",
+    "matchId": "5071679",
+    "targetMatchId": "5076956",
+    "goals": [
+      "",
+      "24' 0-1",
+      "32' 0-2",
+      "",
+      "",
+      "74' 1-2",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "10/02/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Margveti 2006 Hist",
+    "title": "Iveria Khashuri 0-1 Margveti 2006",
+    "homeTeam": "Iveria Khashuri",
+    "awayTeam": "Margveti 2006",
+    "score": "0-1",
+    "matchId": "5036973",
+    "targetMatchId": "5076956",
+    "goals": [
+      "",
+      "",
+      "38' 0-1",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "17/11/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Margveti 2006 Hist",
+    "title": "Margveti 2006 1-1 FC Merani Tbilisi",
+    "homeTeam": "Margveti 2006",
+    "awayTeam": "FC Merani Tbilisi",
+    "score": "1-1",
+    "matchId": "4997240",
+    "targetMatchId": "5076956",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

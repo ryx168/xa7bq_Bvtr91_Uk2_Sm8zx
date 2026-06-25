@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5076972",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "06/12/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "FC Gonio Hist",
+    "title": "FC Sioni Bolnisi 5-0 FC Gonio",
+    "homeTeam": "FC Sioni Bolnisi",
+    "awayTeam": "FC Gonio",
+    "score": "5-0",
+    "matchId": "4831341",
+    "targetMatchId": "5076972",
+    "goals": [
+      "13' 1-0",
+      "",
+      "",
+      "",
+      "",
+      "67' 2-0<br>75' 3-0",
+      "81' 4-0<br>89' 5-0",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "29/11/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "FC Gonio Hist",
+    "title": "FC Gonio 0-4 FC Rustavi",
+    "homeTeam": "FC Gonio",
+    "awayTeam": "FC Rustavi",
+    "score": "0-4",
+    "matchId": "4831337",
+    "targetMatchId": "5076972",
+    "goals": [
+      "",
+      "21' 0-1",
+      "",
+      "",
+      "",
+      "68' 0-2",
+      "81' 0-3<br>84' 0-4",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "25/11/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "FC Gonio Hist",
+    "title": "Samtredia 3-2 FC Gonio",
+    "homeTeam": "Samtredia",
+    "awayTeam": "FC Gonio",
+    "score": "3-2",
+    "matchId": "4831335",
+    "targetMatchId": "5076972",
+    "goals": [
+      "6' 1-0",
+      "",
+      "41' 2-0",
+      "",
+      "",
+      "70' 2-1",
+      "87' 2-2",
+      "90+1' 3-2"
+    ],
+    "isReference": true
+  }
+]

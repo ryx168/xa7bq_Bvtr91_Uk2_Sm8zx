@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5076963",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "08/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Lokomotiv Tbilisi Hist",
+    "title": "Lokomotiv Tbilisi 1-1 Shturmi",
+    "homeTeam": "Lokomotiv Tbilisi",
+    "awayTeam": "Shturmi",
+    "score": "1-1",
+    "matchId": "5073308",
+    "targetMatchId": "5076963",
+    "goals": [
+      "",
+      "27' 1-0",
+      "",
+      "",
+      "60' 1-1",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "15/12/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Lokomotiv Tbilisi Hist",
+    "title": "Lokomotiv Tbilisi 0-1 Aragvi Dusheti",
+    "homeTeam": "Lokomotiv Tbilisi",
+    "awayTeam": "Aragvi Dusheti",
+    "score": "0-1",
+    "matchId": "5002518",
+    "targetMatchId": "5076963",
+    "goals": [
+      "",
+      "30' 0-1",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "11/12/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Lokomotiv Tbilisi Hist",
+    "title": "Aragvi Dusheti 2-3 Lokomotiv Tbilisi",
+    "homeTeam": "Aragvi Dusheti",
+    "awayTeam": "Lokomotiv Tbilisi",
+    "score": "2-3",
+    "matchId": "5002515",
+    "targetMatchId": "5076963",
+    "goals": [
+      "6' 1-0",
+      "",
+      "34' 1-1",
+      "",
+      "",
+      "72' 1-2",
+      "84' 2-2<br>89' 2-3",
+      ""
+    ],
+    "isReference": true
+  }
+]
