@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5086209",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "14/02/16",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Araioses FC Hist",
+    "title": "Moto Clube(MA) 2-0 Araioses FC",
+    "homeTeam": "Moto Clube(MA)",
+    "awayTeam": "Araioses FC",
+    "score": "2-0",
+    "matchId": "1533253",
+    "targetMatchId": "5086209",
+    "goals": [
+      "15' 1-0",
+      "",
+      "",
+      "",
+      "48' 2-0",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "25/01/16",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Araioses FC Hist",
+    "title": "Araioses FC 0-2 Sampaio Correa (MA)",
+    "homeTeam": "Araioses FC",
+    "awayTeam": "Sampaio Correa (MA)",
+    "score": "0-2",
+    "matchId": "1522619",
+    "targetMatchId": "5086209",
+    "goals": [
+      "",
+      "21' 0-1<br>24' 0-2",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "11/09/23",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Expressinho MA Hist",
+    "title": "Expressinho MA 0-4 Moto Clube(MA)",
+    "homeTeam": "Expressinho MA",
+    "awayTeam": "Moto Clube(MA)",
+    "score": "0-4",
+    "matchId": "4586521",
+    "targetMatchId": "5086209",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "26/03/15",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Expressinho MA Hist",
+    "title": "Expressinho MA 1-1 Sampaio Correa (MA)",
+    "homeTeam": "Expressinho MA",
+    "awayTeam": "Sampaio Correa (MA)",
+    "score": "1-1",
+    "matchId": "1268060",
+    "targetMatchId": "5086209",
+    "goals": [
+      "",
+      "",
+      "45' 1-0",
+      "",
+      "",
+      "64' 1-1",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5086212",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "22/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Arlington Soccer Blue Women\\s Hist",
+    "title": "District Elite Women's 2-2 Arlington Soccer Blue Women's",
+    "homeTeam": "District Elite Women's",
+    "awayTeam": "Arlington Soccer Blue Women's",
+    "score": "2-2",
+    "matchId": "5068409",
+    "targetMatchId": "5086212",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "27/06/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Arlington Soccer Blue Women\\s Hist",
+    "title": "Arlington Soccer Blue Women's 1-1 McLean Soccer Women's",
+    "homeTeam": "Arlington Soccer Blue Women's",
+    "awayTeam": "McLean Soccer Women's",
+    "score": "1-1",
+    "matchId": "4883223",
+    "targetMatchId": "5086212",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "20/06/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Arlington Soccer Blue Women\\s Hist",
+    "title": "Alexandria Reds Women's 0-5 Arlington Soccer Blue Women's",
+    "homeTeam": "Alexandria Reds Women's",
+    "awayTeam": "Arlington Soccer Blue Women's",
+    "score": "0-5",
+    "matchId": "4880905",
+    "targetMatchId": "5086212",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "13/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "The St James Women\\s Hist",
+    "title": "The St James Women's 1-2 Alexandria Reds Women's",
+    "homeTeam": "The St James Women's",
+    "awayTeam": "Alexandria Reds Women's",
+    "score": "1-2",
+    "matchId": "5073945",
+    "targetMatchId": "5086212",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

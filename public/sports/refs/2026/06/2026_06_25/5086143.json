@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5086143",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "28/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Shandong Qiutan Hist",
+    "title": "Beijing Smart Sky 0-1 Shandong Qiutan",
+    "homeTeam": "Beijing Smart Sky",
+    "awayTeam": "Shandong Qiutan",
+    "score": "0-1",
+    "matchId": "5069244",
+    "targetMatchId": "5086143",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "22/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Shandong Qiutan Hist",
+    "title": "Shandong Qiutan 2-0 Beijing Life Football",
+    "homeTeam": "Shandong Qiutan",
+    "awayTeam": "Beijing Life Football",
+    "score": "2-0",
+    "matchId": "5068531",
+    "targetMatchId": "5086143",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "20/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Shandong Qiutan Hist",
+    "title": "Shandong Qiutan 0-0 Shaanxi United Soaring",
+    "homeTeam": "Shandong Qiutan",
+    "awayTeam": "Shaanxi United Soaring",
+    "score": "0-0",
+    "matchId": "5068106",
+    "targetMatchId": "5086143",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
