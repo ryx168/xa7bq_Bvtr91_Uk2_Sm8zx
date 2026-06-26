@@ -1,0 +1,50 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5090119",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "20/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Grand Rapids FC Women\\s Hist",
+    "title": "Grand Rapids FC Women's 1-0 Tulip City United Women's",
+    "homeTeam": "Grand Rapids FC Women's",
+    "awayTeam": "Tulip City United Women's",
+    "score": "1-0",
+    "matchId": "5080454",
+    "targetMatchId": "5090119",
+    "goals": [
+      "12' 1-0",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

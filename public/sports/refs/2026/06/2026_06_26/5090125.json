@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5090125",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "29/07/18",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Tatran Cementaren Hist",
+    "title": "Tatran Cementaren 0-3 Povazska Bystrica",
+    "homeTeam": "Tatran Cementaren",
+    "awayTeam": "Povazska Bystrica",
+    "score": "0-3",
+    "matchId": "3772126",
+    "targetMatchId": "5090125",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "10/08/16",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Tatran Cementaren Hist",
+    "title": "Tatran Cementaren 1-2 MFK Nova Bana",
+    "homeTeam": "Tatran Cementaren",
+    "awayTeam": "MFK Nova Bana",
+    "score": "1-2",
+    "matchId": "1625843",
+    "targetMatchId": "5090125",
+    "goals": [
+      "",
+      "",
+      "41' 1-0",
+      "",
+      "",
+      "",
+      "81' 1-1<br>83' 1-2",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "19/11/23",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Morlaas Est-Bearn Hist",
+    "title": "Morlaas Est-Bearn 0-1 AS Panazol",
+    "homeTeam": "Morlaas Est-Bearn",
+    "awayTeam": "AS Panazol",
+    "score": "0-1",
+    "matchId": "4616542",
+    "targetMatchId": "5090125",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
