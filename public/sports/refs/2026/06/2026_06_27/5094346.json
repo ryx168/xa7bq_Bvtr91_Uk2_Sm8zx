@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5094346",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "31/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Carolina Ascent Women\\s Hist",
+    "title": "Lexington Women's 1-1 Carolina Ascent Women's",
+    "homeTeam": "Lexington Women's",
+    "awayTeam": "Carolina Ascent Women's",
+    "score": "1-1",
+    "matchId": "5071104",
+    "targetMatchId": "5094346",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "25/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Carolina Ascent Women\\s Hist",
+    "title": "Sporting Jax Women's 0-1 Carolina Ascent Women's",
+    "homeTeam": "Sporting Jax Women's",
+    "awayTeam": "Carolina Ascent Women's",
+    "score": "0-1",
+    "matchId": "5068757",
+    "targetMatchId": "5094346",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "17/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Carolina Ascent Women\\s Hist",
+    "title": "Carolina Ascent Women's 3-1 Sporting Jax Women's",
+    "homeTeam": "Carolina Ascent Women's",
+    "awayTeam": "Sporting Jax Women's",
+    "score": "3-1",
+    "matchId": "5067621",
+    "targetMatchId": "5094346",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
