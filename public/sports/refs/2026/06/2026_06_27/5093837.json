@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5093837",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "22/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Annapolis Blues Women\\s Hist",
+    "title": "Annapolis Blues Women's 0-1 Virginia Beach United Women's",
+    "homeTeam": "Annapolis Blues Women's",
+    "awayTeam": "Virginia Beach United Women's",
+    "score": "0-1",
+    "matchId": "5083652",
+    "targetMatchId": "5093837",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "28/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Virginia Atlantic FC Women\\s Hist",
+    "title": "Virginia Atlantic FC Women's 1-3 Virginia Development Acade Women's",
+    "homeTeam": "Virginia Atlantic FC Women's",
+    "awayTeam": "Virginia Development Acade Women's",
+    "score": "1-3",
+    "matchId": "5069689",
+    "targetMatchId": "5093837",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "21/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Virginia Atlantic FC Women\\s Hist",
+    "title": "Virginia Beach United Women's 2-1 Virginia Atlantic FC Women's",
+    "homeTeam": "Virginia Beach United Women's",
+    "awayTeam": "Virginia Atlantic FC Women's",
+    "score": "2-1",
+    "matchId": "5068089",
+    "targetMatchId": "5093837",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

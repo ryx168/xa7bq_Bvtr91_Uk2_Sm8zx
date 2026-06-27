@@ -1,0 +1,122 @@
+[
+  {
+    "date": "27/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": "New England Mutiny Women's 1-1 Vermont Green Women's",
+    "homeTeam": "New England Mutiny Women's",
+    "awayTeam": "Vermont Green Women's",
+    "score": "1-1",
+    "matchId": "5069617",
+    "targetMatchId": "5093298",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "21/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "New England Mutiny Women\\s Hist",
+    "title": "New England Mutiny Women's 2-4 Hudson Valley Crusaders Women's",
+    "homeTeam": "New England Mutiny Women's",
+    "awayTeam": "Hudson Valley Crusaders Women's",
+    "score": "2-4",
+    "matchId": "5080393",
+    "targetMatchId": "5093298",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "10/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "New England Mutiny Women\\s Hist",
+    "title": "Hudson Valley Crusaders Women's 2-1 New England Mutiny Women's",
+    "homeTeam": "Hudson Valley Crusaders Women's",
+    "awayTeam": "New England Mutiny Women's",
+    "score": "2-1",
+    "matchId": "5073323",
+    "targetMatchId": "5093298",
+    "goals": [
+      "",
+      "30' 1-0",
+      "",
+      "",
+      "53' 1-1<br>60' 2-1",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "27/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "New England Mutiny Women\\s Hist",
+    "title": "New England Mutiny Women's 1-1 Vermont Green Women's",
+    "homeTeam": "New England Mutiny Women's",
+    "awayTeam": "Vermont Green Women's",
+    "score": "1-1",
+    "matchId": "5069617",
+    "targetMatchId": "5093298",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "27/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Vermont Green Women\\s Hist",
+    "title": "New England Mutiny Women's 1-1 Vermont Green Women's",
+    "homeTeam": "New England Mutiny Women's",
+    "awayTeam": "Vermont Green Women's",
+    "score": "1-1",
+    "matchId": "5069617",
+    "targetMatchId": "5093298",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
