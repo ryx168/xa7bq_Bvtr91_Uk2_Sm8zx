@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5093856",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "03/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Gimletroll(U19) Hist",
+    "title": "FK Jerv (U19) 2-3 Gimletroll(U19)",
+    "homeTeam": "FK Jerv (U19)",
+    "awayTeam": "Gimletroll(U19)",
+    "score": "2-3",
+    "matchId": "5071523",
+    "targetMatchId": "5093856",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "17/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Start Kristiansand (U19) Hist",
+    "title": "FK Jerv (U19) 2-6 Start Kristiansand (U19)",
+    "homeTeam": "FK Jerv (U19)",
+    "awayTeam": "Start Kristiansand (U19)",
+    "score": "2-6",
+    "matchId": "5077776",
+    "targetMatchId": "5093856",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "27/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Start Kristiansand (U19) Hist",
+    "title": "Vindbjart(U19) 1-2 Start Kristiansand (U19)",
+    "homeTeam": "Vindbjart(U19)",
+    "awayTeam": "Start Kristiansand (U19)",
+    "score": "1-2",
+    "matchId": "5068960",
+    "targetMatchId": "5093856",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "01/04/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Start Kristiansand (U19) Hist",
+    "title": "Sandefjord U19 2-1 Start Kristiansand (U19)",
+    "homeTeam": "Sandefjord U19",
+    "awayTeam": "Start Kristiansand (U19)",
+    "score": "2-1",
+    "matchId": "5048659",
+    "targetMatchId": "5093856",
+    "goals": [
+      "15' 1-0",
+      "",
+      "42' 1-1",
+      "",
+      "",
+      "64' 2-1",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

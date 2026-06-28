@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5094255",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "18/04/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Royal Olympic Club Charleroi Hist",
+    "title": "RSCA Futures 5-0 Royal Olympic Club Charleroi",
+    "homeTeam": "RSCA Futures",
+    "awayTeam": "Royal Olympic Club Charleroi",
+    "score": "5-0",
+    "matchId": "4900627",
+    "targetMatchId": "5094255",
+    "goals": [
+      "4' 1-0",
+      "29' 2-0",
+      "",
+      "",
+      "60' 3-0",
+      "",
+      "78' 4-0<br>83' 5-0",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "12/04/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Royal Olympic Club Charleroi Hist",
+    "title": "Royal Olympic Club Charleroi 0-1 K. Lierse S.K.",
+    "homeTeam": "Royal Olympic Club Charleroi",
+    "awayTeam": "K. Lierse S.K.",
+    "score": "0-1",
+    "matchId": "4900626",
+    "targetMatchId": "5094255",
+    "goals": [
+      "",
+      "",
+      "36' 0-1",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "05/04/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Royal Olympic Club Charleroi Hist",
+    "title": "RFC Liege 2-1 Royal Olympic Club Charleroi",
+    "homeTeam": "RFC Liege",
+    "awayTeam": "Royal Olympic Club Charleroi",
+    "score": "2-1",
+    "matchId": "4900617",
+    "targetMatchId": "5094255",
+    "goals": [
+      "7' 1-0",
+      "",
+      "42' 2-0",
+      "",
+      "",
+      "",
+      "",
+      "90+2' 2-1"
+    ],
+    "isReference": true
+  }
+]

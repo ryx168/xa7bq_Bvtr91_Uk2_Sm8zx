@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5093854",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "07/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "FC AWJ Hist",
+    "title": "Osaka City SC 1-0 FC AWJ",
+    "homeTeam": "Osaka City SC",
+    "awayTeam": "FC AWJ",
+    "score": "1-0",
+    "matchId": "5072694",
+    "targetMatchId": "5093854",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "31/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "FC AWJ Hist",
+    "title": "FC AWJ 5-1 Kobe FC 1970",
+    "homeTeam": "FC AWJ",
+    "awayTeam": "Kobe FC 1970",
+    "score": "5-1",
+    "matchId": "5071105",
+    "targetMatchId": "5093854",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "30/08/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "FC AWJ Hist",
+    "title": "Moriyama Samurai 1-2 FC AWJ",
+    "homeTeam": "Moriyama Samurai",
+    "awayTeam": "FC AWJ",
+    "score": "1-2",
+    "matchId": "4978695",
+    "targetMatchId": "5093854",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

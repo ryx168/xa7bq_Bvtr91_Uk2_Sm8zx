@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5093273",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "01/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Platense FC Hist",
+    "title": "Deportivo LSM 1-0 Platense FC",
+    "homeTeam": "Deportivo LSM",
+    "awayTeam": "Platense FC",
+    "score": "1-0",
+    "matchId": "5071312",
+    "targetMatchId": "5093273",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "27/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Artigas Hist",
+    "title": "CA Lito 0-0 Artigas",
+    "homeTeam": "CA Lito",
+    "awayTeam": "Artigas",
+    "score": "0-0",
+    "matchId": "5069221",
+    "targetMatchId": "5093273",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "03/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Artigas Hist",
+    "title": "Basanez 1-5 Artigas",
+    "homeTeam": "Basanez",
+    "awayTeam": "Artigas",
+    "score": "1-5",
+    "matchId": "5064005",
+    "targetMatchId": "5093273",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "18/10/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Artigas Hist",
+    "title": "Artigas 2-0 Colon FC Montevideo",
+    "homeTeam": "Artigas",
+    "awayTeam": "Colon FC Montevideo",
+    "score": "2-0",
+    "matchId": "4991298",
+    "targetMatchId": "5093273",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
