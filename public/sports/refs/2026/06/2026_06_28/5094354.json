@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5094354",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "18/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Osner\\s FC Hist",
+    "title": "American Soccer Club NY 0-0 Osner's FC",
+    "homeTeam": "American Soccer Club NY",
+    "awayTeam": "Osner's FC",
+    "score": "0-0",
+    "matchId": "5079958",
+    "targetMatchId": "5094354",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "07/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Osner\\s FC Hist",
+    "title": "Santa Cruz FC USA 1-0 Osner's FC",
+    "homeTeam": "Santa Cruz FC USA",
+    "awayTeam": "Osner's FC",
+    "score": "1-0",
+    "matchId": "5072715",
+    "targetMatchId": "5094354",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "10/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Osner\\s FC Hist",
+    "title": "Osner's FC 1-2 New Haven United FC",
+    "homeTeam": "Osner's FC",
+    "awayTeam": "New Haven United FC",
+    "score": "1-2",
+    "matchId": "5065541",
+    "targetMatchId": "5094354",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5094357",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "16/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "SC Eltersdorf Hist",
+    "title": "SC Eltersdorf 3-1 SC Grossschwarzenlohe",
+    "homeTeam": "SC Eltersdorf",
+    "awayTeam": "SC Grossschwarzenlohe",
+    "score": "3-1",
+    "matchId": "4885426",
+    "targetMatchId": "5094357",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "09/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "SC Eltersdorf Hist",
+    "title": "Eintracht Bamberg 1-1 SC Eltersdorf",
+    "homeTeam": "Eintracht Bamberg",
+    "awayTeam": "SC Eltersdorf",
+    "score": "1-1",
+    "matchId": "4885398",
+    "targetMatchId": "5094357",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "02/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "SC Eltersdorf Hist",
+    "title": "SC Eltersdorf 3-0 ASV Neumarkt",
+    "homeTeam": "SC Eltersdorf",
+    "awayTeam": "ASV Neumarkt",
+    "score": "3-0",
+    "matchId": "4885371",
+    "targetMatchId": "5094357",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

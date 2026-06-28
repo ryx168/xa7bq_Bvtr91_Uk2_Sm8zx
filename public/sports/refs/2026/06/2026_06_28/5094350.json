@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5094350",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "08/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "AD Moravia Women\\s Hist",
+    "title": "AD Moravia Women's 1-2 AD Chorotega Women's",
+    "homeTeam": "AD Moravia Women's",
+    "awayTeam": "AD Chorotega Women's",
+    "score": "1-2",
+    "matchId": "5065152",
+    "targetMatchId": "5094350",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "30/04/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "AD Moravia Women\\s Hist",
+    "title": "AD Moravia Women's 2-3 CS Herediano Women's",
+    "homeTeam": "AD Moravia Women's",
+    "awayTeam": "CS Herediano Women's",
+    "score": "2-3",
+    "matchId": "5063089",
+    "targetMatchId": "5094350",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "05/04/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "AD Moravia Women\\s Hist",
+    "title": "AD Moravia Women's 0-3 Dimas Escazu Women's",
+    "homeTeam": "AD Moravia Women's",
+    "awayTeam": "Dimas Escazu Women's",
+    "score": "0-3",
+    "matchId": "5059482",
+    "targetMatchId": "5094350",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

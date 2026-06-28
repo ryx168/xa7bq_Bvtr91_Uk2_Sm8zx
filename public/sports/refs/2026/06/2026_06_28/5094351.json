@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5094351",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "28/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Argentino de Rosario Hist",
+    "title": "CDyS Juventud Unida 3-0 Argentino de Rosario",
+    "homeTeam": "CDyS Juventud Unida",
+    "awayTeam": "Argentino de Rosario",
+    "score": "3-0",
+    "matchId": "5015033",
+    "targetMatchId": "5094351",
+    "goals": [
+      "8' 1-0",
+      "",
+      "",
+      "",
+      "59' 2-0",
+      "",
+      "87' 3-0",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "16/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Argentino de Rosario Hist",
+    "title": "Sacachispas 1-0 Argentino de Rosario",
+    "homeTeam": "Sacachispas",
+    "awayTeam": "Argentino de Rosario",
+    "score": "1-0",
+    "matchId": "5015015",
+    "targetMatchId": "5094351",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "59' 1-0",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "07/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Argentino de Rosario Hist",
+    "title": "Argentino de Rosario 2-1 CA Lugano",
+    "homeTeam": "Argentino de Rosario",
+    "awayTeam": "CA Lugano",
+    "score": "2-1",
+    "matchId": "5015061",
+    "targetMatchId": "5094351",
+    "goals": [
+      "13' 1-0",
+      "",
+      "",
+      "",
+      "",
+      "62' 1-1",
+      "85' 2-1",
+      ""
+    ],
+    "isReference": true
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5069082",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "11/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Club 10 de Julio Hist",
+    "title": "Gral Caballero Fuerte Olimpo 0-3 Club 10 de Julio",
+    "homeTeam": "Gral Caballero Fuerte Olimpo",
+    "awayTeam": "Club 10 de Julio",
+    "score": "0-3",
+    "matchId": "5069081",
+    "targetMatchId": "5069082",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
