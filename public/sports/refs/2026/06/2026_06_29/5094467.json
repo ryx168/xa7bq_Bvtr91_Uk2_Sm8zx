@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5094467",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "20/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Ferroviario de Lichinga Hist",
+    "title": "Ferroviario de Nacala 0-0 Ferroviario de Lichinga",
+    "homeTeam": "Ferroviario de Nacala",
+    "awayTeam": "Ferroviario de Lichinga",
+    "score": "0-0",
+    "matchId": "5078430",
+    "targetMatchId": "5094467",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "31/08/19",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Maxaquene Hist",
+    "title": "Maxaquene 0-0 Costa do Sol Maputo",
+    "homeTeam": "Maxaquene",
+    "awayTeam": "Costa do Sol Maputo",
+    "score": "0-0",
+    "matchId": "3961153",
+    "targetMatchId": "5094467",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "02/03/13",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Maxaquene Hist",
+    "title": "Mochudi Centre Chiefs 1-0 Maxaquene",
+    "homeTeam": "Mochudi Centre Chiefs",
+    "awayTeam": "Maxaquene",
+    "score": "1-0",
+    "matchId": "913062",
+    "targetMatchId": "5094467",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "17/02/13",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Maxaquene Hist",
+    "title": "Maxaquene 0-1 Mochudi Centre Chiefs",
+    "homeTeam": "Maxaquene",
+    "awayTeam": "Mochudi Centre Chiefs",
+    "score": "0-1",
+    "matchId": "911100",
+    "targetMatchId": "5094467",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
