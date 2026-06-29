@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5094564",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "23/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Willem II Hist",
+    "title": "FC Volendam 1-2 Willem II",
+    "homeTeam": "FC Volendam",
+    "awayTeam": "Willem II",
+    "score": "1-2",
+    "matchId": "5067809",
+    "targetMatchId": "5094564",
+    "goals": [
+      "8' 0-1",
+      "17' 0-2",
+      "40' 1-2",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "21/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Willem II Hist",
+    "title": "Willem II 1-2 FC Volendam",
+    "homeTeam": "Willem II",
+    "awayTeam": "FC Volendam",
+    "score": "1-2",
+    "matchId": "5067808",
+    "targetMatchId": "5094564",
+    "goals": [
+      "13' 0-1",
+      "18' 0-2",
+      "",
+      "",
+      "54' 1-2",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "17/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Willem II Hist",
+    "title": "Willem II 2-0 Almere City FC",
+    "homeTeam": "Willem II",
+    "awayTeam": "Almere City FC",
+    "score": "2-0",
+    "matchId": "5066780",
+    "targetMatchId": "5094564",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "60' 1-0",
+      "",
+      "85' 2-0",
+      ""
+    ],
+    "isReference": true
+  }
+]
