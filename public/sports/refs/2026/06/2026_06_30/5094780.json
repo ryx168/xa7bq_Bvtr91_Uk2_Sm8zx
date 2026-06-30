@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5094780",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "16/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "SV Rodinghausen Hist",
+    "title": "SC Paderborn 07 B 2-0 SV Rodinghausen",
+    "homeTeam": "SC Paderborn 07 B",
+    "awayTeam": "SV Rodinghausen",
+    "score": "2-0",
+    "matchId": "4908343",
+    "targetMatchId": "5094780",
+    "goals": [
+      "",
+      "",
+      "39' 1-0",
+      "",
+      "",
+      "",
+      "81' 2-0",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "09/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "SV Rodinghausen Hist",
+    "title": "SV Rodinghausen 0-1 SC Wiedenbruck",
+    "homeTeam": "SV Rodinghausen",
+    "awayTeam": "SC Wiedenbruck",
+    "score": "0-1",
+    "matchId": "4908335",
+    "targetMatchId": "5094780",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "90+4' 0-1"
+    ],
+    "isReference": true
+  },
+  {
+    "date": "02/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "SV Rodinghausen Hist",
+    "title": "Koln Am. 2-1 SV Rodinghausen",
+    "homeTeam": "Koln Am.",
+    "awayTeam": "SV Rodinghausen",
+    "score": "2-1",
+    "matchId": "4908322",
+    "targetMatchId": "5094780",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

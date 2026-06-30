@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5094777",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "17/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "FK Jerv (U19) Hist",
+    "title": "FK Jerv (U19) 2-6 Start Kristiansand (U19)",
+    "homeTeam": "FK Jerv (U19)",
+    "awayTeam": "Start Kristiansand (U19)",
+    "score": "2-6",
+    "matchId": "5077776",
+    "targetMatchId": "5094777",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "03/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "FK Jerv (U19) Hist",
+    "title": "FK Jerv (U19) 2-3 Gimletroll(U19)",
+    "homeTeam": "FK Jerv (U19)",
+    "awayTeam": "Gimletroll(U19)",
+    "score": "2-3",
+    "matchId": "5071523",
+    "targetMatchId": "5094777",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "21/06/24",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "FK Jerv (U19) Hist",
+    "title": "Start Kristiansand (U19) 6-3 FK Jerv (U19)",
+    "homeTeam": "Start Kristiansand (U19)",
+    "awayTeam": "FK Jerv (U19)",
+    "score": "6-3",
+    "matchId": "4703897",
+    "targetMatchId": "5094777",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "23/05/19",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Randesund IL(U19) Hist",
+    "title": "Flekkeroy IL(U19) 1-0 Randesund IL(U19)",
+    "homeTeam": "Flekkeroy IL(U19)",
+    "awayTeam": "Randesund IL(U19)",
+    "score": "1-0",
+    "matchId": "3889043",
+    "targetMatchId": "5094777",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
