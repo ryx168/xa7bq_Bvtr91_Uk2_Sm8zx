@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5094808",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "31/07/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "PVF Vietnam(U21) Hist",
+    "title": "PVF Vietnam(U21) 1-0 Viettel (U21)",
+    "homeTeam": "PVF Vietnam(U21)",
+    "awayTeam": "Viettel (U21)",
+    "score": "1-0",
+    "matchId": "4935568",
+    "targetMatchId": "5094808",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "29/07/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "PVF Vietnam(U21) Hist",
+    "title": "Ha Noi(U21) 0-1 PVF Vietnam(U21)",
+    "homeTeam": "Ha Noi(U21)",
+    "awayTeam": "PVF Vietnam(U21)",
+    "score": "0-1",
+    "matchId": "4933076",
+    "targetMatchId": "5094808",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "27/07/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "PVF Vietnam(U21) Hist",
+    "title": "PVF Vietnam(U21) 1-1 Song Lam Nghe An(U21)",
+    "homeTeam": "PVF Vietnam(U21)",
+    "awayTeam": "Song Lam Nghe An(U21)",
+    "score": "1-1",
+    "matchId": "4932675",
+    "targetMatchId": "5094808",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
