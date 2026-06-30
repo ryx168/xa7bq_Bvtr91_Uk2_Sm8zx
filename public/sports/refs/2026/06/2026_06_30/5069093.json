@@ -1,0 +1,74 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5069093",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "29/05/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "14 de Mayo FBC Hist",
+    "title": "Sportivo San Pedro FBC 2-1 14 de Mayo FBC",
+    "homeTeam": "Sportivo San Pedro FBC",
+    "awayTeam": "14 de Mayo FBC",
+    "score": "2-1",
+    "matchId": "4872266",
+    "targetMatchId": "5069093",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "53' 0-1",
+      "",
+      "80' 1-1<br>87' 2-1",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "27/04/23",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "14 de Mayo FBC Hist",
+    "title": "14 de Mayo FBC 1-1 Sportivo San Pedro FBC",
+    "homeTeam": "14 de Mayo FBC",
+    "awayTeam": "Sportivo San Pedro FBC",
+    "score": "1-1",
+    "matchId": "4462160",
+    "targetMatchId": "5069093",
+    "goals": [
+      "",
+      "28' 1-0",
+      "",
+      "",
+      "",
+      "",
+      "85' 1-1",
+      ""
+    ],
+    "isReference": true
+  }
+]
