@@ -1,0 +1,122 @@
+[
+  {
+    "date": "24/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": "Kunshan Zhangpu 1-4 Liaoning Shengjing Xinrui",
+    "homeTeam": "Kunshan Zhangpu",
+    "awayTeam": "Liaoning Shengjing Xinrui",
+    "score": "1-4",
+    "matchId": "5083891",
+    "targetMatchId": "5094710",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "24/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Liaoning Shengjing Xinrui Hist",
+    "title": "Kunshan Zhangpu 1-4 Liaoning Shengjing Xinrui",
+    "homeTeam": "Kunshan Zhangpu",
+    "awayTeam": "Liaoning Shengjing Xinrui",
+    "score": "1-4",
+    "matchId": "5083891",
+    "targetMatchId": "5094710",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "29/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Liaoning Shengjing Xinrui Hist",
+    "title": "Liaoning Shengjing Xinrui 4-0 Benxi Qingfan",
+    "homeTeam": "Liaoning Shengjing Xinrui",
+    "awayTeam": "Benxi Qingfan",
+    "score": "4-0",
+    "matchId": "5070744",
+    "targetMatchId": "5094710",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "26/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Liaoning Shengjing Xinrui Hist",
+    "title": "Xingtai Wanshuai 2-0 Liaoning Shengjing Xinrui",
+    "homeTeam": "Xingtai Wanshuai",
+    "awayTeam": "Liaoning Shengjing Xinrui",
+    "score": "2-0",
+    "matchId": "5068968",
+    "targetMatchId": "5094710",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "24/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Kunshan Zhangpu Hist",
+    "title": "Kunshan Zhangpu 1-4 Liaoning Shengjing Xinrui",
+    "homeTeam": "Kunshan Zhangpu",
+    "awayTeam": "Liaoning Shengjing Xinrui",
+    "score": "1-4",
+    "matchId": "5083891",
+    "targetMatchId": "5094710",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
