@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5100556",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "06/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Vendsyssel Hist",
+    "title": "Vendsyssel 4-2 Naestved",
+    "homeTeam": "Vendsyssel",
+    "awayTeam": "Naestved",
+    "score": "4-2",
+    "matchId": "5060949",
+    "targetMatchId": "5100556",
+    "goals": [
+      "",
+      "24' 1-0",
+      "36' 2-0<br>39' 2-1",
+      "",
+      "58' 2-2",
+      "66' 3-2",
+      "",
+      "90+6' 4-2"
+    ],
+    "isReference": true
+  },
+  {
+    "date": "30/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Vendsyssel Hist",
+    "title": "Hellerup IK 4-3 Vendsyssel",
+    "homeTeam": "Hellerup IK",
+    "awayTeam": "Vendsyssel",
+    "score": "4-3",
+    "matchId": "5060943",
+    "targetMatchId": "5100556",
+    "goals": [
+      "",
+      "",
+      "32' 1-0<br>34' 1-1<br>44' 1-2",
+      "",
+      "48' 1-3<br>58' 2-3",
+      "",
+      "",
+      "90+2' 3-3<br>90+4' 4-3"
+    ],
+    "isReference": true
+  },
+  {
+    "date": "24/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Vendsyssel Hist",
+    "title": "Vendsyssel 3-1 FC Roskilde",
+    "homeTeam": "Vendsyssel",
+    "awayTeam": "FC Roskilde",
+    "score": "3-1",
+    "matchId": "5060938",
+    "targetMatchId": "5100556",
+    "goals": [
+      "",
+      "16' 1-0<br>20' 1-1",
+      "45' 2-1",
+      "",
+      "",
+      "",
+      "89' 3-1",
+      ""
+    ],
+    "isReference": true
+  }
+]
