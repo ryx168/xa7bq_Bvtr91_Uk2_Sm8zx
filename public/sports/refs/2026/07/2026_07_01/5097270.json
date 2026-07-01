@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5097270",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "17/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Hannover 96 Hist",
+    "title": "Hannover 96 3-3 1. FC Nurnberg",
+    "homeTeam": "Hannover 96",
+    "awayTeam": "1. FC Nurnberg",
+    "score": "3-3",
+    "matchId": "4889476",
+    "targetMatchId": "5097270",
+    "goals": [
+      "",
+      "25' 0-1<br>30' 1-1",
+      "45' 2-1",
+      "",
+      "47' 2-2<br>51' 3-2",
+      "",
+      "83' 3-3",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "09/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Hannover 96 Hist",
+    "title": "VfL Bochum 1-1 Hannover 96",
+    "homeTeam": "VfL Bochum",
+    "awayTeam": "Hannover 96",
+    "score": "1-1",
+    "matchId": "4889438",
+    "targetMatchId": "5097270",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "50' 0-1<br>55' 1-1",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "03/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Hannover 96 Hist",
+    "title": "Hannover 96 3-3 SC Preussen Munster",
+    "homeTeam": "Hannover 96",
+    "awayTeam": "SC Preussen Munster",
+    "score": "3-3",
+    "matchId": "4889426",
+    "targetMatchId": "5097270",
+    "goals": [
+      "",
+      "25' 0-1",
+      "39' 0-2",
+      "45+1' 1-2<br>45+4' 2-2",
+      "",
+      "",
+      "85' 3-2",
+      "90+3' 3-3"
+    ],
+    "isReference": true
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5097251",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "28/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "JN Quansheng Hist",
+    "title": "JN Quansheng 0-3 Shaanxi United Soaring",
+    "homeTeam": "JN Quansheng",
+    "awayTeam": "Shaanxi United Soaring",
+    "score": "0-3",
+    "matchId": "5070837",
+    "targetMatchId": "5097251",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "22/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "JN Quansheng Hist",
+    "title": "Shaanxi Shan an 1-3 JN Quansheng",
+    "homeTeam": "Shaanxi Shan an",
+    "awayTeam": "JN Quansheng",
+    "score": "1-3",
+    "matchId": "5068520",
+    "targetMatchId": "5097251",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
