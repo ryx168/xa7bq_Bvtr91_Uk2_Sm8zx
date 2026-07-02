@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5101287",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "17/07/24",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Peckeloh Hist",
+    "title": "Peckeloh 1-4 SC Wiedenbruck",
+    "homeTeam": "Peckeloh",
+    "awayTeam": "SC Wiedenbruck",
+    "score": "1-4",
+    "matchId": "4734108",
+    "targetMatchId": "5101287",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "17/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Arminia Bielefeld Hist",
+    "title": "Arminia Bielefeld 6-1 Hertha BSC",
+    "homeTeam": "Arminia Bielefeld",
+    "awayTeam": "Hertha BSC",
+    "score": "6-1",
+    "matchId": "4889472",
+    "targetMatchId": "5101287",
+    "goals": [
+      "",
+      "",
+      "37' 0-1",
+      "",
+      "49' 1-1<br>59' 2-1",
+      "65' 3-1<br>74' 4-1",
+      "",
+      "90+2' 5-1<br>90+6' 6-1"
+    ],
+    "isReference": true
+  },
+  {
+    "date": "09/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Arminia Bielefeld Hist",
+    "title": "FC Kaiserslautern 2-0 Arminia Bielefeld",
+    "homeTeam": "FC Kaiserslautern",
+    "awayTeam": "Arminia Bielefeld",
+    "score": "2-0",
+    "matchId": "4889448",
+    "targetMatchId": "5101287",
+    "goals": [
+      "15' 1-0",
+      "29' 2-0",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "02/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Arminia Bielefeld Hist",
+    "title": "Arminia Bielefeld 1-1 VfL Bochum",
+    "homeTeam": "Arminia Bielefeld",
+    "awayTeam": "VfL Bochum",
+    "score": "1-1",
+    "matchId": "4889420",
+    "targetMatchId": "5101287",
+    "goals": [
+      "",
+      "27' 1-0",
+      "",
+      "",
+      "",
+      "",
+      "79' 1-1",
+      ""
+    ],
+    "isReference": true
+  }
+]
