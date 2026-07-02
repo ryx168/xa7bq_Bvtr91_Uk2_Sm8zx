@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5097426",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "28/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "New England Mutiny Women\\s Hist",
+    "title": "New England Mutiny Women's 0-3 Vermont Green Women's",
+    "homeTeam": "New England Mutiny Women's",
+    "awayTeam": "Vermont Green Women's",
+    "score": "0-3",
+    "matchId": "5093298",
+    "targetMatchId": "5097426",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "21/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "New England Mutiny Women\\s Hist",
+    "title": "New England Mutiny Women's 2-4 Hudson Valley Crusaders Women's",
+    "homeTeam": "New England Mutiny Women's",
+    "awayTeam": "Hudson Valley Crusaders Women's",
+    "score": "2-4",
+    "matchId": "5080393",
+    "targetMatchId": "5097426",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "10/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "New England Mutiny Women\\s Hist",
+    "title": "Hudson Valley Crusaders Women's 2-1 New England Mutiny Women's",
+    "homeTeam": "Hudson Valley Crusaders Women's",
+    "awayTeam": "New England Mutiny Women's",
+    "score": "2-1",
+    "matchId": "5073323",
+    "targetMatchId": "5097426",
+    "goals": [
+      "",
+      "30' 1-0",
+      "",
+      "",
+      "53' 1-1<br>60' 2-1",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "17/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Connecticut Legends Women\\s Hist",
+    "title": "Connecticut Legends Women's 2-1 Worcester Wanderers Women's",
+    "homeTeam": "Connecticut Legends Women's",
+    "awayTeam": "Worcester Wanderers Women's",
+    "score": "2-1",
+    "matchId": "5078390",
+    "targetMatchId": "5097426",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
