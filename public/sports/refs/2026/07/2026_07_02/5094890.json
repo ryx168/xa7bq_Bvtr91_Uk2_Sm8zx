@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5094890",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "30/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Ha Noi Bulls(U21) Hist",
+    "title": "PVF Vietnam(U21) 5-0 Ha Noi Bulls(U21)",
+    "homeTeam": "PVF Vietnam(U21)",
+    "awayTeam": "Ha Noi Bulls(U21)",
+    "score": "5-0",
+    "matchId": "5094808",
+    "targetMatchId": "5094890",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "30/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Ha Noi(U21) Hist",
+    "title": "Viettel (U21) 1-1 Ha Noi(U21)",
+    "homeTeam": "Viettel (U21)",
+    "awayTeam": "Ha Noi(U21)",
+    "score": "1-1",
+    "matchId": "5094775",
+    "targetMatchId": "5094890",
+    "goals": [
+      "8' 1-0",
+      "",
+      "",
+      "",
+      "49' 1-1",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "29/07/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Ha Noi(U21) Hist",
+    "title": "Ha Noi(U21) 0-1 PVF Vietnam(U21)",
+    "homeTeam": "Ha Noi(U21)",
+    "awayTeam": "PVF Vietnam(U21)",
+    "score": "0-1",
+    "matchId": "4933076",
+    "targetMatchId": "5094890",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "27/07/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Ha Noi(U21) Hist",
+    "title": "Da Nang(U21) 0-0 Ha Noi(U21)",
+    "homeTeam": "Da Nang(U21)",
+    "awayTeam": "Ha Noi(U21)",
+    "score": "0-0",
+    "matchId": "4932676",
+    "targetMatchId": "5094890",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

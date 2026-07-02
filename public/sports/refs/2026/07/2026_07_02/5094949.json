@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5094949",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "30/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "TTHL TDTT Gia Lai(U21) Hist",
+    "title": "TTHL TDTT Gia Lai(U21) 0-2 Da Nang(U21)",
+    "homeTeam": "TTHL TDTT Gia Lai(U21)",
+    "awayTeam": "Da Nang(U21)",
+    "score": "0-2",
+    "matchId": "5094773",
+    "targetMatchId": "5094949",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "30/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Cong An Ho Chi Minh City(U21) Hist",
+    "title": "Cong An Ho Chi Minh City(U21) 1-2 Hoang Anh Gia Lai(U21)",
+    "homeTeam": "Cong An Ho Chi Minh City(U21)",
+    "awayTeam": "Hoang Anh Gia Lai(U21)",
+    "score": "1-2",
+    "matchId": "5094846",
+    "targetMatchId": "5094949",
+    "goals": [
+      "",
+      "16' 1-0<br>20' 1-1",
+      "43' 1-2",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "23/07/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Cong An Ho Chi Minh City(U21) Hist",
+    "title": "Cong An Ho Chi Minh City(U21) 1-1 PVF-CAND(U21)",
+    "homeTeam": "Cong An Ho Chi Minh City(U21)",
+    "awayTeam": "PVF-CAND(U21)",
+    "score": "1-1",
+    "matchId": "4921069",
+    "targetMatchId": "5094949",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "21/07/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Cong An Ho Chi Minh City(U21) Hist",
+    "title": "Da Nang(U21) 0-0 Cong An Ho Chi Minh City(U21)",
+    "homeTeam": "Da Nang(U21)",
+    "awayTeam": "Cong An Ho Chi Minh City(U21)",
+    "score": "0-0",
+    "matchId": "4921067",
+    "targetMatchId": "5094949",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

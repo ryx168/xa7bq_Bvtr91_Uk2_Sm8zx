@@ -1,0 +1,122 @@
+[
+  {
+    "date": "01/07/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": "Guangzhou Xingpai 2-0 JN Quansheng",
+    "homeTeam": "Guangzhou Xingpai",
+    "awayTeam": "JN Quansheng",
+    "score": "2-0",
+    "matchId": "5097251",
+    "targetMatchId": "5101285",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "01/07/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "JN Quansheng Hist",
+    "title": "Guangzhou Xingpai 2-0 JN Quansheng",
+    "homeTeam": "Guangzhou Xingpai",
+    "awayTeam": "JN Quansheng",
+    "score": "2-0",
+    "matchId": "5097251",
+    "targetMatchId": "5101285",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "28/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "JN Quansheng Hist",
+    "title": "JN Quansheng 0-3 Shaanxi United Soaring",
+    "homeTeam": "JN Quansheng",
+    "awayTeam": "Shaanxi United Soaring",
+    "score": "0-3",
+    "matchId": "5070837",
+    "targetMatchId": "5101285",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "22/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "JN Quansheng Hist",
+    "title": "Shaanxi Shan an 1-3 JN Quansheng",
+    "homeTeam": "Shaanxi Shan an",
+    "awayTeam": "JN Quansheng",
+    "score": "1-3",
+    "matchId": "5068520",
+    "targetMatchId": "5101285",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "01/07/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Guangzhou Xingpai Hist",
+    "title": "Guangzhou Xingpai 2-0 JN Quansheng",
+    "homeTeam": "Guangzhou Xingpai",
+    "awayTeam": "JN Quansheng",
+    "score": "2-0",
+    "matchId": "5097251",
+    "targetMatchId": "5101285",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5101266",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "30/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Breidablik Augnablik Smari(U19) Hist",
+    "title": "Breidablik Augnablik Smari(U19) 4-3 Keflavik Njardvik U19",
+    "homeTeam": "Breidablik Augnablik Smari(U19)",
+    "awayTeam": "Keflavik Njardvik U19",
+    "score": "4-3",
+    "matchId": "5094359",
+    "targetMatchId": "5101266",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "20/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Breidablik Augnablik Smari(U19) Hist",
+    "title": "KA Dalvik Reynir(U19) 5-3 Breidablik Augnablik Smari(U19)",
+    "homeTeam": "KA Dalvik Reynir(U19)",
+    "awayTeam": "Breidablik Augnablik Smari(U19)",
+    "score": "5-3",
+    "matchId": "5080483",
+    "targetMatchId": "5101266",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "06/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Breidablik Augnablik Smari(U19) Hist",
+    "title": "Breidablik Augnablik Smari(U19) 5-2 ThorTHK VolsMagni(U19)",
+    "homeTeam": "Breidablik Augnablik Smari(U19)",
+    "awayTeam": "ThorTHK VolsMagni(U19)",
+    "score": "5-2",
+    "matchId": "5072153",
+    "targetMatchId": "5101266",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "24/09/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Vikingur BF108(U19) Hist",
+    "title": "Vikingur BF108(U19) 4-0 Leiknir Reykjavik(U19)",
+    "homeTeam": "Vikingur BF108(U19)",
+    "awayTeam": "Leiknir Reykjavik(U19)",
+    "score": "4-0",
+    "matchId": "4987638",
+    "targetMatchId": "5101266",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

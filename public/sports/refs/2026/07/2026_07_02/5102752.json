@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5102752",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "07/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Charlottetowne Hops Hist",
+    "title": "Charlottetowne Hops 1-2 Greenville United",
+    "homeTeam": "Charlottetowne Hops",
+    "awayTeam": "Greenville United",
+    "score": "1-2",
+    "matchId": "5072659",
+    "targetMatchId": "5102752",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "08/06/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Charlottetowne Hops Hist",
+    "title": "Charlottetowne Hops 4-1 Greenville United",
+    "homeTeam": "Charlottetowne Hops",
+    "awayTeam": "Greenville United",
+    "score": "4-1",
+    "matchId": "4874803",
+    "targetMatchId": "5102752",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "01/06/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Charlottetowne Hops Hist",
+    "title": "Port City 2-3 Charlottetowne Hops",
+    "homeTeam": "Port City",
+    "awayTeam": "Charlottetowne Hops",
+    "score": "2-3",
+    "matchId": "4873016",
+    "targetMatchId": "5102752",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "07/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Burlington United Hist",
+    "title": "Bristol Rhythm 5-0 Burlington United",
+    "homeTeam": "Bristol Rhythm",
+    "awayTeam": "Burlington United",
+    "score": "5-0",
+    "matchId": "5072712",
+    "targetMatchId": "5102752",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
