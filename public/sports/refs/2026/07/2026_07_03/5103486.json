@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5103486",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "02/07/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Greuther Furth B Hist",
+    "title": "SC Grossschwarzenlohe 3-5 Greuther Furth B",
+    "homeTeam": "SC Grossschwarzenlohe",
+    "awayTeam": "Greuther Furth B",
+    "score": "3-5",
+    "matchId": "5094546",
+    "targetMatchId": "5103486",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "28/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Greuther Furth B Hist",
+    "title": "SSV Jahn Regensburg II 2-3 Greuther Furth B",
+    "homeTeam": "SSV Jahn Regensburg II",
+    "awayTeam": "Greuther Furth B",
+    "score": "2-3",
+    "matchId": "5083987",
+    "targetMatchId": "5103486",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "03/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Greuther Furth B Hist",
+    "title": "Greuther Furth B 1-0 ASV Cham",
+    "homeTeam": "Greuther Furth B",
+    "awayTeam": "ASV Cham",
+    "score": "1-0",
+    "matchId": "5067838",
+    "targetMatchId": "5103486",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "51' 1-0",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
