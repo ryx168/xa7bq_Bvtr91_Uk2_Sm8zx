@@ -121,8 +121,8 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/analyst/
-          git commit -m "Auto-update daily analyst JSON [skip ci]" || echo "No changes to commit"
+          git add public/sports/refs/
+          git commit -m "Auto-update daily analyst refs [skip ci]" || echo "No changes to commit"
           git push
 
       - name: Setup Python
