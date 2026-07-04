@@ -924,9 +924,10 @@ export const SportsMixin = {
                 const box1color = has45plus ? '#fff' : '#334155';
                 const box1border = has45plus ? '#22c55e' : '#cbd5e1';
 
-                const box2bg = has90plus ? '#ef4444' : 'transparent';
-                const box2color = has90plus ? '#fff' : '#334155';
-                const box2border = has90plus ? '#ef4444' : '#cbd5e1';
+                const is2HTZero = (goals2HT === 0 && total > 0);
+                const box2bg = has90plus ? '#ef4444' : (is2HTZero ? '#000000' : 'transparent');
+                const box2color = has90plus ? '#fff' : (is2HTZero ? '#fff' : '#334155');
+                const box2border = has90plus ? '#ef4444' : (is2HTZero ? '#000000' : '#cbd5e1');
 
                 let box3bg = 'transparent', box3color = '#334155', box3border = '#cbd5e1';
                 if (total === 0) { box3bg = '#64748b'; box3color = '#fff'; box3border = '#64748b'; }
