@@ -1,0 +1,43 @@
+1560:         const bodyContent = latest.bodyHtml || (latest.body ? latest.body.replace(/\n/g, '<br>') : (latest.preview || ''));
+1812:         const body = latest.bodyHtml || (latest.body ? latest.body.replace(/\n/g, '<br>') : (latest.preview || ''));
+3187:                         tdClick = `App.openDomainPreview('${firstEv.domain}', '${key}'); event.stopPropagation();`;
+3189:                         tdClick = `App.openCalendarPreview('${firstEv.id}'); event.stopPropagation();`;
+3352:             const panelActive = document.getElementById('calendar-preview-panel')?.classList.contains('active');
+4181:             // If an image exists for this month, make the header click open the right-side preview.
+4184:                 ? `App.openCalendarPreview('${monthEventId}'); event.stopPropagation();`
+4570:         if (!this.state.calendar.previewEmailId) {
+4575:         const email = this.state.emails.find(e => e.id === this.state.calendar.previewEmailId) ||
+4576:             this.state.threads.flatMap(t => t.emails).find(e => e.id === this.state.calendar.previewEmailId);
+4591:                     description: `Subject: ${email.subject}\n\n${email.preview || email.text || ''}`,
+4615:         if (!this.state.calendar.previewEmailId) {
+4619:         await this.junkCalendarEmail(this.state.calendar.previewEmailId);
+4693:                             // Video found! Open the preview. 
+4694:                             // Dashboard sync is handled centrally in openCalendarPreview.
+4695:                             this.openCalendarPreview(candidate.id);
+4708:     async openCalendarPreview(emailId) {
+4709:         console.log('App.openCalendarPreview called with ID:', emailId);
+4712:         this.state.calendar.previewEmailId = emailId;
+4765:             console.error('Email not found for preview:', emailId);
+4789:                 console.error('Error fetching full email for calendar preview', e);
+4793:         const panel = document.getElementById('calendar-preview-panel');
+4794:         const content = document.getElementById('calendar-preview-content');
+4802:             bodyHtml = (email.body || email.text || email.preview || '').replace(/\n/g, '<br/>');
+4835:         let websitePreviewHtml = '';
+4838:             websitePreviewHtml = `
+4959:                 ${websitePreviewHtml}
+4961:                     <iframe id="calendar-preview-frame" style="width: 100%; height: 100%; flex: 1; border: none; ${iframeStyle}"></iframe>
+5047:             const iframe = document.getElementById('calendar-preview-frame');
+5067:                     console.error('Error writing to preview iframe:', e);
+5071:             // Dashboard Synchronization (Deferred until preview is open)
+5291:     openDomainPreview(domain, dateKey) {
+5292:         console.log('App.openDomainPreview called for:', domain, dateKey);
+5293:         const panel = document.getElementById('calendar-preview-panel');
+5294:         const content = document.getElementById('calendar-preview-content');
+5298:         // Hide header buttons for domain list preview
+5383:                             ${this.escape((email.preview || '').substring(0, 150))}
+5401:     closeCalendarPreview() {
+5402:         const panel = document.getElementById('calendar-preview-panel');
+5463:         if (!this.state.calendar.previewEmailId) {
+5482:         const eventId = this.state.calendar.previewEmailId;
+6049:             this.closeCalendarPreview();
+7280:                 App.openCalendarPreview(ev.id);

@@ -1,0 +1,2983 @@
+<!DOCTYPE html>
+<html class="iframe">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudMail - Universal Email & Calendar</title>
+    <base href="/">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script>
+        if (localStorage.getItem('colorMode') === 'dark' || (!localStorage.getItem('colorMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark-mode');
+        } else {
+            document.documentElement.classList.remove('dark-mode');
+        }
+    </script>
+
+    <!-- Bootstrap & LESS -->
+    <link rel="stylesheet" href="deps/bootstrap.min.css">
+    <link rel="stylesheet/less" href="styles/styles.less">
+    <script src="deps/less.min.js" data-env="development"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- MapLibre GL -->
+    <link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
+    <script src='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js'></script>
+
+    <!-- CKEditor 5 -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/40.0.0/classic/ckeditor.js"></script>
+
+    <!-- Pinyin-Pro (Chinese → Pinyin search) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pinyin-pro/3.27.0/index.min.js"></script>
+
+    <style>
+        /* Custom Overrides for Static Mode */
+        .hidden {
+            display: none !important;
+        }
+
+        /* Ensure calendar view stays hidden on mobile when not on the calendar page
+           (overrides the display:flex !important from styles.less mobile media query) */
+        @media (max-width: 768px) {
+            #calendar-view.hidden {
+                display: none !important;
+            }
+        }
+
+        /* ===================================================================
+           MOBILE BOTTOM NAV BAR  (replaces the left sidebar on mobile)
+           Converts the vertical #layout-menu into a horizontal scrollable
+           bottom bar on viewports <= 768px.
+           =================================================================== */
+        @media screen and (max-width: 768px) {
+
+            /* Flip the main layout so the menu sits at the bottom */
+            #layout {
+                flex-direction: column !important;
+            }
+
+            /* Turn the menu into a slim horizontal bar */
+            #layout-menu {
+                order: 99 !important;
+                width: 100% !important;
+                height: 52px !important;
+                min-height: 52px !important;
+                max-height: 52px !important;
+                flex: 0 0 52px !important;
+                display: flex !important;
+                flex-direction: row !important;
+                overflow-x: auto !important;
+                overflow-y: hidden !important;
+                -webkit-overflow-scrolling: touch;
+                scroll-behavior: smooth;
+                background-color: #2f3a3f !important;
+                border-top: 1px solid rgba(255,255,255,0.1);
+                border-right: none !important;
+                padding: 0 !important;
+                scrollbar-width: thin;
+                scrollbar-color: rgba(255,255,255,0.3) transparent;
+                z-index: 1000 !important;
+            }
+
+            /* Hide the logo/header inside the menu on mobile */
+            #layout-menu .popover-header {
+                display: none !important;
+            }
+
+            /* Make the taskmenu a horizontal flex row */
+            #taskmenu {
+                display: flex !important;
+                flex-direction: row !important;
+                width: auto !important;
+                min-width: 100%;
+                height: 52px !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                overflow: visible !important;
+            }
+
+            /* Each nav icon button: square touch-friendly tiles */
+            #taskmenu a {
+                display: inline-flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                flex-direction: column !important;
+                flex: 0 0 52px !important;
+                width: 52px !important;
+                height: 52px !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                float: none !important;
+                text-align: center !important;
+                border: none !important;
+                border-bottom: none !important;
+                line-height: 1 !important;
+                font-size: 1.25rem !important;
+                position: relative !important;
+                top: auto !important;
+                bottom: auto !important;
+                left: auto !important;
+                right: auto !important;
+            }
+
+            #taskmenu a:before {
+                float: none !important;
+                display: block !important;
+                width: auto !important;
+                height: auto !important;
+                line-height: 1 !important;
+                margin: 0 !important;
+                font-size: 1.25rem !important;
+            }
+
+            /* Active indicator: top border stripe */
+            #taskmenu a.selected {
+                background: rgba(255,255,255,0.1) !important;
+                border-top: 3px solid #4fc3f7 !important;
+                border-left: none !important;
+            }
+
+            /* Hide text labels - icons only on mobile */
+            #taskmenu span.inner {
+                display: none !important;
+            }
+
+            /* Special buttons (logout, theme) flow inline at the right end */
+            #taskmenu .special-buttons {
+                position: static !important;
+                display: flex !important;
+                flex-direction: row !important;
+                margin-left: auto;
+                background-color: transparent !important;
+            }
+
+            /* Webkit scrollbar styling for the nav bar */
+            #layout-menu::-webkit-scrollbar {
+                height: 3px;
+            }
+            #layout-menu::-webkit-scrollbar-track {
+                background: transparent;
+            }
+            #layout-menu::-webkit-scrollbar-thumb {
+                background: rgba(255,255,255,0.3);
+                border-radius: 2px;
+            }
+            
+            
+            /* Ensure the table list can scroll horizontally on mobile and has visible scrollbars */
+            .eo-table-wrap {
+                -webkit-overflow-scrolling: touch !important;
+                scrollbar-width: thin !important;
+                scrollbar-color: rgba(0,0,0,0.3) transparent !important;
+                /* If the table is very tall, adding a max-height ensures the horizontal 
+                   scrollbar stays visible without scrolling to the bottom of the page */
+                /* max-height: calc(100vh - 180px); */
+                /* overflow-y: auto !important; */
+                overflow-x: auto !important;
+                border-bottom: 1px solid #e2e8f0;
+            }
+            .eo-table-wrap::-webkit-scrollbar {
+                height: 6px !important;
+                width: 6px !important;
+                background: transparent !important;
+            }
+            .eo-table-wrap::-webkit-scrollbar-thumb {
+                background: rgba(0,0,0,0.2) !important;
+                border-radius: 3px !important;
+            }
+            
+            /* Hide the mobile hamburger button in the content header */
+            a.task-menu-button {
+                display: none !important;
+            }
+        }
+        }
+        }
+
+
+        .watermark {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: #aaa;
+        }
+
+        .watermark i {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Fix iframe height */
+        #layout-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .iframe-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Selection Styles */
+        tr.message.selected {
+            background-color: #e8f0fe !important;
+        }
+
+        #taskmenu a i {
+            transition: color 0.3s;
+        }
+
+        #taskmenu a.selected i {
+            color: #28a745 !important; /* Matches @color-success */
+        }
+
+        /* Context Menu */
+        #context-menu {
+            position: fixed;
+            z-index: 10000;
+            background: white;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 5px 0;
+            min-width: 150px;
+            display: none;
+        }
+
+        #context-menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #context-menu li {
+            padding: 8px 15px;
+            cursor: pointer;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+        }
+
+        #context-menu li i {
+            margin-right: 10px;
+            width: 16px;
+            text-align: center;
+            color: #666;
+        }
+
+        /* Modal Contact Styles */
+        .contact-item:hover {
+            background: #f0f7ff !important;
+        }
+
+        .contact-avatar {
+            background: #007bff;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        #modal-contact-groups .nav-link {
+            font-size: 13px;
+            color: #555;
+            padding: 8px 15px;
+        }
+
+        #modal-contact-groups .nav-link:hover {
+            background: #eee;
+        }
+
+        #modal-contact-groups .nav-link.active {
+            background: #e7f3ff;
+            color: #007bff;
+            border-right: 2px solid #007bff;
+        }
+
+        #context-menu li:hover {
+            background-color: #f1f1f1;
+        }
+
+        #context-menu li.divider {
+            height: 1px;
+            background: #eee;
+            margin: 5px 0;
+        }
+
+        /* CKEditor Customization */
+        .ck-editor__editable_inline {
+            min-height: 400px;
+            max-height: 600px;
+            /* overflow-y: auto !important; */
+        }
+
+        .ck-editor {
+            width: 100% !important;
+        }
+
+        .toolbar-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: none;
+            border: none;
+            color: #333;
+            cursor: pointer;
+            font-size: 11px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+            min-width: 60px;
+        }
+
+        /* Calendar Preview Panel */
+        .calendar-preview-panel {
+            width: 450px;
+            min-width: 350px;
+            max-width: 600px;
+            background: #fff;
+            border-left: 1px solid #e2e2e2;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            flex-shrink: 0;
+            display: none;
+            /* Hidden by default */
+        }
+
+        .calendar-preview-panel.active {
+            display: flex;
+        }
+
+        /* â”€â”€ Event Preview Panel â€” maximize support â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        #calendar-preview-panel {
+            transition: width .28s cubic-bezier(.4,0,.2,1),
+                        height .28s cubic-bezier(.4,0,.2,1),
+                        top .28s cubic-bezier(.4,0,.2,1),
+                        left .28s cubic-bezier(.4,0,.2,1),
+                        box-shadow .28s ease;
+        }
+
+        #calendar-preview-panel.preview-maximized {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100vw !important;
+            height: 100vh !important;
+            z-index: 99998 !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+        }
+
+        #calendar-preview-panel.preview-maximized #calendar-preview-content {
+            max-height: calc(100vh - 52px) !important;
+            height: calc(100vh - 52px) !important;
+        }
+
+        #calendar-preview-panel.preview-maximized #calendar-preview-frame {
+            height: 100% !important;
+            min-height: 0 !important;
+        }
+
+        #btn-preview-maximize {
+            background: transparent;
+            border: 1px solid rgba(0,120,212,.35);
+            color: #0078d4;
+            border-radius: 5px;
+            padding: 4px 9px;
+            cursor: pointer;
+            font-size: 13px;
+            line-height: 1;
+            transition: background .15s, border-color .15s;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        #btn-preview-maximize:hover {
+            background: #e7f3ff;
+            border-color: #0078d4;
+        }
+
+        .toolbar-btn:hover {
+            background: #f0f0f0;
+        }
+
+        .toolbar-btn i {
+            font-size: 18px;
+            margin-bottom: 4px;
+            color: #555;
+        }
+
+        .compose-label {
+            color: #666;
+            font-size: 13px;
+            font-weight: 500;
+            width: 70px;
+            display: inline-block;
+
+        }
+
+        /* Calendar Styles */
+        #calendar-view {
+            display: flex;
+            height: 100%;
+            background: #fff;
+            color: #333;
+            min-width: 0;
+            max-width: 100%;
+        }
+
+        .calendar-sidebar {
+            width: 250px;
+            border-right: 1px solid #e2e2e2;
+            background: #fdfdfd;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+        }
+
+        .calendar-main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            min-height: 0;
+            max-width: 100%;
+        }
+
+        .calendar-header {
+            padding: 8px 15px;
+            border-bottom: 1px solid #e2e2e2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .calendar-controls {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .calendar-grid {
+            flex: 1;
+            overflow: auto;
+            position: relative;
+            min-width: 0;
+            min-height: 0;
+            max-width: 100%;
+        }
+
+        .calendar-table {
+            width: 100%;
+            height: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        .calendar-table th,
+        .calendar-table td {
+            border: 1px solid #eee;
+            vertical-align: top;
+            padding: 5px;
+        }
+
+        .calendar-table th {
+            height: 30px;
+            background: #f8f9fa;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .calendar-day {
+            min-height: 120px;
+            height: auto;
+            min-width: 100px;
+        }
+
+        .calendar-day.today {
+            background: #fffdf5;
+        }
+
+        .calendar-day-header {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 5px;
+        }
+
+        .calendar-day-number {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 13px;
+        }
+
+        .calendar-day.today .calendar-day-number {
+            background: #007bff;
+            color: #fff;
+        }
+
+        .calendar-event {
+            font-size: 11px;
+            padding: 2px 5px;
+            border-radius: 3px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            word-break: break-word;
+            line-height: 1.2;
+        }
+
+        .calendar-event-wrapper {
+            margin-bottom: 6px;
+            cursor: pointer;
+            transition: background 0.1s;
+            border-radius: 4px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .calendar-event-wrapper:hover {
+            background: rgba(0, 0, 0, 0.05);
+        }
+
+        /* Full images in grid views as requested */
+        .calendar-table .event-cover {
+            display: block;
+            width: 100%;
+            margin: 4px 0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .calendar-table .event-cover img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .event-cover {
+            width: 100%;
+            border-radius: 4px;
+            overflow: hidden;
+            background: #f0f0f0;
+            margin-top: 8px;
+        }
+
+        .event-cover img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+
+        .event-received {
+            background: #e7f3ff;
+            color: #007bff;
+            border-left: 3px solid #007bff;
+        }
+
+        .event-sent {
+            background: #e6ffed;
+            color: #1a7f37;
+            border-left: 3px solid #1a7f37;
+        }
+
+        .event-custom {
+            background: #fef1f1;
+            color: #d73a49;
+            border-left: 3px solid #d73a49;
+        }
+
+        .mini-calendar {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .mini-calendar-table {
+            width: 100%;
+            font-size: 12px;
+            border-spacing: 1px;
+            border-collapse: separate;
+        }
+
+        .mini-calendar-table th {
+            color: #999;
+            font-weight: 600;
+            padding: 3px 1px;
+            text-align: center;
+            font-size: 10px;
+        }
+
+        .mini-calendar-table td {
+            text-align: center;
+            padding: 1px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .mini-calendar-table td span {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            transition: background 0.15s, color 0.15s;
+            font-size: 11px;
+        }
+
+        .mini-calendar-table td:hover span {
+            background: #e8f0fe;
+            color: #1a73e8;
+        }
+
+        .mini-calendar-table td.today span {
+            border: 2px solid #1a73e8;
+            color: #1a73e8;
+            font-weight: 700;
+        }
+
+        .mini-calendar-table td.selected span {
+            background: #1a73e8;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .mini-calendar-table td.multi-selected span {
+            background: #4285f4;
+            color: #fff;
+        }
+
+        .mini-calendar-map-tip {
+            font-size: 10px;
+            color: #888;
+            text-align: center;
+            padding: 4px 6px;
+            background: #f0f4ff;
+            border-radius: 4px;
+            margin-top: 4px;
+            line-height: 1.3;
+        }
+
+        /* Map Pin List Sidebar Styles */
+        .map-pin-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .map-pin-item {
+            border-radius: 8px;
+            margin: 0 8px;
+            border: 1px solid transparent;
+        }
+
+        .map-pin-item:hover {
+            background: #fdfdfd;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-color: #eee;
+        }
+
+        .map-pin-item img {
+            border: 1px solid #eee;
+            transition: transform 0.2s;
+        }
+
+        .map-pin-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .map-pin-item .pin-title {
+            color: #1a1a1a;
+            transition: color 0.2s;
+        }
+
+        .map-pin-item:hover .pin-title {
+            color: #007bff;
+        }
+
+        .eo-politician-map-view {
+            display: grid;
+            grid-template-columns: 280px minmax(0, 1fr);
+            height: 100%;
+            min-height: 0;
+            background: #fff;
+        }
+
+        .eo-politician-map-list {
+            border-right: 1px solid #e5e7eb;
+            background: #f8fafc;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .eo-politician-map-list-header {
+            padding: 10px 12px;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            color: #111827;
+        }
+
+        .eo-politician-map-list-header span {
+            display: block;
+            font-size: 12px;
+            color: #64748b;
+        }
+
+        .eo-politician-map-tools {
+            display: inline-flex;
+            gap: 4px;
+            flex-shrink: 0;
+        }
+
+        .eo-politician-map-tools button {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #dbe3ef;
+            border-radius: 6px;
+            background: #fff;
+            color: #1f2937;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .eo-politician-map-tools button:hover {
+            border-color: #93c5fd;
+            color: #1d4ed8;
+        }
+
+        .eo-politician-map-list-scroll {
+            overflow-y: auto;
+            padding: 8px;
+        }
+
+        .eo-politician-map-location {
+            width: 100%;
+            border: 1px solid transparent;
+            background: transparent;
+            border-radius: 7px;
+            padding: 9px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            cursor: pointer;
+            color: #1f2937;
+            text-align: left;
+        }
+
+        .eo-politician-map-location:hover {
+            background: #fff;
+            border-color: #dbeafe;
+            color: #1d4ed8;
+        }
+
+        .eo-politician-map-location.is-unmapped {
+            opacity: 0.5;
+            cursor: default;
+        }
+
+        .eo-politician-map-location-main {
+            min-width: 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+        }
+
+        .eo-politician-map-location-main span {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .eo-politician-map-count {
+            min-width: 26px;
+            padding: 2px 7px;
+            border-radius: 999px;
+            background: #e0f2fe;
+            color: #075985;
+            font-size: 12px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .eo-politician-map-stage {
+            position: relative;
+            min-width: 0;
+            min-height: 0;
+        }
+
+        #politician-map {
+            position: absolute;
+            inset: 0;
+        }
+
+        .eo-politician-map-empty {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #64748b;
+            background: #f8fafc;
+            z-index: 2;
+        }
+
+        .eo-politician-map-marker {
+            width: 34px;
+            height: 34px;
+            border: 2px solid #fff;
+            border-radius: 50% 50% 50% 4px;
+            transform: rotate(-45deg);
+            background: #2563eb;
+            color: #fff;
+            box-shadow: 0 8px 18px rgba(37, 99, 235, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .eo-politician-map-marker span {
+            transform: rotate(45deg);
+            font-size: 12px;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .eo-politician-map-popup {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            min-width: 260px;
+        }
+
+        .eo-politician-map-popup-title {
+            font-weight: 800;
+            color: #111827;
+            font-size: 15px;
+        }
+
+        .eo-politician-map-popup-subtitle,
+        .eo-politician-map-popup-more {
+            color: #64748b;
+            font-size: 12px;
+        }
+
+        .eo-politician-map-popup-person {
+            border: 0;
+            background: #f8fafc;
+            border-radius: 7px;
+            padding: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        .eo-politician-map-popup-person:hover {
+            background: #eef6ff;
+        }
+
+        .eo-politician-map-popup-person span {
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+        }
+
+        .eo-politician-map-popup-person strong,
+        .eo-politician-map-popup-person small {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .eo-politician-map-popup-person small {
+            color: #64748b;
+            max-width: 240px;
+        }
+
+        @media (max-width: 900px) {
+            .eo-politician-map-view {
+                grid-template-columns: 1fr;
+                grid-template-rows: 180px minmax(420px, 1fr);
+                height: 100%;
+            }
+
+            .eo-politician-map-list {
+                border-right: 0;
+                border-bottom: 1px solid #e5e7eb;
+            }
+        }
+
+        /* Playlist Premium Styles */
+        #modal-playlists .modal-content {
+            border-radius: 12px;
+            overflow: hidden;
+            border: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        #modal-playlists .modal-header {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-bottom: 1px solid #dee2e6;
+            padding: 15px 20px;
+        }
+
+        #playlists-sidebar-list .nav-item {
+            transition: all 0.2s ease;
+            margin: 4px 8px;
+            border-radius: 8px;
+            border: 1px solid transparent;
+        }
+
+        #playlists-sidebar-list .nav-item:hover {
+            background: rgba(0, 120, 212, 0.05);
+            border-color: rgba(0, 120, 212, 0.1);
+        }
+
+        #playlists-sidebar-list .nav-item.active {
+            background: #e7f3ff;
+            border-color: #0078d4;
+        }
+
+        .playlist-item-card {
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-bottom: 8px;
+            border: 1px solid #f0f0f0;
+            background: #fff;
+            position: relative;
+        }
+
+        .playlist-item-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-color: #0078d4;
+        }
+
+        .playlist-item-card.dragging {
+            opacity: 0.5;
+            background: #f8f9fa;
+        }
+
+        .playlist-item-card .drag-handle {
+            cursor: grab;
+            padding: 10px;
+            color: #ccc;
+            transition: color 0.2s;
+        }
+
+        .playlist-item-card:hover .drag-handle {
+            color: #999;
+        }
+
+        .playlist-item-card .item-index {
+            font-size: 14px;
+            font-weight: 700;
+            color: #0078d4;
+            margin-right: 10px;
+            width: 25px;
+            text-align: center;
+        }
+
+        #btn-play-all, #btn-shuffle-all {
+            border-radius: 20px;
+            padding: 5px 18px;
+            font-weight: 600;
+            transition: all 0.2s;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .playlist-btn-hidden {
+            display: none !important;
+        }
+        
+        .playlist-btn-visible {
+            display: inline-flex !important;
+        }
+        
+        #btn-play-all {
+            background-color: #28a745 !important;
+            color: white !important;
+        }
+        
+        #btn-play-all:hover {
+            background-color: #218838 !important;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 10px rgba(40, 167, 69, 0.35);
+        }
+        
+        #btn-shuffle-all {
+            background-color: #0078d4 !important;
+            color: white !important;
+        }
+        
+        #btn-shuffle-all:hover {
+            background-color: #005a9e !important;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 10px rgba(0, 123, 255, 0.35);
+        }
+
+        /* Contacts Styles */
+        #contacts-view {
+            display: flex;
+            height: 100%;
+            background: #fff;
+            color: #333;
+            overflow: hidden;
+        }
+
+        .contacts-sidebar {
+            width: 250px;
+            border-right: 1px solid #e2e2e2;
+            background: #fdfdfd;
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
+        }
+
+        #contacts-view.groups-compact .contacts-sidebar {
+            display: none !important;
+            width: 0;
+            flex: 0 0 0;
+            border-right: 0;
+        }
+
+        .contacts-list {
+            width: 350px;
+            border-right: 1px solid #e2e2e2;
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            min-height: 0;
+        }
+
+        #contacts-view.table-mode .contacts-list {
+            flex: 1;
+            width: auto;
+            border-right: none;
+            padding: 10px;
+        }
+
+        #contacts-view.politician-map-mode .contacts-list {
+            padding: 0;
+            min-height: 0;
+        }
+
+        #contacts-view.politician-map-mode #contact-list-items {
+            overflow: hidden !important;
+        }
+
+        #contacts-view.politician-map-mode .footer {
+            display: none !important;
+        }
+
+        #contacts-view.table-mode .contacts-list > .header {
+            display: none !important;
+        }
+
+        #contacts-view.table-mode .contacts-content {
+            display: none !important;
+        }
+
+        #contacts-view.politician-detail-mode .contacts-sidebar,
+        #contacts-view.politician-detail-mode .contacts-list,
+        #contacts-view.politician-detail-mode .contacts-content > .header {
+            display: none !important;
+        }
+
+        .contacts-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            min-height: 0;
+            overflow: hidden;
+        }
+
+        .eo-filter-chip {
+            border: 1px solid #d8d3f4;
+            background: #f5f3ff;
+            color: #5b4acb;
+            border-radius: 999px;
+            padding: 4px 8px;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            white-space: nowrap;
+            line-height: 1.2;
+        }
+
+        .eo-filter-chip:hover {
+            background: #ebe7ff;
+            border-color: #bfb5f0;
+        }
+
+        .eo-filter-chip--truncate {
+            max-width: 116px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            vertical-align: middle;
+        }
+
+        .eo-td--location {
+            width: 130px;
+            min-width: 130px;
+            max-width: 130px;
+        }
+
+        .eo-search-clear {
+            border: 0;
+            background: transparent;
+            color: #777;
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-left: 4px;
+        }
+
+        .eo-search-clear:hover {
+            background: #f1f1f4;
+            color: #333;
+        }
+
+        .eo-politician-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+            gap: 14px;
+            padding: 14px;
+        }
+
+        .eo-politician-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            background: #fff;
+            overflow: hidden;
+            cursor: pointer;
+            min-width: 0;
+        }
+
+        .eo-politician-photo {
+            height: 180px;
+            background: #e8e4f8;
+            background-size: cover;
+            background-position: center top;
+            color: #6c5ce7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .eo-politician-card-body {
+            padding: 12px;
+        }
+
+        .eo-politician-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 8px;
+        }
+
+        .eo-politician-meta,
+        .eo-politician-tags,
+        .eo-politician-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .eo-politician-birthday,
+        .eo-slide-birthday {
+            color: #6b7280;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        .eo-politician-profile {
+            color: #4b5563;
+            font-size: 13px;
+            line-height: 1.45;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            min-height: 55px;
+        }
+
+        .eo-audio-mini,
+        .eo-audio-action,
+        .eo-audio-wrong {
+            border: 1px solid #d8d3f4;
+            background: #f5f3ff;
+            color: #5b4acb;
+            border-radius: 6px;
+            padding: 6px 9px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .eo-audio-wrong {
+            border-color: #d8d3f4;
+            background: #f5f3ff;
+            color: #5b4acb;
+        }
+
+        .eo-audio-wrong.is-marked {
+            border-color: #fecaca;
+            background: #fff1f2;
+            color: #b91c1c;
+        }
+
+        .eo-audio-wrong.is-confirmed {
+            border-color: #bfdbfe;
+            background: #eff6ff;
+            color: #1d4ed8;
+        }
+
+        .eo-th--audio,
+        .eo-td--audio {
+            width: 92px;
+            min-width: 92px;
+            max-width: 92px;
+            text-align: center;
+        }
+
+        .eo-audio-cell {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+        }
+
+        .eo-audio-mini--icon,
+        .eo-audio-wrong--icon {
+            width: 24px;
+            height: 24px;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            border-radius: 5px;
+        }
+
+        .eo-wiki-button,
+        .eo-wiki-inline {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            border: 1px solid #d8d3f4;
+            background: #fff;
+            color: #4f46b8;
+            border-radius: 6px;
+            padding: 6px 9px;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.2;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .eo-wiki-button:hover,
+        .eo-wiki-inline:hover {
+            background: #f5f3ff;
+            border-color: #bcb3ec;
+            color: #3f35a8;
+            text-decoration: none;
+        }
+
+        .eo-wiki-inline {
+            padding: 7px 11px;
+            font-size: 13px;
+        }
+
+        .eo-voice-status-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(17, 24, 39, 0.38);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+        }
+
+        .eo-voice-status-dialog {
+            width: min(360px, calc(100vw - 32px));
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            box-shadow: 0 18px 45px rgba(0,0,0,0.18);
+            padding: 18px;
+        }
+
+        .eo-voice-status-title {
+            font-size: 17px;
+            font-weight: 700;
+            color: #111827;
+        }
+
+        .eo-voice-status-name {
+            margin-top: 4px;
+            color: #6b7280;
+            font-size: 13px;
+        }
+
+        .eo-voice-status-actions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin: 18px 0 12px;
+        }
+
+        .eo-voice-confirmed,
+        .eo-voice-wrong,
+        .eo-voice-cancel {
+            border: 1px solid #e5e7eb;
+            border-radius: 7px;
+            background: #fff;
+            padding: 10px 12px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .eo-voice-confirmed {
+            background: #f0fdf4;
+            border-color: #bbf7d0;
+            color: #15803d;
+        }
+
+        .eo-voice-wrong {
+            background: #fff1f2;
+            border-color: #fecaca;
+            color: #b91c1c;
+        }
+
+        .eo-voice-cancel {
+            width: 100%;
+            color: #4b5563;
+            background: #f9fafb;
+        }
+
+        .eo-politician-slide {
+            height: calc(100% - 10px);
+            min-height: 560px;
+            display: grid;
+            grid-template-columns: 48px minmax(0, 980px) 48px;
+            gap: 14px;
+            align-items: center;
+            justify-content: center;
+            padding: 18px;
+        }
+
+        .eo-slide-card {
+            display: grid;
+            grid-template-columns: minmax(280px, 42%) 1fr;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fff;
+            min-height: 500px;
+        }
+
+        .eo-slide-photo {
+            background: #e8e4f8;
+            background-size: cover;
+            background-position: center top;
+        }
+
+        .eo-slide-info {
+            padding: 28px;
+            min-width: 0;
+        }
+
+        .eo-slide-info h2 {
+            margin: 0 0 12px;
+            font-size: 32px;
+            line-height: 1.15;
+        }
+
+        .eo-slide-info p {
+            color: #374151;
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 14px 0;
+        }
+
+        .eo-slide-count {
+            color: #6b7280;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .eo-slide-nav {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 1px solid #e5e7eb;
+            background: #fff;
+            color: #4b5563;
+            cursor: pointer;
+        }
+
+        .contact-item {
+            padding: 10px 15px;
+            border-bottom: 1px solid #f5f5f5;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .contact-item:hover {
+            background: #f9f9f9;
+        }
+
+        .contact-item.selected {
+            background: #e7f3ff;
+            border-left: 3px solid #007bff;
+        }
+
+        .contact-avatar {
+            width: 36px;
+            height: 36px;
+            background: #eee;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .contact-info {
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .contact-name {
+            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .contact-email {
+            font-size: 12px;
+            color: #888;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .alphabet-divider {
+            padding: 5px 15px;
+            background: #f8f9fa;
+            font-size: 11px;
+            font-weight: bold;
+            color: #999;
+            border-bottom: 1px solid #eee;
+        }
+
+        .contact-detail-header {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-detail-avatar {
+            width: 80px;
+            height: 80px;
+            background: #f0f0f0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: #999;
+        }
+
+        /* Hierarchical Century View */
+        .century-big-group {
+            margin-bottom: 50px;
+            background: #fff;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .century-header-banner {
+            height: 250px;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            padding: 30px;
+            color: #fff;
+        }
+
+        .century-header-banner::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+        }
+
+        .century-header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .century-header-content h2 {
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .century-body {
+            padding: 30px;
+            background: #fff5f8;
+        }
+
+        .decade-group {
+            margin-bottom: 40px;
+        }
+
+        .decade-header-banner {
+            height: 150px;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            padding: 20px 30px;
+            color: #fff;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .decade-header-banner::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, transparent 60%);
+            z-index: 1;
+        }
+
+        .decade-header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .decade-header-content h3 {
+            font-size: 32px;
+            margin: 0;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: 800;
+        }
+
+        .decade-years-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+
+        @media (max-width: 1400px) {
+            .decade-years-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (max-width: 1100px) {
+            .decade-years-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 800px) {
+            .decade-years-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .decade-years-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .century-header-banner {
+                height: 180px;
+                padding: 20px;
+            }
+
+            .century-header-content h2 {
+                font-size: 32px;
+            }
+        }
+
+        /* Modern Year View Styles - DELEGATED TO styles.less */
+        .vs-strip::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+
+<body class="task-mail action-none">
+    <div id="context-menu">
+        <ul>
+            <li onclick="App.batchAction('read')"><i class="fas fa-envelope-open"></i> Mark as Read</li>
+            <li onclick="App.batchAction('unread')"><i class="fas fa-envelope"></i> Mark as Unread</li>
+            <li class="divider"></li>
+            <li onclick="App.saveToContact()"><i class="fas fa-user-plus"></i> Save to Contact</li>
+            <li class="divider"></li>
+            <li onclick="App.batchAction('delete')"><i class="fas fa-trash-alt"></i> Delete</li>
+            <li onclick="App.batchAction('archive')"><i class="fas fa-archive"></i> Archive</li>
+        </ul>
+    </div>
+
+    <div id="layout">
+
+        <!-- MOBILE MENU / HEADER -->
+        <div id="layout-menu">
+            <div class="popover-header">
+                <a class="button icon cancel"><span class="inner">Close</span></a>
+            </div>
+            <div id="taskmenu" class="menu toolbar" role="navigation">
+                <a href="#mail" class="button mail selected"> <span class="inner">Mail</span></a>
+                <a href="#contacts" class="button contacts"> <span class="inner">Contacts</span></a>
+                <a href="#politicians" class="button politicians"> <span class="inner">Politicians</span><i class="fas fa-landmark" style="display: block; font-size: 24px; margin-bottom: 5px; color: #777;"></i></a>
+                <a href="#calendar" class="button calendar"> <span class="inner">Calendar</span></a>
+                <a href="#sports/FIFA-2026-World-Cup" class="button sports"> <span class="inner">Sports</span><i class="fas fa-futbol" style="display: block; font-size: 24px; margin-bottom: 5px; color: #777;"></i></a>
+                <a href="/campaigns/" class="button campaigns"> <span class="inner">Campaigns</span><i class="fas fa-paper-plane" style="display: block; font-size: 24px; margin-bottom: 5px; color: #777;"></i></a>
+                <a href="#automations" class="button automations"> <span class="inner">Automations</span><i class="fas fa-magic" style="display: block; font-size: 24px; margin-bottom: 5px; color: #777;"></i></a>
+                <a href="#reports" class="button reports"> <span class="inner">Reports</span><i class="fas fa-chart-line" style="display: block; font-size: 24px; margin-bottom: 5px; color: #777;"></i></a>
+                <a href="#settings" id="btn-settings" class="button settings"> <span class="inner">Settings</span></a>
+                <a href="#agent" id="btn-agent" class="button agent"> <span class="inner">Agent</span><i
+                        class="fas fa-robot"
+                        style="display: block; font-size: 24px; margin-bottom: 5px; color: #777;"></i></a>
+
+                <span class="special-buttons">
+                    <a href="#" class="button theme-style" onclick="App.openThemeStyle()" title="Theme Style"><i
+                            class="fas fa-paint-brush"></i></a>
+                    <a href="#" class="button about" onclick="App.openAbout()" title="About"><i
+                            class="fas fa-info-circle"></i></a>
+                    <a href="/cdn-cgi/access/logout" class="button logout" title="Logout"> <span
+                            class="inner">Logout</span></a>
+                </span>
+            </div>
+        </div>
+
+        <!-- FOLDER LIST -->
+        <div id="layout-sidebar" class="listbox">
+            <div class="header">
+                <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
+                <span class="header-title username"
+                    style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 140px; display: inline-block; vertical-align: middle;">superesolutions@gmail.com</span>
+                <a class="button icon sidebar-menu"><span class="inner">Menu</span></a>
+            </div>
+            <div id="folderlist-content" class="scroller">
+                <ul class="listing folderlist" id="folder-list">
+                    <!-- JS Inject -->
+                    <li class="mailbox"><a class="selected"><span class="name">Inbox</span><span
+                                class="badge badge-secondary float-right">...</span></a></li>
+                </ul>
+                <div id="group-filters"
+                    style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px;">
+                    <ul class="listing folderlist" id="group-list">
+                        <!-- JS Inject Groups -->
+                    </ul>
+                </div>
+            </div>
+            <div class="footer small">
+                <span id="quota-display" class="quota-widget">Protocol: Static IMAP</span>
+            </div>
+            <div class="column-resizer" id="resizer-sidebar"></div>
+        </div>
+
+        <!-- MESSAGE LIST -->
+        <div id="layout-list" class="listbox selected">
+            <div id="messagelist-header" class="header">
+                <a class="button icon task-menu-button" href="#menu"><span class="inner">Menu</span></a>
+                <a class="button icon back-sidebar-button folders" href="#sidebar"><span
+                        class="inner">Folders</span></a>
+                <span class="header-title"></span>
+                <div class="toolbar menu" role="toolbar">
+                    <a href="#" id="btn-compose" class="button compose" title="Compose"><span class="inner">Compose</span></a>
+                    <a href="#" class="button select" title="Select"><span class="inner">Select</span></a>
+                    <a href="#" class="button threads" title="Threads"><span class="inner">Threads</span></a>
+                </div>
+                <a href="#" class="button icon toolbar-button refresh" onclick="App.triggerSync()" title="Refresh"><span
+                        class="inner">Refresh</span></a>
+            </div>
+
+            <!-- Search -->
+            <div class="searchbar menu">
+                <div class="input-group">
+                    <div class="input-group-prepend"><span class="input-group-text"></span>
+                    </div>
+                    <input type="text" id="mailsearchform" class="form-control" placeholder="Search...">
+                </div>
+            </div>
+
+            <div id="messagelist-content" class="scroller" tabindex="-1">
+                <table class="listing messagelist sortheader fixedheader" id="messagelist">
+                    <thead class="hidden">
+                        <tr>
+                            <th class="subject">Subject</th>
+                            <th class="date">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="email-list-body">
+                        <!-- JS Inject -->
+                        <tr>
+                            <td class="subject"><span class="from">Sender</span><span class="subject">Subject</span>
+                            </td>
+                            <td class="date">Date</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="list-loading" class="loading hidden"> Loading...</div>
+            </div>
+
+            <div class="pagenav menu footer small" role="toolbar">
+                <a id="btn-prev" class="button prevpage disabled" title="Previous"><span class="inner">Prev</span></a>
+                <span class="pagenav-text" id="list-count">Loading...</span>
+                <a id="btn-next" class="button nextpage disabled" title="Next"><span class="inner">Next</span></a>
+            </div>
+            <div class="column-resizer" id="resizer-list"></div>
+        </div>
+
+        <!-- MESSAGE PREVIEW -->
+        <div id="layout-content">
+            <div class="header" role="toolbar">
+                <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
+                <span class="header-title"></span>
+
+                <div id="mailtoolbar" class="toolbar menu" role="toolbar">
+                    <a href="#" id="btn-reply" class="button reply disabled"
+                        onclick="App.openReply(); return false;"><span class="inner">Reply</span></a>
+                    <a href="#" id="btn-reply-all" class="button reply-all disabled"
+                        onclick="App.openReply(true); return false;"><span class="inner">Reply All</span></a>
+                    <a href="#" id="btn-forward" class="button forward disabled"
+                        onclick="App.openForward(); return false;"><span class="inner">Forward</span></a>
+                    <a href="#" id="btn-delete" class="button delete disabled"
+                        onclick="App.batchAction('delete'); return false;"><span class="inner">Delete</span></a>
+                    <a href="#" id="btn-junk" class="button junk disabled"
+                        onclick="App.batchAction('junk'); return false;"><span class="inner">Junk</span></a>
+                    <a href="#" id="btn-extract-bounces" class="button extract-bounces"
+                        onclick="App.extractBounces(); return false;"><span class="inner" style="color:#d13438"><i class="fas fa-biohazard"></i> Extract Bounces</span></a>
+                    <span class="spacer"></span>
+                    <a href="#" id="btn-mark" class="button mark disabled"><span class="inner">Mark</span></a>
+                </div>
+            </div>
+
+            <div class="iframe-wrapper">
+                <div id="content-placeholder" class="watermark">
+                    <p>Select a message to read</p>
+                </div>
+
+                <iframe id="messagecontframe" class="hidden"></iframe>
+            </div>
+        </div>
+
+        <!-- Enhanced Compose View (Roundcube Style) - Full Screen (after task menu) -->
+        <div id="compose-view" class="hidden"
+            style="flex:1; display:flex; flex-direction:column; background:white; z-index:100; font-family: 'Inter', system-ui, -apple-system, sans-serif;">
+
+            <!-- Top Action Toolbar -->
+            <div class="compose-toolbar"
+                style="display:flex; justify-content:flex-start; align-items:center; padding:10px 20px; border-bottom:1px solid #e2e2e2; background:#fff; gap:15px; flex-wrap: wrap;">
+                <button id="btn-send" class="toolbar-btn" onclick="App.sendEmail()">
+                    <i class="fa-solid fa-paper-plane" style="color:#007bff"></i>
+                    <span>Send</span>
+                </button>
+                <button id="btn-save" class="toolbar-btn" onclick="App.saveDraft()">
+                    <i class="fa-solid fa-floppy-disk"></i>
+                    <span>Save</span>
+                </button>
+                <button id="btn-attach-toolbar" class="toolbar-btn"
+                    onclick="document.getElementById('compose-file-input').click()">
+                    <i class="fa-solid fa-paperclip"></i>
+                    <span>Attach</span>
+                </button>
+                <button id="btn-signature" class="toolbar-btn" onclick="App.insertSignature()">
+                    <i class="fa-solid fa-signature"></i>
+                    <span>Signature</span>
+                </button>
+                <button id="btn-responses" class="toolbar-btn" onclick="App.openResponses()">
+                    <i class="fa-solid fa-message"></i>
+                    <span>Responses</span>
+                </button>
+                <div style="flex:1"></div>
+                <div style="display:flex; align-items:center; gap:10px;">
+                    <span style="font-size:12px; color:#666; font-weight:500;">Server:</span>
+                    <select id="compose-relay" class="form-control-sm"
+                        style="font-size:12px; height:30px; border:1px solid #ddd; border-radius:4px; padding:0 5px; color:#333; background:#f9f9f9; outline:none;">
+                        <option value="postfix" selected>Server 1</option>
+                        <option value="postfix2">Server 2</option>
+                        <option value="postfix3">Server 3</option>
+                        <option value="gmail">Server 4</option>
+                        <option value="sendgrid">Server 5</option>
+                        <option value="brevo">Server 6</option>
+                        <option value="ses">Server 7</option>
+                        <option value="postmark">Server 8</option>
+                    </select>
+                </div>
+                <button id="btn-compose-cancel" class="btn btn-sm btn-outline-secondary"
+                    onclick="App.hideCompose()">Cancel</button>
+            </div>
+
+            <div style="flex:1; display:flex; overflow:hidden;">
+                <!-- Custom Contacts Autocomplete Dropdown -->
+                <div id="contacts-autocomplete-dropdown"
+                    style="display:none; position:absolute; z-index:9999; background:#fff; border:1px solid #ccc; box-shadow:0 2px 4px rgba(0,0,0,0.2); max-height:200px; overflow-y:auto; width:100%;">
+                </div>
+
+                <!-- Main Content (Left) -->
+                <div
+                    style="flex:1; display:flex; flex-direction:column; overflow-y:auto; padding:20px; border-right:1px solid #eee;">
+
+                    <!-- Headers -->
+                    <div class="compose-headers" style="margin-bottom:20px;">
+                        <div class="form-group row no-gutters"
+                            style="margin-bottom:12px; border-bottom:1px solid #f5f5f5; padding-bottom:10px; align-items: center;">
+                            <label class="compose-label">From</label>
+                            <div style="flex:1">
+                                <select id="compose-from" class="form-control form-control-sm"
+                                    style="font-size:14px; color:#333;"></select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row no-gutters"
+                            style="margin-bottom:12px; border-bottom:1px solid #f5f5f5; padding-bottom:10px; align-items: center;">
+                            <label class="compose-label">To</label>
+                            <div style="flex:1; position:relative;">
+                                <input type="text" id="compose-to" class="form-control form-control-sm"
+                                    style="font-size:14px; color:#333;" autocomplete="off"
+                                    oninput="App.handleContactAutocomplete(event)"
+                                    onkeydown="App.handleContactAutocompleteKey(event)"
+                                    onblur="setTimeout(() => document.getElementById('contacts-autocomplete-dropdown').style.display='none', 200)">
+                            </div>
+                            <div class="col-sm-1 text-right" style="white-space: nowrap;">
+                                <i class="fa-solid fa-users" style="color:#999; cursor:pointer; margin-right:8px;"
+                                    onclick="App.openInsertContactsModal('compose-to')" title="Insert contact"></i>
+                                <i class="fa-solid fa-plus" id="btn-add-header" style="color:#999; cursor:pointer;"
+                                    onclick="App.toggleHeaderMenu(event)" title="Add header"></i>
+                            </div>
+                        </div>
+
+                        <!-- Add Header Dropdown Menu -->
+                        <div id="header-dropdown" class="dropdown-menu"
+                            style="display:none; position: absolute; z-index: 1050;">
+                            <a class="dropdown-item" href="#" onclick="App.toggleComposeHeader('cc'); return false;"><i
+                                    class="fa-solid fa-envelope"></i> Cc</a>
+                            <a class="dropdown-item" href="#" onclick="App.toggleComposeHeader('bcc'); return false;"><i
+                                    class="fa-solid fa-envelope"></i> Bcc</a>
+                            <a class="dropdown-item" href="#"
+                                onclick="App.toggleComposeHeader('reply-to'); return false;"><i
+                                    class="fa-solid fa-reply"></i> Reply-To</a>
+                            <a class="dropdown-item" href="#"
+                                onclick="App.toggleComposeHeader('followup-to'); return false;"><i
+                                    class="fa-solid fa-share"></i> Followup-To</a>
+                        </div>
+
+                        <div id="row-cc" class="form-group row no-gutters hidden"
+                            style="margin-bottom:12px; border-bottom:1px solid #f5f5f5; padding-bottom:10px; align-items: center;">
+                            <label class="compose-label">Cc</label>
+                            <div style="flex:1; position:relative;">
+                                <input type="text" id="compose-cc" class="form-control form-control-sm"
+                                    style="font-size:14px; color:#333;" autocomplete="off"
+                                    oninput="App.handleContactAutocomplete(event)"
+                                    onkeydown="App.handleContactAutocompleteKey(event)"
+                                    onblur="setTimeout(() => document.getElementById('contacts-autocomplete-dropdown').style.display='none', 200)">
+                            </div>
+                            <div class="col-sm-1 text-right">
+                                <i class="fa-solid fa-users" style="color:#999; cursor:pointer;"
+                                    onclick="App.openInsertContactsModal('compose-cc')"></i>
+                            </div>
+                        </div>
+
+                        <div id="row-bcc" class="form-group row no-gutters hidden"
+                            style="margin-bottom:12px; border-bottom:1px solid #f5f5f5; padding-bottom:10px; align-items: center;">
+                            <label class="compose-label">Bcc</label>
+                            <div style="flex:1; position:relative;">
+                                <input type="text" id="compose-bcc" class="form-control form-control-sm"
+                                    style="font-size:14px; color:#333;" autocomplete="off"
+                                    oninput="App.handleContactAutocomplete(event)"
+                                    onkeydown="App.handleContactAutocompleteKey(event)"
+                                    onblur="setTimeout(() => document.getElementById('contacts-autocomplete-dropdown').style.display='none', 200)">
+                            </div>
+                            <div class="col-sm-1 text-right">
+                                <i class="fa-solid fa-users" style="color:#999; cursor:pointer;"
+                                    onclick="App.openInsertContactsModal('compose-bcc')"></i>
+                            </div>
+                        </div>
+
+                        <div id="row-reply-to" class="form-group row no-gutters hidden"
+                            style="margin-bottom:12px; border-bottom:1px solid #f5f5f5; padding-bottom:10px; align-items: center;">
+                            <label class="compose-label">Reply-To</label>
+                            <div style="flex:1">
+                                <input type="text" id="compose-reply-to" class="form-control form-control-sm"
+                                    style="font-size:14px; color:#333;">
+                            </div>
+                        </div>
+
+                        <div id="row-followup-to" class="form-group row no-gutters hidden"
+                            style="margin-bottom:12px; border-bottom:1px solid #f5f5f5; padding-bottom:10px; align-items: center;">
+                            <label class="compose-label">Followup-To</label>
+                            <div style="flex:1">
+                                <input type="text" id="compose-followup-to" class="form-control form-control-sm"
+                                    style="font-size:14px; color:#333;">
+                            </div>
+                        </div>
+                        <div class="form-group row no-gutters"
+                            style="margin-bottom:12px; border-bottom:1px solid #f5f5f5; padding-bottom:10px; align-items: center;">
+                            <label class="compose-label">Subject</label>
+                            <div style="flex:1">
+                                <input type="text" id="compose-subject" class="form-control form-control-sm"
+                                    style="font-size:14px; color:#333;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formatting Toolbar -->
+                    <!-- Editor Area -->
+                    <div style="flex:1; margin: 10px; display: flex; flex-direction: column; overflow: hidden;">
+                        <textarea id="compose-body" style="display:none;"></textarea>
+                        <div id="editor-container"
+                            style="flex:1; display:flex; flex-direction:column; overflow: hidden;">
+                            <div id="editor"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Link -->
+                <div style="margin-top:10px; text-align:right;">
+                    <a href="#" id="btn-open-extwin" style="color:#007bff; text-decoration:none; font-size:12px;"><i
+                            class="fa-solid fa-up-right-from-square"></i> Open in new window</a>
+                </div>
+
+                <!-- Sidebar (Right) -->
+                <div
+                    style="width:300px; background:#fafafa; display:flex; flex-direction:column; border-left:1px solid #eee;">
+                    <div
+                        style="padding:15px; background:#fff; font-weight:bold; font-size:13px; text-align:center; border-bottom:1px solid #eee;">
+                        Options and attachments</div>
+
+                    <!-- Attachment Zone -->
+                    <div id="drop-zone"
+                        style="border:2px dashed #ddd; border-radius:8px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:30px; background:#fff; position: relative;">
+                        <p style="font-size:12px; color:#888; text-align:center; margin-bottom:15px;">Maximum
+                            allowed file size is 75 MB</p>
+                        <input type="file" id="compose-file-input" multiple style="display:none;">
+                        <button id="btn-attach" class="btn btn-secondary btn-sm"
+                            style="background:#8f9faf; border:none;"><i class="fa-solid fa-paperclip"></i> Attach a
+                            file</button>
+                        <div style="margin-top:20px; width: 100%;" id="attachment-list"></div>
+                        <div style="margin-top:10px; font-size:32px; color:#e2e2e2;">
+                            <i class="fa-solid fa-download"></i>
+                        </div>
+                    </div>
+
+                    <!-- Settings -->
+                    <div style="padding:20px; font-size:13px; color:#333;">
+                        <div
+                            style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+                            <span>Return receipt</span>
+                            <div class="custom-control custom-switch"><input type="checkbox"
+                                    class="custom-control-input" id="sw1"><label class="custom-control-label"
+                                    for="sw1"></label></div>
+                        </div>
+                        <div
+                            style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+                            <span>Delivery status notification</span>
+                            <div class="custom-control custom-switch"><input type="checkbox"
+                                    class="custom-control-input" id="sw2"><label class="custom-control-label"
+                                    for="sw2"></label></div>
+                        </div>
+                        <div
+                            style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+                            <span>Keep formatting</span>
+                            <div class="custom-control custom-switch"><input type="checkbox"
+                                    class="custom-control-input" id="sw3" checked><label class="custom-control-label"
+                                    for="sw3"></label></div>
+                        </div>
+                        <div
+                            style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+                            <span>Priority</span>
+                            <select class="form-control form-control-sm" style="width:120px; background:#fff;">
+                                <option>Normal</option>
+                            </select>
+                        </div>
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <span>Save sent message in</span>
+                            <select class="form-control form-control-sm" style="width:120px; background:#fff;">
+                                <option>Sent</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings View -->
+        <div id="settings-view" class="hidden" style="flex:1; display:flex; height:100%; background:#fff;">
+            <!-- Settings Sidebar -->
+            <div
+                style="width:240px; border-right:1px solid #e2e2e2; background:#f4f4f4; display:flex; flex-direction:column;">
+                <div style="padding:15px; font-weight:bold; border-bottom:1px solid #e2e2e2; background:#fff;">Settings
+                </div>
+                <div class="scroller" style="flex:1;">
+                    <ul class="listing folderlist">
+                        <li class="mailbox"><a href="#" id="tab-signatures" class="selected"
+                                onclick="App.switchSettingsTab('signatures', event)"><i class="fas fa-signature"></i>
+                                <span class="name">Signatures</span></a></li>
+                        <li class="mailbox"><a href="#" id="tab-blacklist"
+                                onclick="App.switchSettingsTab('blacklist', event)"><i class="fas fa-ban"></i> <span
+                                    class="name">Blacklist</span></a></li>
+                        <li class="mailbox"><a href="#" id="tab-whitelist"
+                                onclick="App.switchSettingsTab('whitelist', event)"><i class="fas fa-check-circle"></i>
+                                <span class="name">Whitelist</span></a></li>
+                        <li class="mailbox"><a href="#" id="tab-preferences"
+                                onclick="App.switchSettingsTab('preferences', event)"><i class="fas fa-user-cog"></i>
+                                <span class="name">Preferences</span></a></li>
+                        <li class="mailbox"><a href="#" id="tab-folders"
+                                onclick="App.switchSettingsTab('folders', event)"><i class="fas fa-folder"></i> <span
+                                    class="name">Folders</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Settings Content -->
+            <div style="flex:1; display:flex; flex-direction:column; background:#fff;">
+
+                <!-- Signatures Tab -->
+                <div id="settings-signatures" style="display:flex; flex-direction:column; height:100%;">
+                    <div
+                        style="padding:15px; border-bottom:1px solid #e2e2e2; display:flex; justify-content:space-between; align-items:center;">
+                        <span style="font-weight:bold;">Custom Signatures</span>
+                        <button class="btn btn-sm btn-success" onclick="App.addSignature()">+ Add New Signature</button>
+                    </div>
+                    <div style="padding:20px; flex:1; overflow-y:auto;">
+                        <div id="signature-list-container">
+                            <!-- List of signatures injected by JS -->
+                        </div>
+
+                        <!-- Signature Editor UI (Hidden by default) -->
+                        <div id="signature-editor-container" class="hidden"
+                            style="border:1px solid #e2e2e2; border-radius:8px; padding:20px; background:#f9f9f9;">
+                            <h5 style="margin-top:0; margin-bottom:20px;">Edit Signature</h5>
+                            <div class="form-group" style="margin-bottom:20px;">
+                                <label style="font-weight:500;">Signature Name</label>
+                                <input type="text" id="sig-edit-name" class="form-control"
+                                    placeholder="e.g. Work, Personal">
+                            </div>
+                            <div class="form-group" style="margin-bottom:20px;">
+                                <label style="font-weight:500;">Signature Content</label>
+                                <div id="sig-editor-wrapper" style="background:#fff; border:1px solid #ccc;">
+                                    <div id="sig-editor" style="min-height:150px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blacklist Tab -->
+                <div id="settings-blacklist" style="display:none; flex-direction:column; height:100%;">
+                    <div
+                        style="padding:15px; border-bottom:1px solid #e2e2e2; display:flex; justify-content:space-between; align-items:center;">
+                        <span style="font-weight:bold;">Blacklist Management</span>
+                        <div style="display:flex; gap:10px; align-items: center;">
+                            <div
+                                style="position:relative; margin-right: 15px; border-right: 1px solid #eee; padding-right: 15px;">
+                                <i class="fas fa-search"
+                                    style="position:absolute; left:10px; top:10px; color:#999; font-size:12px;"></i>
+                                <input type="text" id="blacklist-search-input" class="form-control form-control-sm"
+                                    placeholder="Search blacklist..." style="padding-left:30px; width:200px;"
+                                    oninput="App.state.blacklistSearchQuery = this.value; App.renderBlacklist()">
+                            </div>
+                            <input type="text" id="blacklist-add-input" class="form-control form-control-sm"
+                                placeholder="Email or domain" style="width:200px;">
+                            <button class="btn btn-sm btn-danger" onclick="App.addBlacklistItem()">+ Add</button>
+                        </div>
+                    </div>
+                    <div style="padding:20px; flex:1; overflow-y:auto; background:#f9f9f9;">
+                        <div id="blacklist-container">
+                            <!-- List of blacklisted items injected by JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Whitelist Tab -->
+                <div id="settings-whitelist" style="display:none; flex-direction:column; height:100%;">
+                    <div
+                        style="padding:15px; border-bottom:1px solid #e2e2e2; display:flex; justify-content:space-between; align-items:center;">
+                        <span style="font-weight:bold;">Whitelist Management</span>
+                        <div style="display:flex; gap:10px; align-items: center;">
+                            <div
+                                style="position:relative; margin-right: 15px; border-right: 1px solid #eee; padding-right: 15px;">
+                                <i class="fas fa-search"
+                                    style="position:absolute; left:10px; top:10px; color:#999; font-size:12px;"></i>
+                                <input type="text" id="whitelist-search-input" class="form-control form-control-sm"
+                                    placeholder="Search whitelist..." style="padding-left:30px; width:200px;"
+                                    oninput="App.state.whitelistSearchQuery = this.value; App.renderWhitelist()">
+                            </div>
+                            <input type="text" id="whitelist-add-input" class="form-control form-control-sm"
+                                placeholder="Email or domain" style="width:200px;">
+                            <button class="btn btn-sm btn-success" onclick="App.addWhitelistItem()">+ Add</button>
+                        </div>
+                    </div>
+                    <div style="padding:20px; flex:1; overflow-y:auto; background:#f9f9f9;">
+                        <div id="whitelist-container">
+                            <!-- List of whitelisted items injected by JS -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Sports View -->
+        <div id="sports-view" class="hidden" style="display: block; height: 100%; width: 100%; background: #fff; padding: 20px; overflow: auto;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h2 id="sports-title" style="margin: 0; font-weight: 600; color: #333;"><i class="fas fa-futbol" style="margin-right: 10px; color: #007bff;"></i>2026 FIFA Schedule</h2>
+                <div class="sports-tabs" style="display: flex; gap: 10px;">
+                    <button class="btn btn-outline-success" id="btn-sports-sync" onclick="App.syncSportsDrive()" title="Download latest live data from Google Drive"><i class="fas fa-sync-alt" id="sports-sync-icon" style="margin-right: 5px;"></i>Sync Live</button>
+                    <button class="btn btn-outline-info" id="btn-league-sync" onclick="App.syncLeagueDrive()" title="Download latest league data from Google Drive"><i class="fas fa-sync-alt" id="league-sync-icon" style="margin-right: 5px;"></i>Sync Leagues</button>
+                    <button class="btn btn-outline-warning" id="btn-fetch-live" onclick="App.fetchLiveScores()" title="Fetch live scores from 7msport"><i class="fas fa-bolt" id="fetch-live-icon" style="margin-right: 5px;"></i>Fetch Live</button>
+                    <button class="btn btn-outline-primary" id="btn-fetch-schedule" onclick="App.fetchLeagueSchedule()" title="Fetch league schedule from 7msport"><i class="fas fa-calendar-alt" id="fetch-schedule-icon" style="margin-right: 5px;"></i>Fetch 7m Schedule</button>
+                    <a href="#all_live_soccer" class="btn btn-outline-danger" id="btn-sports-live"><i class="fas fa-satellite-dish" style="margin-right: 5px;"></i>All Live Games</a>
+                    <a href="#playnow" class="btn btn-success" id="btn-sports-playnow"><i class="fas fa-dice" style="margin-right: 5px;"></i>PlayNow</a>
+                    <a href="#sportsinteraction" class="btn btn-info" id="btn-sports-sportsinteraction" style="color: white;"><i class="fas fa-external-link-alt" style="margin-right: 5px;"></i>Sports Interaction</a>
+                    <a href="#tonybet" class="btn btn-warning" id="btn-sports-tonybet" style="color: white;"><i class="fas fa-coins" style="margin-right: 5px;"></i>Tonybet</a>
+                    <a href="#betting" class="btn btn-dark" id="btn-sports-master" style="color: white;"><i class="fas fa-chess-king" style="margin-right: 5px;"></i>Betting Master</a>
+                    <select class="form-select text-primary border-primary" id="league-selector" style="width: auto; display: inline-block; cursor: pointer; font-weight: 500;" onchange="App.handleLeagueChange()">
+                        <option value="FIFA">FIFA World Cup</option>
+                    </select>
+                    <select class="form-select text-primary border-primary" id="season-selector" style="width: auto; display: inline-block; cursor: pointer; font-weight: 500;" onchange="App.handleSeasonChange()">
+                        <option value="2026">2026 World Cup</option>
+                        <option value="2022">2022 World Cup</option>
+                        <option value="2018">2018 World Cup</option>
+                        <option value="2014">2014 World Cup</option>
+                        <option value="2010">2010 World Cup</option>
+                        <option value="2006">2006 World Cup</option>
+                    </select>
+                    <a href="#sports/last_game" class="btn btn-outline-info" title="Last Game Every Day"><i class="fas fa-calendar-day" style="margin-right: 5px;"></i>Last Game Every Day</a>
+                </div>
+            </div>
+            
+            <div id="playnow-profile-container" class="hidden" style="margin-bottom: 20px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                    <div id="playnow-balance" style="font-size: 18px; font-weight: bold; background: #e8f0fe; color: #1a73e8; padding: 5px 15px; border-radius: 20px;">Balance: $--.--</div>
+                    <button class="btn btn-outline-success btn-sm" onclick="App.fetchPlaynowProfile()"><i class="fas fa-sync-alt" style="margin-right: 5px;"></i>Refresh Profile</button>
+                </div>
+                <div id="playnow-error-banner" class="hidden" style="background: #fff3cd; color: #856404; padding: 10px; border-radius: 8px; margin-bottom: 10px; border: 1px solid #ffeeba;">
+                    <strong><i class="fas fa-exclamation-triangle"></i> Session Expired:</strong> Please run <code style="background:rgba(255,255,255,0.5);padding:2px 4px;border-radius:4px;">node playnow_open_for_login.mjs</code> locally.
+                </div>
+                <h4 style="margin-top: 0; margin-bottom: 10px; font-size: 14px; color: #475569; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px;">Active/Pending Bets</h4>
+                <div id="playnow-bets-container" style="font-family: monospace; white-space: pre-wrap; font-size: 12px; color: #334155; line-height: 1.5; max-height: 150px; overflow-y: auto;">
+                    Loading bets...
+                </div>
+            </div>
+
+            <div style="display: none !important; justify-content: flex-end; margin-bottom: 10px;" id="analysis-tabs-wrapper">
+                <div id="analysis-tabs-container" style="display: none; gap: 5px;">
+                    <button id="btn-analysis-goalTime" class="btn btn-sm btn-outline-primary" onclick="App.setAnalysisTab('goalTime')">Goal Time</button>
+                    <button id="btn-analysis-total" class="btn btn-sm btn-primary" onclick="App.setAnalysisTab('total')">Total Goal</button>
+                    <button id="btn-analysis-1ht" class="btn btn-sm btn-outline-primary" onclick="App.setAnalysisTab('1ht')">1HT Goal</button>
+                    <button id="btn-analysis-2ht" class="btn btn-sm btn-outline-primary" onclick="App.setAnalysisTab('2ht')">2HT Goal</button>
+                    <button id="btn-analysis-draw" class="btn btn-sm btn-outline-primary" onclick="App.setAnalysisTab('draw')">Draw</button>
+                </div>
+            </div>
+
+            <div class="eo-table-wrap" style="border: 1px solid #e2e8f0; border-radius: 8px; position: relative; overflow: visible !important; max-height: none !important;">
+                <div id="last-game-calendar-container" style="display: none; margin-bottom: 20px; background: #fff; position: sticky; top: 0; z-index: 100;"></div>
+                <table class="table table-hover" style="width: 100%; border-collapse: collapse; margin: 0;">
+                    <thead id="sports-table-head" style="background: #f8fafc; position: sticky; top: 0; z-index: 1;">
+                        <!-- Generated by JS based on active analysis tab -->
+                    </thead>
+                    <tbody id="sports-table-body">
+                        <!-- Populated by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Calendar View -->
+        <div id="calendar-view" class="hidden" style="display: flex; height: 100%;">
+            <div class="calendar-sidebar">
+                <div class="header" style="margin-bottom: 20px; font-weight: bold; font-size: 16px;">Calendars</div>
+
+                <!-- Mini Calendar Toggle Header -->
+                <div style="display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding:3px 2px;margin-bottom:4px;user-select:none;" onclick="App.toggleMiniCalendar()">
+                    <span style="font-size:11px;font-weight:600;color:#555;display:flex;align-items:center;gap:4px;">
+                        <i class="fas fa-calendar-alt" style="color:#0078d4;font-size:10px;"></i> Mini Calendar
+                    </span>
+                    <i id="mini-calendar-chevron" class="fas fa-chevron-up" style="font-size:10px;color:#aaa;transition:transform .2s;"></i>
+                </div>
+                <div id="mini-calendar" class="mini-calendar">
+                    <!-- Mini calendar injected by JS -->
+                </div>
+
+                <!-- Tag Filters Section -->
+                <div class="tag-filters-section" style="margin-bottom: 15px;">
+                    <!-- Tag Search Box -->
+                    <div class="input-group input-group-sm mb-2" style="padding: 0 2px;">
+                        <input type="text" id="calendar-tag-search-input" class="form-control"
+                            placeholder="Search tags..." style="font-size: 11px; height: 26px; padding: 2px 6px;"
+                            oninput="const q = this.value; if (App.state.calendar.videoTagsFilter) { App.state.calendar.videoTagsFilter.keyword = q; App.renderTagThumbnailView(); App.renderLocationTree(); App.renderTypeTree(); App.renderArtStyleTree(); App._syncFilterSectionsToSearch(q); }"
+                            onkeypress="if(event.key === 'Enter') { App.searchTagLocation(this.value); }">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" style="padding: 0 8px; height: 26px; display: flex; align-items: center; justify-content: center;" onclick="document.getElementById('calendar-tag-search-input').value=''; if(App.state.calendar.videoTagsFilter) { App.state.calendar.videoTagsFilter.keyword=''; App.renderTagThumbnailView(); App._syncFilterSectionsToSearch(''); }" title="Clear Search">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <button class="btn btn-outline-secondary" style="padding: 0 8px; height: 26px; display: flex; align-items: center; justify-content: center;" onclick="App.searchTagLocation(document.getElementById('calendar-tag-search-input').value);">
+                                ðŸ”
+                            </button>
+                        </div>
+                    </div>
+                    <div class="header" style="font-weight: bold; font-size: 14px; margin-bottom: 6px; padding: 0 5px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; user-select: none;" onclick="App.toggleTagFiltersPanel()">
+                        <span style="display:flex;align-items:center;gap:5px;"><i class="fas fa-filter" style="font-size:11px;color:#0078d4;"></i> Tag Filters</span>
+                        <i id="tag-filters-chevron" class="fas fa-chevron-down" style="font-size: 11px; color: #888; transition: transform .2s;"></i>
+                    </div>
+                    <div id="tag-filters-content" style="padding: 0 2px; display: flex; flex-direction: column; gap: 0;">
+                        <!-- Hidden state selects for filter logic compatibility -->
+                        <select id="calendar-tag-area" style="display:none;" onchange="App.applyTagFilters()"><option value="all">All Areas</option></select>
+                        <select id="calendar-tag-type" style="display:none;" onchange="App.applyTagFilters()"><option value="all">All Types</option></select>
+
+                        <!-- Location Hierarchy Label + expand/collapse-all button -->
+                        <div style="font-size:11px;font-weight:600;color:#555;padding:3px 5px;background:#f0f2f5;border-radius:4px 4px 0 0;border:1px solid #e2e2e2;border-bottom:none;display:flex;align-items:center;gap:4px;cursor:pointer;user-select:none;" onclick="App.toggleLocationTree()">
+                            <i class="fas fa-globe" style="color:#0078d4;font-size:10px;"></i>
+                            <span style="flex:1;">Location</span>
+                            <span id="loc-tree-toggle-all-btn" title="Expand all areas" onclick="event.stopPropagation();App.toggleAllLocationAreas()" style="cursor:pointer;padding:1px 5px;border-radius:3px;background:#e2e8f0;color:#555;font-size:9px;font-weight:600;letter-spacing:0.3px;transition:background .15s;" onmouseenter="this.style.background='#d0d8e8'" onmouseleave="this.style.background='#e2e8f0'">+ ALL</span>
+                            <i id="location-tree-chevron" class="fas fa-chevron-down" style="font-size:9px;color:#aaa;margin-left:2px;transition:transform .2s;"></i>
+                        </div>
+                        <div id="location-tree-content">
+                            <div id="tag-location-tree" style="font-size:12px;margin-bottom:6px;border:1px solid #e2e2e2;border-radius:0 0 4px 4px;background:#fff;max-height:260px;overflow-y:auto;">
+                                <!-- Injected by JS: App.renderLocationTree() -->
+                            </div>
+                        </div>
+
+                        <!-- Type Filter -->
+                        <div style="margin-top:3px;">
+                            <div style="font-size:11px;font-weight:600;color:#555;padding:3px 5px;background:#f0f2f5;border-radius:4px 4px 0 0;border:1px solid #e2e2e2;border-bottom:none;display:flex;align-items:center;gap:4px;cursor:pointer;user-select:none;" onclick="App.toggleTagSection('tag-type-body','tag-type-chev')">
+                                <i class="fas fa-paw" style="color:#888;font-size:10px;"></i>
+                                <span style="flex:1;">Type</span>
+                                <i id="tag-type-chev" class="fas fa-chevron-down" style="font-size:9px;color:#aaa;margin-left:auto;transition:transform .2s;transform:rotate(-90deg);"></i>
+                            </div>
+                            <div id="tag-type-body" style="display:none;border:1px solid #e2e2e2;border-radius:0 0 4px 4px;background:#fff;max-height:200px;overflow-y:auto;">
+                                <div id="tag-type-tree">
+                                    <!-- Injected by App.renderTypeTree() -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- keep hidden selects for filter logic -->
+                        <select id="calendar-tag-type" style="display:none;" onchange="App.applyTagFilters()"><option value="all">All Types</option></select>
+                        <select id="calendar-tag-type-vis" style="display:none;"><option value="all">All Types</option></select>
+
+                        <!-- Art Style Filter (unified) -->
+                        <div style="margin-top:3px;">
+                            <div style="font-size:11px;font-weight:600;color:#555;padding:3px 5px;background:#f0f2f5;border-radius:4px 4px 0 0;border:1px solid #e2e2e2;border-bottom:none;display:flex;align-items:center;gap:4px;cursor:pointer;user-select:none;" onclick="App.toggleTagSection('tag-artstyle-body','tag-artstyle-chev')">
+                                <i class="fas fa-paint-brush" style="color:#888;font-size:10px;"></i>
+                                <span style="flex:1;">Art Style</span>
+                                <i id="tag-artstyle-chev" class="fas fa-chevron-down" style="font-size:9px;color:#aaa;margin-left:auto;transition:transform .2s;"></i>
+                            </div>
+                            <div id="tag-artstyle-body" style="border:1px solid #e2e2e2;border-radius:0 0 4px 4px;background:#fff;max-height:300px;overflow-y:auto;">
+                                <!-- Tab switcher -->
+                                <div style="display:flex;border-bottom:1px solid #e2e2e2;background:#fafafa;">
+                                    <button id="artstyle-tab-region" onclick="App.switchArtStyleTab('region')"
+                                        style="flex:1;padding:5px 4px;font-size:10px;font-weight:600;border:none;background:#e7f3ff;color:#0078d4;border-bottom:2px solid #0078d4;cursor:pointer;">
+                                        <i class="fas fa-globe" style="font-size:9px;"></i> By Region
+                                    </button>
+                                    <button id="artstyle-tab-phil" onclick="App.switchArtStyleTab('phil')"
+                                        style="flex:1;padding:5px 4px;font-size:10px;font-weight:600;border:none;background:transparent;color:#888;border-bottom:2px solid transparent;cursor:pointer;">
+                                        <i class="fas fa-palette" style="font-size:9px;"></i> By Philosophy
+                                    </button>
+                                </div>
+                                <div id="tag-artstyle-tree">
+                                    <!-- Injected by App.renderArtStyleTree() -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Music Style Filter -->
+                        <div style="margin-top:3px;">
+                            <div style="font-size:11px;font-weight:600;color:#555;padding:3px 5px;background:#f0f2f5;border-radius:4px 4px 0 0;border:1px solid #e2e2e2;border-bottom:none;display:flex;align-items:center;gap:4px;cursor:pointer;user-select:none;" onclick="App.toggleTagSection('tag-music-body','tag-music-chev')">
+                                <i class="fas fa-music" style="color:#f59e0b;font-size:10px;"></i>
+                                <span style="flex:1;">Music Style</span>
+                                <i id="tag-music-chev" class="fas fa-chevron-down" style="font-size:9px;color:#aaa;margin-left:auto;transition:transform .2s;transform:rotate(-90deg);"></i>
+                            </div>
+                            <div id="tag-music-body" style="display:none;border:1px solid #e2e2e2;border-radius:0 0 4px 4px;background:#fff;max-height:280px;overflow-y:auto;">
+                                <div id="tag-music-tree">
+                                    <!-- Injected by App.renderMusicStyleTree() -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Wiki Categories Filter -->
+                        <div style="margin-top:3px;">
+                            <div style="font-size:11px;font-weight:600;color:#555;padding:3px 5px;background:#f0f2f5;border-radius:4px 4px 0 0;border:1px solid #e2e2e2;border-bottom:none;display:flex;align-items:center;gap:4px;cursor:pointer;user-select:none;" onclick="App.toggleTagSection('tag-wiki-body','tag-wiki-chev')">
+                                <i class="fab fa-wikipedia-w" style="color:#333;font-size:10px;"></i>
+                                <span style="flex:1;">Wiki Categories</span>
+                                <i id="tag-wiki-chev" class="fas fa-chevron-down" style="font-size:9px;color:#aaa;margin-left:auto;transition:transform .2s;transform:rotate(-90deg);"></i>
+                            </div>
+                            <div id="tag-wiki-body" style="display:none;border:1px solid #e2e2e2;border-radius:0 0 4px 4px;background:#fff;max-height:280px;overflow-y:auto;">
+                                <div id="tag-wiki-tree">
+                                    <!-- Injected by App.renderWikiCategoriesTree() -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-sm btn-outline-secondary w-100 mt-2" style="font-size:11px;padding:3px 0;" onclick="App.clearTagFilters()">
+                            <i class="fas fa-times-circle"></i> Clear Filters
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="search-box" style="margin-bottom: 20px;">
+                    <input type="text" id="calendar-event-filter" class="form-control"
+                        placeholder="Filter by domain, contact, category..." style="font-size: 13px;"
+                        oninput="App.filterCalendarFilterList(this.value)">
+                </div>
+
+                <div class="listing folderlist">
+                    <li class="mailbox"><a class="selected"><i class="fas fa-calendar-alt"></i> <span class="name">My
+                                Calendar</span></a></li>
+                </div>
+
+                <!-- Calendar Filter List -->
+                <div id="calendar-filter-list" class="scroller" style="flex: 1; overflow-y: auto; margin-top: 10px;">
+                    <!-- Filter items injected by JS -->
+                </div>
+            </div>
+
+            <!-- Mobile Sidebar Overlay -->
+            <div class="calendar-sidebar-overlay" onclick="document.querySelector('.calendar-sidebar').classList.remove('active')"></div>
+
+            <div class="calendar-main" style="flex: 1; min-width: 0;">
+                <div class="calendar-header">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <button id="btn-calendar-sidebar-toggle" class="btn btn-sm btn-outline-secondary d-md-none" 
+                            onclick="document.querySelector('.calendar-sidebar').classList.toggle('active')"
+                            title="Toggle Calendar Menu">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div style="font-size: 18px; font-weight: 500;" id="calendar-range-label">March 2026</div>
+                    </div>
+
+                    <div class="calendar-controls">
+                        <div class="btn-group">
+                            <button class="btn btn-sm btn-outline-secondary" onclick="App.prevMonth()"><i
+                                    class="fas fa-chevron-left"></i></button>
+                            <button class="btn btn-sm btn-outline-secondary" onclick="App.goToday()">Today</button>
+                            <button class="btn btn-sm btn-outline-secondary" onclick="App.nextMonth()"><i
+                                    class="fas fa-chevron-right"></i></button>
+                        </div>
+
+                        <div class="btn-group" id="calendar-view-buttons" style="margin-left: 10px;">
+                            <button class="btn btn-sm btn-outline-secondary"
+                                onclick="App.setCalendarView('day')">Day</button>
+                            <button class="btn btn-sm btn-outline-secondary"
+                                onclick="App.setCalendarView('week')">Week</button>
+                            <button class="btn btn-sm btn-primary" onclick="App.setCalendarView('month')">Month</button>
+                            <button class="btn btn-sm btn-outline-secondary"
+                                onclick="App.setCalendarView('year')">Year</button>
+                            <button class="btn btn-sm btn-outline-secondary"
+                                onclick="App.setCalendarView('century')">Century</button>
+                            <button class="btn btn-sm btn-outline-secondary"
+                                onclick="App.setCalendarView('agenda')">Agenda</button>
+                            <button class="btn btn-sm btn-outline-secondary"
+                                onclick="App.setCalendarView('map')">Map</button>
+                        </div>
+
+                        <button class="btn btn-sm btn-success" style="margin-left: 10px;" onclick="App.createEvent()"><i
+                                class="fas fa-plus"></i> Create</button>
+                        <button class="btn btn-sm btn-outline-primary" style="margin-left: 10px;"
+                            onclick="App.syncGoogleCalendar()"><i class="fab fa-google"></i> Sync</button>
+                        <button class="btn btn-sm btn-outline-warning" style="margin-left: 10px;"
+                            onclick="App.checkCfQuota()"><i class="fas fa-bolt"></i> AI Quota</button>
+                        <button class="btn btn-sm btn-outline-primary" style="margin-left: 10px;"
+                            onclick="App.smartCfPush()"><i class="fas fa-cloud-upload-alt"></i> Smart Push</button>
+                        <button class="btn btn-sm btn-outline-info" style="margin-left: 10px;"
+                            onclick="App.playRandomHlsVideo()"><i class="fas fa-random"></i> Random Video</button>
+                        <button class="btn btn-sm btn-outline-info" style="margin-left: 10px;"
+                            onclick="App.openPlaylistsModal()"><i class="fas fa-list"></i> Playlists</button>
+                        <button class="btn btn-sm btn-outline-info" style="margin-left: 10px;"
+                            onclick="window.location.hash = 'slideshow'"><i class="fas fa-images"></i> Slideshow</button>
+                    </div>
+                </div>
+
+                <div class="calendar-grid" id="calendar-grid">
+                    <!-- Calendar table injected by JS -->
+                </div>
+
+                <!-- Map View Container -->
+                <div id="calendar-map-container"
+                    style="display: none; flex-direction: column; height: 100%; width: 100%; background: #fff; overflow: hidden;">
+                    <div id="calendar-map-filters"
+                        style="padding: 10px; border-bottom: 1px solid #ddd; background: #f8f9fa; display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                        <div class="input-group input-group-sm" style="width: 250px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Period</span>
+                            </div>
+                            <input type="date" id="map-filter-start" class="form-control"
+                                onchange="App.applyMapFilters()">
+                            <input type="date" id="map-filter-end" class="form-control"
+                                onchange="App.applyMapFilters()">
+                        </div>
+
+                        <div class="input-group input-group-sm" style="width: 150px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Area</span>
+                            </div>
+                            <select id="map-filter-area" class="form-control" onchange="App.onAreaDayFilterChange()">
+                                <option value="all">All Regions</option>
+                                <option value="Africa">Africa</option>
+                                <option value="Europe">Europe</option>
+                                <option value="Mesopotamia">Mesopotamia</option>
+                                <option value="North America">North America</option>
+                                <option value="South America">South America</option>
+                                <option value="Asia">Asia</option>
+                                <option value="Oceania">Oceania</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group input-group-sm" style="width: 160px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Star</span>
+                            </div>
+                            <select id="map-filter-star" class="form-control" onchange="App.onStarFilterChange()">
+                                <option value="all">All Signs</option>
+                                <option value="Aries">â™ˆ Aries</option>
+                                <option value="Taurus">â™‰ Taurus</option>
+                                <option value="Gemini">â™Š Gemini</option>
+                                <option value="Cancer">â™‹ Cancer</option>
+                                <option value="Leo">â™Œ Leo</option>
+                                <option value="Virgo">â™ Virgo</option>
+                                <option value="Libra">â™Ž Libra</option>
+                                <option value="Scorpio">â™ Scorpio</option>
+                                <option value="Sagittarius">â™ Sagittarius</option>
+                                <option value="Capricorn">â™‘ Capricorn</option>
+                                <option value="Aquarius">â™’ Aquarius</option>
+                                <option value="Pisces">â™“ Pisces</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group input-group-sm" style="width: 150px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Day</span>
+                            </div>
+                            <select id="map-filter-weekday" class="form-control" onchange="App.onAreaDayFilterChange()">
+                                <option value="all">All Days</option>
+                                <option value="0">Sunday</option>
+                                <option value="1">Monday</option>
+                                <option value="2">Tuesday</option>
+                                <option value="3">Wednesday</option>
+                                <option value="4">Thursday</option>
+                                <option value="5">Friday</option>
+                                <option value="6">Saturday</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group input-group-sm" style="flex: 1; min-width: 200px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-search"></i></span>
+                            </div>
+                            <input type="text" id="map-filter-search" class="form-control"
+                                placeholder="Search events..." onkeyup="App.applyMapFilters()">
+                        </div>
+                    </div>
+                    <div id="calendar-map" style="flex: 1; position: relative;"></div>
+                </div>
+            </div>
+
+            <!-- Calendar Email Preview Panel -->
+            <div id="calendar-preview-panel" class="calendar-preview-panel">
+                <div class="calendar-preview-header"
+                    style="padding: 15px; border-bottom: 1px solid #e2e2e2; display: flex; justify-content: space-between; align-items: center; background: #f8f9fa;">
+                    <div style="font-weight: bold; font-size: 14px; display: flex; align-items: center; gap: 8px;">
+                        <i class="fas fa-envelope text-primary"></i> <span id="calendar-preview-title">Event
+                            Preview</span>
+                    </div>
+                    <div>
+                        <button id="btn-calendar-delete" class="hidden" onclick="App.deleteCalendarEventFromHeader()" 
+                            style="background:#d13438; color:white; border:none; padding:6px 12px; border-radius:4px; cursor:pointer; margin-right: 10px;">
+                            <i class="fas fa-trash"></i> Delete
+                        </button>
+                        <button id="btn-save-playlist" class="btn btn-sm btn-outline-primary hidden"
+                            style="margin-right: 10px;" onclick="App.saveToPlaylist()"
+                            title="Save to Playlist">
+                            <i class="fas fa-list-ul"></i> Save to Playlist
+                        </button>
+                        <button id="btn-slideshow" class="hidden"
+                            onclick="App.openArtStyleSlideshow()"
+                            style="background:transparent;border:1px solid rgba(0,120,212,.35);
+                                   color:#0078d4;border-radius:5px;padding:4px 9px;cursor:pointer;
+                                   font-size:12px;display:inline-flex;align-items:center;gap:5px;
+                                   margin-right:10px;">
+                          <i class="fas fa-images"></i> Slideshow
+                        </button>
+                        <button id="btn-image-generate"
+                            onclick="App.openManualGenModalFromHeader && App.openManualGenModalFromHeader()"
+                            style="background:transparent;border:1px solid rgba(0,120,212,.35);
+                                   color:#0078d4;border-radius:5px;padding:4px 9px;cursor:pointer;
+                                   font-size:12px;display:inline-flex;align-items:center;gap:5px;
+                                   margin-right:10px;"
+                            title="Image Generate">
+                          <i class="fas fa-paint-brush"></i> Image Generate
+                        </button>
+                        <button id="btn-preview-maximize" onclick="App.togglePreviewMaximize()" title="Maximize panel"
+                            style="background:transparent;border:1px solid rgba(0,120,212,.35);color:#0078d4;
+                                   border-radius:5px;padding:4px 9px;cursor:pointer;font-size:12px;
+                                   display:inline-flex;align-items:center;gap:5px;margin-right:10px;">
+                            <i class="fas fa-expand-alt"></i>
+                        </button>
+                        <button class="btn btn-link btn-sm p-0 text-muted" onclick="App.closeCalendarPreview()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <div id="calendar-preview-content" class="calendar-preview-content" style="flex: 1; overflow-y: auto; padding: 15px; font-size: 13px;">
+                    <div style="color: #666; text-align: center; margin-top: 50px;">Select an email event to preview.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Agent View -->
+        <div id="agent-view" class="hidden" style="display: flex; height: 100vh; background: #fff;">
+            <div style="margin: auto; text-align: center; color: #666;">
+                <i class="fas fa-robot" style="font-size: 48px; margin-bottom: 20px;"></i>
+                <h2>Agent Interface</h2>
+                <p>Welcome to the agent assistant view.</p>
+            </div>
+        </div>
+
+        <!-- Automations View -->
+        <div id="automations-view" class="hidden"></div>
+
+        <!-- Reports View -->
+        <div id="reports-view" class="hidden"></div>
+
+        <!-- Campaigns View -->
+        <div id="campaigns-view" class="hidden"></div>
+
+        <!-- Contacts View -->
+        <div id="contacts-view" class="hidden">
+            <div class="contacts-sidebar">
+                <div class="header"
+                    style="padding:15px; border-bottom:1px solid #e2e2e2; font-weight:bold; display:flex; justify-content:space-between; align-items:center;">
+                    <span>Groups</span>
+                    <button class="btn btn-link btn-sm p-0" style="color:#666"><i
+                            class="fas fa-ellipsis-v"></i></button>
+                </div>
+                <div class="scroller" id="contact-groups">
+                    <ul class="listing folderlist">
+                        <li class="mailbox group-encyclopedia"><a onclick="App.filterContactsByGroup('encyclopedia')"><i
+                                    class="fas fa-globe"></i> <span class="name">Global Businesses (NY)</span></a>
+                        </li>
+                        <li class="mailbox group-vancouver"><a onclick="App.filterContactsByGroup('vancouver')"><i
+                                    class="fas fa-leaf"></i> <span class="name">Vancouver Businesses</span></a>
+                        </li>
+                        <li class="mailbox group-personal"><a class="selected"
+                                onclick="App.filterContactsByGroup('personal')"><i class="fas fa-address-book"></i>
+                                <span class="name">Personal Addresses</span></a></li>
+                        <li class="mailbox group-collected"><a onclick="App.filterContactsByGroup('collected')"><i
+                                    class="fas fa-address-book"></i> <span class="name">Collected
+                                    Recipients</span></a>
+                        </li>
+                        <li class="mailbox group-trusted"><a onclick="App.filterContactsByGroup('trusted')"><i
+                                    class="fas fa-address-book"></i> <span class="name">Trusted Senders</span></a>
+                        </li>
+                        <li class="mailbox group-forms"><a onclick="$('#modal-subscribe-form').modal('show')"><i
+                                    class="fas fa-wpforms"></i> <span class="name">Forms</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contacts-list">
+                <div class="header" style="padding:10px; border-bottom:1px solid #e2e2e2; display:flex; gap:10px;">
+                    <div style="flex:1; position:relative;">
+                        <i class="fas fa-search"
+                            style="position:absolute; left:10px; top:10px; color:#999; font-size:12px;"></i>
+                        <input type="text" id="contact-search" class="form-control form-control-sm"
+                            placeholder="Search contacts..." style="padding-left:30px; font-size:13px;"
+                            oninput="App.searchContacts(this.value)">
+                    </div>
+                </div>
+                <div class="scroller" id="contact-list-items" style="flex:1; overflow-y:auto;">
+                    <!-- JS Inject -->
+                </div>
+                <div class="footer"
+                    style="padding:10px; border-top:1px solid #eee; font-size:12px; color:#666; text-align:center;"
+                    id="contact-count">
+                    0 contacts found.
+                </div>
+            </div>
+
+            <div class="contacts-content">
+                <div class="header"
+                    style="padding:10px 20px; border-bottom:1px solid #e2e2e2; display:flex; justify-content:flex-end; gap:10px; align-items:center;">
+                      <button class="btn btn-sm btn-outline-success" onclick="App.syncSubscribers()"><i
+                              class="fas fa-sync"></i> Sync CF</button>
+                      <button class="btn btn-sm btn-outline-secondary" onclick="App.createContact()"><i
+                            class="fas fa-plus"></i> Create</button>
+                    <button class="btn btn-sm btn-outline-primary" onclick="$('#modal-subscribe-form').modal('show')"><i
+                            class="fas fa-envelope-open-text"></i> Subscribe Form</button>
+                    <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-print"></i> Print</button>
+                    <button class="btn btn-sm btn-outline-secondary" onclick="App.deleteSelectedContact()"><i
+                            class="fas fa-trash"></i> Delete</button>
+                    <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-search"></i> Search</button>
+                    <button class="btn btn-sm btn-outline-secondary" onclick="App.importFromEmails()"><i
+                            class="fas fa-upload"></i> Import from Emails</button>
+                    <button class="btn btn-sm btn-outline-secondary" onclick="App.exportCurrentContactGroup && App.exportCurrentContactGroup()"><i class="fas fa-download"></i> Export</button>
+                    <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-ellipsis-h"></i> More</button>
+                </div>
+
+                <div id="contact-details"
+                    style="flex:1; display:flex; flex-direction:column; background:#fff; min-height:0;">
+                    <div class="watermark"
+                        style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#999;">
+                        <div style="font-size:100px; margin-bottom:20px; opacity:0.1;"><i
+                                class="fas fa-address-card"></i></div>
+                        <p>Select a contact to view details or use the "Create" button to add a new record.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="deps/bootstrap.bundle.min.js"></script>
+    <!-- Use our own logic instead of ui.js -->
+    <!-- Contacts Selection Modal -->
+    <div class="modal fade" id="insertContactsModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Insert contact(s)</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                        onclick="$('#insertContactsModal').modal('hide')">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding: 0; display: flex; height: 400px;">
+                    <!-- Modal Sidebar -->
+                    <div style="width: 200px; border-right: 1px solid #eee; background: #f9f9f9; padding: 10px 0;">
+                        <ul class="nav flex-column" id="modal-contact-groups">
+                            <li class="nav-item" style="padding: 0 10px;">
+                                <button class="nav-link active text-left w-100 border-0 bg-transparent" data-group="all"
+                                    onclick="App.renderModalContacts('all'); return false;" style="outline: none;">
+                                    <i class="fa-solid fa-address-book"></i> All Contacts
+                                </button>
+                            </li>
+                            <li class="nav-item" style="padding: 0 10px;">
+                                <button class="nav-link text-left w-100 border-0 bg-transparent" data-group="personal"
+                                    onclick="App.renderModalContacts('personal'); return false;" style="outline: none;">
+                                    <i class="fa-solid fa-user"></i> Personal Addresses
+                                </button>
+                            </li>
+                            <li class="nav-item" style="padding: 0 10px;">
+                                <button class="nav-link text-left w-100 border-0 bg-transparent" data-group="collected"
+                                    onclick="App.renderModalContacts('collected'); return false;"
+                                    style="outline: none;">
+                                    <i class="fa-solid fa-users"></i> Collected Recipients
+                                </button>
+                            </li>
+                            <li class="nav-item" style="padding: 0 10px;">
+                                <button class="nav-link text-left w-100 border-0 bg-transparent" data-group="trusted"
+                                    onclick="App.renderModalContacts('trusted'); return false;" style="outline: none;">
+                                    <i class="fa-solid fa-shield-halved"></i> Trusted Senders
+                                </button>
+                            </li>
+                            <li class="nav-item" style="padding: 0 10px;">
+                                <button class="nav-link text-left w-100 border-0 bg-transparent" data-group="whitelist"
+                                    onclick="App.renderModalContacts('whitelist'); return false;"
+                                    style="outline: none;">
+                                    <i class="fa-solid fa-check-circle"></i> Whitelist
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Modal List -->
+                    <div style="flex: 1; display: flex; flex-direction: column;">
+                        <div style="padding: 10px; border-bottom: 1px solid #eee;">
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa-solid fa-search"></i></span>
+                                </div>
+                                <input type="text" id="modal-contact-search" class="form-control"
+                                    placeholder="Search..." onkeyup="App.renderModalContacts()">
+                            </div>
+                        </div>
+                        <div style="flex: 1; overflow-y: auto;" id="modal-contact-list">
+                            <!-- JS Inject -->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer" style="justify-content: space-between;">
+                    <div>
+                        <!-- Pagination placeholder if needed -->
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary" onclick="App.insertSelectedContacts()">
+                            <i class="fa-solid fa-user-plus"></i> Insert
+                        </button>
+                        <button type="button" class="btn btn-secondary"
+                            onclick="$('#insertContactsModal').modal('hide')">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Playlist Modals -->
+    <div class="modal fade" id="modal-save-to-playlist" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="font-size: 15px;">Save to Playlist</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="$('#modal-save-to-playlist').modal('hide')">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group mb-3">
+                        <label style="font-size: 13px; color: #666;">Select Existing</label>
+                        <select id="playlist-select" class="form-control form-control-sm"></select>
+                    </div>
+                    <div style="text-align: center; margin-bottom: 10px; font-size: 12px; color: #999;">Or create new</div>
+                    <div class="form-group mb-0">
+                        <input type="text" id="playlist-new-name" class="form-control form-control-sm" placeholder="New Playlist Name">
+                    </div>
+                </div>
+                <div class="modal-footer" style="padding: 10px;">
+                    <button type="button" class="btn btn-sm btn-secondary" onclick="$('#modal-save-to-playlist').modal('hide')">Cancel</button>
+                    <button type="button" class="btn btn-sm btn-primary" onclick="App.confirmSaveToPlaylist()">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-playlists" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document" style="max-width: 800px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Playlist Management</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="App.closePlaylistsModal()">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding: 0; display: flex; height: 500px;">
+                    <!-- Left: Playlists List -->
+                    <div style="width: 250px; border-right: 1px solid #eee; background: #f9f9f9; display: flex; flex-direction: column;">
+                        <div style="padding: 15px; border-bottom: 1px solid #eee;">
+                            <div class="input-group input-group-sm">
+                                <input type="text" id="manage-new-playlist-input" class="form-control" placeholder="New Playlist Name">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button" onclick="App.createPlaylistFromManager()"><i class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="flex: 1; overflow-y: auto;" id="playlists-sidebar-list">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+                    <!-- Right: Items in Playlist -->
+                    <div style="flex: 1; display: flex; flex-direction: column; background: #fff;">
+                        <div id="playlist-items-header" style="padding: 15px 20px; border-bottom: 2px solid #eee; display: flex; flex-direction: column; align-items: flex-start; background: #fff; min-height: 100px;">
+                            <div style="display: flex; align-items: center; gap: 20px; width: 100%;">
+                                <div id="playlist-header-image" style="width: 120px; height: 75px; background: #f0f0f0; border-radius: 12px; overflow: hidden; display: none; background-size: cover; background-position: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 1px solid #eee; flex-shrink: 0;"></div>
+                                <div style="display: flex; flex-direction: column; justify-content: center; min-height: 75px;">
+                                    <h5 style="margin: 0; font-size: 19px; font-weight: 700; color: #111; letter-spacing: -0.2px;" id="playlist-items-title">Select a Playlist</h5>
+                                    <div id="playlist-header-meta" style="font-size: 13px; color: #666; margin-top: 4px; font-weight: 500; margin-bottom: 8px;"></div>
+                                    <div style="display: flex; gap: 10px;">
+                                        <button class="btn btn-sm playlist-btn-hidden" id="btn-play-all" title="Play all videos in sequence" style="padding: 6px 14px; border-radius: 6px; font-weight: 600; display: flex; align-items: center; gap: 6px;">
+                                            <i class="fas fa-play"></i> Play All
+                                        </button>
+                                        <button class="btn btn-sm playlist-btn-hidden" id="btn-shuffle-all" title="Shuffle and play" style="padding: 6px 14px; border-radius: 6px; font-weight: 600; display: flex; align-items: center; gap: 6px;">
+                                            <i class="fas fa-random"></i> Shuffle
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="flex: 1; overflow-y: auto; padding: 15px;" id="playlist-items-container">
+                            <div style="color: #999; text-align: center; margin-top: 50px;">Select a playlist from the left to manage its videos.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Playlist Player Modal -->
+    <div class="modal fade" id="modal-playlist-player" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width: 900px;">
+            <div class="modal-content">
+                <div class="modal-header" style="border-bottom: 1px solid #e2e2e2;">
+                    <div style="display: flex; flex-direction: column;">
+                        <h5 class="modal-title" id="playlist-player-title" style="font-size: 16px; margin: 0; font-weight: 600;">Loading Video...</h5>
+                        <small id="playlist-player-subtitle" style="color: #666;"></small>
+                    </div>
+                    <div>
+                        <button type="button" class="close" onclick="App.closePlaylistPlayer()" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body" style="padding: 0; background-color: #000; display: flex; align-items: center; justify-content: center; min-height: 450px;">
+                    <div id="playlist-player-container" style="width: 100%; position: relative; text-align: center;">
+                        <video id="playlist-video-player" controls style="width: 100%; max-height: 60vh; display: block;"></video>
+                        <div id="playlist-player-error" style="display: none; color: #ff6b6b; padding: 50px;">
+                            <i class="fas fa-exclamation-triangle" style="font-size: 48px; margin-bottom: 20px;"></i>
+                            <p>Failed to load video.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer" style="display: flex; justify-content: space-between; align-items: center; background-color: #f8f9fa;">
+                    <button class="btn btn-outline-secondary" id="btn-playlist-prev" onclick="App.playPrevInPlaylist()" disabled>
+                        <i class="fas fa-step-backward"></i> Previous
+                    </button>
+                    
+                    <span id="playlist-player-counter" style="font-size: 14px; font-weight: 500; color: #555;"></span>
+                    <button id="btn-playlist-download" class="btn btn-sm" onclick="App.downloadPlaylistHlsVideo()" style="background:linear-gradient(135deg,#0078d4,#005a9e);color:#fff;border:none;padding:5px 12px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:5px;" title="Download as MP4"><i class="fas fa-download" style="font-size:11px;"></i> MP4</button>
+
+                    <button class="btn btn-primary" id="btn-playlist-next" onclick="App.playNextInPlaylist()">
+                        Next <i class="fas fa-step-forward"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CF Quota Check Modal -->
+    <div id="modal-cf-quota" class="modal" tabindex="-1" role="dialog" style="display:none; background: rgba(0,0,0,0.5); position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 99999;">
+        <div class="modal-dialog modal-lg" role="document" style="margin-top: 10vh;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">AI Quota Check - Add AI Models</h5>
+                    <button type="button" class="close" onclick="document.getElementById('modal-cf-quota').style.display='none'" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="background:#1e1e1e; color:#00ff00; font-family: monospace; height: 400px; overflow-y: auto;">
+                    <pre id="cf-quota-log" style="color: inherit; border: none; background: transparent; white-space: pre-wrap; font-size: 13px; margin: 0;"></pre>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="document.getElementById('modal-cf-quota').style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subscribe Form Modal -->
+    <div class="modal fade" id="modal-subscribe-form" tabindex="-1" role="dialog" aria-hidden="true" style="background: rgba(0,0,0,0.6);">
+        <div class="modal-dialog" role="document" style="max-width: 550px; margin-top: 2vh;">
+            <div class="modal-content" style="background: transparent; border: none; box-shadow: none;">
+                <div class="modal-header" style="border: none; justify-content: flex-end; padding: 0 10px 10px;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff; text-shadow: none; opacity: 1; font-size: 30px;" onclick="$('#modal-subscribe-form').modal('hide')">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="padding: 0;">
+                    <iframe src="subscribe_xotours.html" style="width: 100%; height: 80vh; max-height: 750px; min-height: 500px; border:none; border-radius:12px;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Smart Push Terminal Modal -->
+    <div id="modal-smart-push" class="modal" tabindex="-1" role="dialog" style="display:none; background: rgba(0,0,0,0.5); position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 99999;">
+        <div class="modal-dialog modal-lg" role="document" style="margin-top: 10vh;">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #2d2d2d; color: #fff;">
+                    <h5 class="modal-title" style="display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-terminal"></i> Smart Cloudflare Push
+                    </h5>
+                    <button type="button" class="close" onclick="document.getElementById('modal-smart-push').style.display='none'" aria-label="Close" style="color: #fff;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="background:#000; color:#0f0; font-family: 'Consolas', 'Monaco', monospace; height: 450px; overflow-y: auto; padding: 15px;">
+                    <pre id="smart-push-log" style="color: inherit; border: none; background: transparent; white-space: pre-wrap; font-size: 12px; margin: 0; line-height: 1.4;"></pre>
+                </div>
+                <div class="modal-footer" style="background: #f8f9fa;">
+                    <span id="smart-push-status" style="flex: 1; font-size: 12px; color: #666; font-style: italic;">Initializing...</span>
+                    <button type="button" class="btn btn-secondary btn-sm" onclick="document.getElementById('modal-smart-push').style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="js/league_catalog_data.js"></script>
+    <script type="module" src="js/app.js?v=46"></script>
+    <script type="module" src="js/calendar-artstyle-filter.js"></script>
+    <script type="module" src="js/calendar-location-filter.js"></script>
+    <script type="module" src="js/calendar-type-filter.js"></script>   
+    <script type="module" src="js/calendar-tag-filters.js"></script> 
+    <script type="module" src="js/calendar-music-filter.js"></script>
+    <script type="module" src="js/calendar-wiki-filter.js"></script>
+    <script type="module" src="js/famous-people-queue.js?v=13"></script>
+</body>
+
+</html>
