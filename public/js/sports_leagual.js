@@ -142,7 +142,7 @@ export const SportsLeagueMixin = {
                 lastGamesByDay[dStr].forEach(m => calMatches.push(m));
             }
             if (typeof this.renderLeagueCalendar === 'function') {
-                this.renderLeagueCalendar(allLeague, calMatches, leagueId, season);
+                await this.renderLeagueCalendar(allLeague, calMatches, leagueId, season);
             }
             return allLeague;
         } catch (e) {
@@ -152,7 +152,7 @@ export const SportsLeagueMixin = {
         }
     },
 
-    renderLeagueCalendar: function (allMatches, tableMatches = null, leagueId = null, season = null) {
+    renderLeagueCalendar: async function (allMatches, tableMatches = null, leagueId = null, season = null) {
         const calendarContainer = document.getElementById('last-game-calendar-container');
         if (!calendarContainer) return;
 
@@ -164,6 +164,7 @@ export const SportsLeagueMixin = {
         const goals45PerDay = {};
         const zeroGamesPerDay = {};
         const fivePlusGamesPerDay = {};
+        const zero2HTGamesPerDay = {};
         const seenGoalsMatchIds = new Set();
         calendarMatches.forEach(m => {
 
@@ -177,6 +178,8 @@ export const SportsLeagueMixin = {
             if (!zeroGamesPerDay[dStr]) zeroGamesPerDay[dStr] = 0;
             if (!fivePlusGamesPerDay[dStr]) fivePlusGamesPerDay[dStr] = 0;
 
+            let goals1HT = 0, goals2HT = 0;
+
             if (m.goals && Array.isArray(m.goals)) {
                 m.goals.forEach(val => {
                     if (!val || typeof val !== 'string' || !val.includes("'")) return;
@@ -187,6 +190,9 @@ export const SportsLeagueMixin = {
                         const min = parseInt(minMatch[1], 10);
                         const added = minMatch[2] ? parseInt(minMatch[2], 10) : 0;
                         const effective = min + added;
+
+                        if (min <= 45) goals1HT++;
+                        else goals2HT++;
 
                         if (min <= 90) {
                             if (min < 45 && effective >= 43) {
@@ -212,6 +218,22 @@ export const SportsLeagueMixin = {
                         let total = s1 + s2;
                         if (total === 0) zeroGamesPerDay[dStr]++;
                         if (total >= 5) fivePlusGamesPerDay[dStr]++;
+                        
+                        if (goals1HT === 0 && goals2HT === 0 && m.score_ht && m.score_ht !== 'VS') {
+                            let hp = m.score_ht.split('-');
+                            if (hp.length === 2) {
+                                let h1 = parseInt(hp[0], 10);
+                                let h2 = parseInt(hp[1], 10);
+                                if (!isNaN(h1) && !isNaN(h2)) {
+                                    goals1HT = h1 + h2;
+                                }
+                            }
+                        }
+                        let calculated2HT = Math.max(0, total - goals1HT);
+                        if (calculated2HT === 0) {
+                            if (!zero2HTGamesPerDay[dStr]) zero2HTGamesPerDay[dStr] = 0;
+                            zero2HTGamesPerDay[dStr]++;
+                        }
                     }
                 }
             }
@@ -358,56 +380,38 @@ export const SportsLeagueMixin = {
 
                 // 2. Build SVG overlay
                 let svgHtml = `<svg viewBox="0 0 700 35" width="100%" height="35" style="display: block; position: absolute; top: 0; left: 0; z-index: 10; pointer-events: none;" preserveAspectRatio="none">`;
-                const maxGoals = Math.max(...weekDays.map(d => Math.max(d.goals, d.goals45 || 0)), 1);
+                const maxGoals = Math.max(...weekDays.map(d => Math.max(d.goals || 0, d.goals45 || 0, d.zero2HT || 0)), 1);
 
-                const buildPolygons = (is45) => {
-                    let out = '';
-                    let currentPoints = [];
-                    let firstX = null, lastX = null;
-
-                    const flushSegment = () => {
-                        if (currentPoints.length > 0) {
-                            const pointsStr = currentPoints.join(' ');
-                            const polyFill = `${firstX},32 ${pointsStr} ${lastX},32`;
-                            const colorStr = is45 ? '34, 197, 94' : '239, 68, 68';
-                            const hexColor = is45 ? '#22c55e' : '#ef4444';
-
-                            out += `<polygon points="${polyFill}" fill="rgba(${colorStr}, 0.1)" />`;
-                            out += `<polyline points="${pointsStr}" fill="none" stroke="${hexColor}" stroke-width="1.5" />`;
-                        }
-                        currentPoints = [];
-                        firstX = null;
-                        lastX = null;
-                    };
+                const buildBars = (chartType) => {
+                    let outHtml = '';
+                    const sortedDates = [...new Set(calendarMatches.map(m => m.date).filter(Boolean))].sort();
+                    let activeStart = sortedDates[0] || '1900-01-01';
+                    let activeEnd = sortedDates[sortedDates.length - 1] || '2100-01-01';
 
                     weekDays.forEach((d, idx) => {
-                        const sortedDates = [...new Set(calendarMatches.map(m => m.date).filter(Boolean))].sort();
-                        let activeStart = sortedDates[0] || '1900-01-01';
-                        let activeEnd = sortedDates[sortedDates.length - 1] || '2100-01-01';
-
                         if (d.date >= activeStart && d.date <= activeEnd) {
-                            const hasGame = calendarMatches.some(m => m.date === d.date);
-                            if (hasGame) {
-                                const x = 50 + 100 * idx;
-                                if (firstX === null) firstX = x;
-                                lastX = x;
-                                const val = is45 ? d.goals45 : d.goals;
-                                const y = (!val || val === -1) ? 32 : 32 - (val / maxGoals) * 12;
-                                currentPoints.push(`${x},${y}`);
-                            } else {
-                                flushSegment();
-                            }
-                        } else {
-                            flushSegment();
+                            const val = chartType === '45' ? d.goals45 : (chartType === '2ht0' ? d.zero2HT : d.goals);
+                            if (!val || val === 0) return;
+                            
+                            const basePathX = 50 + 100 * idx;
+                            let barX = basePathX;
+                            let color = '';
+                            if (chartType === '45') { barX = basePathX - 10; color = '#22c55e'; }
+                            else if (chartType === '90') { barX = basePathX; color = '#ef4444'; }
+                            else if (chartType === '2ht0') { barX = basePathX + 10; color = '#000000'; }
+
+                            const y = 32 - (val / maxGoals) * 12;
+                            const height = 32 - y;
+                            const opacity = chartType === '2ht0' ? '0.4' : '0.2';
+                            outHtml += `<rect x="${barX - 4}" y="${y}" width="8" height="${height}" fill="${color}" opacity="${opacity}" rx="2" />`;
                         }
                     });
-
-                    flushSegment();
-                    return out;
+                    return outHtml;
                 };
 
-                svgHtml += buildPolygons(true);
-                svgHtml += buildPolygons(false);
+                svgHtml += buildBars('90');
+                svgHtml += buildBars('45');
+                svgHtml += buildBars('2ht0');
 
                 weekDays.forEach((d, idx) => {
 
@@ -419,16 +423,23 @@ export const SportsLeagueMixin = {
                         const x = 50 + 100 * idx;
                         const y = (!d.goals || d.goals === -1) ? 32 : 32 - (d.goals / maxGoals) * 12;
                         const y45 = (!d.goals45 || d.goals45 === -1) ? 32 : 32 - (d.goals45 / maxGoals) * 12;
+                        const y2ht0 = (!d.zero2HT || d.zero2HT === -1) ? 32 : 32 - (d.zero2HT / maxGoals) * 12;
 
                         if (d.goals45 > 0) {
-                            svgHtml += `<circle cx="${x}" cy="${y45}" r="2" fill="#22c55e" />`;
-                            let textY = y45 - 4;
-                            if (d.goals === d.goals45) textY = y45 + 8;
-                            svgHtml += `<text x="${x}" y="${textY}" text-anchor="middle" font-size="8" fill="#22c55e" font-family="sans-serif" font-weight="bold">${d.goals45}</text>`;
+                            const cx = x - 10;
+                            svgHtml += `<circle cx="${cx}" cy="${y45}" r="2.5" fill="#22c55e" />`;
+                            svgHtml += `<text x="${cx}" y="${y45 - 4}" text-anchor="middle" font-size="8" fill="#22c55e" font-family="sans-serif" font-weight="bold">${d.goals45}</text>`;
                         }
                         if (d.goals > 0) {
-                            svgHtml += `<circle cx="${x}" cy="${y}" r="2" fill="#ef4444" />`;
-                            svgHtml += `<text x="${x}" y="${y - 4}" text-anchor="middle" font-size="8" fill="#ef4444" font-family="sans-serif" font-weight="bold">${d.goals}</text>`;
+                            const cx = x;
+                            svgHtml += `<circle cx="${cx}" cy="${y}" r="2.5" fill="#ef4444" />`;
+                            svgHtml += `<text x="${cx}" y="${y - 4}" text-anchor="middle" font-size="8" fill="#ef4444" font-family="sans-serif" font-weight="bold">${d.goals}</text>`;
+                        }
+                        
+                        if (d.zero2HT > 0) {
+                            const cx = x + 10;
+                            svgHtml += `<circle cx="${cx}" cy="${y2ht0}" r="2.5" fill="#000000" />`;
+                            svgHtml += `<text x="${cx}" y="${y2ht0 - 4}" text-anchor="middle" font-size="9" fill="#000000" font-family="sans-serif" font-weight="900">${d.zero2HT}</text>`;
                         }
 
                         if (d.zeroGames > 0) {
@@ -453,7 +464,7 @@ export const SportsLeagueMixin = {
                 const pm = String(prevDate.getMonth() + 1).padStart(2, '0');
                 const pd = String(prevDate.getDate()).padStart(2, '0');
                 const dStr = `${py}-${pm}-${pd}`;
-                weekDays.push({ empty: true, date: dStr, label: prevDate.getDate(), goals: goalsPerDay[dStr] || 0, goals45: goals45PerDay[dStr] || 0, zeroGames: zeroGamesPerDay[dStr] || 0, fiveGames: fivePlusGamesPerDay[dStr] || 0 });
+                weekDays.push({ empty: true, date: dStr, label: prevDate.getDate(), goals: goalsPerDay[dStr] || 0, goals45: goals45PerDay[dStr] || 0, zeroGames: zeroGamesPerDay[dStr] || 0, fiveGames: fivePlusGamesPerDay[dStr] || 0, zero2HT: zero2HTGamesPerDay[dStr] || 0 });
             }
 
             for (let day = 1; day <= daysInMonth; day++) {
@@ -462,7 +473,7 @@ export const SportsLeagueMixin = {
                     calendarHtml += processWeek();
                     weekDays = [];
                 }
-                weekDays.push({ empty: false, date: dStr, dayNum: day, goals: goalsPerDay[dStr] || 0, goals45: goals45PerDay[dStr] || 0, zeroGames: zeroGamesPerDay[dStr] || 0, fiveGames: fivePlusGamesPerDay[dStr] || 0 });
+                weekDays.push({ empty: false, date: dStr, dayNum: day, goals: goalsPerDay[dStr] || 0, goals45: goals45PerDay[dStr] || 0, zeroGames: zeroGamesPerDay[dStr] || 0, fiveGames: fivePlusGamesPerDay[dStr] || 0, zero2HT: zero2HTGamesPerDay[dStr] || 0 });
             }
 
             const lastDay = new Date(targetYear, targetMonth, daysInMonth).getDay();
@@ -473,7 +484,7 @@ export const SportsLeagueMixin = {
                     const pm = String(nextDate.getMonth() + 1).padStart(2, '0');
                     const pd = String(nextDate.getDate()).padStart(2, '0');
                     const dStr = `${py}-${pm}-${pd}`;
-                    weekDays.push({ empty: true, date: dStr, label: nextDate.getDate(), goals: goalsPerDay[dStr] || 0, goals45: goals45PerDay[dStr] || 0, zeroGames: zeroGamesPerDay[dStr] || 0, fiveGames: fivePlusGamesPerDay[dStr] || 0 });
+                    weekDays.push({ empty: true, date: dStr, label: nextDate.getDate(), goals: goalsPerDay[dStr] || 0, goals45: goals45PerDay[dStr] || 0, zeroGames: zeroGamesPerDay[dStr] || 0, fiveGames: fivePlusGamesPerDay[dStr] || 0, zero2HT: zero2HTGamesPerDay[dStr] || 0 });
                 }
             }
 
@@ -486,7 +497,7 @@ export const SportsLeagueMixin = {
         calendarHtml += '</div>';
 
 
-        const renderMasterTimeline = (allMatches, tableMatches, displayDateTL, isSportsOnlyView, isPairedGame = false, hideCalendarBtn = false) => {
+        const renderMasterTimeline = async (allMatches, tableMatches, displayDateTL, isSportsOnlyView, isPairedGame = false, hideCalendarBtn = false) => {
             const nowLocal = new Date();
             const nowMins = nowLocal.getHours() * 60 + nowLocal.getMinutes();
             const todayStr2 = nowLocal.getFullYear() + '-' + String(nowLocal.getMonth() + 1).padStart(2, '0') + '-' + String(nowLocal.getDate()).padStart(2, '0');
@@ -1270,7 +1281,7 @@ export const SportsLeagueMixin = {
         let tlMatches = allMatches.filter(m => tlKeepGroups.has(m.group || 'Unknown'));
         let tlTableMatches = tableMatches ? tableMatches.filter(m => tlKeepGroups.has(m.group || 'Unknown')) : tableMatches;
 
-        html += renderMasterTimeline(tlMatches, tlTableMatches, displayDateTL, isSportsOnlyViewMaster, isPairedGame, hideBtn);
+        html += await renderMasterTimeline(tlMatches, tlTableMatches, displayDateTL, isSportsOnlyViewMaster, isPairedGame, hideBtn);
         html += calendarHtml;
 
         if (isGameAnalystView && homeTeam && awayTeam) {
