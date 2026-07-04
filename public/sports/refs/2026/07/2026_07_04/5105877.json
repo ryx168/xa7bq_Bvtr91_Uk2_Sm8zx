@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5105877",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "30/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Elana Torun Hist",
+    "title": "Elana Torun 2-5 Tluchowo",
+    "homeTeam": "Elana Torun",
+    "awayTeam": "Tluchowo",
+    "score": "2-5",
+    "matchId": "4904616",
+    "targetMatchId": "5105877",
+    "goals": [
+      "10' 0-1",
+      "22' 0-2<br>28' 1-2",
+      "",
+      "",
+      "49' 2-2",
+      "70' 2-3",
+      "81' 2-4<br>89' 2-5",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "23/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Elana Torun Hist",
+    "title": "Elana Torun 0-3 Notec Czarnkow",
+    "homeTeam": "Elana Torun",
+    "awayTeam": "Notec Czarnkow",
+    "score": "0-3",
+    "matchId": "4904606",
+    "targetMatchId": "5105877",
+    "goals": [
+      "",
+      "22' 0-1<br>25' 0-2<br>30' 0-3",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "17/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Elana Torun Hist",
+    "title": "Elana Torun 0-4 Unia Swarzedz",
+    "homeTeam": "Elana Torun",
+    "awayTeam": "Unia Swarzedz",
+    "score": "0-4",
+    "matchId": "4904594",
+    "targetMatchId": "5105877",
+    "goals": [
+      "",
+      "",
+      "38' 0-1",
+      "",
+      "51' 0-2",
+      "64' 0-3",
+      "82' 0-4",
+      ""
+    ],
+    "isReference": true
+  }
+]
