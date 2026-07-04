@@ -64,3 +64,83 @@ jobs:
           done
           
           echo "Finished continuous loop gracefully. Next cron job will pick up."
+
+  scrape-leagues:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install puppeteer
+
+      - name: Run League Scraper
+        run: node scrape_all_leagues.mjs
+
+      - name: Commit and Push state
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add league_catalog.json output_leagues/ public/data/leagues/
+          git commit -m "Auto-update scraped leagues [skip ci]" || echo "No changes to commit"
+          git push
+
+  prepare-daily-analyst:
+    needs: scrape-leagues
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install jsdom
+        run: npm install jsdom
+
+      - name: Run League Template Generator
+        run: node public/data/generate_league_templates.mjs
+
+      - name: Run Prepare Daily Analyst
+        run: node public/data/prepare_daily_analyst.mjs
+
+      - name: Commit and Push Analyst Data
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/analyst/
+          git commit -m "Auto-update daily analyst JSON [skip ci]" || echo "No changes to commit"
+          git push
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Google API dependencies
+        run: pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
+
+      - name: Setup Google Drive Credentials
+        run: |
+          if [ -n "${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}" ]; then
+            echo "${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}" > credentials.json
+          fi
+          if [ -n "${{ secrets.GOOGLE_DRIVE_TOKEN }}" ]; then
+            echo "${{ secrets.GOOGLE_DRIVE_TOKEN }}" | base64 --decode > token.pickle
+          fi
+
+      - name: Upload Daily Analyst Data to Google Drive
+        run: python scripts/upload_folder_to_drive.py public/data --name "sports data backup" || true
