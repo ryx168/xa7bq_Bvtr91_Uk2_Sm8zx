@@ -66,6 +66,7 @@ jobs:
           echo "Finished continuous loop gracefully. Next cron job will pick up."
 
   scrape-leagues:
+    needs: prepare-daily-analyst
     runs-on: ubuntu-latest
     timeout-minutes: 360
     permissions:
@@ -94,7 +95,6 @@ jobs:
           git push
 
   prepare-daily-analyst:
-    needs: scrape-leagues
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
