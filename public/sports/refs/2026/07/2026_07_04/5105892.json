@@ -1,0 +1,74 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5105892",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "24/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Kandai FC 2008 Hist",
+    "title": "Hannan University 2-2 Kandai FC 2008",
+    "homeTeam": "Hannan University",
+    "awayTeam": "Kandai FC 2008",
+    "score": "2-2",
+    "matchId": "5068779",
+    "targetMatchId": "5105892",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "28/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Bandito Ikoma Hist",
+    "title": "Bandito Ikoma 1-7 FC AWJ",
+    "homeTeam": "Bandito Ikoma",
+    "awayTeam": "FC AWJ",
+    "score": "1-7",
+    "matchId": "5093854",
+    "targetMatchId": "5105892",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
