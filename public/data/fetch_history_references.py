@@ -90,11 +90,13 @@ def main():
     parser.add_argument('match_id', type=int)
     parser.add_argument('home_team', type=str)
     parser.add_argument('away_team', type=str)
+    parser.add_argument('match_date', type=str, nargs='?', default='')
     args = parser.parse_args()
     
     target_match_id = args.match_id
     home_team = args.home_team
     away_team = args.away_team
+    match_date = args.match_date
     
     # 1. Fetch gamehistory_en.js (H2H)
     h2h_js = fetch_url(f"https://px-analyse.7mdt.com/{target_match_id}/data/gamehistory_en.js")
@@ -126,12 +128,12 @@ def main():
             dates = re.search(r'"date":\[(.*?)\]', data)
             
             if ids and aids and bids and livea and liveb and dates:
-                id_list = ids.group(1).split(',')[:3]
-                aid_list = aids.group(1).split(',')[:3]
-                bid_list = bids.group(1).split(',')[:3]
-                livea_list = livea.group(1).split(',')[:3]
-                liveb_list = liveb.group(1).split(',')[:3]
-                date_list = [x.strip('"') for x in dates.group(1).split(',')][:3]
+                id_list = ids.group(1).split(',')
+                aid_list = aids.group(1).split(',')
+                bid_list = bids.group(1).split(',')
+                livea_list = livea.group(1).split(',')
+                liveb_list = liveb.group(1).split(',')
+                date_list = [x.strip('"') for x in dates.group(1).split(',')]
                 
                 for i in range(len(id_list)):
                     h_team = team_dict.get(aid_list[i], aid_list[i])
@@ -161,12 +163,12 @@ def main():
             dates = re.search(r'"date":\[(.*?)\]', data)
             
             if ids and aids and bids and livea and liveb and dates:
-                id_list = ids.group(1).split(',')[:3]
-                aid_list = aids.group(1).split(',')[:3]
-                bid_list = bids.group(1).split(',')[:3]
-                livea_list = livea.group(1).split(',')[:3]
-                liveb_list = liveb.group(1).split(',')[:3]
-                date_list = [x.strip('"') for x in dates.group(1).split(',')][:3]
+                id_list = ids.group(1).split(',')
+                aid_list = aids.group(1).split(',')
+                bid_list = bids.group(1).split(',')
+                livea_list = livea.group(1).split(',')
+                liveb_list = liveb.group(1).split(',')
+                date_list = [x.strip('"') for x in dates.group(1).split(',')]
                 
                 for i in range(len(id_list)):
                     h_team = team_dict.get(aid_list[i], aid_list[i])
@@ -187,12 +189,12 @@ def main():
             dates = re.search(r'"date":\[(.*?)\]', data)
             
             if ids and aids and bids and livea and liveb and dates:
-                id_list = ids.group(1).split(',')[:3]
-                aid_list = aids.group(1).split(',')[:3]
-                bid_list = bids.group(1).split(',')[:3]
-                livea_list = livea.group(1).split(',')[:3]
-                liveb_list = liveb.group(1).split(',')[:3]
-                date_list = [x.strip('"') for x in dates.group(1).split(',')][:3]
+                id_list = ids.group(1).split(',')
+                aid_list = aids.group(1).split(',')
+                bid_list = bids.group(1).split(',')
+                livea_list = livea.group(1).split(',')
+                liveb_list = liveb.group(1).split(',')
+                date_list = [x.strip('"') for x in dates.group(1).split(',')]
                 
                 for i in range(len(id_list)):
                     h_team = team_dict.get(aid_list[i], aid_list[i])
@@ -202,11 +204,17 @@ def main():
                     historical_matches.append(match_obj)
 
     # Save to individual reference file
-    import datetime
-    now = datetime.datetime.now()
-    year_str = now.strftime('%Y')
-    month_str = now.strftime('%m')
-    date_str = now.strftime('%Y_%m_%d')
+    if match_date and len(match_date.split('-')) == 3:
+        parts = match_date.split('-')
+        year_str = parts[0]
+        month_str = parts[1]
+        date_str = match_date.replace('-', '_')
+    else:
+        import datetime
+        now = datetime.datetime.now()
+        year_str = now.strftime('%Y')
+        month_str = now.strftime('%m')
+        date_str = now.strftime('%Y_%m_%d')
     
     refs_dir = os.path.join(os.path.dirname(__file__), '..', 'sports', 'refs', year_str, month_str, date_str)
     if not os.path.exists(refs_dir):
