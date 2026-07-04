@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5107486",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "01/05/24",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "FSV Kuhlungsborn Hist",
+    "title": "FSV Kuhlungsborn 2-2 Greifswalder",
+    "homeTeam": "FSV Kuhlungsborn",
+    "awayTeam": "Greifswalder",
+    "score": "2-2",
+    "matchId": "4677511",
+    "targetMatchId": "5107486",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "20/07/23",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "FSV Kuhlungsborn Hist",
+    "title": "FSV Kuhlungsborn 1-5 Rostocker FC",
+    "homeTeam": "FSV Kuhlungsborn",
+    "awayTeam": "Rostocker FC",
+    "score": "1-5",
+    "matchId": "4531375",
+    "targetMatchId": "5107486",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "15/07/21",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "FSV Kuhlungsborn Hist",
+    "title": "FSV Kuhlungsborn 1-4 Hansa Rostock Am.",
+    "homeTeam": "FSV Kuhlungsborn",
+    "awayTeam": "Hansa Rostock Am.",
+    "score": "1-4",
+    "matchId": "4189785",
+    "targetMatchId": "5107486",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "08/08/10",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "FC Hansa Rostock Hist",
+    "title": "SV Hafen Rostock Women's 1-9 Magdeburger  Women's",
+    "homeTeam": "SV Hafen Rostock Women's",
+    "awayTeam": "Magdeburger  Women's",
+    "score": "1-9",
+    "matchId": "387696",
+    "targetMatchId": "5107486",
+    "goals": [
+      "13' 0-1",
+      "22' 0-2",
+      "32' 0-3<br>38' 0-4<br>40' 0-5<br>45' 0-6",
+      "",
+      "48' 1-6",
+      "71' 1-7",
+      "83' 1-8<br>85' 1-9",
+      ""
+    ],
+    "isReference": true
+  }
+]
