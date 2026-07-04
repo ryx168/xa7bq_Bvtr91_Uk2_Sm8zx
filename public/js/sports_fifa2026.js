@@ -324,14 +324,14 @@ export const SportsMixin = {
                             const basePathX = 50 + 100 * idx;
                             let barX = basePathX;
                             let color = '';
-                            if (chartType === '45') { barX = basePathX - 10; color = '#22c55e'; }
+                            if (chartType === '45') { barX = basePathX - 16; color = '#22c55e'; }
                             else if (chartType === '90') { barX = basePathX; color = '#ef4444'; }
-                            else if (chartType === '2ht0') { barX = basePathX + 10; color = '#000000'; }
+                            else if (chartType === '2ht0') { barX = basePathX + 16; color = '#000000'; }
 
                             const y = 32 - (val / maxGoals) * 12;
                             const height = 32 - y;
                             const opacity = chartType === '2ht0' ? '0.4' : '0.2';
-                            outHtml += `<rect x="${barX - 4}" y="${y}" width="8" height="${height}" fill="${color}" opacity="${opacity}" rx="2" />`;
+                            outHtml += `<rect x="${barX - 7}" y="${y}" width="14" height="${height}" fill="${color}" opacity="${opacity}" rx="2" />`;
                         }
                     });
                     return outHtml;
@@ -358,29 +358,29 @@ export const SportsMixin = {
                         const y2ht0 = (!d.zero2HT || d.zero2HT === -1) ? 32 : 32 - (d.zero2HT / maxGoals) * 12;
 
                         if (d.goals45 > 0) {
-                            const cx = x - 10;
-                            svgHtml += `<circle cx="${cx}" cy="${y45}" r="2.5" fill="#22c55e" />`;
-                            svgHtml += `<text x="${cx}" y="${y45 - 4}" text-anchor="middle" font-size="8" fill="#22c55e" font-family="sans-serif" font-weight="bold">${d.goals45}</text>`;
+                            const cx = x - 16;
+                            svgHtml += `<circle cx="${cx}" cy="${y45}" r="3" fill="#22c55e" />`;
+                            svgHtml += `<text x="${cx}" y="${y45 - 5}" text-anchor="middle" font-size="9" fill="#22c55e" font-family="sans-serif" font-weight="bold">${d.goals45}</text>`;
                         }
                         if (d.goals > 0) {
                             const cx = x;
-                            svgHtml += `<circle cx="${cx}" cy="${y}" r="2.5" fill="#ef4444" />`;
-                            svgHtml += `<text x="${cx}" y="${y - 4}" text-anchor="middle" font-size="8" fill="#ef4444" font-family="sans-serif" font-weight="bold">${d.goals}</text>`;
+                            svgHtml += `<circle cx="${cx}" cy="${y}" r="3" fill="#ef4444" />`;
+                            svgHtml += `<text x="${cx}" y="${y - 5}" text-anchor="middle" font-size="9" fill="#ef4444" font-family="sans-serif" font-weight="bold">${d.goals}</text>`;
                         }
 
                         if (d.zero2HT > 0) {
-                            const cx = x + 10;
-                            svgHtml += `<circle cx="${cx}" cy="${y2ht0}" r="2.5" fill="#000000" />`;
-                            svgHtml += `<text x="${cx}" y="${y2ht0 - 4}" text-anchor="middle" font-size="9" fill="#000000" font-family="sans-serif" font-weight="900">${d.zero2HT}</text>`;
+                            const cx = x + 16;
+                            svgHtml += `<circle cx="${cx}" cy="${y2ht0}" r="3" fill="#000000" />`;
+                            svgHtml += `<text x="${cx}" y="${y2ht0 - 5}" text-anchor="middle" font-size="10" fill="#000000" font-family="sans-serif" font-weight="900">${d.zero2HT}</text>`;
                         }
 
                         if (d.zeroGames > 0) {
-                            svgHtml += `<circle cx="${x - 18}" cy="12" r="6" fill="#64748b" />`;
-                            svgHtml += `<text x="${x - 18}" y="14.5" text-anchor="middle" font-size="7" fill="#fff" font-family="sans-serif" font-weight="bold">0</text>`;
+                            svgHtml += `<circle cx="${x - 26}" cy="12" r="6" fill="#64748b" />`;
+                            svgHtml += `<text x="${x - 26}" y="14.5" text-anchor="middle" font-size="7" fill="#fff" font-family="sans-serif" font-weight="bold">0</text>`;
                         }
                         if (d.fiveGames > 0) {
-                            svgHtml += `<circle cx="${x + 18}" cy="12" r="6" fill="#8b5cf6" />`;
-                            svgHtml += `<text x="${x + 18}" y="14.5" text-anchor="middle" font-size="7" fill="#fff" font-family="sans-serif" font-weight="bold">5+</text>`;
+                            svgHtml += `<circle cx="${x + 26}" cy="12" r="6" fill="#8b5cf6" />`;
+                            svgHtml += `<text x="${x + 26}" y="14.5" text-anchor="middle" font-size="7" fill="#fff" font-family="sans-serif" font-weight="bold">5+</text>`;
                         }
                     }
                 });
