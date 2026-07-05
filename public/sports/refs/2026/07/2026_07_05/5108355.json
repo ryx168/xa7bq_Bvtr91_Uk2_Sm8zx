@@ -1,0 +1,122 @@
+[
+  {
+    "date": "13/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": "Nacao SC 0-0 Atletico Tubarao SC",
+    "homeTeam": "Nacao SC",
+    "awayTeam": "Atletico Tubarao SC",
+    "score": "0-0",
+    "matchId": "5067044",
+    "targetMatchId": "5108355",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "28/07/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": "Nacao SC 1-2 Atletico Tubarao SC",
+    "homeTeam": "Nacao SC",
+    "awayTeam": "Atletico Tubarao SC",
+    "score": "1-2",
+    "matchId": "4932252",
+    "targetMatchId": "5108355",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "17/07/22",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": "Atletico Tubarao SC 0-4 Nacao SC",
+    "homeTeam": "Atletico Tubarao SC",
+    "awayTeam": "Nacao SC",
+    "score": "0-4",
+    "matchId": "4350220",
+    "targetMatchId": "5108355",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "05/09/21",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": "Atletico Tubarao SC 0-1 Nacao SC",
+    "homeTeam": "Atletico Tubarao SC",
+    "awayTeam": "Nacao SC",
+    "score": "0-1",
+    "matchId": "4233864",
+    "targetMatchId": "5108355",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "29/07/21",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": "Nacao SC 3-0 Atletico Tubarao SC",
+    "homeTeam": "Nacao SC",
+    "awayTeam": "Atletico Tubarao SC",
+    "score": "3-0",
+    "matchId": "4203247",
+    "targetMatchId": "5108355",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
