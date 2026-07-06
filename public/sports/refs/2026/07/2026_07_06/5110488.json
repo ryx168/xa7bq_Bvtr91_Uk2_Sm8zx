@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5110488",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "30/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "DeKalb County Women\\s Hist",
+    "title": "DeKalb County Women's 2-2 Rockford Raptors Women's",
+    "homeTeam": "DeKalb County Women's",
+    "awayTeam": "Rockford Raptors Women's",
+    "score": "2-2",
+    "matchId": "5094700",
+    "targetMatchId": "5110488",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "18/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "DeKalb County Women\\s Hist",
+    "title": "DeKalb County Women's 3-3 TN Force Women's",
+    "homeTeam": "DeKalb County Women's",
+    "awayTeam": "TN Force Women's",
+    "score": "3-3",
+    "matchId": "5078386",
+    "targetMatchId": "5110488",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "22/06/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "DeKalb County Women\\s Hist",
+    "title": "Edgewater Castle Women's 3-0 DeKalb County Women's",
+    "homeTeam": "Edgewater Castle Women's",
+    "awayTeam": "DeKalb County Women's",
+    "score": "3-0",
+    "matchId": "4881058",
+    "targetMatchId": "5110488",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
