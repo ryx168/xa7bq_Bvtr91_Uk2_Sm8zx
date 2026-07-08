@@ -1,0 +1,50 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5111722",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "25/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Beijing Warriors Hist",
+    "title": "Shandong Qiutan 0-1 Beijing Warriors",
+    "homeTeam": "Shandong Qiutan",
+    "awayTeam": "Beijing Warriors",
+    "score": "0-1",
+    "matchId": "5086143",
+    "targetMatchId": "5111722",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
