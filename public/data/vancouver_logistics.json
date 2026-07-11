@@ -582,20 +582,20 @@
     {
         "id": "yp_log_27",
         "city": "Vancouver",
-        "name": "Ashcroft Terminal",
+        "name": "Sensible BC",
         "industry": "Logistics",
         "website": "N/A",
-        "phone": "604-563-5595",
+        "phone": "604-620-6599",
         "address": "Unknown",
         "start_date": "Unknown"
     },
     {
         "id": "yp_log_28",
         "city": "Vancouver",
-        "name": "Sensible BC",
+        "name": "Ashcroft Terminal",
         "industry": "Logistics",
         "website": "N/A",
-        "phone": "604-620-6599",
+        "phone": "604-563-5595",
         "address": "Unknown",
         "start_date": "Unknown"
     },
@@ -610,22 +610,22 @@
         "start_date": "Unknown"
     },
     {
+        "id": "yp_log_30",
+        "city": "Vancouver",
+        "name": "Reuben Anderson",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-222-0086",
+        "address": "Unknown",
+        "start_date": "Unknown"
+    },
+    {
         "id": "yp_log_31",
         "city": "Vancouver",
         "name": "VanCity Limos",
         "industry": "Logistics",
         "website": "N/A",
         "phone": "778-654-5699",
-        "address": "Unknown",
-        "start_date": "Unknown"
-    },
-    {
-        "id": "yp_log_32",
-        "city": "Vancouver",
-        "name": "Reuben Anderson",
-        "industry": "Logistics",
-        "website": "N/A",
-        "phone": "604-222-0086",
         "address": "Unknown",
         "start_date": "Unknown"
     },
