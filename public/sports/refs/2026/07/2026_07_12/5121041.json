@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5121041",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "10/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "New Haven United FC Hist",
+    "title": "Osner's FC 1-2 New Haven United FC",
+    "homeTeam": "Osner's FC",
+    "awayTeam": "New Haven United FC",
+    "score": "1-2",
+    "matchId": "5065541",
+    "targetMatchId": "5121041",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "17/07/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "New Haven United FC Hist",
+    "title": "West Chester United SC 4-0 New Haven United FC",
+    "homeTeam": "West Chester United SC",
+    "awayTeam": "New Haven United FC",
+    "score": "4-0",
+    "matchId": "4918492",
+    "targetMatchId": "5121041",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "19/06/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "New Haven United FC Hist",
+    "title": "New Haven United FC 2-4 Osner's FC",
+    "homeTeam": "New Haven United FC",
+    "awayTeam": "Osner's FC",
+    "score": "2-4",
+    "matchId": "4878276",
+    "targetMatchId": "5121041",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "18/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "American Soccer Club NY Hist",
+    "title": "American Soccer Club NY 0-0 Osner's FC",
+    "homeTeam": "American Soccer Club NY",
+    "awayTeam": "Osner's FC",
+    "score": "0-0",
+    "matchId": "5079958",
+    "targetMatchId": "5121041",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
