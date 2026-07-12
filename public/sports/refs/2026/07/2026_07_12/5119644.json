@@ -1,0 +1,74 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5119644",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "06/08/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Richmond Women\\s Hist",
+    "title": "Royal AM Women's 1-0 Richmond Women's",
+    "homeTeam": "Royal AM Women's",
+    "awayTeam": "Richmond Women's",
+    "score": "1-0",
+    "matchId": "4942441",
+    "targetMatchId": "5119644",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "29/06/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Richmond Women\\s Hist",
+    "title": "First Touch Academy Women's 1-1 Richmond Women's",
+    "homeTeam": "First Touch Academy Women's",
+    "awayTeam": "Richmond Women's",
+    "score": "1-1",
+    "matchId": "4892031",
+    "targetMatchId": "5119644",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
