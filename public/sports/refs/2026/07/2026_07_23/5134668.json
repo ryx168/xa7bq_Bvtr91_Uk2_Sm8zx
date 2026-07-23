@@ -1,0 +1,50 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5134668",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "27/07/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "La Clery FL Hist",
+    "title": "SV Real Rincon 1-1 La Clery FL",
+    "homeTeam": "SV Real Rincon",
+    "awayTeam": "La Clery FL",
+    "score": "1-1",
+    "matchId": "4928919",
+    "targetMatchId": "5134668",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "66' 0-1",
+      "79' 1-1",
+      ""
+    ],
+    "isReference": true
+  }
+]
