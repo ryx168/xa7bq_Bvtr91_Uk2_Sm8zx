@@ -1,0 +1,50 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5139823",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "23/07/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "St. John\\s SC Hist",
+    "title": "Dublanc FC 1-3 St. John's SC",
+    "homeTeam": "Dublanc FC",
+    "awayTeam": "St. John's SC",
+    "score": "1-3",
+    "matchId": "5134615",
+    "targetMatchId": "5139823",
+    "goals": [
+      "",
+      "",
+      "41' 0-1",
+      "45+2' 0-2<br>45+8' 1-2",
+      "54' 1-3",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

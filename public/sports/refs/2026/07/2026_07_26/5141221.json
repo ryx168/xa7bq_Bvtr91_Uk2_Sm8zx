@@ -1,0 +1,50 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5141221",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "25/07/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Elite SC Hist",
+    "title": "Elite SC 2-0 Virgin Gorda United",
+    "homeTeam": "Elite SC",
+    "awayTeam": "Virgin Gorda United",
+    "score": "2-0",
+    "matchId": "5134758",
+    "targetMatchId": "5141221",
+    "goals": [
+      "",
+      "16' 1-0",
+      "",
+      "",
+      "56' 2-0",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
