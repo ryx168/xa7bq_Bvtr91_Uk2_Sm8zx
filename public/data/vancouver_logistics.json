@@ -220,7 +220,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_23",
+        "id": "yp_log_25",
         "city": "Vancouver",
         "name": "Bob Global Logistics",
         "industry": "Logistics",
@@ -572,16 +572,6 @@
     {
         "id": "yp_log_26",
         "city": "Vancouver",
-        "name": "VanCity Limos",
-        "industry": "Logistics",
-        "website": "N/A",
-        "phone": "778-654-5699",
-        "address": "Unknown",
-        "start_date": "Unknown"
-    },
-    {
-        "id": "yp_log_27",
-        "city": "Vancouver",
         "name": "LThomas Trucking",
         "industry": "Logistics",
         "website": "N/A",
@@ -590,17 +580,17 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_28",
+        "id": "yp_log_27",
         "city": "Vancouver",
-        "name": "Nova Trucking",
+        "name": "VanCity Limos",
         "industry": "Logistics",
         "website": "N/A",
-        "phone": "778-233-3096",
+        "phone": "778-654-5699",
         "address": "Unknown",
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_29",
+        "id": "yp_log_28",
         "city": "Vancouver",
         "name": "Reuben Anderson",
         "industry": "Logistics",
@@ -610,7 +600,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_30",
+        "id": "yp_log_29",
         "city": "Vancouver",
         "name": "Xperia Logistics",
         "industry": "Logistics",
@@ -620,12 +610,22 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_32",
+        "id": "yp_log_30",
         "city": "Vancouver",
         "name": "Knight Trucking",
         "industry": "Logistics",
         "website": "N/A",
         "phone": "604-831-2162",
+        "address": "Unknown",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_31",
+        "city": "Vancouver",
+        "name": "Nova Trucking",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "778-233-3096",
         "address": "Unknown",
         "start_date": "Unknown"
     },
