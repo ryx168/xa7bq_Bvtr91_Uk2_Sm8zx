@@ -1,0 +1,74 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5142782",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "27/07/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Willemstad Hist",
+    "title": "Willemstad 5-2 St. John's SC",
+    "homeTeam": "Willemstad",
+    "awayTeam": "St. John's SC",
+    "score": "5-2",
+    "matchId": "5139823",
+    "targetMatchId": "5142782",
+    "goals": [
+      "15' 1-0",
+      "20' 2-0<br>28' 2-1",
+      "33' 3-1<br>38' 4-1",
+      "",
+      "",
+      "69' 5-1",
+      "",
+      "90+2' 5-2"
+    ],
+    "isReference": true
+  },
+  {
+    "date": "27/07/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Delfines Del Este Hist",
+    "title": "Delfines Del Este 2-0 Elite SC",
+    "homeTeam": "Delfines Del Este",
+    "awayTeam": "Elite SC",
+    "score": "2-0",
+    "matchId": "5141221",
+    "targetMatchId": "5142782",
+    "goals": [
+      "13' 1-0",
+      "27' 2-0",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
