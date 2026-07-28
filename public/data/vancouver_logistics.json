@@ -220,7 +220,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_23",
+        "id": "yp_log_24",
         "city": "Vancouver",
         "name": "Bob Global Logistics",
         "industry": "Logistics",
@@ -592,10 +592,10 @@
     {
         "id": "yp_log_28",
         "city": "Vancouver",
-        "name": "Knight Trucking",
+        "name": "Reuben Anderson",
         "industry": "Logistics",
         "website": "N/A",
-        "phone": "604-831-2162",
+        "phone": "604-222-0086",
         "address": "Unknown",
         "start_date": "Unknown"
     },
@@ -610,7 +610,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_30",
+        "id": "yp_log_31",
         "city": "Vancouver",
         "name": "Nova Trucking",
         "industry": "Logistics",
@@ -620,33 +620,33 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_31",
-        "city": "Vancouver",
-        "name": "Reuben Anderson",
-        "industry": "Logistics",
-        "website": "N/A",
-        "phone": "604-222-0086",
-        "address": "Unknown",
-        "start_date": "Unknown"
-    },
-    {
-        "id": "yp_log_33",
-        "city": "Vancouver",
-        "name": "VanCity Limos",
-        "industry": "Logistics",
-        "website": "N/A",
-        "phone": "778-654-5699",
-        "address": "Unknown",
-        "start_date": "Unknown"
-    },
-    {
-        "id": "yp_log_34",
+        "id": "yp_log_32",
         "city": "Vancouver",
         "name": "Xperia Logistics",
         "industry": "Logistics",
         "website": "N/A",
         "phone": "778-883-0630",
         "address": "Vancouver, BC V5P 3B9",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_33",
+        "city": "Vancouver",
+        "name": "Knight Trucking",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-831-2162",
+        "address": "Unknown",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_34",
+        "city": "Vancouver",
+        "name": "VanCity Limos",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "778-654-5699",
+        "address": "Unknown",
         "start_date": "Unknown"
     }
 ]
