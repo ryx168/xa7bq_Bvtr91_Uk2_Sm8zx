@@ -1,0 +1,50 @@
+[
+  {
+    "date": "04/12/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": "CSD Xelaju MC 1-1 Liga Deportiva Alajuelense",
+    "homeTeam": "CSD Xelaju MC",
+    "awayTeam": "Liga Deportiva Alajuelense",
+    "score": "1-1",
+    "matchId": "4994844",
+    "targetMatchId": "5077636",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "74' 0-1",
+      "82' 1-1",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "27/11/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": "Liga Deportiva Alajuelense 1-1 CSD Xelaju MC",
+    "homeTeam": "Liga Deportiva Alajuelense",
+    "awayTeam": "CSD Xelaju MC",
+    "score": "1-1",
+    "matchId": "4994843",
+    "targetMatchId": "5077636",
+    "goals": [
+      "13' 0-0",
+      "",
+      "31' 0-0",
+      "",
+      "53' 0-1",
+      "67' 1-1",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
