@@ -112,6 +112,16 @@
     {
         "id": "yp_log_12",
         "city": "Vancouver",
+        "name": "G-Direct Freight Inc",
+        "industry": "Logistics",
+        "website": "http://gdirectfreight.com/",
+        "phone": "1-800-605-0972",
+        "address": "PO BOX 73067 RPO EVERGREEN, Surrey, BC V3R 0J2",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_13",
+        "city": "Vancouver",
         "name": "Sokil Express Lines Ltd",
         "industry": "Logistics",
         "website": "https://www.facebook.com/pages/Sokil-Express-Lines-Ltd/195410244175468",
@@ -120,7 +130,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_13",
+        "id": "yp_log_14",
         "city": "Vancouver",
         "name": "Government of BC",
         "industry": "Logistics",
@@ -130,7 +140,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_14",
+        "id": "yp_log_15",
         "city": "Vancouver",
         "name": "TMS Transportation Management Services Ltd Dispatch/Operations",
         "industry": "Logistics",
@@ -140,7 +150,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_15",
+        "id": "yp_log_16",
         "city": "Vancouver",
         "name": "Can-Am West Carriers Inc",
         "industry": "Logistics",
@@ -150,7 +160,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_16",
+        "id": "yp_log_17",
         "city": "Vancouver",
         "name": "Can-Am West Asset Based Logistics",
         "industry": "Logistics",
@@ -160,7 +170,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_17",
+        "id": "yp_log_18",
         "city": "Vancouver",
         "name": "Van-Kam Freightways Ltd",
         "industry": "Logistics",
@@ -170,7 +180,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_18",
+        "id": "yp_log_19",
         "city": "Vancouver",
         "name": "Paul's Junk Removal & Transport",
         "industry": "Logistics",
@@ -180,7 +190,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_19",
+        "id": "yp_log_20",
         "city": "Vancouver",
         "name": "Impark",
         "industry": "Logistics",
@@ -190,7 +200,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_20",
+        "id": "yp_log_21",
         "city": "Vancouver",
         "name": "VIA Rail Canada Inc",
         "industry": "Logistics",
@@ -200,7 +210,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_21",
+        "id": "yp_log_22",
         "city": "Vancouver",
         "name": "Canadian Freightways",
         "industry": "Logistics",
@@ -210,7 +220,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_22",
+        "id": "yp_log_23",
         "city": "Vancouver",
         "name": "Dan",
         "industry": "Logistics",
@@ -220,7 +230,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_23",
+        "id": "yp_log_24",
         "city": "Vancouver",
         "name": "Driving Miss Daisy",
         "industry": "Logistics",
@@ -230,7 +240,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_24",
+        "id": "yp_log_27",
         "city": "Vancouver",
         "name": "Bob Global Logistics",
         "industry": "Logistics",
@@ -240,7 +250,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_27",
+        "id": "yp_log_28",
         "city": "Vancouver",
         "name": "First Group America",
         "industry": "Logistics",
@@ -250,7 +260,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_28",
+        "id": "yp_log_29",
         "city": "Vancouver",
         "name": "Seatrade Shipping Ltd",
         "industry": "Logistics",
@@ -260,7 +270,17 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_29",
+        "id": "yp_log_30",
+        "city": "Vancouver",
+        "name": "Transx Ltd",
+        "industry": "Logistics",
+        "website": "http://transx.com/",
+        "phone": "604-540-5572",
+        "address": "25 Capilano Way, New Westminster, BC V3L 5G3",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_31",
         "city": "Vancouver",
         "name": "Versacold Group Services ULC",
         "industry": "Logistics",
@@ -270,7 +290,17 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_30",
+        "id": "yp_log_32",
+        "city": "Vancouver",
+        "name": "Kee West Auto Carriers Inc",
+        "industry": "Logistics",
+        "website": "http://www.keewest.com/",
+        "phone": "604-232-9491",
+        "address": "16179 Blundell Rd, Richmond, BC V6W 0A3",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_33",
         "city": "Vancouver",
         "name": "JBC Transport",
         "industry": "Logistics",
@@ -280,7 +310,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_31",
+        "id": "yp_log_34",
         "city": "Vancouver",
         "name": "Malou Travel Svc",
         "industry": "Logistics",
@@ -290,7 +320,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_32",
+        "id": "yp_log_0",
         "city": "Vancouver",
         "name": "Kids Coach Transportation Systems For Children",
         "industry": "Logistics",
@@ -300,17 +330,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_33",
-        "city": "Vancouver",
-        "name": "Veemo",
-        "industry": "Logistics",
-        "website": "https://www.facebook.com/rideveemo/",
-        "phone": "778-806-8736",
-        "address": "1885 Franklin St, Vancouver, BC V5L 1P9",
-        "start_date": "Unknown"
-    },
-    {
-        "id": "yp_log_34",
+        "id": "yp_log_1",
         "city": "Vancouver",
         "name": "VeloMetro",
         "industry": "Logistics",
@@ -320,7 +340,17 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_0",
+        "id": "yp_log_2",
+        "city": "Vancouver",
+        "name": "Veemo",
+        "industry": "Logistics",
+        "website": "https://www.facebook.com/rideveemo/",
+        "phone": "778-806-8736",
+        "address": "1885 Franklin St, Vancouver, BC V5L 1P9",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_3",
         "city": "Vancouver",
         "name": "Snowbus",
         "industry": "Logistics",
@@ -330,7 +360,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_1",
+        "id": "yp_log_4",
         "city": "Vancouver",
         "name": "Goodfellas Transport",
         "industry": "Logistics",
@@ -340,7 +370,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_2",
+        "id": "yp_log_5",
         "city": "Vancouver",
         "name": "Breakaway Vacations",
         "industry": "Logistics",
@@ -350,7 +380,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_3",
+        "id": "yp_log_6",
         "city": "Vancouver",
         "name": "Parr Trucking",
         "industry": "Logistics",
@@ -360,7 +390,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_4",
+        "id": "yp_log_7",
         "city": "Vancouver",
         "name": "Vanride Inc",
         "industry": "Logistics",
@@ -370,7 +400,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_5",
+        "id": "yp_log_8",
         "city": "Vancouver",
         "name": "Waheguru Trucking",
         "industry": "Logistics",
@@ -380,7 +410,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_6",
+        "id": "yp_log_9",
         "city": "Vancouver",
         "name": "Ringo Trucking",
         "industry": "Logistics",
@@ -390,7 +420,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_7",
+        "id": "yp_log_10",
         "city": "Vancouver",
         "name": "Nuna Logistics",
         "industry": "Logistics",
@@ -400,7 +430,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_8",
+        "id": "yp_log_11",
         "city": "Vancouver",
         "name": "TMBC Logistics",
         "industry": "Logistics",
@@ -410,7 +440,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_9",
+        "id": "yp_log_12",
         "city": "Vancouver",
         "name": "Harman Trucking",
         "industry": "Logistics",
@@ -420,7 +450,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_10",
+        "id": "yp_log_13",
         "city": "Vancouver",
         "name": "DRC Travel",
         "industry": "Logistics",
@@ -430,7 +460,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_11",
+        "id": "yp_log_14",
         "city": "Vancouver",
         "name": "Armored Logistics",
         "industry": "Logistics",
@@ -440,7 +470,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_12",
+        "id": "yp_log_15",
         "city": "Vancouver",
         "name": "Aruba Transport",
         "industry": "Logistics",
@@ -450,7 +480,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_13",
+        "id": "yp_log_16",
         "city": "Vancouver",
         "name": "GoNorth Canada",
         "industry": "Logistics",
@@ -460,7 +490,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_14",
+        "id": "yp_log_17",
         "city": "Vancouver",
         "name": "Tuksen express",
         "industry": "Logistics",
@@ -470,7 +500,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_15",
+        "id": "yp_log_18",
         "city": "Vancouver",
         "name": "Fircrest Management",
         "industry": "Logistics",
@@ -480,7 +510,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_16",
+        "id": "yp_log_19",
         "city": "Vancouver",
         "name": "Left Lane Logistics Inc",
         "industry": "Logistics",
@@ -490,7 +520,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_17",
+        "id": "yp_log_20",
         "city": "Vancouver",
         "name": "Milthorp Trucking",
         "industry": "Logistics",
@@ -500,7 +530,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_18",
+        "id": "yp_log_22",
         "city": "Vancouver",
         "name": "BDS Transport",
         "industry": "Logistics",
@@ -510,7 +540,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_20",
+        "id": "yp_log_23",
         "city": "Vancouver",
         "name": "Hallcon Corp",
         "industry": "Logistics",
@@ -520,7 +550,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_21",
+        "id": "yp_log_24",
         "city": "Vancouver",
         "name": "Kukil Tours",
         "industry": "Logistics",
@@ -530,7 +560,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_22",
+        "id": "yp_log_25",
         "city": "Vancouver",
         "name": "KTP Transportation",
         "industry": "Logistics",
@@ -540,7 +570,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_23",
+        "id": "yp_log_26",
         "city": "Vancouver",
         "name": "Cougar Transport",
         "industry": "Logistics",
@@ -550,7 +580,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_24",
+        "id": "yp_log_27",
         "city": "Vancouver",
         "name": "Ruano Dora",
         "industry": "Logistics",
@@ -560,7 +590,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_25",
+        "id": "yp_log_28",
         "city": "Vancouver",
         "name": "e-courier",
         "industry": "Logistics",
@@ -570,7 +600,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_26",
+        "id": "yp_log_29",
         "city": "Vancouver",
         "name": "ForVikingsOnly.ca",
         "industry": "Logistics",
@@ -580,7 +610,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_27",
+        "id": "yp_log_30",
         "city": "Vancouver",
         "name": "LThomas Trucking",
         "industry": "Logistics",
@@ -590,52 +620,22 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_28",
-        "city": "Vancouver",
-        "name": "Sensible BC",
-        "industry": "Logistics",
-        "website": "N/A",
-        "phone": "604-620-6599",
-        "address": "Unknown",
-        "start_date": "Unknown"
-    },
-    {
-        "id": "yp_log_29",
-        "city": "Vancouver",
-        "name": "Ashcroft Terminal",
-        "industry": "Logistics",
-        "website": "N/A",
-        "phone": "604-563-5595",
-        "address": "Unknown",
-        "start_date": "Unknown"
-    },
-    {
         "id": "yp_log_31",
         "city": "Vancouver",
-        "name": "Reuben Anderson",
+        "name": "VanCity Limos",
         "industry": "Logistics",
         "website": "N/A",
-        "phone": "604-222-0086",
-        "address": "Unknown",
-        "start_date": "Unknown"
-    },
-    {
-        "id": "yp_log_32",
-        "city": "Vancouver",
-        "name": "Nova Trucking",
-        "industry": "Logistics",
-        "website": "N/A",
-        "phone": "778-233-3096",
+        "phone": "778-654-5699",
         "address": "Unknown",
         "start_date": "Unknown"
     },
     {
         "id": "yp_log_33",
         "city": "Vancouver",
-        "name": "VanCity Limos",
+        "name": "Reuben Anderson",
         "industry": "Logistics",
         "website": "N/A",
-        "phone": "778-654-5699",
+        "phone": "604-222-0086",
         "address": "Unknown",
         "start_date": "Unknown"
     },
