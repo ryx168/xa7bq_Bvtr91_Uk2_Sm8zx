@@ -1,0 +1,50 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5156930",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "02/09/23",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Newhaven Hist",
+    "title": "Cray Wanderers 5-1 Newhaven",
+    "homeTeam": "Cray Wanderers",
+    "awayTeam": "Newhaven",
+    "score": "5-1",
+    "matchId": "4570928",
+    "targetMatchId": "5156930",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5156933",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "04/09/24",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Whitchurch Alport FC Hist",
+    "title": "Wythenshawe Town 2-1 Whitchurch Alport FC",
+    "homeTeam": "Wythenshawe Town",
+    "awayTeam": "Whitchurch Alport FC",
+    "score": "2-1",
+    "matchId": "4784582",
+    "targetMatchId": "5156933",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "31/08/24",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Whitchurch Alport FC Hist",
+    "title": "Whitchurch Alport FC 1-1 Wythenshawe Town",
+    "homeTeam": "Whitchurch Alport FC",
+    "awayTeam": "Wythenshawe Town",
+    "score": "1-1",
+    "matchId": "4780047",
+    "targetMatchId": "5156933",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "03/09/22",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Whitchurch Alport FC Hist",
+    "title": "Anstey Nomads 3-1 Whitchurch Alport FC",
+    "homeTeam": "Anstey Nomads",
+    "awayTeam": "Whitchurch Alport FC",
+    "score": "3-1",
+    "matchId": "4387304",
+    "targetMatchId": "5156933",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "24/07/21",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Whitchurch Alport FC Hist",
+    "title": "Nantwich Town 2-1 Whitchurch Alport FC",
+    "homeTeam": "Nantwich Town",
+    "awayTeam": "Whitchurch Alport FC",
+    "score": "2-1",
+    "matchId": "4200290",
+    "targetMatchId": "5156933",
+    "goals": [
+      "",
+      "",
+      "32' 1-0<br>34' 1-1",
+      "",
+      "",
+      "70' 2-1",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5156918",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "31/08/24",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Dudley Town Hist",
+    "title": "Dudley Town 0-5 Stourbridge",
+    "homeTeam": "Dudley Town",
+    "awayTeam": "Stourbridge",
+    "score": "0-5",
+    "matchId": "4780061",
+    "targetMatchId": "5156918",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "08/09/12",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Dudley Town Hist",
+    "title": "Dudley Town 0-1 Nuneaton Griff",
+    "homeTeam": "Dudley Town",
+    "awayTeam": "Nuneaton Griff",
+    "score": "0-1",
+    "matchId": "860804",
+    "targetMatchId": "5156918",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "25/08/12",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Dudley Town Hist",
+    "title": "Halesowen Town 1-2 Dudley Town",
+    "homeTeam": "Halesowen Town",
+    "awayTeam": "Dudley Town",
+    "score": "1-2",
+    "matchId": "10825538",
+    "targetMatchId": "5156918",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

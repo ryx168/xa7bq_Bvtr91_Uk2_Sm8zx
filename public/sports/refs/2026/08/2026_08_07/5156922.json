@@ -1,0 +1,74 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5156922",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "13/09/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Hackney Wick Hist",
+    "title": "Leiston FC 4-1 Hackney Wick",
+    "homeTeam": "Leiston FC",
+    "awayTeam": "Hackney Wick",
+    "score": "4-1",
+    "matchId": "4980504",
+    "targetMatchId": "5156922",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "30/08/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Hackney Wick Hist",
+    "title": "Knaphill FC 1-2 Hackney Wick",
+    "homeTeam": "Knaphill FC",
+    "awayTeam": "Hackney Wick",
+    "score": "1-2",
+    "matchId": "4977320",
+    "targetMatchId": "5156922",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

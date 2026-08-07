@@ -1,0 +1,74 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5156927",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "31/08/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Wokingham Town Hist",
+    "title": "Wokingham Town 1-5 Burgess Hill Town",
+    "homeTeam": "Wokingham Town",
+    "awayTeam": "Burgess Hill Town",
+    "score": "1-5",
+    "matchId": "4974894",
+    "targetMatchId": "5156927",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "20/08/11",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Corsham Town Hist",
+    "title": "Corsham Town 1-6 Cadbury Heath",
+    "homeTeam": "Corsham Town",
+    "awayTeam": "Cadbury Heath",
+    "score": "1-6",
+    "matchId": "554224",
+    "targetMatchId": "5156927",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
