@@ -1,0 +1,74 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5160020",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "20/07/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "CA Colegiales (U20) Hist",
+    "title": "San Telmo(U20) 2-0 CA Colegiales (U20)",
+    "homeTeam": "San Telmo(U20)",
+    "awayTeam": "CA Colegiales (U20)",
+    "score": "2-0",
+    "matchId": "4924664",
+    "targetMatchId": "5160020",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "25/09/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Brown Adrogue(U20) Hist",
+    "title": "Brown Adrogue(U20) 0-2 San Telmo(U20)",
+    "homeTeam": "Brown Adrogue(U20)",
+    "awayTeam": "San Telmo(U20)",
+    "score": "0-2",
+    "matchId": "4987925",
+    "targetMatchId": "5160020",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
