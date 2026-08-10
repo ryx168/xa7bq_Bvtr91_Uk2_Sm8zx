@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5159356",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "30/11/23",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Debibi United Hist",
+    "title": "Bechem United 8-0 Debibi United",
+    "homeTeam": "Bechem United",
+    "awayTeam": "Debibi United",
+    "score": "8-0",
+    "matchId": "4620348",
+    "targetMatchId": "5159356",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "29/11/24",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Attram de Visser Hist",
+    "title": "Attram de Visser 1-1 Okwahu United",
+    "homeTeam": "Attram de Visser",
+    "awayTeam": "Okwahu United",
+    "score": "1-1",
+    "matchId": "4805415",
+    "targetMatchId": "5159356",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "25/07/21",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Attram de Visser Hist",
+    "title": "Medeama SC 2-2 Attram de Visser",
+    "homeTeam": "Medeama SC",
+    "awayTeam": "Attram de Visser",
+    "score": "2-2",
+    "matchId": "4200364",
+    "targetMatchId": "5159356",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
