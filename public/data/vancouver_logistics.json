@@ -582,10 +582,10 @@
     {
         "id": "yp_log_27",
         "city": "Vancouver",
-        "name": "Ashcroft Terminal",
+        "name": "LThomas Trucking",
         "industry": "Logistics",
         "website": "N/A",
-        "phone": "604-563-5595",
+        "phone": "604-240-8899",
         "address": "Unknown",
         "start_date": "Unknown"
     },
@@ -600,37 +600,27 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_30",
+        "id": "yp_log_29",
         "city": "Vancouver",
-        "name": "LThomas Trucking",
+        "name": "Ashcroft Terminal",
         "industry": "Logistics",
         "website": "N/A",
-        "phone": "604-240-8899",
+        "phone": "604-563-5595",
         "address": "Unknown",
         "start_date": "Unknown"
     },
     {
         "id": "yp_log_31",
         "city": "Vancouver",
-        "name": "Nova Trucking",
+        "name": "Reuben Anderson",
         "industry": "Logistics",
         "website": "N/A",
-        "phone": "778-233-3096",
+        "phone": "604-222-0086",
         "address": "Unknown",
         "start_date": "Unknown"
     },
     {
         "id": "yp_log_32",
-        "city": "Vancouver",
-        "name": "VanCity Limos",
-        "industry": "Logistics",
-        "website": "N/A",
-        "phone": "778-654-5699",
-        "address": "Unknown",
-        "start_date": "Unknown"
-    },
-    {
-        "id": "yp_log_33",
         "city": "Vancouver",
         "name": "Xperia Logistics",
         "industry": "Logistics",
@@ -640,12 +630,22 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_34",
+        "id": "yp_log_33",
         "city": "Vancouver",
         "name": "Knight Trucking",
         "industry": "Logistics",
         "website": "N/A",
         "phone": "604-831-2162",
+        "address": "Unknown",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_34",
+        "city": "Vancouver",
+        "name": "Nova Trucking",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "778-233-3096",
         "address": "Unknown",
         "start_date": "Unknown"
     }
