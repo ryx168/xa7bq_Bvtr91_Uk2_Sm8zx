@@ -1,0 +1,98 @@
+[
+  {
+    "date": "08/08/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": "Horbury Town 1-1 Golcar United",
+    "homeTeam": "Horbury Town",
+    "awayTeam": "Golcar United",
+    "score": "1-1",
+    "matchId": "5156945",
+    "targetMatchId": "5159125",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "08/08/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Golcar United Hist",
+    "title": "Horbury Town 1-1 Golcar United",
+    "homeTeam": "Horbury Town",
+    "awayTeam": "Golcar United",
+    "score": "1-1",
+    "matchId": "5156945",
+    "targetMatchId": "5159125",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "09/08/23",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Golcar United Hist",
+    "title": "Trafford 1-0 Golcar United",
+    "homeTeam": "Trafford",
+    "awayTeam": "Golcar United",
+    "score": "1-0",
+    "matchId": "4564030",
+    "targetMatchId": "5159125",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "08/08/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Horbury Town Hist",
+    "title": "Horbury Town 1-1 Golcar United",
+    "homeTeam": "Horbury Town",
+    "awayTeam": "Golcar United",
+    "score": "1-1",
+    "matchId": "5156945",
+    "targetMatchId": "5159125",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

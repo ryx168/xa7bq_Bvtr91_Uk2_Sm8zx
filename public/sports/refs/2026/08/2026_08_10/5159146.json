@@ -1,0 +1,74 @@
+[
+  {
+    "date": "08/08/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": "Lutterworth Town 0-0 Hereford Pegasus",
+    "homeTeam": "Lutterworth Town",
+    "awayTeam": "Hereford Pegasus",
+    "score": "0-0",
+    "matchId": "5157726",
+    "targetMatchId": "5159146",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "08/08/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Hereford Pegasus Hist",
+    "title": "Lutterworth Town 0-0 Hereford Pegasus",
+    "homeTeam": "Lutterworth Town",
+    "awayTeam": "Hereford Pegasus",
+    "score": "0-0",
+    "matchId": "5157726",
+    "targetMatchId": "5159146",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "08/08/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Lutterworth Town Hist",
+    "title": "Lutterworth Town 0-0 Hereford Pegasus",
+    "homeTeam": "Lutterworth Town",
+    "awayTeam": "Hereford Pegasus",
+    "score": "0-0",
+    "matchId": "5157726",
+    "targetMatchId": "5159146",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
