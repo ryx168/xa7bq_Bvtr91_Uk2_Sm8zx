@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5164009",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "18/06/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Deportivo Moron(U20) Hist",
+    "title": "Club Atletico Atlanta(U20) 2-2 Deportivo Moron(U20)",
+    "homeTeam": "Club Atletico Atlanta(U20)",
+    "awayTeam": "Deportivo Moron(U20)",
+    "score": "2-2",
+    "matchId": "4880055",
+    "targetMatchId": "5164009",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "07/06/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Deportivo Moron(U20) Hist",
+    "title": "Defensores Belgrano Villa Ramallo(U20) 1-4 Deportivo Moron(U20)",
+    "homeTeam": "Defensores Belgrano Villa Ramallo(U20)",
+    "awayTeam": "Deportivo Moron(U20)",
+    "score": "1-4",
+    "matchId": "4875770",
+    "targetMatchId": "5164009",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "07/06/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Los Andes(U20) Hist",
+    "title": "Club Atletico San Miguel(U20) 0-0 Los Andes(U20)",
+    "homeTeam": "Club Atletico San Miguel(U20)",
+    "awayTeam": "Los Andes(U20)",
+    "score": "0-0",
+    "matchId": "4875769",
+    "targetMatchId": "5164009",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
