@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5104610",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "12/10/24",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Kaya F.C.Women\\s Hist",
+    "title": "Melbourne City Women's 4-0 Kaya F.C.Women's",
+    "homeTeam": "Melbourne City Women's",
+    "awayTeam": "Kaya F.C.Women's",
+    "score": "4-0",
+    "matchId": "4793667",
+    "targetMatchId": "5104610",
+    "goals": [
+      "4' 1-0<br>8' 2-0<br>10' 3-0",
+      "",
+      "38' 4-0",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "09/10/24",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Kaya F.C.Women\\s Hist",
+    "title": "Bam Khatoon Women's 1-1 Kaya F.C.Women's",
+    "homeTeam": "Bam Khatoon Women's",
+    "awayTeam": "Kaya F.C.Women's",
+    "score": "1-1",
+    "matchId": "4793665",
+    "targetMatchId": "5104610",
+    "goals": [
+      "",
+      "",
+      "39' 1-0",
+      "",
+      "",
+      "",
+      "",
+      "90+4' 1-1"
+    ],
+    "isReference": true
+  },
+  {
+    "date": "06/10/24",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Kaya F.C.Women\\s Hist",
+    "title": "Kaya F.C.Women's 0-0 College of Asian Scholar Women's",
+    "homeTeam": "Kaya F.C.Women's",
+    "awayTeam": "College of Asian Scholar Women's",
+    "score": "0-0",
+    "matchId": "4793664",
+    "targetMatchId": "5104610",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
