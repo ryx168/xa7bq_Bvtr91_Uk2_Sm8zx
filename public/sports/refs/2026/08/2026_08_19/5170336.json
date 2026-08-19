@@ -1,0 +1,74 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5170336",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "17/08/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Bayern Munich Women\\s(U17) Hist",
+    "title": "Bayern Munich Women's(U17) 0-6 China Women's(U17)",
+    "homeTeam": "Bayern Munich Women's(U17)",
+    "awayTeam": "China Women's(U17)",
+    "score": "0-6",
+    "matchId": "5168404",
+    "targetMatchId": "5170336",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "17/08/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Real Madrid CF Women\\s(U17) Hist",
+    "title": "Real Madrid CF Women's(U17) 2-1 Manchester City Women's(U17)",
+    "homeTeam": "Real Madrid CF Women's(U17)",
+    "awayTeam": "Manchester City Women's(U17)",
+    "score": "2-1",
+    "matchId": "5168403",
+    "targetMatchId": "5170336",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

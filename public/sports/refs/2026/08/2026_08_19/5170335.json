@@ -1,0 +1,74 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5170335",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "17/08/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Arsenal Women\\s(U17) Hist",
+    "title": "Arsenal Women's(U17) 2-2 Shanghai Women's(U17)",
+    "homeTeam": "Arsenal Women's(U17)",
+    "awayTeam": "Shanghai Women's(U17)",
+    "score": "2-2",
+    "matchId": "5168406",
+    "targetMatchId": "5170335",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "17/08/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Paris FC Women\\s(U17) Hist",
+    "title": "Paris FC Women's(U17) 2-4 Real Sociedad Women's(U17)",
+    "homeTeam": "Paris FC Women's(U17)",
+    "awayTeam": "Real Sociedad Women's(U17)",
+    "score": "2-4",
+    "matchId": "5168405",
+    "targetMatchId": "5170335",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
