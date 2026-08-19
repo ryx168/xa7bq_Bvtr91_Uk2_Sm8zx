@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5170526",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "13/03/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "KF Vllaznia Shkoder Youth Hist",
+    "title": "Mavlon FC Youth 1-0 KF Vllaznia Shkoder Youth",
+    "homeTeam": "Mavlon FC Youth",
+    "awayTeam": "KF Vllaznia Shkoder Youth",
+    "score": "1-0",
+    "matchId": "5049188",
+    "targetMatchId": "5170526",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "11/03/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "KF Vllaznia Shkoder Youth Hist",
+    "title": "Genoa Youth 3-0 KF Vllaznia Shkoder Youth",
+    "homeTeam": "Genoa Youth",
+    "awayTeam": "KF Vllaznia Shkoder Youth",
+    "score": "3-0",
+    "matchId": "5049176",
+    "targetMatchId": "5170526",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "09/03/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "KF Vllaznia Shkoder Youth Hist",
+    "title": "KF Vllaznia Shkoder Youth 0-2 AS Police Youth",
+    "homeTeam": "KF Vllaznia Shkoder Youth",
+    "awayTeam": "AS Police Youth",
+    "score": "0-2",
+    "matchId": "5049166",
+    "targetMatchId": "5170526",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "15/10/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Basania FC Hist",
+    "title": "KF Skenderbeu Korce 2-2 Basania FC",
+    "homeTeam": "KF Skenderbeu Korce",
+    "awayTeam": "Basania FC",
+    "score": "2-2",
+    "matchId": "4991293",
+    "targetMatchId": "5170526",
+    "goals": [
+      "7' 1-0",
+      "",
+      "",
+      "",
+      "50' 1-1",
+      "63' 2-1",
+      "88' 2-2",
+      ""
+    ],
+    "isReference": true
+  }
+]
