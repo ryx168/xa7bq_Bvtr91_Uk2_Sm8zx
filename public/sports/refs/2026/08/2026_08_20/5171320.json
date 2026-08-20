@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5171320",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "19/08/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Paris FC Women\\s(U17) Hist",
+    "title": "Arsenal Women's(U17) 0-1 Paris FC Women's(U17)",
+    "homeTeam": "Arsenal Women's(U17)",
+    "awayTeam": "Paris FC Women's(U17)",
+    "score": "0-1",
+    "matchId": "5170335",
+    "targetMatchId": "5171320",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "17/08/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Paris FC Women\\s(U17) Hist",
+    "title": "Paris FC Women's(U17) 2-4 Real Sociedad Women's(U17)",
+    "homeTeam": "Paris FC Women's(U17)",
+    "awayTeam": "Real Sociedad Women's(U17)",
+    "score": "2-4",
+    "matchId": "5168405",
+    "targetMatchId": "5171320",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "19/08/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Manchester City Women\\s(U17) Hist",
+    "title": "China Women's(U17) 3-0 Manchester City Women's(U17)",
+    "homeTeam": "China Women's(U17)",
+    "awayTeam": "Manchester City Women's(U17)",
+    "score": "3-0",
+    "matchId": "5170337",
+    "targetMatchId": "5171320",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "17/08/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Manchester City Women\\s(U17) Hist",
+    "title": "Real Madrid CF Women's(U17) 2-1 Manchester City Women's(U17)",
+    "homeTeam": "Real Madrid CF Women's(U17)",
+    "awayTeam": "Manchester City Women's(U17)",
+    "score": "2-1",
+    "matchId": "5168403",
+    "targetMatchId": "5171320",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

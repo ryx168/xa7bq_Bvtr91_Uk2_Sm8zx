@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5171319",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "19/08/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Bayern Munich Women\\s(U17) Hist",
+    "title": "Bayern Munich Women's(U17) 1-1 Real Madrid CF Women's(U17)",
+    "homeTeam": "Bayern Munich Women's(U17)",
+    "awayTeam": "Real Madrid CF Women's(U17)",
+    "score": "1-1",
+    "matchId": "5170336",
+    "targetMatchId": "5171319",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "17/08/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Bayern Munich Women\\s(U17) Hist",
+    "title": "Bayern Munich Women's(U17) 0-6 China Women's(U17)",
+    "homeTeam": "Bayern Munich Women's(U17)",
+    "awayTeam": "China Women's(U17)",
+    "score": "0-6",
+    "matchId": "5168404",
+    "targetMatchId": "5171319",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "19/08/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Real Sociedad Women\\s(U17) Hist",
+    "title": "Shanghai Women's(U17) 1-1 Real Sociedad Women's(U17)",
+    "homeTeam": "Shanghai Women's(U17)",
+    "awayTeam": "Real Sociedad Women's(U17)",
+    "score": "1-1",
+    "matchId": "5170334",
+    "targetMatchId": "5171319",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "17/08/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Real Sociedad Women\\s(U17) Hist",
+    "title": "Paris FC Women's(U17) 2-4 Real Sociedad Women's(U17)",
+    "homeTeam": "Paris FC Women's(U17)",
+    "awayTeam": "Real Sociedad Women's(U17)",
+    "score": "2-4",
+    "matchId": "5168405",
+    "targetMatchId": "5171319",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
