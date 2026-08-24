@@ -1,0 +1,50 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5173166",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "18/08/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Umphrup Hist",
+    "title": "SMIT SC 3-0 Umphrup",
+    "homeTeam": "SMIT SC",
+    "awayTeam": "Umphrup",
+    "score": "3-0",
+    "matchId": "5168640",
+    "targetMatchId": "5173166",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
