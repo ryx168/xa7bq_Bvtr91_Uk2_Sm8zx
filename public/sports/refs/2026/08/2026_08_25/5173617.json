@@ -1,0 +1,74 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5173617",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "30/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Randesund IL(U19) Hist",
+    "title": "FK Jerv (U19) 2-1 Randesund IL(U19)",
+    "homeTeam": "FK Jerv (U19)",
+    "awayTeam": "Randesund IL(U19)",
+    "score": "2-1",
+    "matchId": "5094777",
+    "targetMatchId": "5173617",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "23/05/19",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Randesund IL(U19) Hist",
+    "title": "Flekkeroy IL(U19) 1-0 Randesund IL(U19)",
+    "homeTeam": "Flekkeroy IL(U19)",
+    "awayTeam": "Randesund IL(U19)",
+    "score": "1-0",
+    "matchId": "3889043",
+    "targetMatchId": "5173617",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
