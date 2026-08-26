@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5175097",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "02/09/19",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "AE Karitsa Hist",
+    "title": "AE Karitsa 1-2 Panserraikos F.C.",
+    "homeTeam": "AE Karitsa",
+    "awayTeam": "Panserraikos F.C.",
+    "score": "1-2",
+    "matchId": "3959992",
+    "targetMatchId": "5175097",
+    "goals": [
+      "",
+      "24' 0-1",
+      "",
+      "",
+      "",
+      "75' 1-1",
+      "86' 1-2",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "25/08/19",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "AE Karitsa Hist",
+    "title": "Paone 0-4 AE Karitsa",
+    "homeTeam": "Paone",
+    "awayTeam": "AE Karitsa",
+    "score": "0-4",
+    "matchId": "3956680",
+    "targetMatchId": "5175097",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "24/08/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Ermis Exochis Hist",
+    "title": "Pierikos 2-2 Ermis Exochis",
+    "homeTeam": "Pierikos",
+    "awayTeam": "Ermis Exochis",
+    "score": "2-2",
+    "matchId": "4977138",
+    "targetMatchId": "5175097",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "20/08/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Ermis Exochis Hist",
+    "title": "Aiginiakos FC 0-1 Ermis Exochis",
+    "homeTeam": "Aiginiakos FC",
+    "awayTeam": "Ermis Exochis",
+    "score": "0-1",
+    "matchId": "4975262",
+    "targetMatchId": "5175097",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
