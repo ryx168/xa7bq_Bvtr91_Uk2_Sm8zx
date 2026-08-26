@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5175087",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "07/07/07",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Japan Women\\s(U18) Hist",
+    "title": "Korea Republic Women's B(U18) 0-1 Japan Women's(U18)",
+    "homeTeam": "Korea Republic Women's B(U18)",
+    "awayTeam": "Japan Women's(U18)",
+    "score": "0-1",
+    "matchId": "126231",
+    "targetMatchId": "5175087",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "69' 0-1",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "06/07/07",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Japan Women\\s(U18) Hist",
+    "title": "Japan Women's(U18) 2-3 China Women's (U18)",
+    "homeTeam": "Japan Women's(U18)",
+    "awayTeam": "China Women's (U18)",
+    "score": "2-3",
+    "matchId": "126033",
+    "targetMatchId": "5175087",
+    "goals": [
+      "3' 0-1",
+      "21' 1-1",
+      "",
+      "",
+      "",
+      "62' 1-2<br>64' 1-3<br>73' 2-3",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "05/07/07",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Japan Women\\s(U18) Hist",
+    "title": "Korea Republic Women's  (U18) 2-1 Japan Women's(U18)",
+    "homeTeam": "Korea Republic Women's  (U18)",
+    "awayTeam": "Japan Women's(U18)",
+    "score": "2-1",
+    "matchId": "125180",
+    "targetMatchId": "5175087",
+    "goals": [
+      "",
+      "28' 1-0",
+      "40' 2-0",
+      "",
+      "",
+      "68' 2-1",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
