@@ -22,26 +22,6 @@
     {
         "id": "yp_fur_2",
         "city": "Vancouver",
-        "name": "Canadian Tire",
-        "industry": "Furniture",
-        "website": "http://canadiantire.ca/",
-        "phone": "Unknown",
-        "address": "2830 Bentall St, Vancouver, BC V5M 4H4",
-        "start_date": "Unknown"
-    },
-    {
-        "id": "yp_fur_5",
-        "city": "Vancouver",
-        "name": "HomeSense",
-        "industry": "Furniture",
-        "website": "http://homesense.ca/",
-        "phone": "604-683-4406",
-        "address": "493 Robson St, Vancouver, BC V6B 6L9",
-        "start_date": "Unknown"
-    },
-    {
-        "id": "yp_fur_6",
-        "city": "Vancouver",
         "name": "Sleep Country",
         "industry": "Furniture",
         "website": "N/A",
@@ -50,7 +30,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_7",
+        "id": "yp_fur_3",
         "city": "Vancouver",
         "name": "Pier 1 Imports",
         "industry": "Furniture",
@@ -60,7 +40,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_9",
+        "id": "yp_fur_5",
         "city": "Vancouver",
         "name": "United Furniture Warehouse",
         "industry": "Furniture",
@@ -70,7 +50,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_10",
+        "id": "yp_fur_6",
         "city": "Vancouver",
         "name": "Direct Liquidation",
         "industry": "Furniture",
@@ -80,13 +60,43 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_11",
+        "id": "yp_fur_7",
         "city": "Vancouver",
         "name": "Save Now Furniture",
         "industry": "Furniture",
         "website": "http://savenowfurniture.com/",
         "phone": "604-331-4665",
         "address": "2005-928 Richards St, Vancouver, BC V6B 3C1",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_8",
+        "city": "Vancouver",
+        "name": "Pallucci Furniture",
+        "industry": "Furniture",
+        "website": "https://www.palluccifurniture.ca/",
+        "phone": "604-568-4855",
+        "address": "1774 2 Ave W, Vancouver, BC V6J 1H6",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_9",
+        "city": "Vancouver",
+        "name": "Country Furniture",
+        "industry": "Furniture",
+        "website": "https://www.facebook.com/pages/Country-Furniture/72402363442",
+        "phone": "604-738-6411",
+        "address": "852 Hastings St E, Vancouver, BC V6A 1R6",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_11",
+        "city": "Vancouver",
+        "name": "Heritage Office Furnishings Ltd",
+        "industry": "Furniture",
+        "website": "N/A",
+        "phone": "604-261-0575",
+        "address": "1588 Rand Ave, Vancouver, BC V6P 3G2",
         "start_date": "Unknown"
     },
     {
@@ -157,16 +167,6 @@
         "website": "http://oscargranns.com/",
         "phone": "604-987-9833",
         "address": "237 1st St E, North Vancouver, BC V7L 1B4",
-        "start_date": "Unknown"
-    },
-    {
-        "id": "yp_fur_19",
-        "city": "Vancouver",
-        "name": "Country Furniture",
-        "industry": "Furniture",
-        "website": "http://theotherroom.ca/",
-        "phone": "604-971-5336",
-        "address": "1395 Pemberton Ave, North Vancouver, BC V7P 2R6",
         "start_date": "Unknown"
     },
     {
@@ -282,46 +282,6 @@
     {
         "id": "yp_fur_0",
         "city": "Vancouver",
-        "name": "Durga Interiors",
-        "industry": "Furniture",
-        "website": "http://www.durgainteriors.com/",
-        "phone": "604-738-6699",
-        "address": "3566 4th Ave W, Vancouver, BC V6R 1N8",
-        "start_date": "Unknown"
-    },
-    {
-        "id": "yp_fur_1",
-        "city": "Vancouver",
-        "name": "Fullhouse Modern",
-        "industry": "Furniture",
-        "website": "http://www.fullhousemodern.com/",
-        "phone": "604-733-7789",
-        "address": "1545 4th Ave W, Vancouver, BC V6J 1L6",
-        "start_date": "Unknown"
-    },
-    {
-        "id": "yp_fur_2",
-        "city": "Vancouver",
-        "name": "Industrial Revolution",
-        "industry": "Furniture",
-        "website": "http://industrialrevolution.net/",
-        "phone": "604-734-4395",
-        "address": "2306 Granville St, Vancouver, BC V6H 3G3",
-        "start_date": "Unknown"
-    },
-    {
-        "id": "yp_fur_3",
-        "city": "Vancouver",
-        "name": "Urban Garage",
-        "industry": "Furniture",
-        "website": "http://www.urbangarage.com/",
-        "phone": "604-620-8568",
-        "address": "3640 Hastings St E, Vancouver, BC V5K 2A9",
-        "start_date": "Unknown"
-    },
-    {
-        "id": "yp_fur_4",
-        "city": "Vancouver",
         "name": "McKellars Interiors",
         "industry": "Furniture",
         "website": "http://www.mckellarsinteriors.com/",
@@ -330,7 +290,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_5",
+        "id": "yp_fur_1",
         "city": "Vancouver",
         "name": "Buen Café",
         "industry": "Furniture",
@@ -340,7 +300,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_6",
+        "id": "yp_fur_2",
         "city": "Vancouver",
         "name": "Furniture Salad",
         "industry": "Furniture",
@@ -350,7 +310,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_7",
+        "id": "yp_fur_3",
         "city": "Vancouver",
         "name": "Bulthaup Vancouver",
         "industry": "Furniture",
@@ -360,7 +320,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_8",
+        "id": "yp_fur_4",
         "city": "Vancouver",
         "name": "Naughty Pine",
         "industry": "Furniture",
@@ -370,13 +330,53 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_9",
+        "id": "yp_fur_5",
         "city": "Vancouver",
         "name": "EOY Designs",
         "industry": "Furniture",
         "website": "N/A",
         "phone": "604-992-1952",
         "address": "1189 Howe St, Vancouver, BC V6Z 2X4",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_6",
+        "city": "Vancouver",
+        "name": "Drometta Living",
+        "industry": "Furniture",
+        "website": "https://www.facebook.com/dromettaliving/",
+        "phone": "604-789-8863",
+        "address": "1915 Haro St, Vancouver, BC V6G 1H9",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_7",
+        "city": "Vancouver",
+        "name": "Zebo Designs",
+        "industry": "Furniture",
+        "website": "http://www.zebodesigns.com/",
+        "phone": "604-255-7473",
+        "address": "280-1000 Parker St, Vancouver, BC V6A 2H2",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_8",
+        "city": "Vancouver",
+        "name": "Charron Joe",
+        "industry": "Furniture",
+        "website": "http://www.facebook.com/114491025767527",
+        "phone": "604-261-2022",
+        "address": "7520 Balaclava St, Vancouver, BC V6N 0A3",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_9",
+        "city": "Vancouver",
+        "name": "Divano Interiors",
+        "industry": "Furniture",
+        "website": "N/A",
+        "phone": "604-733-9823",
+        "address": "2213 Granville St, Vancouver, BC V6H 3G1",
         "start_date": "Unknown"
     },
     {
