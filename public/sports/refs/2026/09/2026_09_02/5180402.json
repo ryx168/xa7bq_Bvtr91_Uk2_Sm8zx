@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5180402",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "07/07/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Mauaense SP Women\\s Hist",
+    "title": "Mauaense SP Women's 0-3 Sao Paulo Women's",
+    "homeTeam": "Mauaense SP Women's",
+    "awayTeam": "Sao Paulo Women's",
+    "score": "0-3",
+    "matchId": "5070830",
+    "targetMatchId": "5180402",
+    "goals": [
+      "",
+      "",
+      "38' 0-1",
+      "",
+      "",
+      "65' 0-2",
+      "86' 0-3",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "28/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Mauaense SP Women\\s Hist",
+    "title": "Mauaense SP Women's 3-0 Itacoatiara Women's",
+    "homeTeam": "Mauaense SP Women's",
+    "awayTeam": "Itacoatiara Women's",
+    "score": "3-0",
+    "matchId": "5067693",
+    "targetMatchId": "5180402",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "30/04/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Mauaense SP Women\\s Hist",
+    "title": "Rolim de Moura Women's 1-1 Mauaense SP Women's",
+    "homeTeam": "Rolim de Moura Women's",
+    "awayTeam": "Mauaense SP Women's",
+    "score": "1-1",
+    "matchId": "5062851",
+    "targetMatchId": "5180402",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
