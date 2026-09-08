@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5182145",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "23/07/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Kiffen Women\\s Hist",
+    "title": "Honka II Women's 0-1 Kiffen Women's",
+    "homeTeam": "Honka II Women's",
+    "awayTeam": "Kiffen Women's",
+    "score": "0-1",
+    "matchId": "5134461",
+    "targetMatchId": "5182145",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "13/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Kiffen Women\\s Hist",
+    "title": "HPS B Women's 3-0 Kiffen Women's",
+    "homeTeam": "HPS B Women's",
+    "awayTeam": "Kiffen Women's",
+    "score": "3-0",
+    "matchId": "5073962",
+    "targetMatchId": "5182145",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "28/05/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Kiffen Women\\s Hist",
+    "title": "HJK Helsinki Women's (U18) 4-0 Kiffen Women's",
+    "homeTeam": "HJK Helsinki Women's (U18)",
+    "awayTeam": "Kiffen Women's",
+    "score": "4-0",
+    "matchId": "5069687",
+    "targetMatchId": "5182145",
+    "goals": [
+      "11' 1-0",
+      "23' 2-0",
+      "",
+      "",
+      "48' 3-0",
+      "73' 4-0",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "10/05/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Kiffen Women\\s Hist",
+    "title": "Kiffen Women's 3-0 PIF Pargas Women's",
+    "homeTeam": "Kiffen Women's",
+    "awayTeam": "PIF Pargas Women's",
+    "score": "3-0",
+    "matchId": "4868514",
+    "targetMatchId": "5182145",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
