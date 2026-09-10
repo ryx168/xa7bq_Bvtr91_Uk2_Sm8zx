@@ -1,0 +1,74 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5182695",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "04/09/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Al-Ahli Doha(U20) Hist",
+    "title": "Al-Ahli Doha(U20) 2-1 Al Duhail SC(U20)",
+    "homeTeam": "Al-Ahli Doha(U20)",
+    "awayTeam": "Al Duhail SC(U20)",
+    "score": "2-1",
+    "matchId": "5181151",
+    "targetMatchId": "5182695",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "04/09/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Al-Sadd(U20) Hist",
+    "title": "Qatar SC(U20) 0-1 Al-Sadd(U20)",
+    "homeTeam": "Qatar SC(U20)",
+    "awayTeam": "Al-Sadd(U20)",
+    "score": "0-1",
+    "matchId": "5181148",
+    "targetMatchId": "5182695",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

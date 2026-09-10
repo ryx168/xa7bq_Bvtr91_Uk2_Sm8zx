@@ -1,0 +1,74 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5182590",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "02/11/22",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Arkansas Women\\s Hist",
+    "title": "Arkansas Women's 1-1 Vanderbilt Women's",
+    "homeTeam": "Arkansas Women's",
+    "awayTeam": "Vanderbilt Women's",
+    "score": "1-1",
+    "matchId": "4403973",
+    "targetMatchId": "5182590",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "03/10/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Texas Women\\s Hist",
+    "title": "Texas AM University Women's 1-0 Texas Women's",
+    "homeTeam": "Texas AM University Women's",
+    "awayTeam": "Texas Women's",
+    "score": "1-0",
+    "matchId": "4989894",
+    "targetMatchId": "5182590",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
