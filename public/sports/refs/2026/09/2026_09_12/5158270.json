@@ -1,0 +1,74 @@
+[
+  {
+    "date": "05/09/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": "Star Sport Academy 0-0 Medina United",
+    "homeTeam": "Star Sport Academy",
+    "awayTeam": "Medina United",
+    "score": "0-0",
+    "matchId": "5158256",
+    "targetMatchId": "5158270",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "05/09/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Medina United Hist",
+    "title": "Star Sport Academy 0-0 Medina United",
+    "homeTeam": "Star Sport Academy",
+    "awayTeam": "Medina United",
+    "score": "0-0",
+    "matchId": "5158256",
+    "targetMatchId": "5158270",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "05/09/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Star Sport Academy Hist",
+    "title": "Star Sport Academy 0-0 Medina United",
+    "homeTeam": "Star Sport Academy",
+    "awayTeam": "Medina United",
+    "score": "0-0",
+    "matchId": "5158256",
+    "targetMatchId": "5158270",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
