@@ -1,0 +1,50 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5185651",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "21/11/24",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Anstrengung United Hist",
+    "title": "Mumbai Young Boys 1-1 Anstrengung United",
+    "homeTeam": "Mumbai Young Boys",
+    "awayTeam": "Anstrengung United",
+    "score": "1-1",
+    "matchId": "4804123",
+    "targetMatchId": "5185651",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
