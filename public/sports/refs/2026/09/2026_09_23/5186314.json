@@ -1,0 +1,74 @@
+[
+  {
+    "date": "28/02/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": "Estudiantes de Queretaro 6-0 Titanes de Queretaro",
+    "homeTeam": "Estudiantes de Queretaro",
+    "awayTeam": "Titanes de Queretaro",
+    "score": "6-0",
+    "matchId": "5047149",
+    "targetMatchId": "5186314",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "28/02/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Estudiantes de Queretaro Hist",
+    "title": "Estudiantes de Queretaro 6-0 Titanes de Queretaro",
+    "homeTeam": "Estudiantes de Queretaro",
+    "awayTeam": "Titanes de Queretaro",
+    "score": "6-0",
+    "matchId": "5047149",
+    "targetMatchId": "5186314",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "28/02/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Titanes de Queretaro Hist",
+    "title": "Estudiantes de Queretaro 6-0 Titanes de Queretaro",
+    "homeTeam": "Estudiantes de Queretaro",
+    "awayTeam": "Titanes de Queretaro",
+    "score": "6-0",
+    "matchId": "5047149",
+    "targetMatchId": "5186314",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
