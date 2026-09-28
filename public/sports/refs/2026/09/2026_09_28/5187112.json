@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5187112",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "12/01/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Napoli Argentino Hist",
+    "title": "Atletico Escobar FC 1-0 Napoli Argentino",
+    "homeTeam": "Atletico Escobar FC",
+    "awayTeam": "Napoli Argentino",
+    "score": "1-0",
+    "matchId": "5021463",
+    "targetMatchId": "5187112",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "21/12/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Napoli Argentino Hist",
+    "title": "Napoli Argentino 1-1 Uribelarrea FC",
+    "homeTeam": "Napoli Argentino",
+    "awayTeam": "Uribelarrea FC",
+    "score": "1-1",
+    "matchId": "5009608",
+    "targetMatchId": "5187112",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "15/12/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Napoli Argentino Hist",
+    "title": "Uribelarrea FC 1-2 Napoli Argentino",
+    "homeTeam": "Uribelarrea FC",
+    "awayTeam": "Napoli Argentino",
+    "score": "1-2",
+    "matchId": "5005158",
+    "targetMatchId": "5187112",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
