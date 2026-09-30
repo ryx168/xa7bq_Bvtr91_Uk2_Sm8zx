@@ -600,7 +600,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_29",
+        "id": "yp_log_30",
         "city": "Vancouver",
         "name": "Reuben Anderson",
         "industry": "Logistics",
@@ -610,22 +610,12 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_log_30",
-        "city": "Vancouver",
-        "name": "Nova Trucking",
-        "industry": "Logistics",
-        "website": "N/A",
-        "phone": "778-233-3096",
-        "address": "Unknown",
-        "start_date": "Unknown"
-    },
-    {
         "id": "yp_log_31",
         "city": "Vancouver",
-        "name": "Claddagh Cartage",
+        "name": "Knight Trucking",
         "industry": "Logistics",
         "website": "N/A",
-        "phone": "604-315-5600",
+        "phone": "604-831-2162",
         "address": "Unknown",
         "start_date": "Unknown"
     },
@@ -642,10 +632,20 @@
     {
         "id": "yp_log_33",
         "city": "Vancouver",
-        "name": "Knight Trucking",
+        "name": "Nova Trucking",
         "industry": "Logistics",
         "website": "N/A",
-        "phone": "604-831-2162",
+        "phone": "778-233-3096",
+        "address": "Unknown",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_log_34",
+        "city": "Vancouver",
+        "name": "Claddagh Cartage",
+        "industry": "Logistics",
+        "website": "N/A",
+        "phone": "604-315-5600",
         "address": "Unknown",
         "start_date": "Unknown"
     }
