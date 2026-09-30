@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5188152",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "25/09/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Orange Sport FSI Hist",
+    "title": "Cascada 3-0 Orange Sport FSI",
+    "homeTeam": "Cascada",
+    "awayTeam": "Orange Sport FSI",
+    "score": "3-0",
+    "matchId": "5186603",
+    "targetMatchId": "5188152",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "55' 1-0",
+      "",
+      "79' 2-0<br>85' 3-0",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "25/09/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Al Qanater Hist",
+    "title": "Al Qanater 0-1 Levels FC",
+    "homeTeam": "Al Qanater",
+    "awayTeam": "Levels FC",
+    "score": "0-1",
+    "matchId": "5186604",
+    "targetMatchId": "5188152",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "89' 0-1",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "09/02/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Al Qanater Hist",
+    "title": "El Sharqia Dokhan 1-0 Al Qanater",
+    "homeTeam": "El Sharqia Dokhan",
+    "awayTeam": "Al Qanater",
+    "score": "1-0",
+    "matchId": "5036690",
+    "targetMatchId": "5188152",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "03/02/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Al Qanater Hist",
+    "title": "Al Qanater 1-2 Al Nasr Cairo",
+    "homeTeam": "Al Qanater",
+    "awayTeam": "Al Nasr Cairo",
+    "score": "1-2",
+    "matchId": "5033093",
+    "targetMatchId": "5188152",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
