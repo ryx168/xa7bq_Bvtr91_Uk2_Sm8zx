@@ -1,0 +1,50 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5189156",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "03/09/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Strommen B(U19) Hist",
+    "title": "Strommen B(U19) 5-2 Sorumsand(U19)",
+    "homeTeam": "Strommen B(U19)",
+    "awayTeam": "Sorumsand(U19)",
+    "score": "5-2",
+    "matchId": "5180401",
+    "targetMatchId": "5189156",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
