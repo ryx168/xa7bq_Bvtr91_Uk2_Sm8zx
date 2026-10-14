@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5192384",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "11/03/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Aliaga Futbol AS(U19) Hist",
+    "title": "Karsiyaka(U19) 1-1 Aliaga Futbol AS(U19)",
+    "homeTeam": "Karsiyaka(U19)",
+    "awayTeam": "Aliaga Futbol AS(U19)",
+    "score": "1-1",
+    "matchId": "5050973",
+    "targetMatchId": "5192384",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "11/02/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Aliaga Futbol AS(U19) Hist",
+    "title": "Bornova(U19) 1-1 Aliaga Futbol AS(U19)",
+    "homeTeam": "Bornova(U19)",
+    "awayTeam": "Aliaga Futbol AS(U19)",
+    "score": "1-1",
+    "matchId": "5037004",
+    "targetMatchId": "5192384",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "21/01/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Aliaga Futbol AS(U19) Hist",
+    "title": "Altay Spor Kulubu(U19) 2-0 Aliaga Futbol AS(U19)",
+    "homeTeam": "Altay Spor Kulubu(U19)",
+    "awayTeam": "Aliaga Futbol AS(U19)",
+    "score": "2-0",
+    "matchId": "5025480",
+    "targetMatchId": "5192384",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
