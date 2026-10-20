@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5193197",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "14/08/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Nueva Chicago(U20) Hist",
+    "title": "Nueva Chicago(U20) 0-0 All Boys(U20)",
+    "homeTeam": "Nueva Chicago(U20)",
+    "awayTeam": "All Boys(U20)",
+    "score": "0-0",
+    "matchId": "4965859",
+    "targetMatchId": "5193197",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "18/06/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Nueva Chicago(U20) Hist",
+    "title": "Nueva Chicago(U20) 1-0 Almirante Brown(U20)",
+    "homeTeam": "Nueva Chicago(U20)",
+    "awayTeam": "Almirante Brown(U20)",
+    "score": "1-0",
+    "matchId": "4880267",
+    "targetMatchId": "5193197",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "23/10/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "CA Estudiantes (U20) Hist",
+    "title": "San Telmo(U20) 5-0 CA Estudiantes (U20)",
+    "homeTeam": "San Telmo(U20)",
+    "awayTeam": "CA Estudiantes (U20)",
+    "score": "5-0",
+    "matchId": "4993480",
+    "targetMatchId": "5193197",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
