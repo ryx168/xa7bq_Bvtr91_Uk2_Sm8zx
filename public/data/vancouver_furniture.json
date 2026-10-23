@@ -122,6 +122,16 @@
     {
         "id": "yp_fur_14",
         "city": "Vancouver",
+        "name": "Wooden Table Hospitality",
+        "industry": "Furniture",
+        "website": "N/A",
+        "phone": "604-838-6158",
+        "address": "1075 1St St W, North Vancouver, BC V7P 3T4",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_15",
+        "city": "Vancouver",
         "name": "Vancouver Sofa & Patio",
         "industry": "Furniture",
         "website": "N/A",
@@ -130,7 +140,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_15",
+        "id": "yp_fur_16",
         "city": "Vancouver",
         "name": "C & C Furniture Ltd",
         "industry": "Furniture",
@@ -140,7 +150,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_16",
+        "id": "yp_fur_17",
         "city": "Vancouver",
         "name": "Coker's Custom Classics",
         "industry": "Furniture",
@@ -150,7 +160,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_17",
+        "id": "yp_fur_18",
         "city": "Vancouver",
         "name": "Velles North Van Furniture Ltd",
         "industry": "Furniture",
@@ -160,7 +170,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_18",
+        "id": "yp_fur_19",
         "city": "Vancouver",
         "name": "Oscar Granns Ltd",
         "industry": "Furniture",
@@ -170,7 +180,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_21",
+        "id": "yp_fur_22",
         "city": "Vancouver",
         "name": "A A Furniture Repair & Refinishing",
         "industry": "Furniture",
@@ -180,7 +190,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_22",
+        "id": "yp_fur_23",
         "city": "Vancouver",
         "name": "The Modern Source Inc.",
         "industry": "Furniture",
@@ -190,7 +200,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_23",
+        "id": "yp_fur_24",
         "city": "Vancouver",
         "name": "North Shore Custom Furniture Co.",
         "industry": "Furniture",
@@ -200,7 +210,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_24",
+        "id": "yp_fur_25",
         "city": "Vancouver",
         "name": "Cate Brown",
         "industry": "Furniture",
@@ -210,7 +220,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_25",
+        "id": "yp_fur_26",
         "city": "Vancouver",
         "name": "The Living Lab",
         "industry": "Furniture",
@@ -220,7 +230,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_27",
+        "id": "yp_fur_28",
         "city": "Vancouver",
         "name": "Mansour International Commerce",
         "industry": "Furniture",
@@ -230,7 +240,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_28",
+        "id": "yp_fur_29",
         "city": "Vancouver",
         "name": "Northwood Furniture Repair Services",
         "industry": "Furniture",
@@ -240,7 +250,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_30",
+        "id": "yp_fur_31",
         "city": "Vancouver",
         "name": "Canadian Heritage Designs Ltd",
         "industry": "Furniture",
@@ -250,7 +260,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_31",
+        "id": "yp_fur_32",
         "city": "Vancouver",
         "name": "Bed Bath & Beyond",
         "industry": "Furniture",
@@ -260,7 +270,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_32",
+        "id": "yp_fur_33",
         "city": "Vancouver",
         "name": "Ginger Jar Furniture",
         "industry": "Furniture",
@@ -270,7 +280,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_33",
+        "id": "yp_fur_34",
         "city": "Vancouver",
         "name": "OMG It's Small",
         "industry": "Furniture",
@@ -380,23 +390,13 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_33",
+        "id": "yp_fur_34",
         "city": "Vancouver",
         "name": "Showcase",
         "industry": "Furniture",
         "website": "http://shopatshowcasecanada.com/",
         "phone": "604-980-5737",
         "address": "103-935 Marine Dr, North Vancouver, BC V7P 1S3",
-        "start_date": "Unknown"
-    },
-    {
-        "id": "yp_fur_34",
-        "city": "Vancouver",
-        "name": "Ginger Jar",
-        "industry": "Furniture",
-        "website": "http://www.gingerjarfurniture.com/",
-        "phone": "604-988-7328",
-        "address": "1420 Fell Ave, North Vancouver, BC V7P 2K3",
         "start_date": "Unknown"
     }
 ]
