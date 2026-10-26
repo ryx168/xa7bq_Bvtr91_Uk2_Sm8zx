@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5194957",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "26/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Notteroy/Husoy Foynland(U19) Hist",
+    "title": "Fram Larvik(U19) 4-0 Notteroy/Husoy Foynland(U19)",
+    "homeTeam": "Fram Larvik(U19)",
+    "awayTeam": "Notteroy/Husoy Foynland(U19)",
+    "score": "4-0",
+    "matchId": "5089064",
+    "targetMatchId": "5194957",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "12/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Notteroy/Husoy Foynland(U19) Hist",
+    "title": "Larvik Turn(U19) 0-1 Notteroy/Husoy Foynland(U19)",
+    "homeTeam": "Larvik Turn(U19)",
+    "awayTeam": "Notteroy/Husoy Foynland(U19)",
+    "score": "0-1",
+    "matchId": "5073518",
+    "targetMatchId": "5194957",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "24/09/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Runar(U19) Hist",
+    "title": "Runar(U19) 2-0 Fram (U19)",
+    "homeTeam": "Runar(U19)",
+    "awayTeam": "Fram (U19)",
+    "score": "2-0",
+    "matchId": "5186245",
+    "targetMatchId": "5194957",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "09/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Runar(U19) Hist",
+    "title": "Runar(U19) 5-2 Flint Tonsberg U19",
+    "homeTeam": "Runar(U19)",
+    "awayTeam": "Flint Tonsberg U19",
+    "score": "5-2",
+    "matchId": "5073304",
+    "targetMatchId": "5194957",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
