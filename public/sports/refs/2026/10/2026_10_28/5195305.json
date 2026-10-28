@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5195305",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "15/10/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Real Succes Women\\s Hist",
+    "title": "FC Chisinau Women's 6-1 Real Succes Women's",
+    "homeTeam": "FC Chisinau Women's",
+    "awayTeam": "Real Succes Women's",
+    "score": "6-1",
+    "matchId": "5191992",
+    "targetMatchId": "5195305",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "30/09/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Real Succes Women\\s Hist",
+    "title": "Real Succes Women's 0-5 Anenii Noi Women's",
+    "homeTeam": "Real Succes Women's",
+    "awayTeam": "Anenii Noi Women's",
+    "score": "0-5",
+    "matchId": "5187842",
+    "targetMatchId": "5195305",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "18/12/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Real Succes Women\\s Hist",
+    "title": "Real Succes Women's 1-2 FC Chisinau Women's",
+    "homeTeam": "Real Succes Women's",
+    "awayTeam": "FC Chisinau Women's",
+    "score": "1-2",
+    "matchId": "5006613",
+    "targetMatchId": "5195305",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "15/10/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Real Succes Women\\s Hist",
+    "title": "Real Succes Women's 0-4 FC Chisinau Women's",
+    "homeTeam": "Real Succes Women's",
+    "awayTeam": "FC Chisinau Women's",
+    "score": "0-4",
+    "matchId": "4991990",
+    "targetMatchId": "5195305",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
