@@ -1,0 +1,50 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5197737",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "24/07/09",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Nautico (PE)U19 Hist",
+    "title": "Internacional(U19) 3-0 Nautico (PE)U19",
+    "homeTeam": "Internacional(U19)",
+    "awayTeam": "Nautico (PE)U19",
+    "score": "3-0",
+    "matchId": "282450",
+    "targetMatchId": "5197737",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
