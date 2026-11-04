@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5197562",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "01/08/10",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Santos(U19) Hist",
+    "title": "Flamengo (RJ) U19 2-2 Santos(U19)",
+    "homeTeam": "Flamengo (RJ) U19",
+    "awayTeam": "Santos(U19)",
+    "score": "2-2",
+    "matchId": "382877",
+    "targetMatchId": "5197562",
+    "goals": [
+      "",
+      "",
+      "37' 0-1",
+      "",
+      "52' 1-1",
+      "",
+      "76' 1-2<br>90' 2-2",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "01/06/10",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Santos(U19) Hist",
+    "title": "Santos(U19) 0-0 Madureira(U19)",
+    "homeTeam": "Santos(U19)",
+    "awayTeam": "Madureira(U19)",
+    "score": "0-0",
+    "matchId": "361200",
+    "targetMatchId": "5197562",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "29/05/10",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Santos(U19) Hist",
+    "title": "Santos(U19) 2-2 Goias(U19)",
+    "homeTeam": "Santos(U19)",
+    "awayTeam": "Goias(U19)",
+    "score": "2-2",
+    "matchId": "361104",
+    "targetMatchId": "5197562",
+    "goals": [
+      "5' 1-0",
+      "",
+      "",
+      "",
+      "",
+      "63' 2-0<br>70' 2-1",
+      "80' 2-2",
+      ""
+    ],
+    "isReference": true
+  }
+]

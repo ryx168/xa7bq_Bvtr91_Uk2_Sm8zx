@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5197458",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "23/11/23",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Sporting Baie Mahault Hist",
+    "title": "Moulien 3-1 Sporting Baie Mahault",
+    "homeTeam": "Moulien",
+    "awayTeam": "Sporting Baie Mahault",
+    "score": "3-1",
+    "matchId": "4620874",
+    "targetMatchId": "5197458",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "31/10/22",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Sporting Baie Mahault Hist",
+    "title": "L'Etoile de Morne-a-l'Eau 1-1 Sporting Baie Mahault",
+    "homeTeam": "L'Etoile de Morne-a-l'Eau",
+    "awayTeam": "Sporting Baie Mahault",
+    "score": "1-1",
+    "matchId": "4401981",
+    "targetMatchId": "5197458",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "15/11/14",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Siroco Les Abymes Hist",
+    "title": "Quevilly Rouen 2-0 Siroco Les Abymes",
+    "homeTeam": "Quevilly Rouen",
+    "awayTeam": "Siroco Les Abymes",
+    "score": "2-0",
+    "matchId": "1180486",
+    "targetMatchId": "5197458",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "60' 1-0",
+      "",
+      "90' 2-0",
+      ""
+    ],
+    "isReference": true
+  }
+]
