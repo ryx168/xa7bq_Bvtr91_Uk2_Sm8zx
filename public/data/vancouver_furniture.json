@@ -22,6 +22,16 @@
     {
         "id": "yp_fur_2",
         "city": "Vancouver",
+        "name": "Ethan Allen Design Center",
+        "industry": "Furniture",
+        "website": "http://www.ethanallen.ca/richmond",
+        "phone": "604-260-3583",
+        "address": "2915 Granville St, Vancouver, BC V6H 3J6",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_3",
+        "city": "Vancouver",
         "name": "Sleep Country",
         "industry": "Furniture",
         "website": "N/A",
@@ -30,7 +40,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_3",
+        "id": "yp_fur_4",
         "city": "Vancouver",
         "name": "Pier 1 Imports",
         "industry": "Furniture",
@@ -40,7 +50,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_5",
+        "id": "yp_fur_6",
         "city": "Vancouver",
         "name": "United Furniture Warehouse",
         "industry": "Furniture",
@@ -50,7 +60,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_6",
+        "id": "yp_fur_7",
         "city": "Vancouver",
         "name": "Direct Liquidation",
         "industry": "Furniture",
@@ -60,7 +70,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_7",
+        "id": "yp_fur_8",
         "city": "Vancouver",
         "name": "Save Now Furniture",
         "industry": "Furniture",
@@ -70,7 +80,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_8",
+        "id": "yp_fur_9",
         "city": "Vancouver",
         "name": "Pallucci Furniture",
         "industry": "Furniture",
@@ -80,7 +90,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_9",
+        "id": "yp_fur_10",
         "city": "Vancouver",
         "name": "Country Furniture",
         "industry": "Furniture",
@@ -90,17 +100,17 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_11",
+        "id": "yp_fur_12",
         "city": "Vancouver",
         "name": "Heritage Office Furnishings Ltd",
         "industry": "Furniture",
         "website": "N/A",
-        "phone": "604-261-0575",
+        "phone": "604-261-1397",
         "address": "1588 Rand Ave, Vancouver, BC V6P 3G2",
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_12",
+        "id": "yp_fur_13",
         "city": "Vancouver",
         "name": "Ready Set Show Staging",
         "industry": "Furniture",
@@ -110,7 +120,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_13",
+        "id": "yp_fur_14",
         "city": "Vancouver",
         "name": "Wooden Table Hospitality",
         "industry": "Furniture",
@@ -120,7 +130,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_14",
+        "id": "yp_fur_15",
         "city": "Vancouver",
         "name": "Vancouver Sofa & Patio",
         "industry": "Furniture",
@@ -130,7 +140,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_15",
+        "id": "yp_fur_16",
         "city": "Vancouver",
         "name": "C & C Furniture Ltd",
         "industry": "Furniture",
@@ -140,7 +150,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_16",
+        "id": "yp_fur_17",
         "city": "Vancouver",
         "name": "Coker's Custom Classics",
         "industry": "Furniture",
@@ -150,7 +160,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_17",
+        "id": "yp_fur_18",
         "city": "Vancouver",
         "name": "Velles North Van Furniture Ltd",
         "industry": "Furniture",
@@ -160,7 +170,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_18",
+        "id": "yp_fur_19",
         "city": "Vancouver",
         "name": "Oscar Granns Ltd",
         "industry": "Furniture",
@@ -170,7 +180,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_21",
+        "id": "yp_fur_22",
         "city": "Vancouver",
         "name": "A A Furniture Repair & Refinishing",
         "industry": "Furniture",
@@ -180,7 +190,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_22",
+        "id": "yp_fur_23",
         "city": "Vancouver",
         "name": "The Modern Source Inc.",
         "industry": "Furniture",
@@ -190,7 +200,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_23",
+        "id": "yp_fur_24",
         "city": "Vancouver",
         "name": "North Shore Custom Furniture Co.",
         "industry": "Furniture",
@@ -200,7 +210,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_24",
+        "id": "yp_fur_25",
         "city": "Vancouver",
         "name": "Cate Brown",
         "industry": "Furniture",
@@ -210,7 +220,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_25",
+        "id": "yp_fur_26",
         "city": "Vancouver",
         "name": "The Living Lab",
         "industry": "Furniture",
@@ -220,7 +230,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_27",
+        "id": "yp_fur_28",
         "city": "Vancouver",
         "name": "Mansour International Commerce",
         "industry": "Furniture",
@@ -230,7 +240,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_28",
+        "id": "yp_fur_29",
         "city": "Vancouver",
         "name": "Northwood Furniture Repair Services",
         "industry": "Furniture",
@@ -240,7 +250,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_30",
+        "id": "yp_fur_31",
         "city": "Vancouver",
         "name": "Canadian Heritage Designs Ltd",
         "industry": "Furniture",
@@ -250,7 +260,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_31",
+        "id": "yp_fur_32",
         "city": "Vancouver",
         "name": "Bed Bath & Beyond",
         "industry": "Furniture",
@@ -260,7 +270,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_32",
+        "id": "yp_fur_33",
         "city": "Vancouver",
         "name": "Ginger Jar Furniture",
         "industry": "Furniture",
@@ -270,7 +280,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_33",
+        "id": "yp_fur_34",
         "city": "Vancouver",
         "name": "OMG It's Small",
         "industry": "Furniture",
@@ -282,6 +292,16 @@
     {
         "id": "yp_fur_0",
         "city": "Vancouver",
+        "name": "Urban Garage",
+        "industry": "Furniture",
+        "website": "http://www.urbangarage.com/",
+        "phone": "604-620-8568",
+        "address": "3640 Hastings St E, Vancouver, BC V5K 2A9",
+        "start_date": "Unknown"
+    },
+    {
+        "id": "yp_fur_1",
+        "city": "Vancouver",
         "name": "McKellars Interiors",
         "industry": "Furniture",
         "website": "http://www.mckellarsinteriors.com/",
@@ -290,7 +310,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_1",
+        "id": "yp_fur_2",
         "city": "Vancouver",
         "name": "Buen Café",
         "industry": "Furniture",
@@ -300,7 +320,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_2",
+        "id": "yp_fur_3",
         "city": "Vancouver",
         "name": "Furniture Salad",
         "industry": "Furniture",
@@ -310,7 +330,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_3",
+        "id": "yp_fur_4",
         "city": "Vancouver",
         "name": "Bulthaup Vancouver",
         "industry": "Furniture",
@@ -320,7 +340,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_4",
+        "id": "yp_fur_5",
         "city": "Vancouver",
         "name": "Naughty Pine",
         "industry": "Furniture",
@@ -330,7 +350,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_5",
+        "id": "yp_fur_6",
         "city": "Vancouver",
         "name": "EOY Designs",
         "industry": "Furniture",
@@ -340,7 +360,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_6",
+        "id": "yp_fur_7",
         "city": "Vancouver",
         "name": "Drometta Living",
         "industry": "Furniture",
@@ -350,7 +370,7 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_7",
+        "id": "yp_fur_8",
         "city": "Vancouver",
         "name": "Zebo Designs",
         "industry": "Furniture",
@@ -360,23 +380,13 @@
         "start_date": "Unknown"
     },
     {
-        "id": "yp_fur_8",
+        "id": "yp_fur_9",
         "city": "Vancouver",
         "name": "Charron Joe",
         "industry": "Furniture",
         "website": "http://www.facebook.com/114491025767527",
         "phone": "604-261-2022",
         "address": "7520 Balaclava St, Vancouver, BC V6N 0A3",
-        "start_date": "Unknown"
-    },
-    {
-        "id": "yp_fur_9",
-        "city": "Vancouver",
-        "name": "Divano Interiors",
-        "industry": "Furniture",
-        "website": "N/A",
-        "phone": "604-733-9823",
-        "address": "2213 Granville St, Vancouver, BC V6H 3G1",
         "start_date": "Unknown"
     },
     {
