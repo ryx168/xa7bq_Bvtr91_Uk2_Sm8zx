@@ -1,0 +1,74 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5198757",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "07/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Florida Premier Hist",
+    "title": "Florida Premier 2-4 PCU Pelicans",
+    "homeTeam": "Florida Premier",
+    "awayTeam": "PCU Pelicans",
+    "score": "2-4",
+    "matchId": "5072632",
+    "targetMatchId": "5198757",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "04/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Florida Premier Hist",
+    "title": "Lakeland Tropics 1-3 Florida Premier",
+    "homeTeam": "Lakeland Tropics",
+    "awayTeam": "Florida Premier",
+    "score": "1-3",
+    "matchId": "5071528",
+    "targetMatchId": "5198757",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
