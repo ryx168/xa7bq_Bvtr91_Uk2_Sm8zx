@@ -1,0 +1,74 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5199234",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "06/11/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Al Khor SC(U20) Hist",
+    "title": "Al Mesaimeer Club(U20) 0-2 Al Khor SC(U20)",
+    "homeTeam": "Al Mesaimeer Club(U20)",
+    "awayTeam": "Al Khor SC(U20)",
+    "score": "0-2",
+    "matchId": "5197875",
+    "targetMatchId": "5199234",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "06/11/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Al-Arabi Doha(U20) Hist",
+    "title": "Al-Arabi Doha(U20) 2-0 Al-Ahli Doha(U20)",
+    "homeTeam": "Al-Arabi Doha(U20)",
+    "awayTeam": "Al-Ahli Doha(U20)",
+    "score": "2-0",
+    "matchId": "5197874",
+    "targetMatchId": "5199234",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

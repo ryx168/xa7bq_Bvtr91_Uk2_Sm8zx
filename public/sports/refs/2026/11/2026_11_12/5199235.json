@@ -1,0 +1,74 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5199235",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "05/11/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Al-Wakrah SC (U20) Hist",
+    "title": "Al Duhail SC(U20) 1-1 Al-Wakrah SC (U20)",
+    "homeTeam": "Al Duhail SC(U20)",
+    "awayTeam": "Al-Wakrah SC (U20)",
+    "score": "1-1",
+    "matchId": "5197675",
+    "targetMatchId": "5199235",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "06/11/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Al Mesaimeer Club(U20) Hist",
+    "title": "Al Mesaimeer Club(U20) 0-2 Al Khor SC(U20)",
+    "homeTeam": "Al Mesaimeer Club(U20)",
+    "awayTeam": "Al Khor SC(U20)",
+    "score": "0-2",
+    "matchId": "5197875",
+    "targetMatchId": "5199235",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
