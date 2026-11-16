@@ -1,0 +1,50 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5199594",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "09/11/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Miami FC (U20) Hist",
+    "title": "Florida Elite SA 2-3 Miami FC (U20)",
+    "homeTeam": "Florida Elite SA",
+    "awayTeam": "Miami FC (U20)",
+    "score": "2-3",
+    "matchId": "5198645",
+    "targetMatchId": "5199594",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
