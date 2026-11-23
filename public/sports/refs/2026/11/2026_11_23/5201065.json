@@ -1,0 +1,98 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5201065",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "21/11/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Tiradentes PA Women\\s Hist",
+    "title": "DO Remo Women's 1-1 Tiradentes PA Women's",
+    "homeTeam": "DO Remo Women's",
+    "awayTeam": "Tiradentes PA Women's",
+    "score": "1-1",
+    "matchId": "5200614",
+    "targetMatchId": "5201065",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "13/11/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Tiradentes PA Women\\s Hist",
+    "title": "Paysandu (PA) Women's 2-0 Tiradentes PA Women's",
+    "homeTeam": "Paysandu (PA) Women's",
+    "awayTeam": "Tiradentes PA Women's",
+    "score": "2-0",
+    "matchId": "5199236",
+    "targetMatchId": "5201065",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "30/04/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Tiradentes PA Women\\s Hist",
+    "title": "Tiradentes PA Women's 2-4 Planalto EC Women's",
+    "homeTeam": "Tiradentes PA Women's",
+    "awayTeam": "Planalto EC Women's",
+    "score": "2-4",
+    "matchId": "5062843",
+    "targetMatchId": "5201065",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
