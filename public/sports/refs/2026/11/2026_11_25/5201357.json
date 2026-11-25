@@ -1,0 +1,122 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5201357",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "19/03/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Florida Badgers Hist",
+    "title": "Charleston Battery 2-1 Florida Badgers",
+    "homeTeam": "Charleston Battery",
+    "awayTeam": "Florida Badgers",
+    "score": "2-1",
+    "matchId": "5031088",
+    "targetMatchId": "5201357",
+    "goals": [
+      "",
+      "21' 1-0",
+      "",
+      "",
+      "",
+      "66' 1-1",
+      "",
+      "90+12' 2-1"
+    ],
+    "isReference": true
+  },
+  {
+    "date": "18/07/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Florida Wolves FC Hist",
+    "title": "Florida Soccer Soldiers 2-0 Florida Wolves FC",
+    "homeTeam": "Florida Soccer Soldiers",
+    "awayTeam": "Florida Wolves FC",
+    "score": "2-0",
+    "matchId": "5129747",
+    "targetMatchId": "5201357",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "08/06/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Florida Wolves FC Hist",
+    "title": "Florida Wolves FC 0-0 FC Florida",
+    "homeTeam": "Florida Wolves FC",
+    "awayTeam": "FC Florida",
+    "score": "0-0",
+    "matchId": "5073204",
+    "targetMatchId": "5201357",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "29/09/25",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Florida Wolves FC Hist",
+    "title": "Miami United 3-2 Florida Wolves FC",
+    "homeTeam": "Miami United",
+    "awayTeam": "Florida Wolves FC",
+    "score": "3-2",
+    "matchId": "4988751",
+    "targetMatchId": "5201357",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

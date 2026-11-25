@@ -1,0 +1,74 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5201375",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "18/11/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Gaziemirspor(U19) Hist",
+    "title": "Bucaspor(U19) 4-2 Gaziemirspor(U19)",
+    "homeTeam": "Bucaspor(U19)",
+    "awayTeam": "Gaziemirspor(U19)",
+    "score": "4-2",
+    "matchId": "5200048",
+    "targetMatchId": "5201375",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "14/10/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Gaziemirspor(U19) Hist",
+    "title": "Aliaga Futbol AS(U19) 1-1 Gaziemirspor(U19)",
+    "homeTeam": "Aliaga Futbol AS(U19)",
+    "awayTeam": "Gaziemirspor(U19)",
+    "score": "1-1",
+    "matchId": "5192384",
+    "targetMatchId": "5201375",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]

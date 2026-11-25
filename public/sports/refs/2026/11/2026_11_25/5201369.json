@@ -1,0 +1,74 @@
+[
+  {
+    "date": "",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "H2H",
+    "title": " - ",
+    "homeTeam": "",
+    "awayTeam": "",
+    "score": "-",
+    "matchId": "",
+    "targetMatchId": "5201369",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "11/03/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Inkilapspor(U19) Hist",
+    "title": "Bulvarspor(U19) 6-2 Inkilapspor(U19)",
+    "homeTeam": "Bulvarspor(U19)",
+    "awayTeam": "Inkilapspor(U19)",
+    "score": "6-2",
+    "matchId": "5050972",
+    "targetMatchId": "5201369",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  },
+  {
+    "date": "04/02/26",
+    "day": "",
+    "time": "",
+    "status": "FT",
+    "group": "Inkilapspor(U19) Hist",
+    "title": "Inkilapspor(U19) 1-1 Karacabey Birlikspor(U19)",
+    "homeTeam": "Inkilapspor(U19)",
+    "awayTeam": "Karacabey Birlikspor(U19)",
+    "score": "1-1",
+    "matchId": "5033339",
+    "targetMatchId": "5201369",
+    "goals": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "isReference": true
+  }
+]
